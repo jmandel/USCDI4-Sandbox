@@ -24,7 +24,7 @@ jobs:
       - name: FHIR IG Action
         uses: qligier/fhir-ig-action@v0.2.0
         with:
-        sushi: "2.10"
+         sushi: "2.10"
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
