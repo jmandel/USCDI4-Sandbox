@@ -1,0 +1,57 @@
+{
+  "date" : "Wed, 02 Aug, 2023 07:23:58 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json",
+      "size" : 4514,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 79,
+          "length" : 454
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 80,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 582
+        },
+        {
+          "activity" : "validate",
+          "start" : 80,
+          "length" : 2350
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 83,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 83,
+          "length" : 125
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 264
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 118,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 125,
+          "length" : 2
+        }
+      ]
+    }
+  ]
+}

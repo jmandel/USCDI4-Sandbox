@@ -1,0 +1,9 @@
+[
+  {
+    "id" : "uscdi4-sandbox",
+    "type" : "ImplementationGuide",
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox",
+    "version" : "0.0.0",
+    "name" : "USCDI4_1Sandbox"
+  }
+]
