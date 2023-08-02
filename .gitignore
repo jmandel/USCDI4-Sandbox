@@ -1,0 +1,16 @@
+# ig - Implementation Guide files to ignore
+
+.DS_Store
+Thumbs.db
+/output/
+/input-cache/
+/temp/
+/template/
+/node_modules/
+/save/
+/bin/
+/target/
+/docs/
+/output/
+SUSHI-GENERATED-FILES.mdv
+/my-notes/
