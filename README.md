@@ -1,2 +1,5 @@
-# USCDI4-Sandbox
-USCDI4 Sandbox to test out new profiles and examples
+# My IG Publisher Sandbox
+
+place to create resource instances and examples
+
+See the git hub pages for a peek!
