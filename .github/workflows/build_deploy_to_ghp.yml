@@ -1,4 +1,5 @@
-# This is a basic workflow to help you get started with Actions
+# This is a basic workflow to build a FHIR-IG and publish the output (docs folder) 
+# on Git Hub Pages everytime it is pushed to the main branch
 
 name: Build and Deploy
 
@@ -21,11 +22,11 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-      - name: FHIR IG Action
-        uses: qligier/fhir-ig-action@v0.2.0
+      - name: FHIR IG Action   # action from the GitHub Marketplace
+        uses: qligier/fhir-ig-action@v0.2.0.
         with:
          sushi: "2.10"
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages  # action from the GitHub Marketplace
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           folder: docs # deploy from the docs from the prior step
