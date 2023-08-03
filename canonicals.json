@@ -5,5 +5,12 @@
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox",
     "version" : "0.0.0",
     "name" : "USCDI4_1Sandbox"
+  },
+  {
+    "id" : "us-core-average-blood-pressure",
+    "type" : "StructureDefinition",
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure",
+    "version" : "0.0.0",
+    "name" : "USCoreAverageBloodPressureProfile"
   }
 ]

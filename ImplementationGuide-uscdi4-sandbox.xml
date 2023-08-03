@@ -17,7 +17,7 @@
   <name value="USCDI4_1Sandbox"/>
   <title value="HealtheData1 USCDI4 Sandbox"/>
   <status value="active"/>
-  <date value="2023-08-02T07:23:58+00:00"/>
+  <date value="2023-08-03T04:18:55+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -142,7 +142,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="escludejsn"/>
+        <valueString value="excludejson"/>
       </extension>
       <extension url="value">
         <valueString value="false"/>
@@ -159,14 +159,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="excludemap"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="excludeexample"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -409,7 +401,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="escludejsn"/>
+        <valueCode value="excludejson"/>
       </extension>
       <extension url="value">
         <valueString value="false"/>
@@ -426,14 +418,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueCode value="excludemap"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="excludeexample"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -611,6 +595,28 @@
       <name value="Test Examples"/>
       <description value="Examples for Testing Stuff Out!!!"/>
     </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/average-blood-pressure"/>
+      </reference>
+      <name value="Average Blood Pressure Example"/>
+      <description value="This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)."/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-average-blood-pressure"/>
+      </reference>
+      <name value="US Core Average Blood Pressure Profile"/>
+      <description value="To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="informative"/>
@@ -652,6 +658,17 @@
         </extension>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ImplementationGuide.html"/>
+        </extension>
+        <nameUrl value="ImplementationGuide.html"/>
+        <title value="USCDI4 Sandbox ImplementationGuide Resource"/>
         <generation value="markdown"/>
       </page>
       <page>

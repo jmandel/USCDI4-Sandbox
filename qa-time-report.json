@@ -1,55 +1,152 @@
 {
-  "date" : "Wed, 02 Aug, 2023 07:23:58 +0000",
+  "date" : "Thu, 03 Aug, 2023 04:18:55 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json",
-      "size" : 4514,
+      "size" : 6024,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 79,
-          "length" : 454
+          "start" : 94,
+          "length" : 745
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 80,
-          "length" : 6
+          "start" : 98,
+          "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 80,
-          "length" : 582
+          "start" : 98,
+          "length" : 627
         },
         {
           "activity" : "validate",
-          "start" : 80,
-          "length" : 2350
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 83,
-          "length" : 1
+          "start" : 105,
+          "length" : 2086
         },
         {
           "activity" : "generate1",
-          "start" : 83,
-          "length" : 125
+          "start" : 109,
+          "length" : 186
         },
         {
           "activity" : "generate2",
-          "start" : 85,
-          "length" : 264
+          "start" : 112,
+          "length" : 273
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 118,
-          "length" : 2
+          "start" : 156,
+          "length" : 3
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 125,
+          "start" : 169,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-us-core-average-blood-pressure.json",
+      "size" : 14395,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 93,
+          "length" : 346
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 94,
+          "length" : 369
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 95,
+          "length" : 2994
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 99,
+          "length" : 3722
+        },
+        {
+          "activity" : "validate",
+          "start" : 102,
+          "length" : 2707
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 107,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 107,
           "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 109,
+          "length" : 710
+        },
+        {
+          "activity" : "generate2",
+          "start" : 112,
+          "length" : 7240
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 156,
+          "length" : 17
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 169,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-average-blood-pressure.json",
+      "size" : 3207,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 94,
+          "length" : 19
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 98,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 102,
+          "length" : 239
+        },
+        {
+          "activity" : "validate",
+          "start" : 107,
+          "length" : 872
+        },
+        {
+          "activity" : "generate1",
+          "start" : 110,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 119,
+          "length" : 40
         }
       ]
     }

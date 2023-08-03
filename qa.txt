@@ -1,23 +1,16 @@
 ﻿USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 5, warn = 5, info = 0
-IG Publisher Version: 1.3.25
-Generated Wed Aug 02 07:24:44 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
- Build Errors : 2 / 4 / 0
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 5 / 1 / 1
+err = 1, warn = 0, info = 0
+IG Publisher Version: 1.3.26
+Generated Thu Aug 03 04:20:11 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+ Build Errors : 0 / 0 / 0
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 1 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 195, column 8: The link 'csvs.zip' for "CSV(compressed folder)" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 210, column 8: The link 'schematrons.zip' for "Schematrons(compressed folder)" cannot be resolved
-WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json ==
-WARNING: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox: Unknown Parameters: [escludejsn=false, excludeexample=true]
-ERROR: ImplementationGuide/uscdi4-sandbox: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
-ERROR: ImplementationGuide/uscdi4-sandbox: ImplementationGuide.definition.extension[8].extension[0].value.ofType(string): The value provided ('escludejsn') is not in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.0.0-candidate), and a code is required from this value set) (error message = Unknown Code 'escludejsn' in the system 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters'; The provided code http://hl7.org/fhir/tools/CodeSystem/ig-parameters#escludejsn is not in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.0.0-candidate')
-ERROR: ImplementationGuide/uscdi4-sandbox: ImplementationGuide.definition.extension[11].extension[0].value.ofType(string): The value provided ('excludeexample') is not in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.0.0-candidate), and a code is required from this value set) (error message = Unknown Code 'excludeexample' in the system 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters'; The provided code http://hl7.org/fhir/tools/CodeSystem/ig-parameters#excludeexample is not in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.0.0-candidate')
-ERROR: ImplementationGuide/uscdi4-sandbox: ImplementationGuide.definition.extension[42].extension[0].value.ofType(code): The value provided ('escludejsn') is not in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.0.0-candidate), and a code is required from this value set) (error message = Unknown Code 'escludejsn' in the system 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters'; The provided code http://hl7.org/fhir/tools/CodeSystem/ig-parameters#escludejsn is not in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.0.0-candidate')
-ERROR: ImplementationGuide/uscdi4-sandbox: ImplementationGuide.definition.extension[45].extension[0].value.ofType(code): The value provided ('excludeexample') is not in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.0.0-candidate), and a code is required from this value set) (error message = Unknown Code 'excludeexample' in the system 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters'; The provided code http://hl7.org/fhir/tools/CodeSystem/ig-parameters#excludeexample is not in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.0.0-candidate')
+== input/examples/Observation-average-blood-pressure.json ==
+ERROR: Observation/average-blood-pressure: Observation.effective.ofType(Period): Rule vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' Failed
+== input/resources/StructureDefinition-us-core-average-blood-pressure.json ==
