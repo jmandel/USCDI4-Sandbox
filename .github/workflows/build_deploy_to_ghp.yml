@@ -25,7 +25,7 @@ jobs:
       - name: FHIR IG Action   # action from the GitHub Marketplace
         uses: qligier/fhir-ig-action@v0.2.0.
         with:
-         sushi: "2.10"
+         sushi: "3.2.0"
       - name: Deploy to GitHub Pages  # action from the GitHub Marketplace
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
