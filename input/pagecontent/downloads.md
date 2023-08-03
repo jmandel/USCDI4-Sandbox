@@ -36,8 +36,8 @@ Schematrons are also available for download:
 
 ### Implementation Guide Details
 
-The following link to the [ImplementationGuide] resource defines the technical details of this publication, including dependencies and  publishing parameters:
+The following link to the ImplementationGuide resource defines the technical details of this publication, including dependencies and publishing parameters:
 
-<!-- - [My ImplementationGuide Resource] -->
+- [My ImplementationGuide Resource](ImplementationGuide.html)
 
 {% include link-list.md %}

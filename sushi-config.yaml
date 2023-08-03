@@ -71,8 +71,8 @@ pages:
   downloads.md:
     title: Downloads
 
-  # ImplementationGuide-healthedata1-sandbox.md:
-  #   title: CDex ImplementationGuide Resource
+  ImplementationGuide.md:
+    title: USCDI4 Sandbox ImplementationGuide Resource
 
   changes.md:
     title: Change Log
@@ -94,10 +94,10 @@ parameters:
   #  value: #path #A relative path that contains liquid templates for generating narrative
   path-liquid: input/images/liquid
   excludexml: true
-  escludejsn: false
+  excludejson: false
   excludettl: true
   excludemap: true
-  excludeexample: true
+  # excludeexample: true
   # custom parameter also possible too
   #foo: bar
   # no-narrative:
@@ -128,4 +128,4 @@ menu:
   Artifact Index: artifacts.html
   Downloads: downloads.html
   Change Log: changes.html
-  # IG Page: 'ImplementationGuide-healthedata1-sandbox.html'
+  IG Page: 'ImplementationGuide.html'
