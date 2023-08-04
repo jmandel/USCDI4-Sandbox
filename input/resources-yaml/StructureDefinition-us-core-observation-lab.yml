@@ -116,6 +116,10 @@ differential:
     path: Observation.interpretation
     short: (USCDI) Result interpretation
     comment: Categorical assessment of a laboratory value, often in relation to a test's reference range. Examples include but are not limited to high, low, critical, and normal.
+    binding:
+      strength: extensible
+      description: Observation Interpretation Codes
+      valueSet: http://hl7.org/fhir/ValueSet/observation-interpretation
     mustSupport: true
 
   - id: Observation.specimen
