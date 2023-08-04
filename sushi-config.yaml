@@ -47,12 +47,23 @@ dependencies:
 
 
 groups:
-  TestExamples:
-    name: Test Examples 
-    description: Examples for Testing Stuff Out!!!
+  AvgBP:
+    name: Average Blood Pressure
+    description: Average Blood Pressure Profile and Examples
     resources:
-      # - Patient/deceased-example
-
+      - StructureDefinition/us-core-average-blood-pressure
+      - Observation/average-blood-pressure
+  PE:
+    name: Physical Activity 
+    description: Physical Activity Health Status Assessment Examples
+    resources:
+      - Observation/EVS-item-example-68516-4
+      - Observation/EVS-item-example-89555-7
+      - Observation/EVS-panel-example-89574-8
+      - Observation/exercise-per-day
+      - Observation/exercise-per-week
+      - Questionnaire/exercise-vital-sign
+      - QuestionnaireResponse/exercise-vital-sign
 
 pages:
   index.md:

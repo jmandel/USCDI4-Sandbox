@@ -67,15 +67,6 @@
                                 "valueBoolean": true
                             }
                         ],
-                        "code": "dateTime"
-                    },
-                    {
-                        "extension": [
-                            {
-                                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                "valueBoolean": true
-                            }
-                        ],
                         "code": "Period"
                     }
                 ],

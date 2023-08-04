@@ -1,2 +1,9 @@
-[average-blood-pressure]: Observation-average-blood-pressure.html
 [USCoreAverageBloodPressureProfile]: StructureDefinition-us-core-average-blood-pressure.html
+[average-blood-pressure]: Observation-average-blood-pressure.html
+[EVS-item-example-68516-4]: Observation-EVS-item-example-68516-4.html
+[EVS-item-example-89555-7]: Observation-EVS-item-example-89555-7.html
+[EVS-panel-example-89574-8]: Observation-EVS-panel-example-89574-8.html
+[exercise-per-day]: Observation-exercise-per-day.html
+[exercise-per-week]: Observation-exercise-per-week.html
+[exercise-vital-sign]: Questionnaire-exercise-vital-sign.html
+[exercise-vital-sign]: QuestionnaireResponse-exercise-vital-sign.html

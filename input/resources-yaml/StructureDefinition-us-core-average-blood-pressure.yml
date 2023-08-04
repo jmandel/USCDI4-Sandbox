@@ -47,11 +47,11 @@ differential:
     path: Observation.effective[x]
     short: (USCDI) clinically relevant time-period for the average of blood pressure (BP) readings
     type:
-        - extension:
-            - url: >-
-                http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
-              valueBoolean: true
-          code: dateTime
+        # - extension:
+        #     - url: >-
+        #         http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+        #       valueBoolean: true
+        #   code: dateTime
         - extension:
             - url: >-
                 http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
