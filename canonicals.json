@@ -19,5 +19,19 @@
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure",
     "version" : "0.0.0",
     "name" : "USCoreAverageBloodPressureProfile"
+  },
+  {
+    "id" : "us-core-observation-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab",
+    "version" : "0.0.0",
+    "name" : "USCoreLaboratoryResultObservationProfile"
+  },
+  {
+    "id" : "us-core-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen",
+    "version" : "0.0.0",
+    "name" : "USCoreSpecimenProfile"
   }
 ]

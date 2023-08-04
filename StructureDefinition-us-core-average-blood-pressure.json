@@ -3172,6 +3172,10 @@
         "max" : "1"
       },
       "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+          "valueBoolean" : true
+        }],
         "code" : "Quantity"
       }],
       "condition" : ["vs-3"],
@@ -3880,6 +3884,10 @@
         "max" : "1"
       },
       "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+          "valueBoolean" : true
+        }],
         "code" : "Quantity"
       }],
       "condition" : ["vs-3"],

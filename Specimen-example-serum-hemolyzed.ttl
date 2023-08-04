@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi4-sandbox/Specimen/example-serum-hemolyzed> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-serum-hemolyzed"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Hemolyzed Serum Specimen Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition and body source site." ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen"^^xsd:anyURI ;
+       fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"example-serum-hemolyzed\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;example-serum-hemolyzed&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-specimen.html\">US Core Specimen Profile</a></p></div><p><b>identifier</b>: id: 20220927-00124</p><p><b>accessionIdentifier</b>: id: 20220927-00124</p><p><b>type</b>: Serum sample <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT[US]</a>#119364003; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0487.html\">specimenType</a>#SER &quot;Serum&quot;)</span></p><p><b>subject</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td>2022-09-27 18:07:12+0000</td><td>Right arm <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT[US]</a>#368209003)</span></td></tr></table><h3>Containers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Serum Separator Tube <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table><p><b>condition</b>: Hemolyzed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0493.html\">specimenCondition</a>#HEM)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://acme.com/labs/accession-ids"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "20220927-00124" ]
+  ] ) ; # 
+  fhir:accessionIdentifier [
+     fhir:system [ fhir:v "http://acme.com/labs/accession-ids"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "20220927-00124" ]
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:119364003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/731000124108" ] ;
+       fhir:code [ fhir:v "119364003" ] ;
+       fhir:display [ fhir:v "Serum sample" ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0487"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SER" ] ;
+       fhir:display [ fhir:v "Serum" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://www.hl7.org/fhir/us/core/Patient/example> ;
+     fhir:reference [ fhir:v "http://www.hl7.org/fhir/us/core/Patient/example" ]
+  ] ; # 
+  fhir:collection [
+     fhir:collected [ fhir:v "2022-09-27T18:07:12Z"^^xsd:dateTime ] ;
+     fhir:bodySite [
+       fhir:coding ( [
+         a sct:368209003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/731000124108" ] ;
+         fhir:code [ fhir:v "368209003" ] ;
+         fhir:display [ fhir:v "Right arm" ]
+       ] ) ;
+       fhir:text [ fhir:v "Right arm" ]
+     ]
+  ] ; # 
+  fhir:container ( [
+     fhir:type [
+       fhir:text [ fhir:v "Serum Separator Tube" ]
+     ]
+  ] ) ; # 
+  fhir:condition ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0493"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HEM" ] ;
+       fhir:display [ fhir:v "Hemolyzed" ]
+     ] ) ;
+     fhir:text [ fhir:v "Hemolyzed" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

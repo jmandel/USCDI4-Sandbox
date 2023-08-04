@@ -8,11 +8,22 @@
       {
         "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure",
         "title": "US Core Average Blood Pressure Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab",
+        "title": "US Core Laboratory Result Observation Profile"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen",
+        "title": "US Core Specimen Profile"
       }
     ]
   },
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.differential.element.constraint",
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
@@ -37,12 +48,14 @@
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
       "Observation.meta",
       "Questionnaire.meta",
-      "QuestionnaireResponse.meta"
+      "QuestionnaireResponse.meta",
+      "Specimen.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
       "Observation.meta",
       "Questionnaire.meta",
-      "QuestionnaireResponse.meta"
+      "QuestionnaireResponse.meta",
+      "Specimen.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/questionnaire-unit": [
       "Questionnaire.item"

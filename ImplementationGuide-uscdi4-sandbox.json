@@ -18,7 +18,7 @@
   "name" : "USCDI4_1Sandbox",
   "title" : "HealtheData1 USCDI4 Sandbox",
   "status" : "active",
-  "date" : "2023-08-04T05:30:43+00:00",
+  "date" : "2023-08-04T20:09:38+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -804,6 +804,11 @@
       "id" : "PE",
       "name" : "Physical Activity",
       "description" : "Physical Activity Health Status Assessment Examples"
+    },
+    {
+      "id" : "Labs",
+      "name" : "Laboratory",
+      "description" : "Laboratory and Specimen Profiles and Examples"
     }],
     "resource" : [{
       "extension" : [{
@@ -921,6 +926,58 @@
       "description" : "This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources.",
       "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse",
       "groupingId" : "PE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-observation-lab"
+      },
+      "name" : "US Core Laboratory Result Observation Profile",
+      "description" : "The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases.",
+      "exampleBoolean" : false,
+      "groupingId" : "Labs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-specimen"
+      },
+      "name" : "US Core Specimen Profile",
+      "description" : "This profile sets minimum expectations for the Specimen resource to record, search, and fetch \"substances being sampled or tested. (e.g., nasopharyngeal swab, whole blood, serum, urine, wound swab)\" associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.",
+      "exampleBoolean" : false,
+      "groupingId" : "Labs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/serum-glucose"
+      },
+      "name" : "Serum Glucose Example",
+      "description" : "This is a serum glucose example for the *US Core Observation Lab Profile*.",
+      "exampleCanonical" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab",
+      "groupingId" : "Labs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/example-serum-hemolyzed"
+      },
+      "name" : "Hemolyzed Serum Specimen Example",
+      "description" : "This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition and body source site.",
+      "exampleCanonical" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen",
+      "groupingId" : "Labs"
     }],
     "page" : {
       "extension" : [{

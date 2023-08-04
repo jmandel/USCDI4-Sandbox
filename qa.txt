@@ -2,9 +2,9 @@
 =========================================
 
 err = 1, warn = 0, info = 2
-IG Publisher Version: 1.3.27
-Generated Fri Aug 04 05:32:06 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
- Build Errors : 0 / 0 / 0
+IG Publisher Version: 1.3.28
+Generated Fri Aug 04 20:11:05 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+ Build Errors : 1 / 0 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-EVS-item-example-68516-4 : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-EVS-item-example-89555-7 : 0 / 0 / 1
@@ -12,11 +12,16 @@ Generated Fri Aug 04 05:32:06 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 1 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-day : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-week : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-serum-glucose : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-exercise-vital-sign : 0 / 0 / 3
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/QuestionnaireResponse-exercise-vital-sign : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Specimen-example-serum-hemolyzed : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-observation-lab : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-specimen : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/Observation-serum-glucose.html#/html/body/div/div/div/div/div/div/p/a at Line 180, column 1474: The link 'Specimen-specimen-example-serum.html' for "Specimen/specimen-example-serum: Serum specimen" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json ==
 == input/examples/Observation-EVS-item-example-68516-4.json ==
 == input/examples/Observation-EVS-item-example-89555-7.json ==
@@ -25,8 +30,12 @@ Generated Fri Aug 04 05:32:06 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.
 ERROR: Observation/average-blood-pressure: Observation.effective.ofType(Period): Rule vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' Failed
 == input/examples/Observation-exercise-per-day.json ==
 == input/examples/Observation-exercise-per-week.json ==
+== input/examples/Observation-serum-glucose.json ==
 == input/examples/Questionnaire-exercise-vital-sign.json ==
 INFORMATION: Questionnaire/exercise-vital-sign: Questionnaire.item[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
 INFORMATION: Questionnaire/exercise-vital-sign: Questionnaire.item[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
 == input/examples/QuestionnaireResponse-exercise-vital-sign.json ==
+== input/examples/Specimen-example-serum-hemolyzed.json ==
 == input/resources/StructureDefinition-us-core-average-blood-pressure.json ==
+== input/resources/StructureDefinition-us-core-observation-lab.json ==
+== input/resources/StructureDefinition-us-core-specimen.json ==

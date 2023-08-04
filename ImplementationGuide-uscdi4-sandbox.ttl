@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "USCDI4_1Sandbox"] ; # 
   fhir:title [ fhir:v "HealtheData1 USCDI4 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-04T05:30:43+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-04T20:09:38+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -698,6 +698,10 @@
        fhir:id [ fhir:v "PE" ] ;
        fhir:name [ fhir:v "Physical Activity" ] ;
        fhir:description [ fhir:v "Physical Activity Health Status Assessment Examples" ]
+     ] [
+       fhir:id [ fhir:v "Labs" ] ;
+       fhir:name [ fhir:v "Laboratory" ] ;
+       fhir:description [ fhir:v "Laboratory and Specimen Profiles and Examples" ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -840,6 +844,64 @@
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse>
        ] ;
        fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-observation-lab" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Laboratory Result Observation Profile" ] ;
+       fhir:description [ fhir:v "The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "Labs" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-specimen" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Specimen Profile" ] ;
+       fhir:description [ fhir:v "This profile sets minimum expectations for the Specimen resource to record, search, and fetch \"substances being sampled or tested. (e.g., nasopharyngeal swab, whole blood, serum, urine, wound swab)\" associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "Labs" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/serum-glucose> ;
+         fhir:reference [ fhir:v "Observation/serum-glucose" ]
+       ] ;
+       fhir:name [ fhir:v "Serum Glucose Example" ] ;
+       fhir:description [ fhir:v "This is a serum glucose example for the *US Core Observation Lab Profile*." ] ;
+       fhir:example [
+         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab"^^xsd:anyURI ;
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab>
+       ] ;
+       fhir:groupingId [ fhir:v "Labs" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Specimen" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Specimen/example-serum-hemolyzed> ;
+         fhir:reference [ fhir:v "Specimen/example-serum-hemolyzed" ]
+       ] ;
+       fhir:name [ fhir:v "Hemolyzed Serum Specimen Example" ] ;
+       fhir:description [ fhir:v "This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition and body source site." ] ;
+       fhir:example [
+         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen"^^xsd:anyURI ;
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen>
+       ] ;
+       fhir:groupingId [ fhir:v "Labs" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

@@ -17,7 +17,7 @@
   <name value="USCDI4_1Sandbox"/>
   <title value="HealtheData1 USCDI4 Sandbox"/>
   <status value="active"/>
-  <date value="2023-08-04T05:30:43+00:00"/>
+  <date value="2023-08-04T20:09:38+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -599,6 +599,10 @@
       <name value="Physical Activity"/>
       <description value="Physical Activity Health Status Assessment Examples"/>
     </grouping>
+    <grouping id="Labs">
+      <name value="Laboratory"/>
+      <description value="Laboratory and Specimen Profiles and Examples"/>
+    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -706,6 +710,54 @@
       <description value="This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"/>
       <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-observation-lab"/>
+      </reference>
+      <name value="US Core Laboratory Result Observation Profile"/>
+      <description value="The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Labs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-specimen"/>
+      </reference>
+      <name value="US Core Specimen Profile"/>
+      <description value="This profile sets minimum expectations for the Specimen resource to record, search, and fetch &quot;substances being sampled or tested. (e.g., nasopharyngeal swab, whole blood, serum, urine, wound swab)&quot; associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Labs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/serum-glucose"/>
+      </reference>
+      <name value="Serum Glucose Example"/>
+      <description value="This is a serum glucose example for the *US Core Observation Lab Profile*."/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab"/>
+      <groupingId value="Labs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/example-serum-hemolyzed"/>
+      </reference>
+      <name value="Hemolyzed Serum Specimen Example"/>
+      <description value="This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition and body source site."/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen"/>
+      <groupingId value="Labs"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

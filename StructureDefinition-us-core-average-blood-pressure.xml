@@ -3078,6 +3078,9 @@
         <max value="1"/>
       </base>
       <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          <valueBoolean value="true"/>
+        </extension>
         <code value="Quantity"/>
       </type>
       <condition value="vs-3"/>
@@ -3756,6 +3759,9 @@
         <max value="1"/>
       </base>
       <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          <valueBoolean value="true"/>
+        </extension>
         <code value="Quantity"/>
       </type>
       <condition value="vs-3"/>

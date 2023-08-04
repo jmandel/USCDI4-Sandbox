@@ -3331,6 +3331,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
+         ] ) ;
          fhir:code [ fhir:v "Quantity"^^xsd:anyURI ]
        ] ) ;
        fhir:condition ( [ fhir:v "vs-3" ] ) ;
@@ -4067,6 +4071,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
+         ] ) ;
          fhir:code [ fhir:v "Quantity"^^xsd:anyURI ]
        ] ) ;
        fhir:condition ( [ fhir:v "vs-3" ] ) ;
