@@ -7,3 +7,7 @@
 [exercise-per-week]: Observation-exercise-per-week.html
 [exercise-vital-sign]: Questionnaire-exercise-vital-sign.html
 [exercise-vital-sign]: QuestionnaireResponse-exercise-vital-sign.html
+[USCoreLaboratoryResultObservationProfile]: StructureDefinition-us-core-observation-lab.html
+[USCoreSpecimenProfile]: StructureDefinition-us-core-specimen.html
+[serum-glucose]: Observation-serum-glucose.html
+[example-serum-hemolyzed]: Specimen-example-serum-hemolyzed.html

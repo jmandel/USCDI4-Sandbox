@@ -64,6 +64,14 @@ groups:
       - Observation/exercise-per-week
       - Questionnaire/exercise-vital-sign
       - QuestionnaireResponse/exercise-vital-sign
+  Labs:
+    name: Laboratory
+    description: Laboratory and Specimen Profiles and Examples
+    resources:
+      - StructureDefinition/us-core-observation-lab
+      - StructureDefinition/us-core-specimen
+      - Observation/serum-glucose
+      - Specimen/example-serum-hemolyzed
 
 pages:
   index.md:

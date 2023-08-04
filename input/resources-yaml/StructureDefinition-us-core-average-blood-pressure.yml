@@ -1,7 +1,6 @@
 resourceType: StructureDefinition
 id: us-core-average-blood-pressure
 url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure
-version: 3.2.0
 name: USCoreAverageBloodPressureProfile
 title: US Core Average Blood Pressure Profile
 status: active
