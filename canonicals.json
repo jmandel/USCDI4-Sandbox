@@ -1,5 +1,12 @@
 [
   {
+    "id" : "exercise-vital-sign",
+    "type" : "Questionnaire",
+    "url" : "http://hl7.org/fhir/us/core/Questionnaire/exercise-vital-sign",
+    "version" : "0.0.0",
+    "name" : "ExerciseVitalSign"
+  },
+  {
     "id" : "uscdi4-sandbox",
     "type" : "ImplementationGuide",
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox",

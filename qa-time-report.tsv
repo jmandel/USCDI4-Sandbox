@@ -1,4 +1,11 @@
-Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json	6024	-	0	0	0	0	0	0	4	627	0	0	0	0	0	0	0	0	0	0	186	273	0	0	0	3	0	13
-input/resources/StructureDefinition-us-core-average-blood-pressure.json	14395	346	1	0	0	0	0	2994	0	3722	0	0	1	0	0	0	0	2	0	0	710	7240	0	0	0	17	0	2
-input/examples/Observation-average-blood-pressure.json	3207	19	0	0	0	0	0	0	1	239	0	0	0	0	0	0	0	0	0	0	19	40	0	0	0	0	0	0
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json	10089	-	0	0	0	0	0	0	4	689	0	0	0	0	0	0	0	0	0	0	169	365	0	0	0	0	4	0	12
+input/resources/StructureDefinition-us-core-average-blood-pressure.json	14010	378	0	0	0	1	0	3298	0	3540	0	0	1	0	0	0	0	3	0	0	669	6211	0	0	0	0	42	3	1
+input/examples/Observation-EVS-item-example-89555-7.json	1997	17	0	0	0	0	0	0	0	60	0	0	0	0	0	0	0	0	0	0	14	31	0	0	0	0	0	0	0
+input/examples/Observation-exercise-per-week.json	2277	16	0	0	0	0	0	0	0	332	0	0	0	0	0	0	0	0	0	0	14	16	0	0	0	0	0	0	0
+input/examples/Observation-average-blood-pressure.json	3207	19	0	0	0	0	0	0	1	125	0	0	0	0	0	0	0	0	0	0	18	21	0	0	0	0	0	0	0
+input/examples/Observation-exercise-per-day.json	2294	16	1	0	0	0	0	0	0	104	0	0	0	0	0	0	0	0	0	0	14	16	0	0	0	0	0	0	0
+input/examples/QuestionnaireResponse-exercise-vital-sign.json	1916	16	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	25	23	1	0	0	0	0	0	0
+input/examples/Observation-EVS-panel-example-89574-8.json	1956	17	0	0	0	0	0	0	0	28	0	0	0	0	0	0	0	0	0	0	13	15	0	0	0	0	0	0	0
+input/examples/Questionnaire-exercise-vital-sign.json	3139	22	0	0	0	0	0	0	0	29	0	0	0	0	0	0	0	0	0	0	28	19	0	0	0	0	1	0	0
+input/examples/Observation-EVS-item-example-68516-4.json	2041	16	0	0	0	0	0	0	0	20	0	0	0	0	0	0	0	0	0	0	13	15	0	0	0	0	0	0	1

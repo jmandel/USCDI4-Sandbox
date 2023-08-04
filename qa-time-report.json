@@ -1,116 +1,183 @@
 {
-  "date" : "Thu, 03 Aug, 2023 04:18:55 +0000",
+  "date" : "Fri, 04 Aug, 2023 05:30:43 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json",
-      "size" : 6024,
+      "size" : 10089,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 94,
-          "length" : 745
+          "start" : 101,
+          "length" : 834
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 98,
+          "start" : 105,
           "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 98,
-          "length" : 627
+          "start" : 105,
+          "length" : 689
         },
         {
           "activity" : "validate",
-          "start" : 105,
-          "length" : 2086
+          "start" : 113,
+          "length" : 2289
         },
         {
           "activity" : "generate1",
-          "start" : 109,
-          "length" : 186
+          "start" : 120,
+          "length" : 169
         },
         {
           "activity" : "generate2",
-          "start" : 112,
-          "length" : 273
+          "start" : 124,
+          "length" : 365
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 3
+          "start" : 170,
+          "length" : 4
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 169,
-          "length" : 13
+          "start" : 184,
+          "length" : 12
         }
       ]
     },
     {
       "name" : "input/resources/StructureDefinition-us-core-average-blood-pressure.json",
-      "size" : 14395,
+      "size" : 14010,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 93,
-          "length" : 346
+          "start" : 100,
+          "length" : 378
         },
         {
-          "activity" : "load-configure",
-          "start" : 94,
+          "activity" : "loadInfo",
+          "start" : 101,
           "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 94,
-          "length" : 369
+          "start" : 101,
+          "length" : 407
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 95,
-          "length" : 2994
+          "start" : 102,
+          "length" : 3298
         },
         {
           "activity" : "generateNarratives",
-          "start" : 99,
-          "length" : 3722
+          "start" : 106,
+          "length" : 3540
         },
         {
           "activity" : "validate",
-          "start" : 102,
-          "length" : 2707
+          "start" : 110,
+          "length" : 2799
         },
         {
           "activity" : "checkConformanceResources",
-          "start" : 107,
+          "start" : 116,
           "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 107,
-          "length" : 2
+          "start" : 116,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 109,
-          "length" : 710
+          "start" : 120,
+          "length" : 669
         },
         {
           "activity" : "generate2",
-          "start" : 112,
-          "length" : 7240
+          "start" : 124,
+          "length" : 6211
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 17
+          "start" : 170,
+          "length" : 42
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 184,
+          "length" : 3
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 169,
-          "length" : 2
+          "start" : 184,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-EVS-item-example-89555-7.json",
+      "size" : 1997,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 101,
+          "length" : 17
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 110,
+          "length" : 60
+        },
+        {
+          "activity" : "validate",
+          "start" : 116,
+          "length" : 459
+        },
+        {
+          "activity" : "generate1",
+          "start" : 121,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 130,
+          "length" : 31
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-exercise-per-week.json",
+      "size" : 2277,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 101,
+          "length" : 16
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 110,
+          "length" : 332
+        },
+        {
+          "activity" : "validate",
+          "start" : 116,
+          "length" : 356
+        },
+        {
+          "activity" : "generate1",
+          "start" : 121,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 130,
+          "length" : 16
         }
       ]
     },
@@ -120,33 +187,213 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 94,
+          "start" : 101,
           "length" : 19
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 98,
+          "start" : 105,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 102,
-          "length" : 239
+          "start" : 110,
+          "length" : 125
         },
         {
           "activity" : "validate",
-          "start" : 107,
-          "length" : 872
+          "start" : 117,
+          "length" : 1116
         },
         {
           "activity" : "generate1",
-          "start" : 110,
-          "length" : 19
+          "start" : 121,
+          "length" : 18
         },
         {
           "activity" : "generate2",
+          "start" : 130,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-exercise-per-day.json",
+      "size" : 2294,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 101,
+          "length" : 16
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 101,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 110,
+          "length" : 104
+        },
+        {
+          "activity" : "validate",
+          "start" : 118,
+          "length" : 462
+        },
+        {
+          "activity" : "generate1",
+          "start" : 121,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 130,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/QuestionnaireResponse-exercise-vital-sign.json",
+      "size" : 1916,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 101,
+          "length" : 16
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 110,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 118,
+          "length" : 123
+        },
+        {
+          "activity" : "generate1",
+          "start" : 121,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 130,
+          "length" : 23
+        },
+        {
+          "activity" : "responsesForQuestionnaire",
+          "start" : 130,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-EVS-panel-example-89574-8.json",
+      "size" : 1956,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 101,
+          "length" : 17
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 110,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
           "start" : 119,
-          "length" : 40
+          "length" : 397
+        },
+        {
+          "activity" : "generate1",
+          "start" : 121,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 130,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Questionnaire-exercise-vital-sign.json",
+      "size" : 3139,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 101,
+          "length" : 22
+        },
+        {
+          "activity" : "load",
+          "start" : 102,
+          "length" : 39
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 110,
+          "length" : 29
+        },
+        {
+          "activity" : "validate",
+          "start" : 116,
+          "length" : 505
+        },
+        {
+          "activity" : "generate1",
+          "start" : 121,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 130,
+          "length" : 19
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 170,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-EVS-item-example-68516-4.json",
+      "size" : 2041,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 101,
+          "length" : 16
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 110,
+          "length" : 20
+        },
+        {
+          "activity" : "validate",
+          "start" : 119,
+          "length" : 285
+        },
+        {
+          "activity" : "generate1",
+          "start" : 121,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 130,
+          "length" : 15
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 184,
+          "length" : 1
         }
       ]
     }

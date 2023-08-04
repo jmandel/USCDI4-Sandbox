@@ -17,7 +17,7 @@
   <name value="USCDI4_1Sandbox"/>
   <title value="HealtheData1 USCDI4 Sandbox"/>
   <status value="active"/>
-  <date value="2023-08-03T04:18:55+00:00"/>
+  <date value="2023-08-04T05:30:43+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -591,21 +591,14 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <grouping id="TestExamples">
-      <name value="Test Examples"/>
-      <description value="Examples for Testing Stuff Out!!!"/>
+    <grouping id="AvgBP">
+      <name value="Average Blood Pressure"/>
+      <description value="Average Blood Pressure Profile and Examples"/>
     </grouping>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/average-blood-pressure"/>
-      </reference>
-      <name value="Average Blood Pressure Example"/>
-      <description value="This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)."/>
-      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure"/>
-    </resource>
+    <grouping id="PE">
+      <name value="Physical Activity"/>
+      <description value="Physical Activity Health Status Assessment Examples"/>
+    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -616,6 +609,103 @@
       <name value="US Core Average Blood Pressure Profile"/>
       <description value="To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases."/>
       <exampleBoolean value="false"/>
+      <groupingId value="AvgBP"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/average-blood-pressure"/>
+      </reference>
+      <name value="Average Blood Pressure Example"/>
+      <description value="This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)."/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure"/>
+      <groupingId value="AvgBP"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EVS-item-example-68516-4"/>
+      </reference>
+      <name value="Evs Item Example 68516-4"/>
+      <description value="This is a Evs Item Example 68516-4 (On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise?) for the *US Core Observation Screening Assessment Profile*"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EVS-item-example-89555-7"/>
+      </reference>
+      <name value="Evs Item Example 89555-7"/>
+      <description value="This is a Evs Item Example 89555-7 (How many D per W did you engage in moderate to strenuous physical activity in the last 30D) for the *US Core Observation Screening Assessment Profile*"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EVS-panel-example-89574-8"/>
+      </reference>
+      <name value="Evs Panel Example 89574-8"/>
+      <description value="This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for the *US Core Observation Screening Assessment Profile*"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/exercise-per-day"/>
+      </reference>
+      <name value="Exercise Per Day Example"/>
+      <description value="This is an minutes exercise per day example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/exercise-per-week"/>
+      </reference>
+      <name value="Exercise Per Week Example"/>
+      <description value="This is a days exercise per week example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/exercise-vital-sign"/>
+      </reference>
+      <name value="Exercise Vital Sign Questionnaire Example"/>
+      <description value="This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) Questionnaire Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/exercise-vital-sign"/>
+      </reference>
+      <name value="Exercise Vital Sign QuestionnaireResponse Example"/>
+      <description value="This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"/>
+      <groupingId value="PE"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

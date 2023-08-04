@@ -138,10 +138,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Average Blood Pressure</a>
       </li>
       <li>
-         <a href="#2">Example: Example Instances</a>
+         <a href="#2">Physical Activity</a>
       </li>
    </ul>
 </div>
@@ -150,9 +150,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Structures: Resource Profiles </h3>
+   <h3>Average Blood Pressure </h3>
    <p>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+    <p>Average Blood Pressure Profile and Examples</p>
 </p>
    <p>
       <table class="grid">
@@ -167,18 +167,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which <em>additional</em> core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases.</p>
 </td>
             </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="2"> </a>
-   <h3>Example: Example Instances </h3>
-   <p>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-average-blood-pressure.html"
@@ -186,6 +174,81 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>This is an average blood pressure example for the <em>Vitalsigns Profile</em>.  It is based on the <a href="http://hl7.org/fhir/us/vitals/STU1/">Vital Signs with Qualifying Elements</a> <a href="http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure">Average Blood Pressure Profile</a>.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Physical Activity </h3>
+   <p>
+    <p>Physical Activity Health Status Assessment Examples</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EVS-item-example-68516-4.html"
+                     title="Observation/EVS-item-example-68516-4">Evs Item Example 68516-4</a>
+               </td>
+               <td>
+<p>This is a Evs Item Example 68516-4 (On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise?) for the <em>US Core Observation Screening Assessment Profile</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EVS-item-example-89555-7.html"
+                     title="Observation/EVS-item-example-89555-7">Evs Item Example 89555-7</a>
+               </td>
+               <td>
+<p>This is a Evs Item Example 89555-7 (How many D per W did you engage in moderate to strenuous physical activity in the last 30D) for the <em>US Core Observation Screening Assessment Profile</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EVS-panel-example-89574-8.html"
+                     title="Observation/EVS-panel-example-89574-8">Evs Panel Example 89574-8</a>
+               </td>
+               <td>
+<p>This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for the <em>US Core Observation Screening Assessment Profile</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-exercise-per-day.html"
+                     title="Observation/exercise-per-day">Exercise Per Day Example</a>
+               </td>
+               <td>
+<p>This is an minutes exercise per day example for the <em>Simple Observation Profile</em>.  It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Simple Observations.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-exercise-per-week.html"
+                     title="Observation/exercise-per-week">Exercise Per Week Example</a>
+               </td>
+               <td>
+<p>This is a days exercise per week example for the <em>Simple Observation Profile</em>.  It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Simple Observations.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-exercise-vital-sign.html"
+                     title="Questionnaire/exercise-vital-sign">Exercise Vital Sign Questionnaire Example</a>
+               </td>
+               <td>
+<p>This is the <a href="https://loinc.org/lhc-forms/">LHC Form</a> Exercise Vital Sign (EVS) Questionnaire Example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-exercise-vital-sign.html"
+                     title="QuestionnaireResponse/exercise-vital-sign">Exercise Vital Sign QuestionnaireResponse Example</a>
+               </td>
+               <td>
+<p>This is the <a href="https://loinc.org/lhc-forms/">LHC Form</a> Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
 </td>
             </tr>
          </tbody>
@@ -215,7 +278,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 3, 2023 04:18+0000">2023-08-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 4, 2023 05:30+0000">2023-08-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

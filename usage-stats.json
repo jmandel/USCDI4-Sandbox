@@ -35,10 +35,17 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
-      "Observation.meta"
+      "Observation.meta",
+      "Questionnaire.meta",
+      "QuestionnaireResponse.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
-      "Observation.meta"
+      "Observation.meta",
+      "Questionnaire.meta",
+      "QuestionnaireResponse.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-unit": [
+      "Questionnaire.item"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"

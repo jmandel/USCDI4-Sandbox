@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "USCDI4_1Sandbox"] ; # 
   fhir:title [ fhir:v "HealtheData1 USCDI4 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-03T04:18:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-04T05:30:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -691,11 +691,28 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] ) ;
      fhir:grouping ( [
-       fhir:id [ fhir:v "TestExamples" ] ;
-       fhir:name [ fhir:v "Test Examples" ] ;
-       fhir:description [ fhir:v "Examples for Testing Stuff Out!!!" ]
+       fhir:id [ fhir:v "AvgBP" ] ;
+       fhir:name [ fhir:v "Average Blood Pressure" ] ;
+       fhir:description [ fhir:v "Average Blood Pressure Profile and Examples" ]
+     ] [
+       fhir:id [ fhir:v "PE" ] ;
+       fhir:name [ fhir:v "Physical Activity" ] ;
+       fhir:description [ fhir:v "Physical Activity Health Status Assessment Examples" ]
      ] ) ;
      fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-average-blood-pressure" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Average Blood Pressure Profile" ] ;
+       fhir:description [ fhir:v "To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "AvgBP" ]
+     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
@@ -709,19 +726,120 @@
        fhir:example [
          fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure"^^xsd:anyURI ;
          fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure>
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "AvgBP" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
+         fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-average-blood-pressure" ]
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/EVS-item-example-68516-4> ;
+         fhir:reference [ fhir:v "Observation/EVS-item-example-68516-4" ]
        ] ;
-       fhir:name [ fhir:v "US Core Average Blood Pressure Profile" ] ;
-       fhir:description [ fhir:v "To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "Evs Item Example 68516-4" ] ;
+       fhir:description [ fhir:v "This is a Evs Item Example 68516-4 (On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise?) for the *US Core Observation Screening Assessment Profile*" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/EVS-item-example-89555-7> ;
+         fhir:reference [ fhir:v "Observation/EVS-item-example-89555-7" ]
+       ] ;
+       fhir:name [ fhir:v "Evs Item Example 89555-7" ] ;
+       fhir:description [ fhir:v "This is a Evs Item Example 89555-7 (How many D per W did you engage in moderate to strenuous physical activity in the last 30D) for the *US Core Observation Screening Assessment Profile*" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/EVS-panel-example-89574-8> ;
+         fhir:reference [ fhir:v "Observation/EVS-panel-example-89574-8" ]
+       ] ;
+       fhir:name [ fhir:v "Evs Panel Example 89574-8" ] ;
+       fhir:description [ fhir:v "This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for the *US Core Observation Screening Assessment Profile*" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/exercise-per-day> ;
+         fhir:reference [ fhir:v "Observation/exercise-per-day" ]
+       ] ;
+       fhir:name [ fhir:v "Exercise Per Day Example" ] ;
+       fhir:description [ fhir:v "This is an minutes exercise per day example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/exercise-per-week> ;
+         fhir:reference [ fhir:v "Observation/exercise-per-week" ]
+       ] ;
+       fhir:name [ fhir:v "Exercise Per Week Example" ] ;
+       fhir:description [ fhir:v "This is a days exercise per week example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Questionnaire/exercise-vital-sign> ;
+         fhir:reference [ fhir:v "Questionnaire/exercise-vital-sign" ]
+       ] ;
+       fhir:name [ fhir:v "Exercise Vital Sign Questionnaire Example" ] ;
+       fhir:description [ fhir:v "This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) Questionnaire Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "QuestionnaireResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/QuestionnaireResponse/exercise-vital-sign> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/exercise-vital-sign" ]
+       ] ;
+       fhir:name [ fhir:v "Exercise Vital Sign QuestionnaireResponse Example" ] ;
+       fhir:description [ fhir:v "This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
