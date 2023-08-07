@@ -73,6 +73,13 @@ groups:
       - Observation/serum-glucose
       - Specimen/example-serum-hemolyzed
 
+  Facility:
+    name: Facility Information
+    description: Location Profiles and Examples
+    resources:
+      - StructureDefinition/us-core-location
+      - Location/hospital
+
 pages:
   index.md:
     title: Home

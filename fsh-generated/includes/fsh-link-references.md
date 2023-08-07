@@ -11,3 +11,5 @@
 [USCoreSpecimenProfile]: StructureDefinition-us-core-specimen.html
 [serum-glucose]: Observation-serum-glucose.html
 [example-serum-hemolyzed]: Specimen-example-serum-hemolyzed.html
+[USCoreLocation]: StructureDefinition-us-core-location.html
+[hospital]: Location-hospital.html

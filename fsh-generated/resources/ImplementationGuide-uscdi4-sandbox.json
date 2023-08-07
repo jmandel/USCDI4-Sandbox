@@ -87,6 +87,11 @@
         "id": "Labs",
         "name": "Laboratory",
         "description": "Laboratory and Specimen Profiles and Examples"
+      },
+      {
+        "id": "Facility",
+        "name": "Facility Information",
+        "description": "Location Profiles and Examples"
       }
     ],
     "resource": [
@@ -206,6 +211,24 @@
         "name": "Hemolyzed Serum Specimen Example",
         "exampleCanonical": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen",
         "groupingId": "Labs"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-core-location"
+        },
+        "description": "This profile sets minimum expectations for the Location resource for recording, searching, and fetching a \"physical place of available services or resources.\"  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used when using the profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation.",
+        "exampleBoolean": false,
+        "name": "US Core Location Profile",
+        "groupingId": "Facility"
+      },
+      {
+        "reference": {
+          "reference": "Location/hospital"
+        },
+        "description": "This is an example hospital location for the *US Core Location Profile*.",
+        "name": "Hospital Location",
+        "exampleCanonical": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location",
+        "groupingId": "Facility"
       }
     ],
     "page": {
