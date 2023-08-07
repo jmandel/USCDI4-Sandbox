@@ -21,6 +21,13 @@
     "name" : "USCoreAverageBloodPressureProfile"
   },
   {
+    "id" : "us-core-location",
+    "type" : "StructureDefinition",
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location",
+    "version" : "0.0.0",
+    "name" : "USCoreLocation"
+  },
+  {
     "id" : "us-core-observation-lab",
     "type" : "StructureDefinition",
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab",

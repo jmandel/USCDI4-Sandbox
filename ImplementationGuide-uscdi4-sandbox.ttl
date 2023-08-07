@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "USCDI4_1Sandbox"] ; # 
   fhir:title [ fhir:v "HealtheData1 USCDI4 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-04T20:18:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-07T05:57:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -702,6 +702,10 @@
        fhir:id [ fhir:v "Labs" ] ;
        fhir:name [ fhir:v "Laboratory" ] ;
        fhir:description [ fhir:v "Laboratory and Specimen Profiles and Examples" ]
+     ] [
+       fhir:id [ fhir:v "Facility" ] ;
+       fhir:name [ fhir:v "Facility Information" ] ;
+       fhir:description [ fhir:v "Location Profiles and Examples" ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -902,6 +906,35 @@
          fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen>
        ] ;
        fhir:groupingId [ fhir:v "Labs" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-location" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Location Profile" ] ;
+       fhir:description [ fhir:v "This profile sets minimum expectations for the Location resource for recording, searching, and fetching a \"physical place of available services or resources.\"  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used when using the profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "Facility" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Location/hospital> ;
+         fhir:reference [ fhir:v "Location/hospital" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Location" ] ;
+       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile*." ] ;
+       fhir:example [
+         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location"^^xsd:anyURI ;
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location>
+       ] ;
+       fhir:groupingId [ fhir:v "Facility" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
