@@ -77,7 +77,7 @@
         "value": 76.0
     },
     "specimen": {
-        "reference": "Specimen/specimen-example-serum",
+        "reference": "Specimen/example-serum-hemolyzed",
         "display": "Serum specimen"
     },
     "interpretation": [
