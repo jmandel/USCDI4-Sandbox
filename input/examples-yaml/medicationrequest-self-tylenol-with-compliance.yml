@@ -1,0 +1,63 @@
+resourceType: MedicationRequest
+id: self-tylenol-with-compliance
+identifier:
+- use: official
+  system: http://acme.org/prescriptions
+  value: '12345689'
+status: active
+intent: plan
+reportedBoolean: true
+medicationCodeableConcept:
+  coding:
+  - system: http://www.nlm.nih.gov/research/umls/rxnorm
+    code: '1187314'
+    display: Tylenol PM Pill
+  text: Tylenol PM Pill
+subject:
+  reference: Patient/example
+  display: Amy V. Shaw
+encounter:
+  reference: Encounter/example-1
+  display: Office Visit
+authoredOn: '2019-06-24'
+requester:
+  reference: Patient/example
+  display: '**self-prescribed**'
+dosageInstruction:
+- text: Takes 1-2 tablets once daily at bedtime as needed for restless legs
+meta:
+  profile:
+  - http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest
+  extension:
+  - url: http://hl7.org/fhir/StructureDefinition/instance-name
+    valueString: MedicationRequest Self Tylenol with Compliance Extension Example
+  - url: http://hl7.org/fhir/StructureDefinition/instance-description
+    valueMarkdown: This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT.
+reasonCode:
+- coding:
+  - system: http://snomed.info/sct
+    code: '25064002'
+    display: Headache (finding)
+    version: http://snomed.info/sct/731000124108
+  text: Headache
+
+# === proposed extension ===
+extension:
+  - extension:
+    - url: medAdherence
+      valueCodeableConcept:
+        coding:
+          - system: http://hl7.org/fhir/CodeSystem/medication-statement-adherence
+            code: unknown
+            display: Unknown
+
+    - url: timeStamp
+      valueDateTime: '2023-08-11T08:15:49.449Z'
+
+    -  url: reporter
+       valueReference:
+        reference: http://www.hl7.org/fhir/us/core/Patient/example
+        display: Amy Shaw
+    url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension
+
+# === end proposed extension ===

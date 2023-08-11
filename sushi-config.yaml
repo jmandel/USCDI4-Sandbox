@@ -80,6 +80,17 @@ groups:
       - StructureDefinition/us-core-location
       - Location/hospital
 
+  Medication:
+    name: Medication
+    description: Medication Adherence Examples
+    resources:
+      - StructureDefinition/us-core-medicationrequest-compliance-extension
+      - Observation/medication-adherence-oral-axid
+      - Observation/medication-adherence-oral-axid-boolean
+      - Observation/medication-adherence-self-tylenol
+      - MedicationRequest/coded-oral-axid-with-compliance
+      - MedicationRequest/self-tylenol-with-compliance
+
 pages:
   index.md:
     title: Home

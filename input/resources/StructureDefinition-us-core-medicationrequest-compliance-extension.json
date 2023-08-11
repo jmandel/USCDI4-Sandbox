@@ -1,0 +1,201 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "us-core-medicationrequest-compliance-extension",
+    "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension",
+    "name": "USCoreMedicationComplianceExtension",
+    "title": "US Core Medication Compliance Extension",
+    "status": "active",
+    "date": "2023-08-11",
+    "description": "A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered",
+    "fhirVersion": "4.0.1",
+    "kind": "complex-type",
+    "abstract": false,
+    "context": [
+        {
+            "type": "element",
+            "expression": "MedicationRequest"
+        }
+    ],
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Extension",
+                "path": "Extension",
+                "definition": "Whether the medication is or is not being consumed or administered",
+                "min": 0,
+                "max": "*"
+            },
+            {
+                "id": "Extension.extension",
+                "path": "Extension.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 2
+            },
+            {
+                "id": "Extension.extension:medAdherence",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "valueBoolean": true
+                    }
+                ],
+                "path": "Extension.extension",
+                "sliceName": "medAdherence",
+                "short": "(USCDI) Code indicating whether the medication is or is not being consumed or administered",
+                "definition": "Code indicating whether the medication is or is not being consumed or administered",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Extension"
+                    }
+                ],
+                "mustSupport": true
+            },
+            {
+                "id": "Extension.extension:medAdherence.url",
+                "path": "Extension.extension.url",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "uri"
+                    }
+                ],
+                "fixedUri": "medAdherence"
+            },
+            {
+                "id": "Extension.extension:medAdherence.value[x]",
+                "path": "Extension.extension.value[x]",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ],
+                "binding": {
+                    "strength": "extensible",
+                    "description": "Medication Adherence Codes",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/medication-statement-adherence"
+                }
+            },
+            {
+                "id": "Extension.extension:timeStamp",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "valueBoolean": true
+                    }
+                ],
+                "path": "Extension.extension",
+                "sliceName": "timeStamp",
+                "short": "(USCDI) Timestamp when it was reported whether the medication is or is not being consumed or administered",
+                "definition": "imestamp when it was reported whether the medication is or is not being consumed or administered",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Extension"
+                    }
+                ],
+                "mustSupport": true
+            },
+            {
+                "id": "Extension.extension:timeStamp.url",
+                "path": "Extension.extension.url",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "uri"
+                    }
+                ],
+                "fixedUri": "timeStamp"
+            },
+            {
+                "id": "Extension.extension:timeStamp.value[x]",
+                "path": "Extension.extension.value[x]",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "dateTime"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.extension:reporter",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "valueBoolean": true
+                    }
+                ],
+                "path": "Extension.extension",
+                "sliceName": "reporter",
+                "short": "(USCDI) Who reported whether the medication is or is not being consumed or administered",
+                "definition": "Who reported whether the medication is or is not being consumed or administered",
+                "min": 0,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Extension"
+                    }
+                ],
+                "mustSupport": true
+            },
+            {
+                "id": "Extension.extension:reporter.url",
+                "path": "Extension.extension.url",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "uri"
+                    }
+                ],
+                "fixedUri": "reporter"
+            },
+            {
+                "id": "Extension.extension:reporter.value[x]",
+                "path": "Extension.extension.value[x]",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
+                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Extension.url",
+                "path": "Extension.url",
+                "fixedUri": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension"
+            },
+            {
+                "id": "Extension.value[x]",
+                "path": "Extension.value[x]",
+                "min": 0,
+                "max": "0"
+            }
+        ]
+    }
+}

@@ -92,6 +92,11 @@
         "id": "Facility",
         "name": "Facility Information",
         "description": "Location Profiles and Examples"
+      },
+      {
+        "id": "Medication",
+        "name": "Medication",
+        "description": "Medication Adherence Examples"
       }
     ],
     "resource": [
@@ -229,6 +234,60 @@
         "name": "Hospital Location",
         "exampleCanonical": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location",
         "groupingId": "Facility"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-core-medicationrequest-compliance-extension"
+        },
+        "description": "A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered",
+        "exampleBoolean": false,
+        "name": "US Core Medication Compliance Extension",
+        "groupingId": "Medication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/medication-adherence-oral-axid"
+        },
+        "description": "This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.",
+        "name": "Medication Adherence Oral Axid (Prescribed) Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation",
+        "groupingId": "Medication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/medication-adherence-oral-axid-boolean"
+        },
+        "description": "This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element.",
+        "name": "Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation",
+        "groupingId": "Medication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/medication-adherence-self-tylenol"
+        },
+        "description": "This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.",
+        "name": "Medication Adherence Self Tylenol (OTC) Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation",
+        "groupingId": "Medication"
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/coded-oral-axid-with-compliance"
+        },
+        "description": "This example demonstrates medication adherence for a prescribed medication example using an extension on the MedicationRequest. The extension value uses SNOMED CT.",
+        "name": "MedicationRequest Coded Oral Axid with Compliance Extension Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
+        "groupingId": "Medication"
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/self-tylenol-with-compliance"
+        },
+        "description": "This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT.",
+        "name": "MedicationRequest Self Tylenol with Compliance Extension Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
+        "groupingId": "Medication"
       }
     ],
     "page": {

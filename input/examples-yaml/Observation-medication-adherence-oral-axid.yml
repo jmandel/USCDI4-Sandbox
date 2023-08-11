@@ -1,0 +1,39 @@
+resourceType: Observation
+id: medication-adherence-oral-axid
+meta:
+  extension:
+  - url: http://hl7.org/fhir/StructureDefinition/instance-name
+    valueString: Medication Adherence Oral Axid (Prescribed) Example
+  - url: http://hl7.org/fhir/StructureDefinition/instance-description
+    valueMarkdown: This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.
+  profile:
+    - 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation'
+basedOn:
+  - reference: http://www.hl7.org/fhir/us/core/MedicationRequest/medicationrequest-coded-oral-axid
+    display: Oral Axid
+status: final
+category:
+  - coding:
+      - system: 'http://terminology.hl7.org/CodeSystem/observation-category'
+        code: survey
+        display: Survey
+code:
+  coding:
+    - system: 'http://snomed.info/sct'
+      version: 'http://snomed.info/sct/731000124108'
+      code: '418633004'
+      display: Medication adherence
+subject:
+  reference: http://www.hl7.org/fhir/us/core/Patient/example
+  display: Amy Shaw
+effectiveDateTime: '2023-08-11T06:14:22.931Z'
+performer:
+  - reference: https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1
+valueCodeableConcept:
+  coding:
+    - system: 'http://snomed.info/sct'
+      version: 'http://snomed.info/sct/731000124108'
+      code: '129019007'
+      display: Taking medication
+
+

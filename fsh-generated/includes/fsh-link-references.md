@@ -13,3 +13,9 @@
 [example-serum-hemolyzed]: Specimen-example-serum-hemolyzed.html
 [USCoreLocation]: StructureDefinition-us-core-location.html
 [hospital]: Location-hospital.html
+[USCoreMedicationComplianceExtension]: StructureDefinition-us-core-medicationrequest-compliance-extension.html
+[medication-adherence-oral-axid]: Observation-medication-adherence-oral-axid.html
+[medication-adherence-oral-axid-boolean]: Observation-medication-adherence-oral-axid-boolean.html
+[medication-adherence-self-tylenol]: Observation-medication-adherence-self-tylenol.html
+[coded-oral-axid-with-compliance]: MedicationRequest-coded-oral-axid-with-compliance.html
+[self-tylenol-with-compliance]: MedicationRequest-self-tylenol-with-compliance.html
