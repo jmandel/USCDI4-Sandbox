@@ -2,7 +2,67 @@
   "package": "uscdi4-sandbox",
   "version": "0.0.0",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension",
+      "title": "US Core Medication Compliance Extension",
+      "types": [
+        "CodeableConcept",
+        "dateTime",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
   "profiles": {
     "Observation": [
       {
@@ -49,6 +109,7 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
       "Location.meta",
+      "MedicationRequest.meta",
       "Observation.meta",
       "Questionnaire.meta",
       "QuestionnaireResponse.meta",
@@ -56,6 +117,7 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
       "Location.meta",
+      "MedicationRequest.meta",
       "Observation.meta",
       "Questionnaire.meta",
       "QuestionnaireResponse.meta",
@@ -103,6 +165,9 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
+    ],
+    "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension": [
+      "MedicationRequest"
     ]
   }
 }

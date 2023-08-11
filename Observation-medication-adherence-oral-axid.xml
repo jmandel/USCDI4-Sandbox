@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="medication-adherence-oral-axid"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Medication Adherence Oral Axid (Prescribed) Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element."/>
+    </extension>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="medication-adherence-oral-axid"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;medication-adherence-oral-axid&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a></p></div><p><b>basedOn</b>: <a href="http://www.hl7.org/fhir/us/core/MedicationRequest/medicationrequest-coded-oral-axid">http://www.hl7.org/fhir/us/core/MedicationRequest/medicationrequest-coded-oral-axid: Oral Axid</a></p><p><b>status</b>: final</p><p><b>category</b>: Survey <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: Medication adherence <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT[US]</a>#418633004)</span></p><p><b>subject</b>: <a href="http://www.hl7.org/fhir/us/core/Patient/example">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-11 06:14:22+0000</p><p><b>performer</b>: <a href="https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1">https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1</a></p><p><b>value</b>: Taking medication <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT[US]</a>#129019007)</span></p></div>
+  </text>
+  <basedOn>
+    <reference value="http://www.hl7.org/fhir/us/core/MedicationRequest/medicationrequest-coded-oral-axid"/>
+    <display value="Oral Axid"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+      <display value="Survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/731000124108"/>
+      <code value="418633004"/>
+      <display value="Medication adherence"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="http://www.hl7.org/fhir/us/core/Patient/example"/>
+    <display value="Amy Shaw"/>
+  </subject>
+  <effectiveDateTime value="2023-08-11T06:14:22.931Z"/>
+  <performer>
+    <reference value="https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/731000124108"/>
+      <code value="129019007"/>
+      <display value="Taking medication"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

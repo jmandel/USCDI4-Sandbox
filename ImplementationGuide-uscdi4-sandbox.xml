@@ -17,7 +17,7 @@
   <name value="USCDI4_1Sandbox"/>
   <title value="HealtheData1 USCDI4 Sandbox"/>
   <status value="active"/>
-  <date value="2023-08-07T06:13:12+00:00"/>
+  <date value="2023-08-11T09:26:33+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -607,6 +607,10 @@
       <name value="Facility Information"/>
       <description value="Location Profiles and Examples"/>
     </grouping>
+    <grouping id="Medication">
+      <name value="Medication"/>
+      <description value="Medication Adherence Examples"/>
+    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -786,6 +790,78 @@
       <description value="This is an example hospital location for the *US Core Location Profile*."/>
       <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location"/>
       <groupingId value="Facility"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-medicationrequest-compliance-extension"/>
+      </reference>
+      <name value="US Core Medication Compliance Extension"/>
+      <description value="A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/medication-adherence-oral-axid"/>
+      </reference>
+      <name value="Medication Adherence Oral Axid (Prescribed) Example"/>
+      <description value="This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/medication-adherence-oral-axid-boolean"/>
+      </reference>
+      <name value="Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example"/>
+      <description value="This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/medication-adherence-self-tylenol"/>
+      </reference>
+      <name value="Medication Adherence Self Tylenol (OTC) Example"/>
+      <description value="This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/coded-oral-axid-with-compliance"/>
+      </reference>
+      <name value="MedicationRequest Coded Oral Axid with Compliance Extension Example"/>
+      <description value="This example demonstrates medication adherence for a prescribed medication example using an extension on the MedicationRequest. The extension value uses SNOMED CT."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/self-tylenol-with-compliance"/>
+      </reference>
+      <name value="MedicationRequest Self Tylenol with Compliance Extension Example"/>
+      <description value="This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+      <groupingId value="Medication"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

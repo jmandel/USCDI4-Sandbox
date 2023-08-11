@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi4-sandbox/Observation/medication-adherence-self-tylenol> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medication-adherence-self-tylenol"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Medication Adherence Self Tylenol (OTC) Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element." ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"medication-adherence-self-tylenol\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;medication-adherence-self-tylenol&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html\">US Core Simple Observation Profile</a></p></div><p><b>basedOn</b>: <a href=\"http://www.hl7.org/fhir/us/core/MedicationRequest/self-tylenol\">http://www.hl7.org/fhir/us/core/MedicationRequest/self-tylenol: Self Prescribed Tylenol</a></p><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: Medication adherence <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT[US]</a>#418633004)</span></p><p><b>subject</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-11 06:14:22+0000</p><p><b>performer</b>: <a href=\"https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1\">https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1</a></p><p><b>value</b>: Drugs not taken/completed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT[US]</a>#266710000)</span></p></div>"
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:link <http://www.hl7.org/fhir/us/core/MedicationRequest/self-tylenol> ;
+     fhir:reference [ fhir:v "http://www.hl7.org/fhir/us/core/MedicationRequest/self-tylenol" ] ;
+     fhir:display [ fhir:v "Self Prescribed Tylenol" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "survey" ] ;
+       fhir:display [ fhir:v "Survey" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:418633004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/731000124108" ] ;
+       fhir:code [ fhir:v "418633004" ] ;
+       fhir:display [ fhir:v "Medication adherence" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://www.hl7.org/fhir/us/core/Patient/example> ;
+     fhir:reference [ fhir:v "http://www.hl7.org/fhir/us/core/Patient/example" ] ;
+     fhir:display [ fhir:v "Amy Shaw" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-08-11T06:14:22.931Z"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1> ;
+     fhir:reference [ fhir:v "https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:266710000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/731000124108" ] ;
+       fhir:code [ fhir:v "266710000" ] ;
+       fhir:display [ fhir:v "Drugs not taken/completed" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

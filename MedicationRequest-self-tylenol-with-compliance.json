@@ -1,0 +1,84 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "self-tylenol-with-compliance",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "MedicationRequest Self Tylenol with Compliance Extension Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"self-tylenol-with-compliance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;self-tylenol-with-compliance&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-medicationrequest.html\">US Core MedicationRequest Profile</a></p></div><blockquote><p><b>US Core Medication Compliance Extension</b></p><blockquote><p><b>url</b></p><code>medAdherence</code></blockquote><p><b>value</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (medication-statement-adherence#unknown)</span></p><blockquote><p><b>url</b></p><code>timeStamp</code></blockquote><p><b>value</b>: 2023-08-11 08:15:49+0000</p><blockquote><p><b>url</b></p><code>reporter</code></blockquote><p><b>value</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p></blockquote><p><b>identifier</b>: id:\u00a012345689\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>reported</b>: true</p><p><b>medication</b>: Tylenol PM Pill <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1187314)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Patient/example: Amy V. Shaw</a></p><p><b>encounter</b>: <a href=\"Encounter-example-1.html\">Encounter/example-1: Office Visit</a></p><p><b>authoredOn</b>: 2019-06-24</p><p><b>requester</b>: <a href=\"Patient-example.html\">Patient/example: **self-prescribed**</a></p><p><b>reasonCode</b>: Headache <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT[US]</a>#25064002 &quot;Headache (finding)&quot;)</span></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Takes 1-2 tablets once daily at bedtime as needed for restless legs</td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "medAdherence",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/CodeSystem/medication-statement-adherence",
+          "code" : "unknown",
+          "display" : "Unknown"
+        }]
+      }
+    },
+    {
+      "url" : "timeStamp",
+      "valueDateTime" : "2023-08-11T08:15:49.449Z"
+    },
+    {
+      "url" : "reporter",
+      "valueReference" : {
+        "reference" : "http://www.hl7.org/fhir/us/core/Patient/example",
+        "display" : "Amy Shaw"
+      }
+    }],
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension"
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://acme.org/prescriptions",
+    "value" : "12345689"
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "reportedBoolean" : true,
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1187314",
+      "display" : "Tylenol PM Pill"
+    }],
+    "text" : "Tylenol PM Pill"
+  },
+  "subject" : {
+    "reference" : "Patient/example",
+    "display" : "Amy V. Shaw"
+  },
+  "encounter" : {
+    "reference" : "Encounter/example-1",
+    "display" : "Office Visit"
+  },
+  "authoredOn" : "2019-06-24",
+  "requester" : {
+    "reference" : "Patient/example",
+    "display" : "**self-prescribed**"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108",
+      "code" : "25064002",
+      "display" : "Headache (finding)"
+    }],
+    "text" : "Headache"
+  }],
+  "dosageInstruction" : [{
+    "text" : "Takes 1-2 tablets once daily at bedtime as needed for restless legs"
+  }]
+}

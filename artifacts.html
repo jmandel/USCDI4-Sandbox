@@ -149,6 +149,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>
          <a href="#4">Facility Information</a>
       </li>
+      <li>
+         <a href="#5">Medication</a>
+      </li>
    </ul>
 </div>
 <div xmlns:html="http://www.w3.org/1999/xhtml"
@@ -336,6 +339,72 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
+   <a name="5"> </a>
+   <h3>Medication </h3>
+   <p>
+    <p>Medication Adherence Examples</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-us-core-medicationrequest-compliance-extension.html"
+                     title="StructureDefinition/us-core-medicationrequest-compliance-extension">US Core Medication Compliance Extension</a>
+               </td>
+               <td>
+<p>A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-medication-adherence-oral-axid.html"
+                     title="Observation/medication-adherence-oral-axid">Medication Adherence Oral Axid (Prescribed) Example</a>
+               </td>
+               <td>
+<p>This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-medication-adherence-oral-axid-boolean.html"
+                     title="Observation/medication-adherence-oral-axid-boolean">Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example</a>
+               </td>
+               <td>
+<p>This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-medication-adherence-self-tylenol.html"
+                     title="Observation/medication-adherence-self-tylenol">Medication Adherence Self Tylenol (OTC) Example</a>
+               </td>
+               <td>
+<p>This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationRequest-coded-oral-axid-with-compliance.html"
+                     title="MedicationRequest/coded-oral-axid-with-compliance">MedicationRequest Coded Oral Axid with Compliance Extension Example</a>
+               </td>
+               <td>
+<p>This example demonstrates medication adherence for a prescribed medication example using an extension on the MedicationRequest. The extension value uses SNOMED CT.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationRequest-self-tylenol-with-compliance.html"
+                     title="MedicationRequest/self-tylenol-with-compliance">MedicationRequest Self Tylenol with Compliance Extension Example</a>
+               </td>
+               <td>
+<p>This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
 </div>
 
 </div>
@@ -360,7 +429,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 7, 2023 06:13+0000">2023-08-07</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 11, 2023 09:26+0000">2023-08-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

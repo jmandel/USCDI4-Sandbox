@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "USCDI4_1Sandbox"] ; # 
   fhir:title [ fhir:v "HealtheData1 USCDI4 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-07T06:13:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-11T09:26:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -706,6 +706,10 @@
        fhir:id [ fhir:v "Facility" ] ;
        fhir:name [ fhir:v "Facility Information" ] ;
        fhir:description [ fhir:v "Location Profiles and Examples" ]
+     ] [
+       fhir:id [ fhir:v "Medication" ] ;
+       fhir:name [ fhir:v "Medication" ] ;
+       fhir:description [ fhir:v "Medication Adherence Examples" ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -935,6 +939,99 @@
          fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location>
        ] ;
        fhir:groupingId [ fhir:v "Facility" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-medicationrequest-compliance-extension" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Medication Compliance Extension" ] ;
+       fhir:description [ fhir:v "A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/medication-adherence-oral-axid> ;
+         fhir:reference [ fhir:v "Observation/medication-adherence-oral-axid" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Adherence Oral Axid (Prescribed) Example" ] ;
+       fhir:description [ fhir:v "This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/medication-adherence-oral-axid-boolean> ;
+         fhir:reference [ fhir:v "Observation/medication-adherence-oral-axid-boolean" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example" ] ;
+       fhir:description [ fhir:v "This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/medication-adherence-self-tylenol> ;
+         fhir:reference [ fhir:v "Observation/medication-adherence-self-tylenol" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Adherence Self Tylenol (OTC) Example" ] ;
+       fhir:description [ fhir:v "This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/MedicationRequest/coded-oral-axid-with-compliance> ;
+         fhir:reference [ fhir:v "MedicationRequest/coded-oral-axid-with-compliance" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequest Coded Oral Axid with Compliance Extension Example" ] ;
+       fhir:description [ fhir:v "This example demonstrates medication adherence for a prescribed medication example using an extension on the MedicationRequest. The extension value uses SNOMED CT." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/MedicationRequest/self-tylenol-with-compliance> ;
+         fhir:reference [ fhir:v "MedicationRequest/self-tylenol-with-compliance" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequest Self Tylenol with Compliance Extension Example" ] ;
+       fhir:description [ fhir:v "This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
