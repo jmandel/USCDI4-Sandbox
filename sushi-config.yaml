@@ -68,13 +68,24 @@ groups:
     name: Alcohol Use 
     description: Alcohol Use Health Status Assessment Examples
     resources:
-      # - Observation/AUDIT-C-item-example-68517-2
-      # - Observation/AUDIT-C-item-example-68519-8
-      # - Observation/AUDIT-C-item-example-68520-6
-      # - Observation/AUDIT-C-item-example-75626-2
-      # - Observation/AUDIT-C-panel-example-72109-2
+      - Observation/alcohol-use-status
+      - Observation/alcoholic-drinks-per-day
+      - Observation/AUDIT-C-item-example-68517-2
+      - Observation/AUDIT-C-item-example-68519-8
+      - Observation/AUDIT-C-item-example-68520-6
+      - Observation/AUDIT-C-item-example-75626-2
+      - Observation/AUDIT-C-panel-example-72109-2
       - Questionnaire/AUDIT-C
       - QuestionnaireResponse/AUDIT-C
+  Drugs:
+    name: Substance Use 
+    description: Substance Use Health Status Assessment Examples
+    resources:
+      # - Observation/drug-use-status
+      # - Observation/number-of-drugs-per-day
+      # - Observation/number-of-drugs-per-week
+      # - Observation/number-of-drugs-per-month
+      # - Observatio
   Labs:
     name: Laboratory
     description: Laboratory and Specimen Profiles and Examples

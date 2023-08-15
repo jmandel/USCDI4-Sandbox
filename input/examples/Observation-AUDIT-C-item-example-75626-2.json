@@ -52,7 +52,9 @@
         "unit": "score"
     },
     "note": [
-        "The Alcohol Use Disorders Identification Test C (AUDIT-C) is scored on a scale of 0-12 where the higher the score, the more likely the patient's drinking is hazardous. A score of 4 or more for men and 3 or more for women is considered positive for hazardous drinking or active alcohol use disorders. If the points are all from Question 1 alone where 2 and 3 are 0, it is likely the patient is drinking below recommended limits. The care provider may review the patients alcohol intake over that past few months to confirm accuracy. [PMID: 12695273]"
+        {
+            "text": "The Alcohol Use Disorders Identification Test C (AUDIT-C) is scored on a scale of 0-12 where the higher the score, the more likely the patient's drinking is hazardous. A score of 4 or more for men and 3 or more for women is considered positive for hazardous drinking or active alcohol use disorders. If the points are all from Question 1 alone where 2 and 3 are 0, it is likely the patient is drinking below recommended limits. The care provider may review the patients alcohol intake over that past few months to confirm accuracy. [PMID: 12695273]"
+        }
     ],
     "derivedFrom": [
         {

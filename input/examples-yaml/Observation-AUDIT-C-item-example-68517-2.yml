@@ -33,8 +33,8 @@ valueQuantity:
   # system: http://unitsofmeasure.org
   # code: '{#}/a'
 note:
-- Where X is 5 for men and 4 for women, and a response of  greater than, or equal
-  to, 1 is positive.
+- text: Where X is 5 for men and 4 for women, and a response of  greater than, or
+    equal to, 1 is positive.
 derivedFrom:
 - reference: QuestionnaireResponse/AUDIT-C
   display: Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse
