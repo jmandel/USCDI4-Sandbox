@@ -64,6 +64,17 @@ groups:
       - Observation/exercise-per-week
       - Questionnaire/exercise-vital-sign
       - QuestionnaireResponse/exercise-vital-sign
+  Booze:
+    name: Alcohol Use 
+    description: Alcohol Use Health Status Assessment Examples
+    resources:
+      # - Observation/AUDIT-C-item-example-68517-2
+      # - Observation/AUDIT-C-item-example-68519-8
+      # - Observation/AUDIT-C-item-example-68520-6
+      # - Observation/AUDIT-C-item-example-75626-2
+      # - Observation/AUDIT-C-panel-example-72109-2
+      - Questionnaire/AUDIT-C
+      - QuestionnaireResponse/AUDIT-C
   Labs:
     name: Laboratory
     description: Laboratory and Specimen Profiles and Examples
