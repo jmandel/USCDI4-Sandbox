@@ -81,11 +81,14 @@ groups:
     name: Substance Use 
     description: Substance Use Health Status Assessment Examples
     resources:
-      # - Observation/drug-use-status
-      # - Observation/number-of-drugs-per-day
-      # - Observation/number-of-drugs-per-week
-      # - Observation/number-of-drugs-per-month
-      # - Observatio
+      - Observation/TAPS-item-example-75889-6
+      - Observation/TAPS-item-example-88037-7
+      - Observation/TAPS-item-example-96842-0
+      - Observation/TAPS-item-example-96843-8
+      - Observation/TAPS-item-example-96844-6
+      - Observation/TAPS-panel-example-96841-2
+      - Questionnaire/TAPS
+      - QuestionnaireResponse/TAPS
   Labs:
     name: Laboratory
     description: Laboratory and Specimen Profiles and Examples

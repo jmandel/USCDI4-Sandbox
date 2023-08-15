@@ -223,6 +223,75 @@ definition:
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse
     groupingId: Booze
   - reference:
+      reference: Observation/TAPS-item-example-75889-6
+    description: This is a Taps Item Example 75889-6 (How often have you had four
+      or more drinks in one day during the past year [Reported]) for the *US Core
+      Observation Screening Assessment Profile*
+    name: Taps Item Example 75889-6
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+    groupingId: Drugs
+  - reference:
+      reference: Observation/TAPS-item-example-88037-7
+    description: This is a Taps Item Example 88037-7 (How often have you had five
+      or more drinks in one day during the past year [Reported]) for the *US Core
+      Observation Screening Assessment Profile*
+    name: Taps Item Example 88037-7
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+    groupingId: Drugs
+  - reference:
+      reference: Observation/TAPS-item-example-96842-0
+    description: This is a Taps Item Example 96842-0 (How often have you used any
+      tobacco product in past 12 months) for the *US Core Observation Screening Assessment
+      Profile*
+    name: Taps Item Example 96842-0
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+    groupingId: Drugs
+  - reference:
+      reference: Observation/TAPS-item-example-96843-8
+    description: This is a Taps Item Example 96843-8 (How often have you used illegal
+      or recreational drugs in past 12 months) for the *US Core Observation Screening
+      Assessment Profile*
+    name: Taps Item Example 96843-8
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+    groupingId: Drugs
+  - reference:
+      reference: Observation/TAPS-item-example-96844-6
+    description: This is a Taps Item Example 96844-6 (How often have you used any
+      prescription medications just for the feeling, more than prescribed or that
+      were not prescribed for you in past 12 months [TAPS]) for the *US Core Observation
+      Screening Assessment Profile*
+    name: Taps Item Example 96844-6
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+    groupingId: Drugs
+  - reference:
+      reference: Observation/TAPS-panel-example-96841-2
+    description: This is a Taps Panel Example 96841-2 (Tobacco, Alcohol, Prescription
+      medications, and other Substance use screen [TAPS]) for the *US Core Observation
+      Screening Assessment Profile*
+    name: Taps Panel Example 96841-2
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+    groupingId: Drugs
+  - reference:
+      reference: Questionnaire/TAPS
+    description: Tobacco, Alcohol, Prescription medications, and other Substance use
+      screen [TAPS] questionnaire example. It is based on the on US Core [Screening
+      and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
+      guidance using Questionnaire/QuestionnaireResponse resources.
+    name: Tobacco, Alcohol, Prescription medications, and other Substance use screen
+      [TAPS] Questionnaire Example
+    exampleCanonical: http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire
+    groupingId: Drugs
+  - reference:
+      reference: QuestionnaireResponse/TAPS
+    description: This is the [LHC Form](https://loinc.org/lhc-forms/)  Tobacco, Alcohol,
+      Prescription medications, and other Substance use screen [TAPS] QuestionnaireResponse
+      example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
+      guidance using Questionnaire/QuestionnaireResponse resources.
+    name: Tobacco, Alcohol, Prescription medications, and other Substance use screen
+      [TAPS] QuestionnaireResponse Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse
+    groupingId: Drugs
+  - reference:
       reference: StructureDefinition/us-core-observation-lab
     description: "The US Core Laboratory Result Observation Profile is based upon\
       \ the US Core Observation Clinical Result Profile and, along with the US Core\

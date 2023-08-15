@@ -52,5 +52,6 @@
     "valueQuantity": {
         "value": 0.0,
         "unit": "# per day"
-    }
+    },
+    "status": "final"
 }

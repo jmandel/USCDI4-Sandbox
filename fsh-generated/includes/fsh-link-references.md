@@ -16,6 +16,14 @@
 [AUDIT-C-panel-example-72109-2]: Observation-AUDIT-C-panel-example-72109-2.html
 [AUDIT-C]: Questionnaire-AUDIT-C.html
 [AUDIT-C]: QuestionnaireResponse-AUDIT-C.html
+[TAPS-item-example-75889-6]: Observation-TAPS-item-example-75889-6.html
+[TAPS-item-example-88037-7]: Observation-TAPS-item-example-88037-7.html
+[TAPS-item-example-96842-0]: Observation-TAPS-item-example-96842-0.html
+[TAPS-item-example-96843-8]: Observation-TAPS-item-example-96843-8.html
+[TAPS-item-example-96844-6]: Observation-TAPS-item-example-96844-6.html
+[TAPS-panel-example-96841-2]: Observation-TAPS-panel-example-96841-2.html
+[TAPS]: Questionnaire-TAPS.html
+[TAPS]: QuestionnaireResponse-TAPS.html
 [USCoreLaboratoryResultObservationProfile]: StructureDefinition-us-core-observation-lab.html
 [USCoreSpecimenProfile]: StructureDefinition-us-core-specimen.html
 [serum-glucose]: Observation-serum-glucose.html

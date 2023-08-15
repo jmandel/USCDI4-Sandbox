@@ -39,3 +39,5 @@ valueCodeableConcept:
       code: '228276006'
       display: Occasional drinker
   text: other choices - non-drinker, former drinker, current drinker
+
+status: final
