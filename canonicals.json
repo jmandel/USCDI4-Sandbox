@@ -7,6 +7,13 @@
     "name" : "AUDIT_C"
   },
   {
+    "id" : "TAPS",
+    "type" : "Questionnaire",
+    "url" : "http://hl7.org/fhir/us/core/Questionnaire/TAPS",
+    "version" : "0.0.0",
+    "name" : "TAPS"
+  },
+  {
     "id" : "exercise-vital-sign",
     "type" : "Questionnaire",
     "url" : "http://hl7.org/fhir/us/core/Questionnaire/exercise-vital-sign",

@@ -1,9 +1,9 @@
 ﻿USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 10, warn = 13, info = 6
+err = 8, warn = 13, info = 10
 IG Publisher Version: 1.3.28
-Generated Tue Aug 15 06:08:44 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+Generated Tue Aug 15 06:42:18 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
  Build Errors : 11 / 0 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance : 2 / 2 / 1
@@ -15,8 +15,14 @@ Generated Tue Aug 15 06:08:44 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-EVS-item-example-68516-4 : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-EVS-item-example-89555-7 : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-EVS-panel-example-89574-8 : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcohol-use-status : 1 / 1 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcoholic-drinks-per-day : 1 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-TAPS-item-example-75889-6 : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-TAPS-item-example-88037-7 : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-TAPS-item-example-96842-0 : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-TAPS-item-example-96843-8 : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-TAPS-item-example-96844-6 : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-TAPS-panel-example-96841-2 : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcohol-use-status : 0 / 1 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcoholic-drinks-per-day : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 1 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-day : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-week : 0 / 0 / 1
@@ -25,8 +31,10 @@ Generated Tue Aug 15 06:08:44 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-self-tylenol : 0 / 2 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-serum-glucose : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-AUDIT-C : 0 / 0 / 5
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-TAPS : 0 / 0 / 5
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-exercise-vital-sign : 0 / 0 / 3
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/QuestionnaireResponse-AUDIT-C : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/QuestionnaireResponse-TAPS : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/QuestionnaireResponse-exercise-vital-sign : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Specimen-example-serum-hemolyzed : 0 / 2 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/location-hospital : 0 / 0 / 1
@@ -63,11 +71,15 @@ WARNING: MedicationRequest/coded-oral-axid-with-compliance: MedicationRequest.re
 == input/examples/Observation-EVS-item-example-68516-4.json ==
 == input/examples/Observation-EVS-item-example-89555-7.json ==
 == input/examples/Observation-EVS-panel-example-89574-8.json ==
+== input/examples/Observation-TAPS-item-example-75889-6.json ==
+== input/examples/Observation-TAPS-item-example-88037-7.json ==
+== input/examples/Observation-TAPS-item-example-96842-0.json ==
+== input/examples/Observation-TAPS-item-example-96843-8.json ==
+== input/examples/Observation-TAPS-item-example-96844-6.json ==
+== input/examples/Observation-TAPS-panel-example-96841-2.json ==
 == input/examples/Observation-alcohol-use-status.json ==
-ERROR: Observation/alcohol-use-status: Observation: Observation.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0)
 WARNING: Observation/alcohol-use-status: Observation.value.ofType(CodeableConcept).coding[0]: Error from server: This version of SNOMED is not loaded
 == input/examples/Observation-alcoholic-drinks-per-day.json ==
-ERROR: Observation/alcoholic-drinks-per-day: Observation: Observation.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0)
 == input/examples/Observation-average-blood-pressure.json ==
 ERROR: Observation/average-blood-pressure: Observation.effective.ofType(Period): Rule vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' Failed
 == input/examples/Observation-exercise-per-day.json ==
@@ -85,10 +97,16 @@ INFORMATION: Questionnaire/AUDIT-C: Questionnaire.item[0].extension[0]: This ele
 INFORMATION: Questionnaire/AUDIT-C: Questionnaire.item[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
 INFORMATION: Questionnaire/AUDIT-C: Questionnaire.item[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
 INFORMATION: Questionnaire/AUDIT-C: Questionnaire.item[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
+== input/examples/Questionnaire-TAPS.json ==
+INFORMATION: Questionnaire/TAPS: Questionnaire.item[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
+INFORMATION: Questionnaire/TAPS: Questionnaire.item[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
+INFORMATION: Questionnaire/TAPS: Questionnaire.item[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
+INFORMATION: Questionnaire/TAPS: Questionnaire.item[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
 == input/examples/Questionnaire-exercise-vital-sign.json ==
 INFORMATION: Questionnaire/exercise-vital-sign: Questionnaire.item[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
 INFORMATION: Questionnaire/exercise-vital-sign: Questionnaire.item[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
 == input/examples/QuestionnaireResponse-AUDIT-C.json ==
+== input/examples/QuestionnaireResponse-TAPS.json ==
 == input/examples/QuestionnaireResponse-exercise-vital-sign.json ==
 == input/examples/Specimen-example-serum-hemolyzed.json ==
 WARNING: Specimen/example-serum-hemolyzed: Specimen.type.coding[0]: Error from server: This version of SNOMED is not loaded
