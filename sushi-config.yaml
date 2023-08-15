@@ -28,6 +28,7 @@ contact:
   - telecom:
       - system: email
         value: 'mailto:ehaas@healthedatainc.com'
+jurisdiction: 'urn:iso:std:iso:3166#US'
 description: This is a **Healthedata1** sandbox for creation of USCDI4 resources and examples
 license: CC0-1.0
 fhirVersion: 4.0.1
@@ -81,6 +82,7 @@ groups:
     name: Substance Use 
     description: Substance Use Health Status Assessment Examples
     resources:
+      - Observation/substance-use-status
       - Observation/TAPS-item-example-75889-6
       - Observation/TAPS-item-example-88037-7
       - Observation/TAPS-item-example-96842-0

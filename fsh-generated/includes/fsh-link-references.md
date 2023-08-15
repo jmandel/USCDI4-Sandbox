@@ -16,6 +16,7 @@
 [AUDIT-C-panel-example-72109-2]: Observation-AUDIT-C-panel-example-72109-2.html
 [AUDIT-C]: Questionnaire-AUDIT-C.html
 [AUDIT-C]: QuestionnaireResponse-AUDIT-C.html
+[substance-use-status]: Observation-substance-use-status.html
 [TAPS-item-example-75889-6]: Observation-TAPS-item-example-75889-6.html
 [TAPS-item-example-88037-7]: Observation-TAPS-item-example-88037-7.html
 [TAPS-item-example-96842-0]: Observation-TAPS-item-example-96842-0.html

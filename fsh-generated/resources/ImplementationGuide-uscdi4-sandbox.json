@@ -28,6 +28,16 @@
     }
   ],
   "description": "This is a **Healthedata1** sandbox for creation of USCDI4 resources and examples",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "packageId": "uscdi4-sandbox",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -271,6 +281,15 @@
         "name": "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse Example",
         "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse",
         "groupingId": "Booze"
+      },
+      {
+        "reference": {
+          "reference": "Observation/substance-use-status"
+        },
+        "description": "This is an Substance-use-status example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations.",
+        "name": "Substance Use Status Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation",
+        "groupingId": "Drugs"
       },
       {
         "reference": {
