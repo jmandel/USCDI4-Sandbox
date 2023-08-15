@@ -31,6 +31,12 @@
       "value" : "mailto:ehaas@healthedatainc.com"
     }]
   }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
   "code" : [{
     "system" : "http://loinc.org",
     "code" : "72109-2",

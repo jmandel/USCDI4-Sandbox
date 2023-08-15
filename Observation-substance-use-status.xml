@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="substance-use-status"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Substance Use Status Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is an Substance-use-status example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations."/>
+    </extension>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="substance-use-status"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;substance-use-status&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a></p></div><p><b>identifier</b>: id: 19a199c7-8fdf-11ec-9837-020000000000</p><p><b>status</b>: final</p><p><b>category</b>: Social History <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Substance use status <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11343-1 &quot;History of Other nonmedical drug use&quot;; <a href="https://browser.ihtsdotools.org/">SNOMED CT[US]</a>#228366006 &quot;Finding relating to drug misuse behavior (finding)&quot;)</span></p><p><b>subject</b>: <a href="http://www.hl7.org/fhir/us/core/Patient/example">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-03</p><p><b>performer</b>: <a href="http://www.hl7.org/fhir/us/core/Patient/example">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>value</b>: other possible values - Misuses drugs (finding), Does not misuse drugs (finding), Has never misused drugs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#44870007 &quot;Misused drugs in past (finding)&quot;)</span></p><p><b>note</b>: At parties</p><blockquote><p><b>component</b></p><p><b>code</b>: Drug or medicament <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT[US]</a>#410942007 &quot;Drug or medicament (substance)&quot;)</span></p><p><b>value</b>: Amphetamine <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT[US]</a>#703842006)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Frequency of drug misuse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT[US]</a>#228390007 &quot;Frequency of drug misuse (observable entity)&quot;)</span></p><p><b>value</b>: 3 times a year</p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6"/>
+    <value value="19a199c7-8fdf-11ec-9837-020000000000"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social History"/>
+    </coding>
+    <text value="Social History"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11343-1"/>
+      <display value="History of Other nonmedical drug use"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/731000124108"/>
+      <code value="228366006"/>
+      <display value="Finding relating to drug misuse behavior (finding)"/>
+    </coding>
+    <text value="Substance use status"/>
+  </code>
+  <subject>
+    <reference value="http://www.hl7.org/fhir/us/core/Patient/example"/>
+    <display value="Amy Shaw"/>
+  </subject>
+  <effectiveDateTime value="2023-08-03"/>
+  <performer>
+    <reference value="http://www.hl7.org/fhir/us/core/Patient/example"/>
+    <display value="Amy Shaw"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="44870007"/>
+      <display value="Misused drugs in past (finding)"/>
+    </coding>
+    <text value="other possible values - Misuses drugs (finding), Does not misuse drugs (finding), Has never misused drugs"/>
+  </valueCodeableConcept>
+  <note>
+    <text value="At parties"/>
+  </note>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/731000124108"/>
+        <code value="410942007"/>
+        <display value="Drug or medicament (substance)"/>
+      </coding>
+      <text value="Drug or medicament"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/731000124108"/>
+        <code value="703842006"/>
+        <display value="Amphetamine"/>
+      </coding>
+      <text value="Amphetamine"/>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/731000124108"/>
+        <code value="228390007"/>
+        <display value="Frequency of drug misuse (observable entity)"/>
+      </coding>
+      <text value="Frequency of drug misuse"/>
+    </code>
+    <valueString value="3 times a year"/>
+  </component>
+</Observation>

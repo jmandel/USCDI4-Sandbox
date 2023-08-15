@@ -46,6 +46,12 @@
     </telecom>
   </contact>
   <description value="A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

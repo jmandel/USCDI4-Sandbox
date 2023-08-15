@@ -41,6 +41,12 @@
        fhir:value [ fhir:v "mailto:ehaas@healthedatainc.com" ]
      ] )
   ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
   fhir:code ( [
      a loinc:72109-2 ;
      fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;

@@ -2,6 +2,7 @@
   "package": "uscdi4-sandbox",
   "version": "0.0.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
   "extensions": [
     {
       "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension",

@@ -32,6 +32,12 @@
       <value value="mailto:ehaas@healthedatainc.com"/>
     </telecom>
   </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <code>
     <system value="http://loinc.org"/>
     <code value="89574-8"/>

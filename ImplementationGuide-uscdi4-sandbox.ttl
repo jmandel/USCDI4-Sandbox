@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "USCDI4_1Sandbox"] ; # 
   fhir:title [ fhir:v "HealtheData1 USCDI4 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-15T06:40:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-15T18:39:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -33,6 +33,12 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "This is a **Healthedata1** sandbox for creation of USCDI4 resources and examples"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
   fhir:packageId [ fhir:v "uscdi4-sandbox"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -1004,6 +1010,22 @@
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse>
        ] ;
        fhir:groupingId [ fhir:v "Booze" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/substance-use-status> ;
+         fhir:reference [ fhir:v "Observation/substance-use-status" ]
+       ] ;
+       fhir:name [ fhir:v "Substance Use Status Example" ] ;
+       fhir:description [ fhir:v "This is an Substance-use-status example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "Drugs" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

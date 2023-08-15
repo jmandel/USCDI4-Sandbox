@@ -42,6 +42,12 @@
     </telecom>
   </contact>
   <description value="This profile sets minimum expectations for the Specimen resource to record, search, and fetch &quot;substances being sampled or tested. (e.g., nasopharyngeal swab, whole blood, serum, urine, wound swab)&quot; associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
