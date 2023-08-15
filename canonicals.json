@@ -1,5 +1,12 @@
 [
   {
+    "id" : "AUDIT-C",
+    "type" : "Questionnaire",
+    "url" : "http://hl7.org/fhir/us/core/Questionnaire/AUDIT-C",
+    "version" : "0.0.0",
+    "name" : "AUDIT_C"
+  },
+  {
     "id" : "exercise-vital-sign",
     "type" : "Questionnaire",
     "url" : "http://hl7.org/fhir/us/core/Questionnaire/exercise-vital-sign",

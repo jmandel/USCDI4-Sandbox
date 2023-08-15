@@ -3,10 +3,10 @@
   "name" : "USCDI4_1Sandbox",
   "package-id" : "uscdi4-sandbox",
   "ig-ver" : "0.0.0",
-  "date" : "Fri, 11 Aug, 2023 09:26:33 +0000",
-  "errs" : 8,
-  "warnings" : 12,
-  "hints" : 2,
+  "date" : "Tue, 15 Aug, 2023 06:06:32 +0000",
+  "errs" : 10,
+  "warnings" : 13,
+  "hints" : 6,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)"
 }

@@ -2,11 +2,18 @@
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance.json: line 27, col 106, Error - URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve (INVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance.json: line 24, col 22, Warning - ValueSet http://hl7.org/fhir/ValueSet/medication-statement-adherence not found (CODEINVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance.json: line 113, col 18, Warning - Error from server: This version of SNOMED is not loaded (CODEINVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcohol-use-status.json: line 1, col 2, Error - Observation.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0) (STRUCTURE)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcohol-use-status.json: line 54, col 14, Warning - Error from server: This version of SNOMED is not loaded (CODEINVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcoholic-drinks-per-day.json: line 1, col 2, Error - Observation.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0) (STRUCTURE)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure.json: line 46, col 6, Error - Rule vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' Failed (INVARIANT)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-oral-axid.json: line 39, col 14, Warning - Error from server: This version of SNOMED is not loaded (CODEINVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-oral-axid.json: line 59, col 14, Warning - Error from server: This version of SNOMED is not loaded (CODEINVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-self-tylenol.json: line 39, col 14, Warning - Error from server: This version of SNOMED is not loaded (CODEINVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-self-tylenol.json: line 59, col 14, Warning - Error from server: This version of SNOMED is not loaded (CODEINVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-AUDIT-C.json: line 1, col 17344, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0 (INFORMATIONAL)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-AUDIT-C.json: line 1, col 18275, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0 (INFORMATIONAL)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-AUDIT-C.json: line 1, col 20187, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0 (INFORMATIONAL)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-AUDIT-C.json: line 1, col 22007, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0 (INFORMATIONAL)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-exercise-vital-sign.json: line 1, col 9636, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0 (INFORMATIONAL)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-exercise-vital-sign.json: line 1, col 10130, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0 (INFORMATIONAL)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Specimen-example-serum-hemolyzed.json: line 25, col 14, Warning - Error from server: This version of SNOMED is not loaded (CODEINVALID)
@@ -23,6 +30,6 @@
 USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 8, warn = 12, info = 2
+err = 10, warn = 13, info = 6
 IG Publisher Version: 1.3.28
-Generated Fri Aug 11 09:28:49 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+Generated Tue Aug 15 06:08:44 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)

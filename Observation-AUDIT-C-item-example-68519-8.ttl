@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi4-sandbox/Observation/AUDIT-C-item-example-68519-8> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AUDIT-C-item-example-68519-8"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Audit-C Item Example 68519-8" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "This is a Audit-C Item Example 68519-8 (How many standard drinks containing alcohol do you have on a typical day?) for the *US Core Observation Screening Assessment Profile*" ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"AUDIT-C-item-example-68519-8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;AUDIT-C-item-example-68519-8&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-screening-assessment.html\">US Core Observation Screening Assessment Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: How many standard drinks containing alcohol do you have on a typical day? <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#68519-8)</span></p><p><b>subject</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example</a></p><p><b>effective</b>: 2023-08-14 20:40:49+0000</p><p><b>performer</b>: <a href=\"https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1\">https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1</a></p><p><b>value</b>: 1 or 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA15694-5)</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-AUDIT-C.html\">QuestionnaireResponse/AUDIT-C: Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse Example</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "survey" ] ;
+       fhir:display [ fhir:v "Survey" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:68519-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "68519-8" ] ;
+       fhir:display [ fhir:v "How many standard drinks containing alcohol do you have on a typical day?" ]
+     ] ) ;
+     fhir:text [ fhir:v "How many standard drinks containing alcohol do you have on a typical day?" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://www.hl7.org/fhir/us/core/Patient/example> ;
+     fhir:reference [ fhir:v "http://www.hl7.org/fhir/us/core/Patient/example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-08-14T20:40:49.675000+00:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1> ;
+     fhir:reference [ fhir:v "https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a loinc:LA15694-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LA15694-5" ] ;
+       fhir:display [ fhir:v "1 or 2" ]
+     ] ) ;
+     fhir:text [ fhir:v "1 or 2" ]
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/QuestionnaireResponse/AUDIT-C> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/AUDIT-C" ] ;
+     fhir:display [ fhir:v "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse Example" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
