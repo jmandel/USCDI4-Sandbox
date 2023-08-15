@@ -30,8 +30,8 @@ performer:
 valueQuantity:
   value: 0.0
   unit: '# per year'
-  # system: http://unitsofmeasure.org
-  # code: '{#}/a'
+  system: http://unitsofmeasure.org
+  code: '{#}/a'
 note:
 - text: Where X is 5 for men and 4 for women, and a response of  greater than, or
     equal to, 1 is positive.
