@@ -1,0 +1,62 @@
+resourceType: MedicationStatement
+id: coded-oral-axid-with-compliance
+meta:
+  profile:
+  # - http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement
+  - http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement
+  extension:
+  - url: http://hl7.org/fhir/StructureDefinition/instance-name
+    valueString: MedicationStatement Coded Oral Axid with Adherence Extension Example
+  - url: http://hl7.org/fhir/StructureDefinition/instance-description
+    valueMarkdown: This example demonstrates medication adherence for a prescribed medication example using an R5 element extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes.
+
+# === proposed R5 extension ===
+extension:
+  - extension:
+    - url: code
+      valueCodeableConcept:
+        coding:
+          - system: http://hl7.org/fhir/CodeSystem/medication-statement-adherence
+            code: taking-not-as-directed
+            display: Taking Not As Directed
+    url: http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence
+
+# === end proposed R5 extension ===
+
+status: active
+# intent: order
+medicationCodeableConcept:
+  coding:
+  - system: http://www.nlm.nih.gov/research/umls/rxnorm
+    code: '476872'
+    display: Nizatidine 15 MG/ML Oral Solution
+  text: Nizatidine 15 MG/ML Oral Solution
+subject:
+  reference: http://www.hl7.org/fhir/us/core/Patient/example
+  display: Amy Shaw
+effectiveDateTime: '2008-04-05'
+informationSource:
+  reference: http://www.hl7.org/fhir/us/core/Patient/example
+  display: Amy Shaw
+dosage:
+- text: 10 mL bid
+  timing:
+    repeat:
+      frequency: 2
+      period: 1
+      periodUnit: d
+      boundsPeriod:
+        start: '2008-04-05'
+  doseAndRate:
+  - doseQuantity:
+      value: 10
+      unit: ml
+      system: http://unitsofmeasure.org
+      code: mL
+reasonCode:
+- coding:
+  - system: http://snomed.info/sct
+    code: '51868009'
+    display: Ulcer of duodenum (disorder)
+    version: http://snomed.info/sct/731000124108
+  text: Active Duodenal Ulcer

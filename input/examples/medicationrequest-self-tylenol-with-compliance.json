@@ -22,16 +22,16 @@
         "text": "Tylenol PM Pill"
     },
     "subject": {
-        "reference": "Patient/example",
+        "reference": "http://www.hl7.org/fhir/us/core/Patient/example",
         "display": "Amy V. Shaw"
     },
     "encounter": {
-        "reference": "Encounter/example-1",
+        "reference": "http://www.hl7.org/fhir/us/core/Encounter/example-1",
         "display": "Office Visit"
     },
     "authoredOn": "2019-06-24",
     "requester": {
-        "reference": "Patient/example",
+        "reference": "http://www.hl7.org/fhir/us/core/Patient/example",
         "display": "**self-prescribed**"
     },
     "dosageInstruction": [
@@ -59,12 +59,12 @@
             "coding": [
                 {
                     "system": "http://snomed.info/sct",
-                    "code": "25064002",
-                    "display": "Headache (finding)",
+                    "code": "32914008",
+                    "display": "Restless legs (disorder) |",
                     "version": "http://snomed.info/sct/731000124108"
                 }
             ],
-            "text": "Headache"
+            "text": "Restless Leg Syndrome"
         }
     ],
     "extension": [

@@ -45,7 +45,8 @@ dependencies:
     id: uscdcphinvads
     uri: 'http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads'
     version: 0.12.0
-  hl7.fhir.extensions.r5: 4.0.1  # for using R5 elements as extensions
+  hl7.fhir.uv.extensions.r4: 1.0.0  # for using R5 elements as extensions not working
+
 
 
 groups:

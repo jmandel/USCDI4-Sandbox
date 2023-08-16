@@ -1,0 +1,51 @@
+resourceType: MedicationStatement
+id: self-tylenol-with-compliance
+# identifier:
+#   - system: http://acme.org/prescriptions
+#     value: '12345689'
+status: active
+medicationCodeableConcept:
+  coding:
+  - system: http://www.nlm.nih.gov/research/umls/rxnorm
+    code: '1187314'
+    display: Tylenol PM Pill
+  text: Tylenol PM Pill
+subject:
+  reference: http://www.hl7.org/fhir/us/core/Patient/example
+  display: Amy Shaw
+effectiveDateTime: '2008-04-05'
+informationSource:
+  reference: http://www.hl7.org/fhir/us/core/Patient/example
+  display: Amy Shaw
+dosage:
+- text: Takes 1-2 tablets once daily at bedtime as needed for restless legs
+meta:
+  profile:
+  # - http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement
+  - http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement
+  extension:
+  - url: http://hl7.org/fhir/StructureDefinition/instance-name
+    valueString: MedicationStatement Self Tylenol with Compliance Extension Example
+  - url: http://hl7.org/fhir/StructureDefinition/instance-description
+    valueMarkdown: This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses MedicationStatement Adherence Codes.
+reasonCode:
+- coding:
+  - system: http://snomed.info/sct
+    code: '32914008'
+    display: Restless legs (disorder)
+    version: http://snomed.info/sct/731000124108
+  text: Restless Leg Syndrome
+
+# === proposed R5 extension ===
+extension:
+  - extension:
+    - url: code
+      valueCodeableConcept:
+        coding:
+          - system: http://hl7.org/fhir/CodeSystem/medication-statement-adherence
+            code: taking
+            display: Taking
+        text: Taking
+    url: http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence
+
+# === end proposed R5 extension ===
