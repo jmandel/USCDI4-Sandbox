@@ -369,13 +369,6 @@ definition:
     exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location
     groupingId: Facility
   - reference:
-      reference: StructureDefinition/us-core-medicationrequest-compliance-extension
-    description: A MedicationRequest extension for indicating whether the medication
-      is or is not being consumed or administered
-    exampleBoolean: false
-    name: US Core Medication Compliance Extension
-    groupingId: Medication
-  - reference:
       reference: Observation/medication-adherence-oral-axid
     description: This is a medication adherance for a prescribed  medication example
       using Observation.  Both the code and value use SNOMED CT and the MedicationRequest
@@ -401,6 +394,13 @@ definition:
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
     groupingId: Medication
   - reference:
+      reference: StructureDefinition/us-core-medicationrequest-compliance-extension
+    description: A MedicationRequest extension for indicating whether the medication
+      is or is not being consumed or administered
+    exampleBoolean: false
+    name: US Core Medication Compliance Extension
+    groupingId: Medication
+  - reference:
       reference: MedicationRequest/coded-oral-axid-with-compliance
     description: This example demonstrates medication adherence for a prescribed medication
       example using an extension on the MedicationRequest. The extension value uses
@@ -415,6 +415,31 @@ definition:
       value uses SNOMED CT.
     name: MedicationRequest Self Tylenol with Compliance Extension Example
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest
+    groupingId: Medication
+  - reference:
+      reference: StructureDefinition/us-core-medicationstatement
+    description: 'Profile of MedicationStatement to support medication adherence -
+      record of a statement of whether a medication has been consumed according to
+      instructions.
+
+      This profile sets minimum expectations for the MedicationStatement resource
+      to record, search, and fetch a record of a statement of whether a medication
+      has been consumed according to instructions.  It identifies which core elements,
+      extensions, vocabularies, and value sets **SHALL** be present in the resource
+      and constrains the way the elements are used when using this profile.  It provides
+      the floor for standards development for specific use cases to promote interoperability
+      and adoption through common implementation.'
+    exampleBoolean: false
+    name: US Core MedicationStatement
+    groupingId: Medication
+  - reference:
+      reference: ValueSet/uscore-medicationstatement-status
+    description: A code specifying the state of the statement.  Generally, this will
+      be active or completed state.  This value set excludes the concept used internally
+      by the FHIR specification, not-taken,on-hold,stopped, and unknown, because they
+      are covered by the medication adherence extension.
+    exampleBoolean: false
+    name: US Core Medication Status Codes
     groupingId: Medication
   page:
     nameUrl: toc.html

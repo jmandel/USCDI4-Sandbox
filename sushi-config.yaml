@@ -45,6 +45,7 @@ dependencies:
     id: uscdcphinvads
     uri: 'http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads'
     version: 0.12.0
+  hl7.fhir.extensions.r5: 4.0.1  # for using R5 elements as extensions
 
 
 groups:
@@ -111,12 +112,14 @@ groups:
     name: Medication
     description: Medication Adherence Examples
     resources:
-      - StructureDefinition/us-core-medicationrequest-compliance-extension
       - Observation/medication-adherence-oral-axid
       - Observation/medication-adherence-oral-axid-boolean
       - Observation/medication-adherence-self-tylenol
+      - StructureDefinition/us-core-medicationrequest-compliance-extension
       - MedicationRequest/coded-oral-axid-with-compliance
       - MedicationRequest/self-tylenol-with-compliance
+      - StructureDefinition/us-core-medicationstatement
+      - ValueSet/uscore-medicationstatement-status
 
 pages:
   index.md:
