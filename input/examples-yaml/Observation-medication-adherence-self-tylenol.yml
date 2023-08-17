@@ -3,7 +3,7 @@ id: medication-adherence-self-tylenol
 meta:
   extension:
   - url: http://hl7.org/fhir/StructureDefinition/instance-name
-    valueString: Medication Adherence Self Tylenol (OTC) Example
+    valueString: Observation Medication Adherence Self Tylenol (OTC) Example
   - url: http://hl7.org/fhir/StructureDefinition/instance-description
     valueMarkdown: This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.
   profile:

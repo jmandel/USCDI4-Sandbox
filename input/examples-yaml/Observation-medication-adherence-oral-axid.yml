@@ -3,7 +3,7 @@ id: medication-adherence-oral-axid
 meta:
   extension:
   - url: http://hl7.org/fhir/StructureDefinition/instance-name
-    valueString: Medication Adherence Oral Axid (Prescribed) Example
+    valueString: Observation Medication Adherence Oral Axid (Prescribed) Example
   - url: http://hl7.org/fhir/StructureDefinition/instance-description
     valueMarkdown: This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.
   profile:

@@ -34,17 +34,17 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 6.1.0
-  hl7.fhir.uv.sdc: 3.0.0
-  hl7.fhir.uv.bulkdata: 2.0.0
-  hl7.fhir.uv.smart-app-launch: 2.0.0
-  us.nlm.vsac:
-      uri: 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac'
-      version: 0.3.0
-      id: vsac
-  us.cdc.phinvads:
-    id: uscdcphinvads
-    uri: 'http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads'
-    version: 0.12.0
+  # hl7.fhir.uv.sdc: 3.0.0
+  # hl7.fhir.uv.bulkdata: 2.0.0
+  # hl7.fhir.uv.smart-app-launch: 2.0.0
+  # us.nlm.vsac:
+  #     uri: 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac'
+  #     version: 0.3.0
+  #     id: vsac
+  # us.cdc.phinvads:
+  #   id: uscdcphinvads
+  #   uri: 'http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads'
+  #   version: 0.12.0
   hl7.fhir.uv.extensions.r4: 1.0.0  # for using R5 elements as extensions not working
 
 
@@ -121,6 +121,8 @@ groups:
       - MedicationRequest/self-tylenol-with-compliance
       - StructureDefinition/us-core-medicationstatement
       - ValueSet/uscore-medicationstatement-status
+      - MedicationStatement/coded-oral-axid-with-compliance
+      - MedicationStatement/self-tylenol-with-compliance.yml
 
 pages:
   index.md:
