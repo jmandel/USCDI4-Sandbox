@@ -72,7 +72,6 @@
         "reference": "http://www.hl7.org/fhir/us/core/Patient/example"
     },
     "valueQuantity": {
-        "code": "mg/dL",
         "system": "http://unitsofmeasure.org",
         "unit": "mg/dL",
         "value": 76.0

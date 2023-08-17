@@ -5,7 +5,7 @@
         "extension": [
             {
                 "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
-                "valueString": "Medication Adherence Self Tylenol (OTC) Example"
+                "valueString": "Observation Medication Adherence Self Tylenol (OTC) Example"
             },
             {
                 "url": "http://hl7.org/fhir/StructureDefinition/instance-description",

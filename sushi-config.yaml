@@ -122,7 +122,7 @@ groups:
       - StructureDefinition/us-core-medicationstatement
       - ValueSet/uscore-medicationstatement-status
       - MedicationStatement/coded-oral-axid-with-compliance
-      - MedicationStatement/self-tylenol-with-compliance.yml
+      - MedicationStatement/self-tylenol-with-compliance
 
 pages:
   index.md:
