@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "USCDI4_1Sandbox"] ; # 
   fhir:title [ fhir:v "HealtheData1 USCDI4 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-17T18:27:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-17T18:57:34+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -62,46 +62,6 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
      fhir:version [ fhir:v "6.1.0" ]
-  ] [
-     fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
-     fhir:uri [
-       fhir:v "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
-     ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.uv.sdc" ] ;
-     fhir:version [ fhir:v "3.0.0" ]
-  ] [
-     fhir:id [ fhir:v "hl7_fhir_uv_bulkdata" ] ;
-     fhir:uri [
-       fhir:v "http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata>
-     ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.uv.bulkdata" ] ;
-     fhir:version [ fhir:v "2.0.0" ]
-  ] [
-     fhir:id [ fhir:v "hl7_fhir_uv_smart_app_launch" ] ;
-     fhir:uri [
-       fhir:v "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch>
-     ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.uv.smart-app-launch" ] ;
-     fhir:version [ fhir:v "2.0.0" ]
-  ] [
-     fhir:id [ fhir:v "vsac" ] ;
-     fhir:uri [
-       fhir:v "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac>
-     ] ;
-     fhir:packageId [ fhir:v "us.nlm.vsac" ] ;
-     fhir:version [ fhir:v "0.3.0" ]
-  ] [
-     fhir:id [ fhir:v "uscdcphinvads" ] ;
-     fhir:uri [
-       fhir:v "http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads>
-     ] ;
-     fhir:packageId [ fhir:v "us.cdc.phinvads" ] ;
-     fhir:version [ fhir:v "0.12.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_extensions_r4" ] ;
      fhir:uri [
@@ -724,35 +684,141 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-average-blood-pressure" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Average Blood Pressure Profile" ] ;
+       fhir:description [ fhir:v "To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "AvgBP" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/average-blood-pressure> ;
+         fhir:reference [ fhir:v "Observation/average-blood-pressure" ]
+       ] ;
+       fhir:name [ fhir:v "Average Blood Pressure Example" ] ;
+       fhir:description [ fhir:v "This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)." ] ;
+       fhir:example [
+         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure"^^xsd:anyURI ;
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure>
+       ] ;
+       fhir:groupingId [ fhir:v "AvgBP" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/EVS-item-example-68516-4> ;
+         fhir:reference [ fhir:v "Observation/EVS-item-example-68516-4" ]
+       ] ;
+       fhir:name [ fhir:v "Evs Item Example 68516-4" ] ;
+       fhir:description [ fhir:v "This is a Evs Item Example 68516-4 (On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise?) for the *US Core Observation Screening Assessment Profile*" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/EVS-item-example-89555-7> ;
+         fhir:reference [ fhir:v "Observation/EVS-item-example-89555-7" ]
+       ] ;
+       fhir:name [ fhir:v "Evs Item Example 89555-7" ] ;
+       fhir:description [ fhir:v "This is a Evs Item Example 89555-7 (How many D per W did you engage in moderate to strenuous physical activity in the last 30D) for the *US Core Observation Screening Assessment Profile*" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/EVS-panel-example-89574-8> ;
+         fhir:reference [ fhir:v "Observation/EVS-panel-example-89574-8" ]
+       ] ;
+       fhir:name [ fhir:v "Evs Panel Example 89574-8" ] ;
+       fhir:description [ fhir:v "This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for the *US Core Observation Screening Assessment Profile*" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/exercise-per-day> ;
+         fhir:reference [ fhir:v "Observation/exercise-per-day" ]
+       ] ;
+       fhir:name [ fhir:v "Exercise Per Day Example" ] ;
+       fhir:description [ fhir:v "This is an minutes exercise per day example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/exercise-per-week> ;
+         fhir:reference [ fhir:v "Observation/exercise-per-week" ]
+       ] ;
+       fhir:name [ fhir:v "Exercise Per Week Example" ] ;
+       fhir:description [ fhir:v "This is a days exercise per week example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "PE" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Questionnaire/AUDIT-C> ;
-         fhir:reference [ fhir:v "Questionnaire/AUDIT-C" ]
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Questionnaire/exercise-vital-sign> ;
+         fhir:reference [ fhir:v "Questionnaire/exercise-vital-sign" ]
        ] ;
-       fhir:name [ fhir:v "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] Questionnaire Example" ] ;
-       fhir:description [ fhir:v "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] questionnaire example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire>
-       ] ;
-       fhir:groupingId [ fhir:v "Booze" ]
+       fhir:name [ fhir:v "Exercise Vital Sign Questionnaire Example" ] ;
+       fhir:description [ fhir:v "This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) Questionnaire Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "PE" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "QuestionnaireResponse" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/QuestionnaireResponse/AUDIT-C> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/AUDIT-C" ]
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/QuestionnaireResponse/exercise-vital-sign> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/exercise-vital-sign" ]
        ] ;
-       fhir:name [ fhir:v "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse Example" ] ;
-       fhir:description [ fhir:v "This is the [LHC Form](https://loinc.org/lhc-forms/) Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
+       fhir:name [ fhir:v "Exercise Vital Sign QuestionnaireResponse Example" ] ;
+       fhir:description [ fhir:v "This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
        fhir:example [
          fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse>
        ] ;
-       fhir:groupingId [ fhir:v "Booze" ]
+       fhir:groupingId [ fhir:v "PE" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -868,289 +934,32 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/average-blood-pressure> ;
-         fhir:reference [ fhir:v "Observation/average-blood-pressure" ]
-       ] ;
-       fhir:name [ fhir:v "Average Blood Pressure Example" ] ;
-       fhir:description [ fhir:v "This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)." ] ;
-       fhir:example [
-         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure"^^xsd:anyURI ;
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure>
-       ] ;
-       fhir:groupingId [ fhir:v "AvgBP" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/EVS-item-example-68516-4> ;
-         fhir:reference [ fhir:v "Observation/EVS-item-example-68516-4" ]
-       ] ;
-       fhir:name [ fhir:v "Evs Item Example 68516-4" ] ;
-       fhir:description [ fhir:v "This is a Evs Item Example 68516-4 (On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise?) for the *US Core Observation Screening Assessment Profile*" ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment>
-       ] ;
-       fhir:groupingId [ fhir:v "PE" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/EVS-item-example-89555-7> ;
-         fhir:reference [ fhir:v "Observation/EVS-item-example-89555-7" ]
-       ] ;
-       fhir:name [ fhir:v "Evs Item Example 89555-7" ] ;
-       fhir:description [ fhir:v "This is a Evs Item Example 89555-7 (How many D per W did you engage in moderate to strenuous physical activity in the last 30D) for the *US Core Observation Screening Assessment Profile*" ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment>
-       ] ;
-       fhir:groupingId [ fhir:v "PE" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/EVS-panel-example-89574-8> ;
-         fhir:reference [ fhir:v "Observation/EVS-panel-example-89574-8" ]
-       ] ;
-       fhir:name [ fhir:v "Evs Panel Example 89574-8" ] ;
-       fhir:description [ fhir:v "This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for the *US Core Observation Screening Assessment Profile*" ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment>
-       ] ;
-       fhir:groupingId [ fhir:v "PE" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/exercise-per-day> ;
-         fhir:reference [ fhir:v "Observation/exercise-per-day" ]
-       ] ;
-       fhir:name [ fhir:v "Exercise Per Day Example" ] ;
-       fhir:description [ fhir:v "This is an minutes exercise per day example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
-       ] ;
-       fhir:groupingId [ fhir:v "PE" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/exercise-per-week> ;
-         fhir:reference [ fhir:v "Observation/exercise-per-week" ]
-       ] ;
-       fhir:name [ fhir:v "Exercise Per Week Example" ] ;
-       fhir:description [ fhir:v "This is a days exercise per week example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
-       ] ;
-       fhir:groupingId [ fhir:v "PE" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Questionnaire/exercise-vital-sign> ;
-         fhir:reference [ fhir:v "Questionnaire/exercise-vital-sign" ]
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Questionnaire/AUDIT-C> ;
+         fhir:reference [ fhir:v "Questionnaire/AUDIT-C" ]
        ] ;
-       fhir:name [ fhir:v "Exercise Vital Sign Questionnaire Example" ] ;
-       fhir:description [ fhir:v "This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) Questionnaire Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire>
-       ] ;
-       fhir:groupingId [ fhir:v "PE" ]
+       fhir:name [ fhir:v "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] Questionnaire Example" ] ;
+       fhir:description [ fhir:v "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] questionnaire example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "Booze" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "QuestionnaireResponse" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/QuestionnaireResponse/exercise-vital-sign> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/exercise-vital-sign" ]
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/QuestionnaireResponse/AUDIT-C> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/AUDIT-C" ]
        ] ;
-       fhir:name [ fhir:v "Exercise Vital Sign QuestionnaireResponse Example" ] ;
-       fhir:description [ fhir:v "This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
+       fhir:name [ fhir:v "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse Example" ] ;
+       fhir:description [ fhir:v "This is the [LHC Form](https://loinc.org/lhc-forms/) Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
        fhir:example [
          fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse>
        ] ;
-       fhir:groupingId [ fhir:v "PE" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Specimen" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Specimen/example-serum-hemolyzed> ;
-         fhir:reference [ fhir:v "Specimen/example-serum-hemolyzed" ]
-       ] ;
-       fhir:name [ fhir:v "Hemolyzed Serum Specimen Example" ] ;
-       fhir:description [ fhir:v "This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition and body source site." ] ;
-       fhir:example [
-         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen"^^xsd:anyURI ;
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen>
-       ] ;
-       fhir:groupingId [ fhir:v "Labs" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Location" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Location/hospital> ;
-         fhir:reference [ fhir:v "Location/hospital" ]
-       ] ;
-       fhir:name [ fhir:v "Hospital Location" ] ;
-       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile*." ] ;
-       fhir:example [
-         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location"^^xsd:anyURI ;
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location>
-       ] ;
-       fhir:groupingId [ fhir:v "Facility" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/medication-adherence-oral-axid> ;
-         fhir:reference [ fhir:v "Observation/medication-adherence-oral-axid" ]
-       ] ;
-       fhir:name [ fhir:v "Medication Adherence Oral Axid (Prescribed) Example" ] ;
-       fhir:description [ fhir:v "This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
-       ] ;
-       fhir:groupingId [ fhir:v "Medication" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/medication-adherence-oral-axid-boolean> ;
-         fhir:reference [ fhir:v "Observation/medication-adherence-oral-axid-boolean" ]
-       ] ;
-       fhir:name [ fhir:v "Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example" ] ;
-       fhir:description [ fhir:v "This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
-       ] ;
-       fhir:groupingId [ fhir:v "Medication" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/medication-adherence-self-tylenol> ;
-         fhir:reference [ fhir:v "Observation/medication-adherence-self-tylenol" ]
-       ] ;
-       fhir:name [ fhir:v "Medication Adherence Self Tylenol (OTC) Example" ] ;
-       fhir:description [ fhir:v "This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
-       ] ;
-       fhir:groupingId [ fhir:v "Medication" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "MedicationRequest" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/MedicationRequest/coded-oral-axid-with-compliance> ;
-         fhir:reference [ fhir:v "MedicationRequest/coded-oral-axid-with-compliance" ]
-       ] ;
-       fhir:name [ fhir:v "MedicationRequest Coded Oral Axid with Compliance Extension Example" ] ;
-       fhir:description [ fhir:v "This example demonstrates medication adherence for a prescribed medication example using an extension on the MedicationRequest. The extension value uses SNOMED CT." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest>
-       ] ;
-       fhir:groupingId [ fhir:v "Medication" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "MedicationRequest" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/MedicationRequest/self-tylenol-with-compliance> ;
-         fhir:reference [ fhir:v "MedicationRequest/self-tylenol-with-compliance" ]
-       ] ;
-       fhir:name [ fhir:v "MedicationRequest Self Tylenol with Compliance Extension Example" ] ;
-       fhir:description [ fhir:v "This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest>
-       ] ;
-       fhir:groupingId [ fhir:v "Medication" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "MedicationStatement" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/MedicationStatement/coded-oral-axid-with-compliance> ;
-         fhir:reference [ fhir:v "MedicationStatement/coded-oral-axid-with-compliance" ]
-       ] ;
-       fhir:name [ fhir:v "MedicationStatement Coded Oral Axid with Adherence Extension Example" ] ;
-       fhir:description [ fhir:v "This example demonstrates medication adherence for a prescribed medication example using an R% elment extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes." ] ;
-       fhir:example [
-         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"^^xsd:anyURI ;
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "MedicationStatement" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/MedicationStatement/self-tylenol-with-compliance> ;
-         fhir:reference [ fhir:v "MedicationStatement/self-tylenol-with-compliance" ]
-       ] ;
-       fhir:name [ fhir:v "MedicationStatement Self Tylenol with Compliance Extension Example" ] ;
-       fhir:description [ fhir:v "This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses MedicationStatement Adherence Codes." ] ;
-       fhir:example [
-         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"^^xsd:anyURI ;
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/serum-glucose> ;
-         fhir:reference [ fhir:v "Observation/serum-glucose" ]
-       ] ;
-       fhir:name [ fhir:v "Serum Glucose Example" ] ;
-       fhir:description [ fhir:v "This is a serum glucose example for the *US Core Observation Lab Profile*." ] ;
-       fhir:example [
-         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab"^^xsd:anyURI ;
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab>
-       ] ;
-       fhir:groupingId [ fhir:v "Labs" ]
+       fhir:groupingId [ fhir:v "Booze" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1274,10 +1083,7 @@
        ] ;
        fhir:name [ fhir:v "Tobacco, Alcohol, Prescription medications, and other Substance use screen [TAPS] Questionnaire Example" ] ;
        fhir:description [ fhir:v "Tobacco, Alcohol, Prescription medications, and other Substance use screen [TAPS] questionnaire example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire>
-       ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
        fhir:groupingId [ fhir:v "Drugs" ]
      ] [
        fhir:extension ( [
@@ -1301,25 +1107,57 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-average-blood-pressure" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Average Blood Pressure Profile" ] ;
-       fhir:description [ fhir:v "To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:groupingId [ fhir:v "AvgBP" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab> ;
          fhir:reference [ fhir:v "StructureDefinition/us-core-observation-lab" ]
        ] ;
        fhir:name [ fhir:v "US Core Laboratory Result Observation Profile" ] ;
        fhir:description [ fhir:v "The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "Labs" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-specimen" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Specimen Profile" ] ;
+       fhir:description [ fhir:v "This profile sets minimum expectations for the Specimen resource to record, search, and fetch \"substances being sampled or tested. (e.g., nasopharyngeal swab, whole blood, serum, urine, wound swab)\" associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "Labs" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/serum-glucose> ;
+         fhir:reference [ fhir:v "Observation/serum-glucose" ]
+       ] ;
+       fhir:name [ fhir:v "Serum Glucose Example" ] ;
+       fhir:description [ fhir:v "This is a serum glucose example for the *US Core Observation Lab Profile*." ] ;
+       fhir:example [
+         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab"^^xsd:anyURI ;
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab>
+       ] ;
+       fhir:groupingId [ fhir:v "Labs" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Specimen" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Specimen/example-serum-hemolyzed> ;
+         fhir:reference [ fhir:v "Specimen/example-serum-hemolyzed" ]
+       ] ;
+       fhir:name [ fhir:v "Hemolyzed Serum Specimen Example" ] ;
+       fhir:description [ fhir:v "This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition and body source site." ] ;
+       fhir:example [
+         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen"^^xsd:anyURI ;
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen>
+       ] ;
        fhir:groupingId [ fhir:v "Labs" ]
      ] [
        fhir:extension ( [
@@ -1337,6 +1175,70 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Location/hospital> ;
+         fhir:reference [ fhir:v "Location/hospital" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Location" ] ;
+       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile*." ] ;
+       fhir:example [
+         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location"^^xsd:anyURI ;
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location>
+       ] ;
+       fhir:groupingId [ fhir:v "Facility" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/medication-adherence-oral-axid> ;
+         fhir:reference [ fhir:v "Observation/medication-adherence-oral-axid" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Medication Adherence Oral Axid (Prescribed) Example" ] ;
+       fhir:description [ fhir:v "This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/medication-adherence-oral-axid-boolean> ;
+         fhir:reference [ fhir:v "Observation/medication-adherence-oral-axid-boolean" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example" ] ;
+       fhir:description [ fhir:v "This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Observation/medication-adherence-self-tylenol> ;
+         fhir:reference [ fhir:v "Observation/medication-adherence-self-tylenol" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Medication Adherence Self Tylenol (OTC) Example" ] ;
+       fhir:description [ fhir:v "This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -1345,6 +1247,51 @@
        ] ;
        fhir:name [ fhir:v "US Core Medication Compliance Extension" ] ;
        fhir:description [ fhir:v "A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/MedicationRequest/coded-oral-axid-with-compliance> ;
+         fhir:reference [ fhir:v "MedicationRequest/coded-oral-axid-with-compliance" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequest Coded Oral Axid with Compliance Extension Example" ] ;
+       fhir:description [ fhir:v "This example demonstrates medication adherence for a prescribed medication example using an extension on the MedicationRequest. The extension value uses SNOMED CT." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/MedicationRequest/self-tylenol-with-compliance> ;
+         fhir:reference [ fhir:v "MedicationRequest/self-tylenol-with-compliance" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequest Self Tylenol with Compliance Extension Example" ] ;
+       fhir:description [ fhir:v "This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-medicationstatement" ]
+       ] ;
+       fhir:name [ fhir:v "US Core MedicationStatement" ] ;
+       fhir:description [ fhir:v "Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.\nThis profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ] ;
        fhir:groupingId [ fhir:v "Medication" ]
      ] [
@@ -1363,29 +1310,35 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
+         fhir:value [ fhir:v "MedicationStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-medicationstatement" ]
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/MedicationStatement/coded-oral-axid-with-compliance> ;
+         fhir:reference [ fhir:v "MedicationStatement/coded-oral-axid-with-compliance" ]
        ] ;
-       fhir:name [ fhir:v "US Core MedicationStatement" ] ;
-       fhir:description [ fhir:v "Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.\nThis profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:name [ fhir:v "MedicationStatement Coded Oral Axid with Adherence Extension Example" ] ;
+       fhir:description [ fhir:v "This example demonstrates medication adherence for a prescribed medication example using an R5 element extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes." ] ;
+       fhir:example [
+         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"^^xsd:anyURI ;
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement>
+       ] ;
        fhir:groupingId [ fhir:v "Medication" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
+         fhir:value [ fhir:v "MedicationStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-specimen" ]
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/MedicationStatement/self-tylenol-with-compliance> ;
+         fhir:reference [ fhir:v "MedicationStatement/self-tylenol-with-compliance" ]
        ] ;
-       fhir:name [ fhir:v "US Core Specimen Profile" ] ;
-       fhir:description [ fhir:v "This profile sets minimum expectations for the Specimen resource to record, search, and fetch \"substances being sampled or tested. (e.g., nasopharyngeal swab, whole blood, serum, urine, wound swab)\" associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:groupingId [ fhir:v "Labs" ]
+       fhir:name [ fhir:v "MedicationStatement Self Tylenol with Compliance Extension Example" ] ;
+       fhir:description [ fhir:v "This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses MedicationStatement Adherence Codes." ] ;
+       fhir:example [
+         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"^^xsd:anyURI ;
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement>
+       ] ;
+       fhir:groupingId [ fhir:v "Medication" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

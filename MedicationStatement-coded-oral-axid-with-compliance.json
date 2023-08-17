@@ -8,7 +8,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-      "valueMarkdown" : "This example demonstrates medication adherence for a prescribed medication example using an R% elment extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes."
+      "valueMarkdown" : "This example demonstrates medication adherence for a prescribed medication example using an R5 element extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes."
     }],
     "profile" : ["http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"]
   },

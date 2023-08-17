@@ -4,7 +4,7 @@
   <id value="medication-adherence-oral-axid-boolean"/>
   <meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
-      <valueString value="Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example"/>
+      <valueString value="Observation Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
       <valueMarkdown value="This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element."/>

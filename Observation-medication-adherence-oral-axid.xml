@@ -4,7 +4,7 @@
   <id value="medication-adherence-oral-axid"/>
   <meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
-      <valueString value="Medication Adherence Oral Axid (Prescribed) Example"/>
+      <valueString value="Observation Medication Adherence Oral Axid (Prescribed) Example"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
       <valueMarkdown value="This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element."/>

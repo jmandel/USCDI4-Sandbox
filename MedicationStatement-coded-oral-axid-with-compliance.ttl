@@ -15,7 +15,7 @@
        fhir:value [ fhir:v "MedicationStatement Coded Oral Axid with Adherence Extension Example" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "This example demonstrates medication adherence for a prescribed medication example using an R% elment extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes." ]
+       fhir:value [ fhir:v "This example demonstrates medication adherence for a prescribed medication example using an R5 element extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes." ]
      ] ) ;
      fhir:profile ( [
        fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"^^xsd:anyURI ;
