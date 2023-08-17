@@ -77,6 +77,12 @@
         "title": "US Core Location Profile"
       }
     ],
+    "MedicationStatement": [
+      {
+        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement",
+        "title": "US Core MedicationStatement"
+      }
+    ],
     "Specimen": [
       {
         "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen",
@@ -85,6 +91,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence": [
+      "MedicationStatement"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.differential.element.constraint",
       "StructureDefinition.snapshot.element.constraint"
@@ -99,6 +108,7 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
@@ -106,11 +116,14 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
       "StructureDefinition.differential.element.type",
-      "StructureDefinition.snapshot.element.type"
+      "StructureDefinition.differential.element.type.targetProfile",
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
       "Location.meta",
       "MedicationRequest.meta",
+      "MedicationStatement.meta",
       "Observation.meta",
       "Questionnaire.meta",
       "QuestionnaireResponse.meta",
@@ -119,6 +132,7 @@
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
       "Location.meta",
       "MedicationRequest.meta",
+      "MedicationStatement.meta",
       "Observation.meta",
       "Questionnaire.meta",
       "QuestionnaireResponse.meta",
@@ -145,7 +159,8 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
       "ImplementationGuide",
-      "StructureDefinition"
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
@@ -155,7 +170,8 @@
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",
       "StructureDefinition",
-      "StructureDefinition.snapshot.element"
+      "StructureDefinition.snapshot.element",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"

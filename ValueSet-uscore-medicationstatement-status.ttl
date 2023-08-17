@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uscore-medicationstatement-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html\"><code>http://hl7.org/fhir/CodeSystem/medication-statement-status</code></a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html\"><code>http://hl7.org/fhir/CodeSystem/medication-statement-status</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-not-taken\">not-taken</a></td><td>Not Taken</td><td>The medication was not consumed by the patient</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-on-hold\">on-hold</a></td><td>On Hold</td><td>Actions implied by the statement have been temporarily halted, but are expected to continue later. May also be called 'suspended'.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-stopped\">stopped</a></td><td>Stopped</td><td>Actions implied by the statement have been permanently halted, before all of them occurred. This should not be used if the statement was entered in error.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-unknown\">unknown</a></td><td>Unknown</td><td>The state of the medication use is not currently known.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "1"^^xsd:integer ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox"^^xsd:anyURI ;
+           fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox"^^xsd:anyURI ;
+           fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.0"] ; # 
+  fhir:name [ fhir:v "USCoreMedicationstatementStatus"] ; # 
+  fhir:title [ fhir:v "US Core Medication Status Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-08-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Health eData Inc"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "mailto:ehaas@healthedatainc.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A code specifying the state of the statement.  Generally, this will be active or completed state.  This value set excludes the concept used internally by the FHIR specification, not-taken,on-hold,stopped, and unknown, because they are covered by the medication adherence extension."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/CodeSystem/medication-statement-status"^^xsd:anyURI ]
+     ] ) ;
+     fhir:exclude ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/CodeSystem/medication-statement-status"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "not-taken" ]
+       ] [
+         fhir:code [ fhir:v "on-hold" ]
+       ] [
+         fhir:code [ fhir:v "stopped" ]
+       ] [
+         fhir:code [ fhir:v "unknown" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

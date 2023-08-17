@@ -1,9 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="aa38a8d6-fb0f-441b-bf60-a2a7e3ecec90"/>
+  <id value="db213d7a-86c8-41aa-b764-6dbd04eff228"/>
   <meta>
-    <lastUpdated value="2023-08-15T18:41:49.730+00:00"/>
+    <lastUpdated value="2023-08-17T06:13:37.753+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html">Medication  status  codes v4.0.1 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-CodeSystem-medication-statement-status-active"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-active">active</a>
+                </td>
+                <td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td>
+                <td>Active</td>
+                <td>
+                  <div>
+                    <p>The medication is still being taken.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-CodeSystem-medication-statement-status-completed"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-completed">completed</a>
+                </td>
+                <td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td>
+                <td>Completed</td>
+                <td>
+                  <div>
+                    <p>The medication is no longer being taken.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-CodeSystem-medication-statement-status-entered-in-error"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-entered-in-error">entered-in-error</a>
+                </td>
+                <td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td>
+                <td>Entered in Error</td>
+                <td>
+                  <div>
+                    <p>Some of the actions that are implied by the medication statement may have occurred.  For example, the patient may have taken some of the medication.  Clinical decision support systems should take this status into account.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-CodeSystem-medication-statement-status-intended"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-intended">intended</a>
+                </td>
+                <td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td>
+                <td>Intended</td>
+                <td>
+                  <div>
+                    <p>The medication may be taken at some time in the future.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status"/>
+        <version value="0.0.0"/>
+        <name value="USCoreMedicationstatementStatus"/>
+        <title value="US Core Medication Status Codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-08-15"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:d0505a8e-0471-4e0e-aff3-ada8da428156"/>
+          <timestamp value="2023-08-17T06:15:21+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/CodeSystem/medication-statement-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/medication-statement-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/medication-statement-status"/>
+            <code value="completed"/>
+            <display value="Completed"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/medication-statement-status"/>
+            <code value="entered-in-error"/>
+            <display value="Entered in Error"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/medication-statement-status"/>
+            <code value="intended"/>
+            <display value="Intended"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

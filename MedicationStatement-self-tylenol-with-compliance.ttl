@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi4-sandbox/MedicationStatement/self-tylenol-with-compliance> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "self-tylenol-with-compliance"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "MedicationStatement Self Tylenol with Compliance Extension Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses MedicationStatement Adherence Codes." ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"^^xsd:anyURI ;
+       fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"self-tylenol-with-compliance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;self-tylenol-with-compliance&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-medicationstatement.html\">US Core MedicationStatement</a></p></div><blockquote><p><b>Extension Definition for MedicationUsage.adherence for Version 5.0</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></blockquote><p><b>value</b>: Taking <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (medication-statement-adherence#taking)</span></p></blockquote><p><b>status</b>: active</p><p><b>medication</b>: Tylenol PM Pill <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1187314)</span></p><p><b>subject</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2008-04-05</p><p><b>informationSource</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>reasonCode</b>: Restless Leg Syndrome <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT[US]</a>#32914008 &quot;Restless legs (disorder)&quot;)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Takes 1-2 tablets once daily at bedtime as needed for restless legs</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/CodeSystem/medication-statement-adherence"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "taking" ] ;
+           fhir:display [ fhir:v "Taking" ]
+         ] ) ;
+         fhir:text [ fhir:v "Taking" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1187314" ] ;
+       fhir:display [ fhir:v "Tylenol PM Pill" ]
+     ] ) ;
+     fhir:text [ fhir:v "Tylenol PM Pill" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://www.hl7.org/fhir/us/core/Patient/example> ;
+     fhir:reference [ fhir:v "http://www.hl7.org/fhir/us/core/Patient/example" ] ;
+     fhir:display [ fhir:v "Amy Shaw" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2008-04-05"^^xsd:date] ; # 
+  fhir:informationSource [
+     fhir:link <http://www.hl7.org/fhir/us/core/Patient/example> ;
+     fhir:reference [ fhir:v "http://www.hl7.org/fhir/us/core/Patient/example" ] ;
+     fhir:display [ fhir:v "Amy Shaw" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:32914008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/731000124108" ] ;
+       fhir:code [ fhir:v "32914008" ] ;
+       fhir:display [ fhir:v "Restless legs (disorder)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Restless Leg Syndrome" ]
+  ] ) ; # 
+  fhir:dosage ( [
+     fhir:text [ fhir:v "Takes 1-2 tablets once daily at bedtime as needed for restless legs" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

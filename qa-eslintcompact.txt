@@ -1,6 +1,9 @@
 ﻿/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance.json: line 26, col 30, Error - Unknown Code System 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' (CODEINVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance.json: line 27, col 106, Error - URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve (INVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance.json: line 24, col 22, Warning - ValueSet http://hl7.org/fhir/ValueSet/medication-statement-adherence not found (CODEINVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationStatement-coded-oral-axid-with-compliance.json: line 1, col 2, Warning - The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence from FHIR version {3} is not allowed to be used at this point (allowed = e:MedicationUsage; this element is [[MedicationStatement]; this is a warning since contexts may be renamed between FHIR versions) (STRUCTURE)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationStatement-coded-oral-axid-with-compliance.json: line 26, col 30, Error - Unknown Code System 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' (CODEINVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationStatement-coded-oral-axid-with-compliance.json: line 27, col 106, Error - URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve (INVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure.json: line 46, col 6, Error - Rule vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' Failed (INVARIANT)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-AUDIT-C.json: line 1, col 17420, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0 (INFORMATIONAL)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-AUDIT-C.json: line 1, col 18351, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0 (INFORMATIONAL)
@@ -15,6 +18,10 @@
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationrequest-self-tylenol-with-compliance.json: line 77, col 30, Error - Unknown Code System 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' (CODEINVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationrequest-self-tylenol-with-compliance.json: line 78, col 106, Error - URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve (INVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationrequest-self-tylenol-with-compliance.json: line 75, col 22, Warning - ValueSet http://hl7.org/fhir/ValueSet/medication-statement-adherence not found (CODEINVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationrequest-self-tylenol-with-compliance.json: line 58, col 10, Error - Wrong Display Name 'Restless legs (disorder) |' for http://snomed.info/sct#32914008 - should be one of 4 choices: 'Restless legs', '"Restless legs syndrome"', '"Restless legs (disorder)"' or '"Willis-Ekbom disease"' (for the language(s) '--') (from Tx-Server) (CODEINVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationstatement-self-tylenol-with-compliance.json: line 1, col 2, Warning - The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence from FHIR version {3} is not allowed to be used at this point (allowed = e:MedicationUsage; this element is [[MedicationStatement]; this is a warning since contexts may be renamed between FHIR versions) (STRUCTURE)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationstatement-self-tylenol-with-compliance.json: line 64, col 30, Error - Unknown Code System 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' (CODEINVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationstatement-self-tylenol-with-compliance.json: line 65, col 106, Error - URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve (INVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension.json: line 1, col 36907, Error - Canonical URL 'http://hl7.org/fhir/ValueSet/medication-statement-adherence' does not resolve (INVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension.json: line 1, col 50915, Error - Canonical URL 'http://hl7.org/fhir/ValueSet/medication-statement-adherence' does not resolve (INVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension.json: line 0, col 0, Warning - The valueSet reference http://hl7.org/fhir/ValueSet/medication-statement-adherence on element Extension.extension.value[x] could not be resolved (BUSINESSRULE)
@@ -23,6 +30,6 @@
 USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 8, warn = 4, info = 10
+err = 13, warn = 6, info = 10
 IG Publisher Version: 1.3.28
-Generated Tue Aug 15 18:46:08 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+Generated Thu Aug 17 06:18:52 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)

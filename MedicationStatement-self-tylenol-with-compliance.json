@@ -1,0 +1,63 @@
+{
+  "resourceType" : "MedicationStatement",
+  "id" : "self-tylenol-with-compliance",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "MedicationStatement Self Tylenol with Compliance Extension Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses MedicationStatement Adherence Codes."
+    }],
+    "profile" : ["http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"self-tylenol-with-compliance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;self-tylenol-with-compliance&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-medicationstatement.html\">US Core MedicationStatement</a></p></div><blockquote><p><b>Extension Definition for MedicationUsage.adherence for Version 5.0</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></blockquote><p><b>value</b>: Taking <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (medication-statement-adherence#taking)</span></p></blockquote><p><b>status</b>: active</p><p><b>medication</b>: Tylenol PM Pill <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#1187314)</span></p><p><b>subject</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2008-04-05</p><p><b>informationSource</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>reasonCode</b>: Restless Leg Syndrome <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT[US]</a>#32914008 &quot;Restless legs (disorder)&quot;)</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Takes 1-2 tablets once daily at bedtime as needed for restless legs</td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "code",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/CodeSystem/medication-statement-adherence",
+          "code" : "taking",
+          "display" : "Taking"
+        }],
+        "text" : "Taking"
+      }
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence"
+  }],
+  "status" : "active",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1187314",
+      "display" : "Tylenol PM Pill"
+    }],
+    "text" : "Tylenol PM Pill"
+  },
+  "subject" : {
+    "reference" : "http://www.hl7.org/fhir/us/core/Patient/example",
+    "display" : "Amy Shaw"
+  },
+  "effectiveDateTime" : "2008-04-05",
+  "informationSource" : {
+    "reference" : "http://www.hl7.org/fhir/us/core/Patient/example",
+    "display" : "Amy Shaw"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108",
+      "code" : "32914008",
+      "display" : "Restless legs (disorder)"
+    }],
+    "text" : "Restless Leg Syndrome"
+  }],
+  "dosage" : [{
+    "text" : "Takes 1-2 tablets once daily at bedtime as needed for restless legs"
+  }]
+}
