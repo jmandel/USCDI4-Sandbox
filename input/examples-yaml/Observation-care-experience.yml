@@ -5,6 +5,13 @@ meta:
     -
       #http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference
       http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference
+  extension:
+  - url: http://hl7.org/fhir/StructureDefinition/instance-name
+    valueString: Care Experience Example
+  - url: http://hl7.org/fhir/StructureDefinition/instance-description
+    valueMarkdown: 'This is an care experience example for the *Care Experience Profile*.  It is based on the *US Core Simple Observation Profile*.
+
+
 # text:
 #   status: additional
 #   div: >-
