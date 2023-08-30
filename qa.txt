@@ -1,9 +1,9 @@
 ﻿USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 16, warn = 7, info = 23
+err = 14, warn = 7, info = 23
 IG Publisher Version: 1.4.1
-Generated Wed Aug 30 17:34:21 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+Generated Wed Aug 30 17:54:55 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
  Build Errors : 8 / 1 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance : 2 / 1 / 1
@@ -25,7 +25,7 @@ Generated Wed Aug 30 17:34:21 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcohol-use-status : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcoholic-drinks-per-day : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 1 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience : 3 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience : 1 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-day : 0 / 0 / 3
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-week : 0 / 0 / 3
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-oral-axid : 0 / 0 / 2
@@ -92,10 +92,8 @@ INFORMATION: Observation/alcoholic-drinks-per-day: Observation.category[0]: Refe
 == input/examples/Observation-average-blood-pressure.json ==
 ERROR: Observation/average-blood-pressure: Observation.effective.ofType(Period): Rule vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' Failed
 == input/examples/Observation-care-experience.json ==
-ERROR: Observation.derivedFrom: The property derivedFrom  must be a JSON Array, not an Object (at Observation)
-INFORMATION: Observation/care-experience: Observation.category[0]: This element does not match any known slice defined in the profile http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference|0.0.0
-ERROR: Observation/care-experience: Observation.category[0].coding[0]: Unknown Code System 'http://hl7.org/fhir/us/pacio-adi/CodeSystem/ADIPreferenceCategoryCS'
-ERROR: Observation/care-experience: Observation.category[0].coding[0].system: URL value 'http://hl7.org/fhir/us/pacio-adi/CodeSystem/ADIPreferenceCategoryCS' does not resolve
+INFORMATION: Observation/care-experience: Observation.category[0]: This element does not match any known slice defined in the profile http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference|0.0.0
+ERROR: Observation/care-experience: Observation.category[0].coding[0]: Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'
 == input/examples/Observation-exercise-per-day.json ==
 INFORMATION: Observation/exercise-per-day: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 INFORMATION: Observation/exercise-per-day: Observation.category[1]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0

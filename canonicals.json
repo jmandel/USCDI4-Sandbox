@@ -28,18 +28,18 @@
     "name" : "USCDI4_1Sandbox"
   },
   {
-    "id" : "care-experience-preference",
-    "type" : "StructureDefinition",
-    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference",
-    "version" : "0.0.0",
-    "name" : "USCoreCareExperiencePreferenceProfile"
-  },
-  {
     "id" : "us-core-average-blood-pressure",
     "type" : "StructureDefinition",
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure",
     "version" : "0.0.0",
     "name" : "USCoreAverageBloodPressureProfile"
+  },
+  {
+    "id" : "us-core-care-experience-preference",
+    "type" : "StructureDefinition",
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference",
+    "version" : "0.0.0",
+    "name" : "USCoreCareExperiencePreferenceProfile"
   },
   {
     "id" : "us-core-location",

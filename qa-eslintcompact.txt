@@ -7,10 +7,8 @@
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcohol-use-status.json: line 20, col 10, Info - Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0 (BUSINESSRULE)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcoholic-drinks-per-day.json: line 20, col 10, Info - Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0 (BUSINESSRULE)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure.json: line 46, col 6, Error - Rule vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' Failed (INVARIANT)
-/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience.json: line 38, col 6, Error - The property derivedFrom  must be a JSON Array, not an Object (at Observation) (INVALID)
-/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience.json: line 11, col 10, Info - This element does not match any known slice defined in the profile http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference|0.0.0 (INFORMATIONAL)
-/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience.json: line 13, col 18, Error - Unknown Code System 'http://hl7.org/fhir/us/pacio-adi/CodeSystem/ADIPreferenceCategoryCS' (CODEINVALID)
-/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience.json: line 14, col 100, Error - URL value 'http://hl7.org/fhir/us/pacio-adi/CodeSystem/ADIPreferenceCategoryCS' does not resolve (INVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience.json: line 11, col 10, Info - This element does not match any known slice defined in the profile http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference|0.0.0 (INFORMATIONAL)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience.json: line 13, col 18, Error - Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference' (CODEINVALID)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-day.json: line 21, col 10, Info - Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0 (BUSINESSRULE)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-day.json: line 31, col 10, Info - Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0 (BUSINESSRULE)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-week.json: line 21, col 10, Info - Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0 (BUSINESSRULE)
@@ -46,6 +44,6 @@
 USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 16, warn = 7, info = 23
+err = 14, warn = 7, info = 23
 IG Publisher Version: 1.4.1
-Generated Wed Aug 30 17:34:21 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+Generated Wed Aug 30 17:54:55 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
