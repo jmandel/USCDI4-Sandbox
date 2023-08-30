@@ -1,10 +1,10 @@
 ﻿USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 13, warn = 6, info = 10
-IG Publisher Version: 1.3.28
-Generated Thu Aug 17 19:01:48 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
- Build Errors : 8 / 0 / 0
+err = 16, warn = 7, info = 23
+IG Publisher Version: 1.4.1
+Generated Wed Aug 30 17:34:21 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+ Build Errors : 8 / 1 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance : 2 / 1 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationStatement-coded-oral-axid-with-compliance : 2 / 1 / 1
@@ -22,16 +22,17 @@ Generated Thu Aug 17 19:01:48 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-TAPS-item-example-96843-8 : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-TAPS-item-example-96844-6 : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-TAPS-panel-example-96841-2 : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcohol-use-status : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcoholic-drinks-per-day : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcohol-use-status : 0 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcoholic-drinks-per-day : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 1 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-day : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-week : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-oral-axid : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-oral-axid-boolean : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-self-tylenol : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-serum-glucose : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-substance-use-status : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience : 3 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-day : 0 / 0 / 3
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-week : 0 / 0 / 3
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-oral-axid : 0 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-oral-axid-boolean : 0 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-self-tylenol : 0 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-serum-glucose : 0 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-substance-use-status : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-AUDIT-C : 0 / 0 / 5
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-TAPS : 0 / 0 / 5
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-exercise-vital-sign : 0 / 0 / 3
@@ -43,18 +44,20 @@ Generated Thu Aug 17 19:01:48 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationrequest-self-tylenol-with-compliance : 3 / 1 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationstatement-self-tylenol-with-compliance : 2 / 1 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-care-experience-preference : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-location : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension : 2 / 2 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-observation-lab : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-specimen : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-uscore-medicationstatement : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-medicationstatement-status : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-medicationstatement-status : 0 / 0 / 2
 </table>
 == n/a ==
 ERROR: Extension.extension.value: The reference http://hl7.org/fhir/ValueSet/medication-statement-adherence could not be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 241, column 115: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 340, column 115: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 508, column 115: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/care-experience.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 227, column 1649: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 266, column 614: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 313, column 1939: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 299, column 1725: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 323, column 1857: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 398, column 1725: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
@@ -83,16 +86,32 @@ ERROR: MedicationStatement/coded-oral-axid-with-compliance: MedicationStatement.
 == input/examples/Observation-TAPS-item-example-96844-6.json ==
 == input/examples/Observation-TAPS-panel-example-96841-2.json ==
 == input/examples/Observation-alcohol-use-status.json ==
+INFORMATION: Observation/alcohol-use-status: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-alcoholic-drinks-per-day.json ==
+INFORMATION: Observation/alcoholic-drinks-per-day: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-average-blood-pressure.json ==
 ERROR: Observation/average-blood-pressure: Observation.effective.ofType(Period): Rule vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' Failed
+== input/examples/Observation-care-experience.json ==
+ERROR: Observation.derivedFrom: The property derivedFrom  must be a JSON Array, not an Object (at Observation)
+INFORMATION: Observation/care-experience: Observation.category[0]: This element does not match any known slice defined in the profile http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference|0.0.0
+ERROR: Observation/care-experience: Observation.category[0].coding[0]: Unknown Code System 'http://hl7.org/fhir/us/pacio-adi/CodeSystem/ADIPreferenceCategoryCS'
+ERROR: Observation/care-experience: Observation.category[0].coding[0].system: URL value 'http://hl7.org/fhir/us/pacio-adi/CodeSystem/ADIPreferenceCategoryCS' does not resolve
 == input/examples/Observation-exercise-per-day.json ==
+INFORMATION: Observation/exercise-per-day: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+INFORMATION: Observation/exercise-per-day: Observation.category[1]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-exercise-per-week.json ==
+INFORMATION: Observation/exercise-per-week: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+INFORMATION: Observation/exercise-per-week: Observation.category[1]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-medication-adherence-oral-axid.json ==
+INFORMATION: Observation/medication-adherence-oral-axid: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-medication-adherence-oral-axid-boolean.json ==
+INFORMATION: Observation/medication-adherence-oral-axid-boolean: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-medication-adherence-self-tylenol.json ==
+INFORMATION: Observation/medication-adherence-self-tylenol: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-serum-glucose.json ==
+INFORMATION: Observation/serum-glucose: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-substance-use-status.json ==
+INFORMATION: Observation/substance-use-status: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Questionnaire-AUDIT-C.json ==
 INFORMATION: Questionnaire/AUDIT-C: Questionnaire.item[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
 INFORMATION: Questionnaire/AUDIT-C: Questionnaire.item[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0
@@ -115,12 +134,13 @@ INFORMATION: Questionnaire/exercise-vital-sign: Questionnaire.item[1].extension[
 ERROR: MedicationRequest/self-tylenol-with-compliance: MedicationRequest.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Unknown Code System 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence'
 ERROR: MedicationRequest/self-tylenol-with-compliance: MedicationRequest.extension[0].extension[0].value.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve
 WARNING: MedicationRequest/self-tylenol-with-compliance: MedicationRequest.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet http://hl7.org/fhir/ValueSet/medication-statement-adherence not found
-ERROR: MedicationRequest/self-tylenol-with-compliance: MedicationRequest.reasonCode[0]: Wrong Display Name 'Restless legs (disorder) |' for http://snomed.info/sct#32914008 - should be one of 4 choices: 'Restless legs', '"Restless legs syndrome"', '"Restless legs (disorder)"' or '"Willis-Ekbom disease"' (for the language(s) '--') (from Tx-Server)
+ERROR: MedicationRequest/self-tylenol-with-compliance: MedicationRequest.reasonCode[0]: Wrong Display Name 'Restless legs (disorder) |' for http://snomed.info/sct#32914008 - should be one of 4 choices: 'Restless legs', 'Restless legs syndrome', 'Restless legs (disorder)' or 'Willis-Ekbom disease' (for the language(s) '--') (from Tx-Server)
 == input/examples/medicationstatement-self-tylenol-with-compliance.json ==
 WARNING: MedicationStatement/self-tylenol-with-compliance: MedicationStatement: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence from FHIR version {3} is not allowed to be used at this point (allowed = e:MedicationUsage; this element is [[MedicationStatement]; this is a warning since contexts may be renamed between FHIR versions)
 ERROR: MedicationStatement/self-tylenol-with-compliance: MedicationStatement.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Unknown Code System 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence'
 ERROR: MedicationStatement/self-tylenol-with-compliance: MedicationStatement.extension[0].extension[0].value.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve
 == input/resources/StructureDefinition-us-core-average-blood-pressure.json ==
+== input/resources/StructureDefinition-us-core-care-experience-preference.json ==
 == input/resources/StructureDefinition-us-core-location.json ==
 == input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension.json ==
 ERROR: StructureDefinition/us-core-medicationrequest-compliance-extension: StructureDefinition.snapshot.element[7].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/medication-statement-adherence' does not resolve
@@ -131,3 +151,4 @@ WARNING: StructureDefinition/us-core-medicationrequest-compliance-extension: Str
 == input/resources/StructureDefinition-us-core-specimen.json ==
 == input/resources/StructureDefinition-uscore-medicationstatement.json ==
 == input/resources/ValueSet-uscore-medicationstatement-status.json ==
+INFORMATION: ValueSet/uscore-medicationstatement-status: ValueSet: The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed

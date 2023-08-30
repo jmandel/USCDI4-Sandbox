@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="215d33c2-b848-481f-bd24-f237af748c15"/>
+  <id value="b890f69f-9126-457b-ba25-ccf3626a4261"/>
   <meta>
-    <lastUpdated value="2023-08-17T18:57:34.717+00:00"/>
+    <lastUpdated value="2023-08-30T17:29:48.048+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html">Medication  status  codes v4.0.1 (CodeSystem)</a>
+              <a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html">codesystem Medication  status  codes v4.0.1 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -106,15 +106,15 @@
         </jurisdiction>
         <immutable value="true"/>
         <expansion>
-          <identifier value="urn:uuid:48f8ee4c-27e0-42e8-b0cc-6569a3bc5ebc"/>
-          <timestamp value="2023-08-17T18:58:52+00:00"/>
+          <identifier value="urn:uuid:61ce19b4-0f91-4735-a91d-464c7fde8537"/>
+          <timestamp value="2023-08-30T17:31:15+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
+            <name value="used-codesystem"/>
             <valueUri value="http://hl7.org/fhir/CodeSystem/medication-statement-status|4.0.1"/>
           </parameter>
           <contains>

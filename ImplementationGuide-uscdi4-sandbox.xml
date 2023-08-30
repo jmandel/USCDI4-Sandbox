@@ -3,8 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="uscdi4-sandbox"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>USCDI4_1Sandbox</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox</pre><div><p>This is a <strong>Healthedata1</strong> sandbox for creation of USCDI4 resources and examples</p>
-</div></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
@@ -17,7 +16,7 @@
   <name value="USCDI4_1Sandbox"/>
   <title value="HealtheData1 USCDI4 Sandbox"/>
   <status value="active"/>
-  <date value="2023-08-17T18:57:34+00:00"/>
+  <date value="2023-08-30T17:29:48+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -599,111 +598,27 @@
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/us-core-average-blood-pressure"/>
-      </reference>
-      <name value="US Core Average Blood Pressure Profile"/>
-      <description value="To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="AvgBP"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/average-blood-pressure"/>
-      </reference>
-      <name value="Average Blood Pressure Example"/>
-      <description value="This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)."/>
-      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure"/>
-      <groupingId value="AvgBP"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/EVS-item-example-68516-4"/>
-      </reference>
-      <name value="Evs Item Example 68516-4"/>
-      <description value="This is a Evs Item Example 68516-4 (On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise?) for the *US Core Observation Screening Assessment Profile*"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"/>
-      <groupingId value="PE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/EVS-item-example-89555-7"/>
-      </reference>
-      <name value="Evs Item Example 89555-7"/>
-      <description value="This is a Evs Item Example 89555-7 (How many D per W did you engage in moderate to strenuous physical activity in the last 30D) for the *US Core Observation Screening Assessment Profile*"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"/>
-      <groupingId value="PE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/EVS-panel-example-89574-8"/>
-      </reference>
-      <name value="Evs Panel Example 89574-8"/>
-      <description value="This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for the *US Core Observation Screening Assessment Profile*"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"/>
-      <groupingId value="PE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/exercise-per-day"/>
-      </reference>
-      <name value="Exercise Per Day Example"/>
-      <description value="This is an minutes exercise per day example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
-      <groupingId value="PE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/exercise-per-week"/>
-      </reference>
-      <name value="Exercise Per Week Example"/>
-      <description value="This is a days exercise per week example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
-      <groupingId value="PE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/exercise-vital-sign"/>
+        <reference value="Questionnaire/AUDIT-C"/>
       </reference>
-      <name value="Exercise Vital Sign Questionnaire Example"/>
-      <description value="This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) Questionnaire Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
+      <name value="Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] Questionnaire Example"/>
+      <description value="Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] questionnaire example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
       <exampleBoolean value="true"/>
-      <groupingId value="PE"/>
+      <groupingId value="Booze"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/exercise-vital-sign"/>
+        <reference value="QuestionnaireResponse/AUDIT-C"/>
       </reference>
-      <name value="Exercise Vital Sign QuestionnaireResponse Example"/>
-      <description value="This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
+      <name value="Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse Example"/>
+      <description value="This is the [LHC Form](https://loinc.org/lhc-forms/) Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"/>
-      <groupingId value="PE"/>
+      <groupingId value="Booze"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -791,27 +706,229 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/average-blood-pressure"/>
+      </reference>
+      <name value="Average Blood Pressure Example"/>
+      <description value="This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)."/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure"/>
+      <groupingId value="AvgBP"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/care-experience"/>
+      </reference>
+      <name value="care-experience"/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EVS-item-example-68516-4"/>
+      </reference>
+      <name value="Evs Item Example 68516-4"/>
+      <description value="This is a Evs Item Example 68516-4 (On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise?) for the *US Core Observation Screening Assessment Profile*"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EVS-item-example-89555-7"/>
+      </reference>
+      <name value="Evs Item Example 89555-7"/>
+      <description value="This is a Evs Item Example 89555-7 (How many D per W did you engage in moderate to strenuous physical activity in the last 30D) for the *US Core Observation Screening Assessment Profile*"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EVS-panel-example-89574-8"/>
+      </reference>
+      <name value="Evs Panel Example 89574-8"/>
+      <description value="This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for the *US Core Observation Screening Assessment Profile*"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/exercise-per-day"/>
+      </reference>
+      <name value="Exercise Per Day Example"/>
+      <description value="This is an minutes exercise per day example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/exercise-per-week"/>
+      </reference>
+      <name value="Exercise Per Week Example"/>
+      <description value="This is a days exercise per week example for the *Simple Observation Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Simple Observations."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/AUDIT-C"/>
+        <reference value="Questionnaire/exercise-vital-sign"/>
       </reference>
-      <name value="Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] Questionnaire Example"/>
-      <description value="Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] questionnaire example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
+      <name value="Exercise Vital Sign Questionnaire Example"/>
+      <description value="This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) Questionnaire Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
       <exampleBoolean value="true"/>
-      <groupingId value="Booze"/>
+      <groupingId value="PE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/AUDIT-C"/>
+        <reference value="QuestionnaireResponse/exercise-vital-sign"/>
       </reference>
-      <name value="Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse Example"/>
-      <description value="This is the [LHC Form](https://loinc.org/lhc-forms/) Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
+      <name value="Exercise Vital Sign QuestionnaireResponse Example"/>
+      <description value="This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance using Questionnaire/QuestionnaireResponse resources."/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"/>
-      <groupingId value="Booze"/>
+      <groupingId value="PE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/example-serum-hemolyzed"/>
+      </reference>
+      <name value="Hemolyzed Serum Specimen Example"/>
+      <description value="This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition and body source site."/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen"/>
+      <groupingId value="Labs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/hospital"/>
+      </reference>
+      <name value="Hospital Location"/>
+      <description value="This is an example hospital location for the *US Core Location Profile*."/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location"/>
+      <groupingId value="Facility"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/coded-oral-axid-with-compliance"/>
+      </reference>
+      <name value="MedicationRequest Coded Oral Axid with Compliance Extension Example"/>
+      <description value="This example demonstrates medication adherence for a prescribed medication example using an extension on the MedicationRequest. The extension value uses SNOMED CT."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/self-tylenol-with-compliance"/>
+      </reference>
+      <name value="MedicationRequest Self Tylenol with Compliance Extension Example"/>
+      <description value="This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/coded-oral-axid-with-compliance"/>
+      </reference>
+      <name value="MedicationStatement Coded Oral Axid with Adherence Extension Example"/>
+      <description value="This example demonstrates medication adherence for a prescribed medication example using an R5 element extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes."/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/self-tylenol-with-compliance"/>
+      </reference>
+      <name value="MedicationStatement Self Tylenol with Compliance Extension Example"/>
+      <description value="This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses MedicationStatement Adherence Codes."/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/medication-adherence-oral-axid"/>
+      </reference>
+      <name value="Observation Medication Adherence Oral Axid (Prescribed) Example"/>
+      <description value="This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/medication-adherence-oral-axid-boolean"/>
+      </reference>
+      <name value="Observation Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example"/>
+      <description value="This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/medication-adherence-self-tylenol"/>
+      </reference>
+      <name value="Observation Medication Adherence Self Tylenol (OTC) Example"/>
+      <description value="This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+      <groupingId value="Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/serum-glucose"/>
+      </reference>
+      <name value="Serum Glucose Example"/>
+      <description value="This is a serum glucose example for the *US Core Observation Lab Profile*."/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab"/>
+      <groupingId value="Labs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -926,47 +1043,34 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/us-core-observation-lab"/>
+        <reference value="StructureDefinition/us-core-average-blood-pressure"/>
       </reference>
-      <name value="US Core Laboratory Result Observation Profile"/>
-      <description value="The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases."/>
+      <name value="US Core Average Blood Pressure Profile"/>
+      <description value="To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Labs"/>
+      <groupingId value="AvgBP"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/us-core-specimen"/>
+        <reference value="StructureDefinition/care-experience-preference"/>
       </reference>
-      <name value="US Core Specimen Profile"/>
-      <description value="This profile sets minimum expectations for the Specimen resource to record, search, and fetch &quot;substances being sampled or tested. (e.g., nasopharyngeal swab, whole blood, serum, urine, wound swab)&quot; associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases."/>
+      <name value="US Core Care Experience Preference Profile"/>
+      <description value="To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch for a patient's care experience preferences. It is based on the US Core Simple Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Labs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Observation/serum-glucose"/>
+        <reference value="StructureDefinition/us-core-observation-lab"/>
       </reference>
-      <name value="Serum Glucose Example"/>
-      <description value="This is a serum glucose example for the *US Core Observation Lab Profile*."/>
-      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab"/>
-      <groupingId value="Labs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Specimen"/>
-      </extension>
-      <reference>
-        <reference value="Specimen/example-serum-hemolyzed"/>
-      </reference>
-      <name value="Hemolyzed Serum Specimen Example"/>
-      <description value="This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition and body source site."/>
-      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen"/>
+      <name value="US Core Laboratory Result Observation Profile"/>
+      <description value="The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases."/>
+      <exampleBoolean value="false"/>
       <groupingId value="Labs"/>
     </resource>
     <resource>
@@ -983,54 +1087,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/hospital"/>
-      </reference>
-      <name value="Hospital Location"/>
-      <description value="This is an example hospital location for the *US Core Location Profile*."/>
-      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location"/>
-      <groupingId value="Facility"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/medication-adherence-oral-axid"/>
-      </reference>
-      <name value="Observation Medication Adherence Oral Axid (Prescribed) Example"/>
-      <description value="This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
-      <groupingId value="Medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/medication-adherence-oral-axid-boolean"/>
-      </reference>
-      <name value="Observation Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example"/>
-      <description value="This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
-      <groupingId value="Medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/medication-adherence-self-tylenol"/>
-      </reference>
-      <name value="Observation Medication Adherence Self Tylenol (OTC) Example"/>
-      <description value="This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
-      <groupingId value="Medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1038,42 +1094,6 @@
       </reference>
       <name value="US Core Medication Compliance Extension"/>
       <description value="A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/coded-oral-axid-with-compliance"/>
-      </reference>
-      <name value="MedicationRequest Coded Oral Axid with Compliance Extension Example"/>
-      <description value="This example demonstrates medication adherence for a prescribed medication example using an extension on the MedicationRequest. The extension value uses SNOMED CT."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
-      <groupingId value="Medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/self-tylenol-with-compliance"/>
-      </reference>
-      <name value="MedicationRequest Self Tylenol with Compliance Extension Example"/>
-      <description value="This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
-      <groupingId value="Medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/us-core-medicationstatement"/>
-      </reference>
-      <name value="US Core MedicationStatement"/>
-      <description value="Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.&#xA;This profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation."/>
       <exampleBoolean value="false"/>
       <groupingId value="Medication"/>
     </resource>
@@ -1091,27 +1111,27 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationStatement"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="MedicationStatement/coded-oral-axid-with-compliance"/>
+        <reference value="StructureDefinition/us-core-medicationstatement"/>
       </reference>
-      <name value="MedicationStatement Coded Oral Axid with Adherence Extension Example"/>
-      <description value="This example demonstrates medication adherence for a prescribed medication example using an R5 element extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes."/>
-      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"/>
+      <name value="US Core MedicationStatement"/>
+      <description value="Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.&#xA;This profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation."/>
+      <exampleBoolean value="false"/>
       <groupingId value="Medication"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationStatement"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="MedicationStatement/self-tylenol-with-compliance"/>
+        <reference value="StructureDefinition/us-core-specimen"/>
       </reference>
-      <name value="MedicationStatement Self Tylenol with Compliance Extension Example"/>
-      <description value="This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses MedicationStatement Adherence Codes."/>
-      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement"/>
-      <groupingId value="Medication"/>
+      <name value="US Core Specimen Profile"/>
+      <description value="This profile sets minimum expectations for the Specimen resource to record, search, and fetch &quot;substances being sampled or tested. (e.g., nasopharyngeal swab, whole blood, serum, urine, wound swab)&quot; associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Labs"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

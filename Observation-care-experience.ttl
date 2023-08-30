@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi4-sandbox/Observation/care-experience> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "care-experience"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference"^^xsd:anyURI ;
+       fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"care-experience\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;care-experience&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-care-experience-preference.html\">US Core Care Experience Preference Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Care Experience Preference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ADIPreferenceCategoryCS#care-experience-preference &quot;Care experience preference&quot;)</span></p><p><b>code</b>: Likes and Joys <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#81360-0 &quot;My likes and joys [Reported]&quot;)</span></p><p><b>subject</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-30</p><p><b>value</b>: Here are some examples of the things that I would like to have near me, music that I’d like to hear, and other details of my care that would help to keep me happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the Fields</p><p><b>derivedFrom</b>: <span>: 'Patient's hand written document  (e.g., letter, note) techcnically a DocumentReference of an image of the document'</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/pacio-adi/CodeSystem/ADIPreferenceCategoryCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "care-experience-preference" ] ;
+       fhir:display [ fhir:v "Care experience preference" ]
+     ] ) ;
+     fhir:text [ fhir:v "Care Experience Preference" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:81360-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "81360-0" ] ;
+       fhir:display [ fhir:v "My likes and joys [Reported]" ]
+     ] ) ;
+     fhir:text [ fhir:v "Likes and Joys" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://www.hl7.org/fhir/us/core/Patient/example> ;
+     fhir:reference [ fhir:v "http://www.hl7.org/fhir/us/core/Patient/example" ] ;
+     fhir:display [ fhir:v "Amy Shaw" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-08-30"^^xsd:date] ; # 
+  fhir:value [ fhir:v "Here are some examples of the things that I would like to have near me, music that I’d like to hear, and other details of my care that would help to keep me happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the Fields"] ; # 
+  fhir:derivedFrom ( [
+     fhir:display [ fhir:v "'Patient's hand written document  (e.g., letter, note) techcnically a DocumentReference of an image of the document'" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

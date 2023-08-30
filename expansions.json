@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "215d33c2-b848-481f-bd24-f237af748c15",
+  "id" : "b890f69f-9126-457b-ba25-ccf3626a4261",
   "meta" : {
-    "lastUpdated" : "2023-08-17T18:57:34.717+00:00"
+    "lastUpdated" : "2023-08-30T17:29:48.048+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,7 +11,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html\">Medication  status  codes v4.0.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-CodeSystem-medication-statement-status-active\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-active\">active</a></td><td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td><td>Active</td><td><div><p>The medication is still being taken.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-CodeSystem-medication-statement-status-completed\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-completed\">completed</a></td><td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td><td>Completed</td><td><div><p>The medication is no longer being taken.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-CodeSystem-medication-statement-status-entered-in-error\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-entered-in-error\">entered-in-error</a></td><td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td><td>Entered in Error</td><td><div><p>Some of the actions that are implied by the medication statement may have occurred.  For example, the patient may have taken some of the medication.  Clinical decision support systems should take this status into account.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-CodeSystem-medication-statement-status-intended\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-intended\">intended</a></td><td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td><td>Intended</td><td><div><p>The medication may be taken at some time in the future.</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html\">codesystem Medication  status  codes v4.0.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-CodeSystem-medication-statement-status-active\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-active\">active</a></td><td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td><td>Active</td><td><div><p>The medication is still being taken.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-CodeSystem-medication-statement-status-completed\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-completed\">completed</a></td><td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td><td>Completed</td><td><div><p>The medication is no longer being taken.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-CodeSystem-medication-statement-status-entered-in-error\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-entered-in-error\">entered-in-error</a></td><td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td><td>Entered in Error</td><td><div><p>Some of the actions that are implied by the medication statement may have occurred.  For example, the patient may have taken some of the medication.  Clinical decision support systems should take this status into account.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-CodeSystem-medication-statement-status-intended\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-intended\">intended</a></td><td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td><td>Intended</td><td><div><p>The medication may be taken at some time in the future.</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status",
       "version" : "0.0.0",
@@ -28,15 +28,15 @@
       }],
       "immutable" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:48f8ee4c-27e0-42e8-b0cc-6569a3bc5ebc",
-        "timestamp" : "2023-08-17T18:58:52+00:00",
+        "identifier" : "urn:uuid:61ce19b4-0f91-4735-a91d-464c7fde8537",
+        "timestamp" : "2023-08-30T17:31:15+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
-          "name" : "version",
+          "name" : "used-codesystem",
           "valueUri" : "http://hl7.org/fhir/CodeSystem/medication-statement-status|4.0.1"
         }],
         "contains" : [{

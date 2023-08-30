@@ -1,0 +1,37 @@
+{
+  "resourceType" : "Observation",
+  "id" : "care-experience",
+  "meta" : {
+    "profile" : ["http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"care-experience\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;care-experience&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-care-experience-preference.html\">US Core Care Experience Preference Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Care Experience Preference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ADIPreferenceCategoryCS#care-experience-preference &quot;Care experience preference&quot;)</span></p><p><b>code</b>: Likes and Joys <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#81360-0 &quot;My likes and joys [Reported]&quot;)</span></p><p><b>subject</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-30</p><p><b>value</b>: Here are some examples of the things that I would like to have near me, music that I’d like to hear, and other details of my care that would help to keep me happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the Fields</p><p><b>derivedFrom</b>: <span>: 'Patient's hand written document  (e.g., letter, note) techcnically a DocumentReference of an image of the document'</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/us/pacio-adi/CodeSystem/ADIPreferenceCategoryCS",
+      "code" : "care-experience-preference",
+      "display" : "Care experience preference"
+    }],
+    "text" : "Care Experience Preference"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "81360-0",
+      "display" : "My likes and joys [Reported]"
+    }],
+    "text" : "Likes and Joys"
+  },
+  "subject" : {
+    "reference" : "http://www.hl7.org/fhir/us/core/Patient/example",
+    "display" : "Amy Shaw"
+  },
+  "effectiveDateTime" : "2023-08-30",
+  "valueString" : "Here are some examples of the things that I would like to have near me, music that I’d like to hear, and other details of my care that would help to keep me happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the Fields",
+  "derivedFrom" : [{
+    "display" : "'Patient's hand written document  (e.g., letter, note) techcnically a DocumentReference of an image of the document'"
+  }]
+}
