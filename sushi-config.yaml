@@ -124,6 +124,14 @@ groups:
       - MedicationStatement/coded-oral-axid-with-compliance
       - MedicationStatement/self-tylenol-with-compliance
 
+  Preferences:
+    name: Goals and Preferences
+    description: Goals and Preferences Profiles and Examples
+    resources:
+      - StructureDefinition/us-core-care-experience-preference
+      - Observation/care-experience
+
+
 pages:
   index.md:
     title: Home

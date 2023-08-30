@@ -3,8 +3,8 @@ id: care-experience
 meta:
   profile:
     -
-      #http://hl7.org/fhir/us/core/StructureDefinition/care-experience-preference
-      http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference
+      #http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference
+      http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference
 # text:
 #   status: additional
 #   div: >-
@@ -16,7 +16,7 @@ meta:
 status: final
 category:
   - coding:
-      - system: 'http://hl7.org/fhir/us/pacio-adi/CodeSystem/ADIPreferenceCategoryCS'
+      - system: 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category'
         code: care-experience-preference
         display: Care experience preference
     text: Care Experience Preference
@@ -36,5 +36,7 @@ valueString: >-
   happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the
   Fields
 derivedFrom:
-  display: >-
-   'Patient's hand written document  (e.g., letter, note) techcnically a DocumentReference of an image of the document'
+  - display: >-
+      Patient's hand written document  (e.g., letter, note) technically a DocumentReference of an image of the document
+    reference: http://example.org/fhir/DocumentReference/source_document
+

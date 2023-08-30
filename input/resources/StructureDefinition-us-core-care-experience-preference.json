@@ -1,7 +1,7 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "care-experience-preference",
-    "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference",
+    "id": "us-core-care-experience-preference",
+    "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference",
     "version": "3.2.0",
     "name": "USCoreCareExperiencePreferenceProfile",
     "title": "US Core Care Experience Preference Profile",
