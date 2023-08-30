@@ -1,0 +1,40 @@
+resourceType: Observation
+id: care-experience
+meta:
+  profile:
+    -
+      #http://hl7.org/fhir/us/core/StructureDefinition/care-experience-preference
+      http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/care-experience-preference
+# text:
+#   status: additional
+#   div: >-
+#     <div xmlns="http://www.w3.org/1999/xhtml"><p><b>My likes / joys:</b> Here
+#     are some examples of the things that I would like to have near me, music
+#     that I’d like to hear, and other details of my care that would help to keep
+#     me happy and relaxed:</p><p><i>Like Bach, especially the cantatas. St.
+#     Martin in the Fields</i></p></div>
+status: final
+category:
+  - coding:
+      - system: 'http://hl7.org/fhir/us/pacio-adi/CodeSystem/ADIPreferenceCategoryCS'
+        code: care-experience-preference
+        display: Care experience preference
+    text: Care Experience Preference
+code:
+  coding:
+    - system: 'http://loinc.org'
+      code: 81360-0
+      display: 'My likes and joys [Reported]'
+  text: Likes and Joys
+subject:
+  display: Amy Shaw
+  reference: http://www.hl7.org/fhir/us/core/Patient/example
+effectiveDateTime: '2023-08-30'
+valueString: >-
+  Here are some examples of the things that I would like to have near me, music
+  that I’d like to hear, and other details of my care that would help to keep me
+  happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the
+  Fields
+derivedFrom:
+  display: >-
+   'Patient's hand written document  (e.g., letter, note) techcnically a DocumentReference of an image of the document'
