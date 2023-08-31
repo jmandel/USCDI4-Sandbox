@@ -767,7 +767,7 @@
         "valueBoolean" : true
       }],
       "path" : "Observation.code",
-      "short" : "(USCDI) Care Experience Preferences Codes (extensible)",
+      "short" : "(USCDI) Care experience preferences code",
       "definition" : "Describes what was observed. Sometimes this is called the observation \"name\".",
       "comment" : "*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.",
       "requirements" : "Knowing what kind of observation is being made is essential to understanding the observation.",
@@ -795,7 +795,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.11"
+        "valueSet" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2516,14 +2516,14 @@
         "valueBoolean" : true
       }],
       "path" : "Observation.code",
-      "short" : "(USCDI) Care Experience Preferences Codes (extensible)",
+      "short" : "(USCDI) Care experience preferences code",
       "type" : [{
         "code" : "CodeableConcept"
       }],
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.11"
+        "valueSet" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"
       }
     },
     {

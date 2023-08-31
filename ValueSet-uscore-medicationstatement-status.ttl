@@ -58,7 +58,6 @@
        fhir:code [ fhir:v "US" ]
      ] )
   ] ) ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "http://hl7.org/fhir/CodeSystem/medication-statement-status"^^xsd:anyURI ]

@@ -46,7 +46,6 @@
       "code" : "US"
     }]
   }],
-  "immutable" : true,
   "compose" : {
     "include" : [{
       "system" : "http://hl7.org/fhir/CodeSystem/medication-statement-status"

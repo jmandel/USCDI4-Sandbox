@@ -827,7 +827,7 @@
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Observation.code" ] ;
-       fhir:short [ fhir:v "(USCDI) Care Experience Preferences Codes (extensible)" ] ;
+       fhir:short [ fhir:v "(USCDI) Care experience preferences code" ] ;
        fhir:definition [ fhir:v "Describes what was observed. Sometimes this is called the observation \"name\"." ] ;
        fhir:comment [ fhir:v "*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation." ] ;
        fhir:requirements [ fhir:v "Knowing what kind of observation is being made is essential to understanding the observation." ] ;
@@ -859,8 +859,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.11"^^xsd:anyURI ;
-           fhir:link <http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.11>
+           fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"^^xsd:anyURI ;
+           fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference>
          ]
        ] ;
        fhir:mapping ( [
@@ -2622,7 +2622,7 @@
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Observation.code" ] ;
-       fhir:short [ fhir:v "(USCDI) Care Experience Preferences Codes (extensible)" ] ;
+       fhir:short [ fhir:v "(USCDI) Care experience preferences code" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
@@ -2630,8 +2630,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.11"^^xsd:anyURI ;
-           fhir:link <http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.11>
+           fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"^^xsd:anyURI ;
+           fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference>
          ]
        ]
      ] [

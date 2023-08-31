@@ -67,8 +67,8 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab",
-        "title": "US Core Laboratory Result Observation Profile"
+        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference",
+        "title": "US Core Treatment Intervention Preference Profile"
       }
     ],
     "Location": [
@@ -158,6 +158,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "CodeSystem",
       "ImplementationGuide",
       "StructureDefinition",
       "ValueSet"
@@ -166,6 +167,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "CodeSystem",
       "ImplementationGuide",
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",

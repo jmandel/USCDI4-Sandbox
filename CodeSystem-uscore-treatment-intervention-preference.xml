@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="uscore-treatment-intervention-preference"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference"/>
+  <version value="0.0.0"/>
+  <name value="USCoreTreatmentInterventionPreferenceCodeSystem"/>
+  <title value="US Core Treatment Intervention Preference CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-08-31T01:42:33.501000+00:00"/>
+  <publisher value="Health eData Inc"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:ehaas@healthedatainc.com"/>
+    </telecom>
+  </contact>
+  <description value="A code representing an individual's medical intervention (treatment) preferences."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="intervention-preference"/>
+    <display value="Intervention Preference"/>
+    <definition value="A personal preference for a type of medical intervention (treatment) request under certain conditions."/>
+  </concept>
+</CodeSystem>

@@ -21,6 +21,13 @@
     "name" : "ExerciseVitalSign"
   },
   {
+    "id" : "uscore-treatment-intervention-preference",
+    "type" : "CodeSystem",
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference",
+    "version" : "0.0.0",
+    "name" : "USCoreTreatmentInterventionPreferenceCodeSystem"
+  },
+  {
     "id" : "uscdi4-sandbox",
     "type" : "ImplementationGuide",
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox",
@@ -77,10 +84,31 @@
     "name" : "USCoreSpecimenProfile"
   },
   {
+    "id" : "us-core-treatment-intervention-preference",
+    "type" : "StructureDefinition",
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference",
+    "version" : "0.0.0",
+    "name" : "USCoreTreatmentInterventionPreferenceProfile"
+  },
+  {
+    "id" : "uscore-care-experience-preference",
+    "type" : "ValueSet",
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference",
+    "version" : "0.0.0",
+    "name" : "USCoreCareExperiencePreference"
+  },
+  {
     "id" : "uscore-medicationstatement-status",
     "type" : "ValueSet",
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status",
     "version" : "0.0.0",
     "name" : "USCoreMedicationstatementStatus"
+  },
+  {
+    "id" : "uscore-treatment-intervention-preference",
+    "type" : "ValueSet",
+    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-treatment-intervention-preference",
+    "version" : "0.0.0",
+    "name" : "USCoreTreatmentInterventionPreferencValueSet"
   }
 ]

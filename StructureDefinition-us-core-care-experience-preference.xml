@@ -732,7 +732,7 @@
         <valueBoolean value="true"/>
       </extension>
       <path value="Observation.code"/>
-      <short value="(USCDI) Care Experience Preferences Codes (extensible)"/>
+      <short value="(USCDI) Care experience preferences code"/>
       <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;."/>
       <comment value="*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation."/>
       <requirements value="Knowing what kind of observation is being made is essential to understanding the observation."/>
@@ -760,7 +760,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.11"/>
+        <valueSet value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -2397,14 +2397,14 @@
         <valueBoolean value="true"/>
       </extension>
       <path value="Observation.code"/>
-      <short value="(USCDI) Care Experience Preferences Codes (extensible)"/>
+      <short value="(USCDI) Care experience preferences code"/>
       <type>
         <code value="CodeableConcept"/>
       </type>
       <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.11"/>
+        <valueSet value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"/>
       </binding>
     </element>
     <element id="Observation.derivedFrom">
