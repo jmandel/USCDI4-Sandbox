@@ -1,0 +1,21 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "uscore-treatment-intervention-preference",
+    "url": "http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference",
+    "name": "USCoreTreatmentInterventionPreferenceCodeSystem",
+    "title": "US Core Treatment Intervention Preference CodeSystem",
+    "status": "active",
+    "experimental": false,
+    "date": "2023-08-31T01:42:33.501000+00:00",
+    "description": "A code representing an individual's medical intervention (treatment) preferences.",
+    "copyright": "Used by permission of HL7 International, all rights reserved Creative Commons License",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "intervention-preference",
+            "display": "Intervention Preference",
+            "definition": "A personal preference for a type of medical intervention (treatment) request under certain conditions."
+        }
+    ]
+}

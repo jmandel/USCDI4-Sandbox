@@ -1,0 +1,30 @@
+resourceType: ValueSet
+id: uscore-care-experience-preference
+
+# url: 'http://hl7.org/fhir/ValueSet/uscore-medicationstatement-status'
+url: 'http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference'  
+
+
+
+
+version: 4.0.1
+name: USCoreCareExperiencePreference
+title: US Core Care Experience Preference Codes
+status: draft
+experimental: false
+date: '2023-08-15'
+
+description: >-
+  A code representing an individual's care experience preferences.
+compose: # only 95541-9	Care experience preference" from the PACIO ValueSet
+  include:
+    - system: 'http://loinc.org'
+      concept:
+        -
+          code: 95541-9
+          display: Care experience preference
+
+
+
+
+

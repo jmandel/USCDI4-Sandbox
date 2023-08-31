@@ -1,0 +1,19 @@
+{
+    "resourceType": "ValueSet",
+    "id": "uscore-treatment-intervention-preference",
+    "url": "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-treatment-intervention-preference",
+    "version": "4.0.1",
+    "name": "USCoreTreatmentInterventionPreferencValueSet",
+    "title": "US Core Treatment Intervention Preference ValueSet",
+    "status": "draft",
+    "experimental": false,
+    "date": "2023-08-15",
+    "description": "A code representing an individual's medical intervention (treatment) preferences.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference"
+            }
+        ]
+    }
+}

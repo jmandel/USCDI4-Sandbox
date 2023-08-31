@@ -9,7 +9,6 @@
     "experimental": false,
     "date": "2023-08-15",
     "description": "A code specifying the state of the statement.  Generally, this will be active or completed state.  This value set excludes the concept used internally by the FHIR specification, not-taken,on-hold,stopped, and unknown, because they are covered by the medication adherence extension.",
-    "immutable": true,
     "compose": {
         "include": [
             {

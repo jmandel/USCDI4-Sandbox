@@ -129,7 +129,12 @@ groups:
     description: Goals and Preferences Profiles and Examples
     resources:
       - StructureDefinition/us-core-care-experience-preference
-      - Observation/care-experience
+      - ValueSet/uscore-care-experience-preference
+      - Observation/care-experience-preference
+      - StructureDefinition/us-core-treatment-intervention-preference
+      - ValueSet/uscore-treatment-intervention-preference
+      - CodeSystem/uscore-treatment-intervention-preference
+      - Observation/intervention-preference
 
 
 pages:

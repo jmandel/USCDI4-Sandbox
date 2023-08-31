@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "care-experience",
+    "id": "care-experience-preference",
     "meta": {
         "profile": [
             "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference"
@@ -8,11 +8,11 @@
         "extension": [
             {
                 "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
-                "valueString": "Care Experience Example"
+                "valueString": "Care Experience Preference Example"
             },
             {
                 "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
-                "valueMarkdown": "This is an care experience example for the *Care Experience Profile*.  It is based on the *US Core Simple Observation Profile*."
+                "valueMarkdown": "This is an care experience preference example for the *Care Experience Profile*.  It is based on the *US Core Simple Observation Profile*."
             }
         ]
     },
@@ -47,7 +47,7 @@
     "valueString": "Here are some examples of the things that I would like to have near me, music that I\u2019d like to hear, and other details of my care that would help to keep me happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the Fields",
     "derivedFrom": [
         {
-            "display": "Patient's hand written document  (e.g., letter, note) technically a DocumentReference of an image of the document",
+            "display": "Patient's hand written document (e.g., letter, note) or form technically a DocumentReference of an image of the document",
             "reference": "http://example.org/fhir/DocumentReference/source_document"
         }
     ]

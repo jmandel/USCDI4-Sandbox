@@ -1,5 +1,5 @@
 resourceType: Observation
-id: care-experience
+id: care-experience-preference
 meta:
   profile:
     -
@@ -7,17 +7,17 @@ meta:
       http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference
   extension:
   - url: http://hl7.org/fhir/StructureDefinition/instance-name
-    valueString: Care Experience Example
+    valueString: Care Experience Preference Example
   - url: http://hl7.org/fhir/StructureDefinition/instance-description
-    valueMarkdown: 'This is an care experience example for the *Care Experience Profile*.  It is based on the *US Core Simple Observation Profile*.
-
+    valueMarkdown: >-
+      This is an care experience preference example for the *Care Experience Profile*.  It is based on the *US Core Simple Observation Profile*.
 
 # text:
 #   status: additional
 #   div: >-
 #     <div xmlns="http://www.w3.org/1999/xhtml"><p><b>My likes / joys:</b> Here
 #     are some examples of the things that I would like to have near me, music
-#     that I’d like to hear, and other details of my care that would help to keep
+#     that I'd like to hear, and other details of my care that would help to keep
 #     me happy and relaxed:</p><p><i>Like Bach, especially the cantatas. St.
 #     Martin in the Fields</i></p></div>
 status: final
@@ -30,9 +30,9 @@ category:
 code:
   coding:
     - system: 'http://loinc.org'
-      code: 81360-0
-      display: 'My likes and joys [Reported]'
-  text: Likes and Joys
+      code: 95541-9
+      display: Care experience preference
+  text: Care Experience Preference
 subject:
   display: Amy Shaw
   reference: http://www.hl7.org/fhir/us/core/Patient/example
@@ -44,6 +44,6 @@ valueString: >-
   Fields
 derivedFrom:
   - display: >-
-      Patient's hand written document  (e.g., letter, note) technically a DocumentReference of an image of the document
+      Patient's hand written document (e.g., letter, note) or form technically a DocumentReference of an image of the document
     reference: http://example.org/fhir/DocumentReference/source_document
 
