@@ -27,20 +27,8 @@ jobs:
         uses: qligier/fhir-ig-action@feature_memory_debug
         with:
           java-flags: "-Xmx4G"
-          sushi: "3.2.0"
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+          sushi: "3.2.0"     
+      - name: Deploy to GitHub Pages  # action from the GitHub Marketplace
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
-          # deploy from the output from the prior step
-          path: 'docs'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
-        
-      # - name: Deploy to GitHub Pages  # action from the GitHub Marketplace
-      #   uses: JamesIves/github-pages-deploy-action@v4.4.3
-      #   with:
-      #     folder: docs # deploy from the docs from the prior step
+          folder: docs # deploy from the docs from the prior step
