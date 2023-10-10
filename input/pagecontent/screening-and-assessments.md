@@ -122,35 +122,9 @@ API consumers may <span class="bg-success" markdown="1">query by categories</spa
 - US Core Condition Problems and Health Concerns Profile
 - US Core ServiceRequest Profile 
 
-{% assign columns = "1,2,3" | split: "," %}
-{% assign rows = "2,19,21,23,24,25,26" | split: "," %}
-
 <div class="bg-success" markdown="1">
 
-#### USCDI Health Assessments Data Elements Categories
-
-<table class="grid">
-  {% for row in site.data.assessments_valuesets %}
-    {% assign current_row = forloop.index | inspect %}
-    {% if forloop.first %}
-    <tr>
-      {% for pair in row %}
-        {% assign current_column = forloop.index | inspect %}
-        {% if columns contains current_column %}<th>{{ pair[0] }}</th>{% endif %}
-      {% endfor %}
-    </tr>
-
-    {% endif %}
-    {% if rows contains current_row %}
-    <tr>
-    {% for pair in row %}
-      {% assign current_column = forloop.index | inspect %}
-      {% if columns contains current_column %}<td>{{ pair[1] }}</td>{% endif %}
-    {% endfor %}
-    </tr>
-    {% endif %}
-  {% endfor %}
-</table>
+{% include assessment-category-table-generator.html %}
 
 </div><!-- new-content -->
 
@@ -163,47 +137,13 @@ Each profile's *Quick Start* section shows searches by category. Although not de
 
 #### Screening and Assessment Codes
 
-  The US Core Observation Screening Assessment Profile, SDC Base Questionnaire, and US Core Simple Observation Profiles have a [preferred] or [example] bindings to broadly defined LOINC value sets.  These value sets contain concepts that span many use cases and are not bound to any USCDI Health Assessments Data Element. The table below lists the domain specific value sets and for which USCDI Health Assessments Data Element they **SHOULD** be used.  Note that because the value sets listed in this table are not bound to a US Core Profile, “automatic” validation (confirmation) that a code is a member of a value set will not occur using the standard validation tools.
+  The US Core Observation Screening Assessment Profile, SDC Base Questionnaire, and US Core Simple Observation Profiles have a [preferred] or [example] bindings to broadly defined LOINC value sets.  These value sets contain concepts that span many use cases and are not bound to any USCDI Health Assessments Data Element. The table below lists the domain specific value sets from the [Value Set Authority Center (VSAC)] for which USCDI Health Assessments Data Element **SHOULD** be used.  Note that because the value sets listed in this table are not bound to a US Core Profile, “automatic” validation (confirmation) that a code is a member of a value set will not occur using the standard validation tools.
 
+##### USCDI Health Assessments Data Element ValueSets
 
-#### USCDI Health Assessments Data Element ValueSets
+{% include assessment-valueset-table-generator.html %}
 
-
-{% assign columns = "1,4,5,7" | split: "," %}
-
-<table class="grid" markdown="1">
-  {% for row in site.data.assessments_valuesets %}
-    {% if forloop.first %}
-    <tr>
-      {% for pair in row %}
-        {% assign current_column = forloop.index | inspect %}
-        {% if columns contains current_column %}
-          {% if pair[0] != "VSAC Link" %}
-            <th>{{ pair[0] }}</th>
-            {% endif %}
-        {% endif %}
-      {% endfor %}
-    </tr>
-
-    {% endif %}
-    <tr>
-    {% for pair in row %}
-      {% assign current_column = forloop.index | inspect %}
-      {% if columns contains current_column %}
-        {% if pair[0] == "ValueSet Title" %} {% assign link_name = pair[1] %}
-          {% else %}
-            {% if pair[0] == "VSAC Link" %}  <td><a href="{{ pair[1] }}">{{link_name}}</a></td>
-              {% else %}
-              <td>{{ pair[1] }}</td>
-            {% endif %}
-          {% endif %}
-      {% endif %}
-    {% endfor %}
-    </tr>
-  {% endfor %}
-</table>
-
-
+This information is also available as a [csv](assessments-valeusets.csv) or [excel](assessments-valeusets.xlsx) file:
 
 </div><!-- new-content -->
 

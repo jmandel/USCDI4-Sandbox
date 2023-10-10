@@ -1,0 +1,70 @@
+{% assign columns = "1,2,3" | split: "," %}
+{% assign rows = "2,19,21,23,24,25,26" | split: "," %}
+
+<div class="bg-success" markdown="1">
+
+#### USCDI Health Assessments Data Elements Categories
+
+<table class="grid">
+  {% for row in site.data.assessments_valuesets %}
+    {% assign current_row = forloop.index | inspect %}
+    {% if forloop.first %}
+    <tr>
+      {% for pair in row %}
+        {% assign current_column = forloop.index | inspect %}
+        {% if columns contains current_column %}<th>{{ pair[0] }}</th>{% endif %}
+      {% endfor %}
+    </tr>
+
+    {% endif %}
+    {% if rows contains current_row %}
+    <tr>
+    {% for pair in row %}
+      {% assign current_column = forloop.index | inspect %}
+      {% if columns contains current_column %}<td>{{ pair[1] }}</td>{% endif %}
+    {% endfor %}
+    </tr>
+    {% endif %}
+  {% endfor %}
+</table>
+
+</div><!-- new-content -->
+
+
+{% assign columns = "1,4,5,7" | split: "," %}
+
+<table class="grid" markdown="1">
+  {% for row in site.data.assessments_valuesets %}
+  {% if forloop.first %}
+  <tr>
+    {% for pair in row %}
+    {% assign current_column = forloop.index | inspect %}
+    {% if columns contains current_column %}
+    {% if pair[0] != "VSAC Link" %}
+    <th>{{ pair[0] }}</th>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </tr>
+
+  {% endif %}
+  <tr>
+    {% for pair in row %}
+    {% assign current_column = forloop.index | inspect %}
+    {% if columns contains current_column %}
+    {% if pair[0] == "ValueSet Title" %} {% assign link_name = pair[1] %}
+    {% else %}
+    {% if pair[0] == "VSAC Link" %} <td><a href="{{ pair[1] }}">{{link_name}}</a></td>
+    {% else %}
+    <td>{{ pair[1] }}</td>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+
+
+
+</div><!-- new-content -->
