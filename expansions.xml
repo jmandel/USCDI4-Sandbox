@@ -1,11 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4be50165-413c-4455-9c14-f2d8dccd88ae"/>
+  <id value="82efd93c-7cbf-4253-8bb9-63be482844ce"/>
   <meta>
-    <lastUpdated value="2023-09-01T01:14:43.445+00:00"/>
+    <lastUpdated value="2023-10-10T17:14:38.554+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>Loinc v2.74</li>
+                <li>Loinc v2.74</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-95541-9"> </a>  
+                  <a href="https://loinc.org/95541-9/">95541-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Care experience preference</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"/>
+        <version value="0.0.0"/>
+        <name value="USCoreCareExperiencePreference"/>
+        <title value="US Core Care Experience Preference Codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-08-15"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:35da960b-ab9a-4b66-a24c-6267a3f622ab"/>
+          <timestamp value="2023-10-10T17:15:51+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95541-9"/>
+            <display value="Care experience preference"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status"/>
     <resource>
@@ -105,8 +189,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bc2fe63b-7ada-4387-8352-2f7a3a7a03e1"/>
-          <timestamp value="2023-09-01T01:16:14+00:00"/>
+          <identifier value="urn:uuid:97bcb587-dc5e-4649-bd96-049275f1cb0b"/>
+          <timestamp value="2023-10-10T17:15:51+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -135,167 +219,6 @@
             <system value="http://hl7.org/fhir/CodeSystem/medication-statement-status"/>
             <code value="intended"/>
             <display value="Intended"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-treatment-intervention-preference"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-uscore-treatment-intervention-preference.html">codesystem US Core Treatment Intervention Preference CodeSystem v0.0.0 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-uscdi4-sandbox-CodeSystem-uscore-treatment-intervention-preference-intervention-preference"> </a>  
-                  <a href="CodeSystem-uscore-treatment-intervention-preference.html#uscore-treatment-intervention-preference-intervention-preference">intervention-preference</a>
-                </td>
-                <td>http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference</td>
-                <td>Intervention Preference</td>
-                <td>
-                  <div>
-                    <p>A personal preference for a type of medical intervention (treatment) request under certain conditions.</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-treatment-intervention-preference"/>
-        <version value="0.0.0"/>
-        <name value="USCoreTreatmentInterventionPreferencValueSet"/>
-        <title value="US Core Treatment Intervention Preference ValueSet"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2023-08-15"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:c6852447-d1d1-4dc1-82c9-a2e2a50610c1"/>
-          <timestamp value="2023-09-01T01:16:18+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference|0.0.0"/>
-          </parameter>
-          <contains>
-            <system value="http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference"/>
-            <code value="intervention-preference"/>
-            <display value="Intervention Preference"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>Loinc v2.74</li>
-                <li>Loinc v2.74</li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-95541-9"> </a>  
-                  <a href="https://loinc.org/95541-9/">95541-9</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Care experience preference</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"/>
-        <version value="0.0.0"/>
-        <name value="USCoreCareExperiencePreference"/>
-        <title value="US Core Care Experience Preference Codes"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2023-08-15"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:8e5723d2-f6aa-43ac-833d-7ab707b7e3a3"/>
-          <timestamp value="2023-09-01T01:16:18+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.74"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.74"/>
-          </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="95541-9"/>
-            <display value="Care experience preference"/>
           </contains>
         </expansion>
       </ValueSet>

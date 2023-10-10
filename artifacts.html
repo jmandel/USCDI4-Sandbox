@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>USCDI4-SANDBOX\Artifacts Summary - FHIR v4.0.1</title>
+    <title>Artifacts Summary - HealtheData1 USCDI4 Sandbox v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -85,6 +85,9 @@
   </li>
   <li>
     <a href="guidance.html">General Guidance</a>
+  </li>
+  <li>
+    <a href="screening-and-assessments.html">Screening and Assessments</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
@@ -142,28 +145,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Average Blood Pressure</a>
+         <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Physical Activity</a>
+         <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Alcohol Use</a>
+         <a href="#3">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#4">Substance Use</a>
+         <a href="#4">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#5">Laboratory</a>
-      </li>
-      <li>
-         <a href="#6">Facility Information</a>
-      </li>
-      <li>
-         <a href="#7">Medication</a>
-      </li>
-      <li>
-         <a href="#8">Goals and Preferences</a>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -172,9 +166,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Average Blood Pressure </h3>
+   <h3>Structures: Resource Profiles </h3>
    <p>
-    <p>Average Blood Pressure Profile and Examples</p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -186,25 +180,80 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/us-core-average-blood-pressure">US Core Average Blood Pressure Profile</a>
                </td>
                <td>
-<p>To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which <em>additional</em> core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases.</p>
+<p>To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which <em>additional</em> core elements, extensions, vocabularies, and value sets  <strong>SHALL</strong> be present and constrains the way the elements are used when using the profile.  It provides the floor for standards development for specific use cases.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-average-blood-pressure.html"
-                     title="Observation/average-blood-pressure">Average Blood Pressure Example</a>
+                  <a href="StructureDefinition-us-core-care-experience-preference.html"
+                     title="StructureDefinition/us-core-care-experience-preference">US Core Care Experience Preference Profile</a>
                </td>
                <td>
-<p>This is an average blood pressure example for the <em>Vitalsigns Profile</em>.  It is based on the <a href="http://hl7.org/fhir/us/vitals/STU1/">Vital Signs with Qualifying Elements</a> <a href="http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure">Average Blood Pressure Profile</a>.</p>
+<p>To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch for a patient’s care experience preferences. It is based on the US Core Simple Profile and identifies which <em>additional</em> core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-us-core-observation-lab.html"
+                     title="StructureDefinition/us-core-observation-lab">US Core Laboratory Result Observation Profile</a>
+               </td>
+               <td>
+<p>The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-us-core-location.html"
+                     title="StructureDefinition/us-core-location">US Core Location Profile</a>
+               </td>
+               <td>
+<p>This profile sets minimum expectations for the Location resource for recording, searching, and fetching a “physical place of available services or resources.”  It identifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used when using the profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-us-core-medicationstatement.html"
+                     title="StructureDefinition/us-core-medicationstatement">US Core MedicationStatement</a>
+               </td>
+               <td>
+<p>Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.
+This profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-us-core-patient.html"
+                     title="StructureDefinition/us-core-patient">US Core Patient Profile</a>
+               </td>
+               <td>
+<p>The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 ‘Patient Demographics’ requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-us-core-specimen.html"
+                     title="StructureDefinition/us-core-specimen">US Core Specimen Profile</a>
+               </td>
+               <td>
+<p>This profile sets minimum expectations for the Specimen resource to record, search, and fetch “substances being sampled or tested. (e.g., nasopharyngeal swab, whole blood, serum, urine, wound swab)” associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-us-core-treatment-intervention-preference.html"
+                     title="StructureDefinition/us-core-treatment-intervention-preference">US Core Treatment Intervention Preference Profile</a>
+               </td>
+               <td>
+<p>To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch for a patient’s treatment intervention preferences. It is based on the US Core Simple Profile and identifies which <em>additional</em> core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases.</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="2"> </a>
-   <h3>Physical Activity </h3>
+   <h3>Structures: Extension Definitions </h3>
    <p>
-    <p>Physical Activity Health Status Assessment Examples</p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -212,79 +261,102 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-EVS-item-example-68516-4.html"
-                     title="Observation/EVS-item-example-68516-4">Evs Item Example 68516-4</a>
+                  <a href="StructureDefinition-us-core-medication-adherence.html"
+                     title="StructureDefinition/us-core-medication-adherence">US Core Medication Adherence Extension</a>
                </td>
                <td>
-<p>This is a Evs Item Example 68516-4 (On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise?) for the <em>US Core Observation Screening Assessment Profile</em></p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-EVS-item-example-89555-7.html"
-                     title="Observation/EVS-item-example-89555-7">Evs Item Example 89555-7</a>
-               </td>
-               <td>
-<p>This is a Evs Item Example 89555-7 (How many D per W did you engage in moderate to strenuous physical activity in the last 30D) for the <em>US Core Observation Screening Assessment Profile</em></p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-EVS-panel-example-89574-8.html"
-                     title="Observation/EVS-panel-example-89574-8">Evs Panel Example 89574-8</a>
-               </td>
-               <td>
-<p>This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for the <em>US Core Observation Screening Assessment Profile</em></p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-exercise-per-day.html"
-                     title="Observation/exercise-per-day">Exercise Per Day Example</a>
-               </td>
-               <td>
-<p>This is an minutes exercise per day example for the <em>Simple Observation Profile</em>.  It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Simple Observations.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-exercise-per-week.html"
-                     title="Observation/exercise-per-week">Exercise Per Week Example</a>
-               </td>
-               <td>
-<p>This is a days exercise per week example for the <em>Simple Observation Profile</em>.  It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Simple Observations.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Questionnaire-exercise-vital-sign.html"
-                     title="Questionnaire/exercise-vital-sign">Exercise Vital Sign Questionnaire Example</a>
-               </td>
-               <td>
-<p>This is the <a href="https://loinc.org/lhc-forms/">LHC Form</a> Exercise Vital Sign (EVS) Questionnaire Example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-exercise-vital-sign.html"
-                     title="QuestionnaireResponse/exercise-vital-sign">Exercise Vital Sign QuestionnaireResponse Example</a>
-               </td>
-               <td>
-<p>This is the <a href="https://loinc.org/lhc-forms/">LHC Form</a> Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
+<p>A MedicationRequest extension representing whether the medication is or is not being consumed or administered.</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="3"> </a>
-   <h3>Alcohol Use </h3>
+   <h3>Terminology: Value Sets </h3>
    <p>
-    <p>Alcohol Use Health Status Assessment Examples</p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-uscore-care-experience-preference.html"
+                     title="ValueSet/uscore-care-experience-preference">US Core Care Experience Preference Codes</a>
+               </td>
+               <td>
+<p>A code representing an individual’s care experience preferences.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-uscore-medicationstatement-status.html"
+                     title="ValueSet/uscore-medicationstatement-status">US Core Medication Status Codes</a>
+               </td>
+               <td>
+<p>A code specifying the state of the statement.  Generally, this will be active or completed state.  This value set excludes the concept used internally by the FHIR specification, not-taken,on-hold,stopped, and unknown, because they are covered by the medication adherence extension.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-uscore-treatment-intervention-preference.html"
+                     title="ValueSet/uscore-treatment-intervention-preference">US Core Treatment Intervention Preference ValueSet</a>
+               </td>
+               <td>
+<p>A code representing an individual’s medical intervention (treatment) preferences.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-uscore-treatment-intervention-preference.html"
+                     title="CodeSystem/uscore-treatment-intervention-preference">US Core Treatment Intervention Preference CodeSystem</a>
+               </td>
+               <td>
+<p>A code representing an individual’s medical intervention (treatment) preferences.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-AUDIT-C.html" title="Questionnaire/AUDIT-C">Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] Questionnaire Example</a>
+               </td>
+               <td>
+<p>Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] questionnaire example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-AUDIT-C.html"
+                     title="QuestionnaireResponse/AUDIT-C">Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse Example</a>
+               </td>
+               <td>
+<p>This is the <a href="https://loinc.org/lhc-forms/">LHC Form</a> Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-alcohol-use-status.html"
@@ -350,33 +422,173 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Questionnaire-AUDIT-C.html" title="Questionnaire/AUDIT-C">Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] Questionnaire Example</a>
+                  <a href="Observation-average-blood-pressure.html"
+                     title="Observation/average-blood-pressure">Average Blood Pressure Example</a>
                </td>
                <td>
-<p>Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] questionnaire example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
+<p>This is an average blood pressure example for the <em>Vitalsigns Profile</em>.  It is based on the <a href="http://hl7.org/fhir/us/vitals/STU1/">Vital Signs with Qualifying Elements</a> <a href="http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure">Average Blood Pressure Profile</a>.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-AUDIT-C.html"
-                     title="QuestionnaireResponse/AUDIT-C">Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse Example</a>
+                  <a href="Observation-care-experience-preference.html"
+                     title="Observation/care-experience-preference">Care Experience Preference Example</a>
                </td>
                <td>
-<p>This is the <a href="https://loinc.org/lhc-forms/">LHC Form</a> Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
+<p>This is an care experience preference example for the <em>Care Experience Profile</em>.  It is based on the <em>US Core Simple Observation Profile</em>.</p>
 </td>
             </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="4"> </a>
-   <h3>Substance Use </h3>
-   <p>
-    <p>Substance Use Health Status Assessment Examples</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EVS-item-example-68516-4.html"
+                     title="Observation/EVS-item-example-68516-4">Evs Item Example 68516-4</a>
+               </td>
+               <td>
+<p>This is a Evs Item Example 68516-4 (On those days that you engage in moderate to strenuous exercise, how many minutes, on average, do you exercise?) for the <em>US Core Observation Screening Assessment Profile</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EVS-item-example-89555-7.html"
+                     title="Observation/EVS-item-example-89555-7">Evs Item Example 89555-7</a>
+               </td>
+               <td>
+<p>This is a Evs Item Example 89555-7 (How many D per W did you engage in moderate to strenuous physical activity in the last 30D) for the <em>US Core Observation Screening Assessment Profile</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EVS-panel-example-89574-8.html"
+                     title="Observation/EVS-panel-example-89574-8">Evs Panel Example 89574-8</a>
+               </td>
+               <td>
+<p>This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for the <em>US Core Observation Screening Assessment Profile</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-exercise-per-day.html"
+                     title="Observation/exercise-per-day">Exercise Per Day Example</a>
+               </td>
+               <td>
+<p>This is an minutes exercise per day example for the <em>Simple Observation Profile</em>.  It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Simple Observations.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-exercise-per-week.html"
+                     title="Observation/exercise-per-week">Exercise Per Week Example</a>
+               </td>
+               <td>
+<p>This is a days exercise per week example for the <em>Simple Observation Profile</em>.  It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Simple Observations.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-exercise-vital-sign.html"
+                     title="Questionnaire/exercise-vital-sign">Exercise Vital Sign Questionnaire Example</a>
+               </td>
+               <td>
+<p>This is the <a href="https://loinc.org/lhc-forms/">LHC Form</a> Exercise Vital Sign (EVS) Questionnaire Example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-exercise-vital-sign.html"
+                     title="QuestionnaireResponse/exercise-vital-sign">Exercise Vital Sign QuestionnaireResponse Example</a>
+               </td>
+               <td>
+<p>This is the <a href="https://loinc.org/lhc-forms/">LHC Form</a> Exercise Vital Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Specimen-example-serum-hemolyzed.html"
+                     title="Specimen/example-serum-hemolyzed">Hemolyzed Serum Specimen Example</a>
+               </td>
+               <td>
+<p>This is a serum specimen example for the <em>US Core Specimen Profile</em>. It demonstrates the use of the USCDI requirements for specimen condition and body source site.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-hospital.html" title="Location/hospital">Hospital Location</a>
+               </td>
+               <td>
+<p>This is an example hospital location for the <em>US Core Location Profile</em>.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationRequest-coded-oral-axid-with-compliance.html"
+                     title="MedicationRequest/coded-oral-axid-with-compliance">MedicationRequest Coded Oral Axid with Compliance Extension Example</a>
+               </td>
+               <td>
+<p>This example demonstrates medication adherence for a prescribed medication example using an extension on the MedicationRequest. The extension value uses SNOMED CT.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationRequest-self-tylenol-with-compliance.html"
+                     title="MedicationRequest/self-tylenol-with-compliance">MedicationRequest Self Tylenol with Compliance Extension Example</a>
+               </td>
+               <td>
+<p>This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationStatement-coded-oral-axid-with-compliance.html"
+                     title="MedicationStatement/coded-oral-axid-with-compliance">MedicationStatement Coded Oral Axid with Adherence Extension Example</a>
+               </td>
+               <td>
+<p>This example demonstrates medication adherence for a prescribed medication example using an R5 element extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationStatement-self-tylenol-with-compliance.html"
+                     title="MedicationStatement/self-tylenol-with-compliance">MedicationStatement Self Tylenol with Compliance Extension Example</a>
+               </td>
+               <td>
+<p>This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses MedicationStatement Adherence Codes.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-medication-adherence-oral-axid.html"
+                     title="Observation/medication-adherence-oral-axid">Observation Medication Adherence Oral Axid (Prescribed) Example</a>
+               </td>
+               <td>
+<p>This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-medication-adherence-oral-axid-boolean.html"
+                     title="Observation/medication-adherence-oral-axid-boolean">Observation Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example</a>
+               </td>
+               <td>
+<p>This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-medication-adherence-self-tylenol.html"
+                     title="Observation/medication-adherence-self-tylenol">Observation Medication Adherence Self Tylenol (OTC) Example</a>
+               </td>
+               <td>
+<p>This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-serum-glucose.html" title="Observation/serum-glucose">Serum Glucose Example</a>
+               </td>
+               <td>
+<p>This is a serum glucose example for the <em>US Core Observation Lab Profile</em>.</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-substance-use-status.html"
@@ -457,251 +669,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>This is the <a href="https://loinc.org/lhc-forms/">LHC Form</a>  Tobacco, Alcohol, Prescription medications, and other Substance use screen [TAPS] QuestionnaireResponse example. It is based on the on US Core <a href="http://hl7.org/fhir/us/core/screening-and-assessments.html">Screening and Assessments</a> guidance using Questionnaire/QuestionnaireResponse resources.</p>
 </td>
             </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="5"> </a>
-   <h3>Laboratory </h3>
-   <p>
-    <p>Laboratory and Specimen Profiles and Examples</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-us-core-observation-lab.html"
-                     title="StructureDefinition/us-core-observation-lab">US Core Laboratory Result Observation Profile</a>
-               </td>
-               <td>
-<p>The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-us-core-specimen.html"
-                     title="StructureDefinition/us-core-specimen">US Core Specimen Profile</a>
-               </td>
-               <td>
-<p>This profile sets minimum expectations for the Specimen resource to record, search, and fetch “substances being sampled or tested. (e.g., nasopharyngeal swab, whole blood, serum, urine, wound swab)” associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-serum-glucose.html" title="Observation/serum-glucose">Serum Glucose Example</a>
-               </td>
-               <td>
-<p>This is a serum glucose example for the <em>US Core Observation Lab Profile</em>.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Specimen-example-serum-hemolyzed.html"
-                     title="Specimen/example-serum-hemolyzed">Hemolyzed Serum Specimen Example</a>
-               </td>
-               <td>
-<p>This is a serum specimen example for the <em>US Core Specimen Profile</em>. It demonstrates the use of the USCDI requirements for specimen condition and body source site.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="6"> </a>
-   <h3>Facility Information </h3>
-   <p>
-    <p>Location Profiles and Examples</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-us-core-location.html"
-                     title="StructureDefinition/us-core-location">US Core Location Profile</a>
-               </td>
-               <td>
-<p>This profile sets minimum expectations for the Location resource for recording, searching, and fetching a “physical place of available services or resources.”  It identifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used when using the profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-hospital.html" title="Location/hospital">Hospital Location</a>
-               </td>
-               <td>
-<p>This is an example hospital location for the <em>US Core Location Profile</em>.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="7"> </a>
-   <h3>Medication </h3>
-   <p>
-    <p>Medication Adherence Examples</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-medication-adherence-oral-axid.html"
-                     title="Observation/medication-adherence-oral-axid">Observation Medication Adherence Oral Axid (Prescribed) Example</a>
-               </td>
-               <td>
-<p>This is a medication adherance for a prescribed  medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-medication-adherence-oral-axid-boolean.html"
-                     title="Observation/medication-adherence-oral-axid-boolean">Observation Medication Adherence Oral Axid (Prescribed) Using Boolean Code Value Pair Example</a>
-               </td>
-               <td>
-<p>This is a medication adherance for a prescribed  medication example using Observation.   The code uses LOINC with an Ordinal scale and value use boolean values and the MedicationRequest is reference using the basedOn element.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-medication-adherence-self-tylenol.html"
-                     title="Observation/medication-adherence-self-tylenol">Observation Medication Adherence Self Tylenol (OTC) Example</a>
-               </td>
-               <td>
-<p>This is a medication adherance for a self-prescribed OTC medication example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest is reference using the basedOn element.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-us-core-medicationrequest-compliance-extension.html"
-                     title="StructureDefinition/us-core-medicationrequest-compliance-extension">US Core Medication Compliance Extension</a>
-               </td>
-               <td>
-<p>A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationRequest-coded-oral-axid-with-compliance.html"
-                     title="MedicationRequest/coded-oral-axid-with-compliance">MedicationRequest Coded Oral Axid with Compliance Extension Example</a>
-               </td>
-               <td>
-<p>This example demonstrates medication adherence for a prescribed medication example using an extension on the MedicationRequest. The extension value uses SNOMED CT.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationRequest-self-tylenol-with-compliance.html"
-                     title="MedicationRequest/self-tylenol-with-compliance">MedicationRequest Self Tylenol with Compliance Extension Example</a>
-               </td>
-               <td>
-<p>This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses SNOMED CT.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-us-core-medicationstatement.html"
-                     title="StructureDefinition/us-core-medicationstatement">US Core MedicationStatement</a>
-               </td>
-               <td>
-<p>Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.
-This profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-uscore-medicationstatement-status.html"
-                     title="ValueSet/uscore-medicationstatement-status">US Core Medication Status Codes</a>
-               </td>
-               <td>
-<p>A code specifying the state of the statement.  Generally, this will be active or completed state.  This value set excludes the concept used internally by the FHIR specification, not-taken,on-hold,stopped, and unknown, because they are covered by the medication adherence extension.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationStatement-coded-oral-axid-with-compliance.html"
-                     title="MedicationStatement/coded-oral-axid-with-compliance">MedicationStatement Coded Oral Axid with Adherence Extension Example</a>
-               </td>
-               <td>
-<p>This example demonstrates medication adherence for a prescribed medication example using an R5 element extension on the MedicationStatement. The extension value uses MedicationStatement Adherence Codes.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationStatement-self-tylenol-with-compliance.html"
-                     title="MedicationStatement/self-tylenol-with-compliance">MedicationStatement Self Tylenol with Compliance Extension Example</a>
-               </td>
-               <td>
-<p>This example demonstrates medication adherence for a self-prescribed Tylenol example for the using an extension on the MedicationRequest. The extension value uses MedicationStatement Adherence Codes.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="8"> </a>
-   <h3>Goals and Preferences </h3>
-   <p>
-    <p>Goals and Preferences Profiles and Examples</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-us-core-care-experience-preference.html"
-                     title="StructureDefinition/us-core-care-experience-preference">US Core Care Experience Preference Profile</a>
-               </td>
-               <td>
-<p>To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch for a patient’s care experience preferences. It is based on the US Core Simple Profile and identifies which <em>additional</em> core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-uscore-care-experience-preference.html"
-                     title="ValueSet/uscore-care-experience-preference">US Core Care Experience Preference Codes</a>
-               </td>
-               <td>
-<p>A code representing an individual’s care experience preferences.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-care-experience-preference.html"
-                     title="Observation/care-experience-preference">Care Experience Preference Example</a>
-               </td>
-               <td>
-<p>This is an care experience preference example for the <em>Care Experience Profile</em>.  It is based on the <em>US Core Simple Observation Profile</em>.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-us-core-treatment-intervention-preference.html"
-                     title="StructureDefinition/us-core-treatment-intervention-preference">US Core Treatment Intervention Preference Profile</a>
-               </td>
-               <td>
-<p>To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch for a patient’s treatment intervention preferences. It is based on the US Core Simple Profile and identifies which <em>additional</em> core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-uscore-treatment-intervention-preference.html"
-                     title="ValueSet/uscore-treatment-intervention-preference">US Core Treatment Intervention Preference ValueSet</a>
-               </td>
-               <td>
-<p>A code representing an individual’s medical intervention (treatment) preferences.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-uscore-treatment-intervention-preference.html"
-                     title="CodeSystem/uscore-treatment-intervention-preference">US Core Treatment Intervention Preference CodeSystem</a>
-               </td>
-               <td>
-<p>A code representing an individual’s medical intervention (treatment) preferences.</p>
-</td>
-            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-intervention-preference.html"
@@ -738,7 +705,7 @@ This profile sets minimum expectations for the MedicationStatement resource to r
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 1, 2023 01:14+0000">2023-09-01</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 10, 2023 17:14+0000">2023-10-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

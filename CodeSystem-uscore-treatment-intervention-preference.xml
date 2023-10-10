@@ -3,7 +3,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="uscore-treatment-intervention-preference"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">intervention-preference<a name="uscore-treatment-intervention-preference-intervention-preference"> </a></td><td>Intervention Preference</td><td>A personal preference for a type of medical intervention (treatment) request under certain conditions.</td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1">
@@ -19,13 +19,13 @@
       </extension>
     </valueCode>
   </extension>
-  <url value="http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference"/>
+  <url value="http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference"/>
   <version value="0.0.0"/>
   <name value="USCoreTreatmentInterventionPreferenceCodeSystem"/>
   <title value="US Core Treatment Intervention Preference CodeSystem"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-08-31T01:42:33.501000+00:00"/>
+  <date value="2023-10-02"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>

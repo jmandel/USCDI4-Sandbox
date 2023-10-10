@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>USCDI4-SANDBOX\US Core Treatment Intervention Preference ValueSet - JSON Representation - FHIR v4.0.1</title>
+    <title>US Core Treatment Intervention Preference ValueSet - JSON Representation - HealtheData1 USCDI4 Sandbox v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.48"}
-    h3,h4,h5,h6{--heading-prefix:"6.48"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.12"}
+    h3,h4,h5,h6{--heading-prefix:"7.12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -87,6 +87,9 @@
   </li>
   <li>
     <a href="guidance.html">General Guidance</a>
+  </li>
+  <li>
+    <a href="screening-and-assessments.html">Screening and Assessments</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
@@ -192,8 +195,8 @@
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "uscore-treatment-intervention-preference",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;Placeholder&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Import all the codes that are contained in https://cts.nlm.nih.gov/fhir/res/ValueSet/2.16.840.1.113762.1.4.1115.9&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-uscore-treatment-intervention-preference.html\&quot;&gt;&lt;code&gt;http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-uscore-treatment-intervention-preference.html#uscore-treatment-intervention-preference-intervention-preference\&quot;&gt;intervention-preference&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intervention preference&lt;/td&gt;&lt;td&gt;A personal preference for a type of medical intervention (treatment) request under certain conditions.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>" : [
     {
@@ -221,13 +224,13 @@
       }
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-treatment-intervention-preference",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/core/ValueSet/uscore-treatment-intervention-preference",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.0.0",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "USCoreTreatmentInterventionPreferencValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "US Core Treatment Intervention Preference ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2023-08-15",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2023-10-02",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "Health eData Inc",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -253,7 +256,18 @@
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
     "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference"
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.valueSet">valueSet</a>" : [
+          "https://cts.nlm.nih.gov/fhir/res/ValueSet/2.16.840.1.113762.1.4.1115.9"
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "intervention-preference",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Intervention preference"
+          }
+        ]
       }
     ]
   }
@@ -287,7 +301,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 1, 2023 01:14+0000">2023-09-01</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 10, 2023 17:14+0000">2023-10-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

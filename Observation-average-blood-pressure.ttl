@@ -18,13 +18,13 @@
        fhir:value [ fhir:v "This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)." ]
      ] ) ;
      fhir:profile ( [
-       fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure"^^xsd:anyURI ;
-       fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure>
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"average-blood-pressure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;average-blood-pressure&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-average-blood-pressure.html\">US Core Average Blood Pressure Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Avg Blood pressure systolic and diastolic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96607-7 &quot;Blood pressure panel mean systolic and mean diastolic&quot;)</span></p><p><b>subject</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-03 01:06:52+0000 --&gt; 2023-08-03 13:07:01+0000</p><p><b>performer</b>: <a href=\"https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1\">https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1</a></p><p><b>note</b>: Average blood pressure is calculated from 12 measurements taken over 12 hours.</p><blockquote><p><b>component</b></p><p><b>code</b>: Average systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96608-5 &quot;Systolic blood pressure mean&quot;)</span></p><p><b>value</b>: 109 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Average diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96609-3 &quot;Diastolic blood pressure mean&quot;)</span></p><p><b>value</b>: 44 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"average-blood-pressure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;average-blood-pressure&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-average-blood-pressure.html\">US Core Average Blood Pressure Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Avg Blood pressure systolic and diastolic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96607-7 &quot;Blood pressure panel mean systolic and mean diastolic&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-03 01:06:52+0000 --&gt; 2023-08-03 13:07:01+0000</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-1.html\">Practitioner/practitioner-1</a></p><p><b>note</b>: Average blood pressure is calculated from 12 measurements taken over 12 hours.</p><blockquote><p><b>component</b></p><p><b>code</b>: Average systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96608-5 &quot;Systolic blood pressure mean&quot;)</span></p><p><b>value</b>: 109 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Average diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96609-3 &quot;Diastolic blood pressure mean&quot;)</span></p><p><b>value</b>: 44 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
@@ -45,8 +45,8 @@
      fhir:text [ fhir:v "Avg Blood pressure systolic and diastolic" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://www.hl7.org/fhir/us/core/Patient/example> ;
-     fhir:reference [ fhir:v "http://www.hl7.org/fhir/us/core/Patient/example" ] ;
+     fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ] ;
      fhir:display [ fhir:v "Amy Shaw" ]
   ] ; # 
   fhir:effective [
@@ -55,8 +55,8 @@
      fhir:end [ fhir:v "2023-08-03T13:07:01.166Z"^^xsd:dateTime ]
   ] ; # 
   fhir:performer ( [
-     fhir:link <https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1> ;
-     fhir:reference [ fhir:v "https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1" ]
+     fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Practitioner/practitioner-1> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-1" ]
   ] ) ; # 
   fhir:note ( [
      fhir:text [ fhir:v "Average blood pressure is calculated from 12 measurements taken over 12 hours." ]

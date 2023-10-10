@@ -1,4 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -10,7 +11,7 @@
   fhir:id [ fhir:v "us-core-care-experience-preference"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-care-experience-preference-definitions.html#Observation\" title=\"\\-\">Observation</a><a name=\"Observation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html\">USCoreSimpleObservationProfile</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">US Core Care Experience Preference Profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-care-experience-preference-definitions.html#Observation.category:us-core\" title=\"Slice us-core\">category:us-core</a><a name=\"Observation.category\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(USCDI) Classification of  type of observation</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck141.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(complex)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://hl7.org/fhir/us/core/CodeSystem/us-core-category</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">care-experience-preference</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-care-experience-preference-definitions.html#Observation.code\">code</a><a name=\"Observation.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Care experience preferences code<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(complex)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://loinc.org</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">95541-9</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-care-experience-preference-definitions.html#Observation.derivedFrom\" title=\"US Core Observations, DocumentReference, QuestionnaireResponse or other resource from which this observation value is derived.\">derivedFrom</a><a name=\"Observation.derivedFrom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html\">US Core DocumentReference Profile</a> | <a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a> | <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html\">US Core QuestionnaireResponse Profile</a> | <a href=\"http://hl7.org/fhir/R4/imagingstudy.html\">ImagingStudy</a> | <a href=\"http://hl7.org/fhir/R4/media.html\">Media</a> | <a href=\"http://hl7.org/fhir/R4/molecularsequence.html\">MolecularSequence</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">(ADD'L USCDI) US Core Profiles or other resource the observation is made from</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
@@ -37,13 +38,13 @@
        ] )
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.0.0"] ; # 
   fhir:name [ fhir:v "USCoreCareExperiencePreferenceProfile"] ; # 
   fhir:title [ fhir:v "US Core Care Experience Preference Profile"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2022-04-20"^^xsd:date] ; # 
+  fhir:date [ fhir:v "2023-10-02"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -782,7 +783,7 @@
        fhir:comment [ fhir:v "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set." ] ;
        fhir:requirements [ fhir:v "Used for filtering what observations are retrieved and displayed." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
+       fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Observation.category" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -791,6 +792,13 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
+       fhir:pattern [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/core/CodeSystem/us-core-category"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "care-experience-preference" ]
+         ] )
+       ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -827,7 +835,7 @@
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Observation.code" ] ;
-       fhir:short [ fhir:v "(USCDI) Care experience preferences code" ] ;
+       fhir:short [ fhir:v "Care experience preferences code" ] ;
        fhir:definition [ fhir:v "Describes what was observed. Sometimes this is called the observation \"name\"." ] ;
        fhir:comment [ fhir:v "*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation." ] ;
        fhir:requirements [ fhir:v "Knowing what kind of observation is being made is essential to understanding the observation." ] ;
@@ -842,6 +850,14 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
+       fhir:pattern [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a loinc:95541-9 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "95541-9" ]
+         ] )
+       ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -857,10 +873,10 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:binding [
-         fhir:strength [ fhir:v "extensible" ] ;
+         fhir:strength [ fhir:v "preferred" ] ;
          fhir:valueSet [
-           fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"^^xsd:anyURI ;
-           fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-codes"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/observation-codes>
          ]
        ] ;
        fhir:mapping ( [
@@ -2117,7 +2133,7 @@
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Observation.derivedFrom" ] ;
-       fhir:short [ fhir:v "(USCDI) US Core Profiles or other resource the observation is made from" ] ;
+       fhir:short [ fhir:v "(ADD'L USCDI) US Core Profiles or other resource the observation is made from" ] ;
        fhir:definition [ fhir:v "US Core Observations, DocumentReference, QuestionnaireResponse or other resource from which this observation value is derived." ] ;
        fhir:comment [ fhir:v "All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -2130,47 +2146,23 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "false"^^xsd:boolean ]
-           ] )
-         ] [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "true"^^xsd:boolean ]
-           ] )
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ] [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "false"^^xsd:boolean ]
-           ] )
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingStudy"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingStudy> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "false"^^xsd:boolean ]
-           ] )
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingStudy>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Media"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Media> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "false"^^xsd:boolean ]
-           ] )
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Media>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "false"^^xsd:boolean ]
-           ] )
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2184,7 +2176,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -2616,24 +2608,35 @@
        fhir:definition [ fhir:v "\\-" ] ;
        fhir:comment [ fhir:v "\\-" ]
      ] [
+       fhir:id [ fhir:v "Observation.category:us-core" ] ;
+       fhir:path [ fhir:v "Observation.category" ] ;
+       fhir:sliceName [ fhir:v "us-core" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:pattern [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/core/CodeSystem/us-core-category"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "care-experience-preference" ]
+         ] )
+       ] ;
+       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
+     ] [
        fhir:id [ fhir:v "Observation.code" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "true"^^xsd:boolean ]
-       ] ) ;
        fhir:path [ fhir:v "Observation.code" ] ;
-       fhir:short [ fhir:v "(USCDI) Care experience preferences code" ] ;
+       fhir:short [ fhir:v "Care experience preferences code" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:binding [
-         fhir:strength [ fhir:v "extensible" ] ;
-         fhir:valueSet [
-           fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference"^^xsd:anyURI ;
-           fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference>
-         ]
-       ]
+       fhir:pattern [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a loinc:95541-9 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "95541-9" ]
+         ] )
+       ] ;
+       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Observation.derivedFrom" ] ;
        fhir:extension ( [
@@ -2641,55 +2644,30 @@
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Observation.derivedFrom" ] ;
-       fhir:short [ fhir:v "(USCDI) US Core Profiles or other resource the observation is made from" ] ;
+       fhir:short [ fhir:v "(ADD'L USCDI) US Core Profiles or other resource the observation is made from" ] ;
        fhir:definition [ fhir:v "US Core Observations, DocumentReference, QuestionnaireResponse or other resource from which this observation value is derived." ] ;
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "false"^^xsd:boolean ]
-           ] )
-         ] [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "true"^^xsd:boolean ]
-           ] )
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ] [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "false"^^xsd:boolean ]
-           ] )
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingStudy"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingStudy> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "false"^^xsd:boolean ]
-           ] )
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingStudy>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Media"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Media> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "false"^^xsd:boolean ]
-           ] )
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Media>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence> ;
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "false"^^xsd:boolean ]
-           ] )
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence>
          ] )
-       ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
+       ] )
      ] )
   ] . # 
 

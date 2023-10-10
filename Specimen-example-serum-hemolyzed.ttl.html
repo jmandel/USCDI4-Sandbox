@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>USCDI4-SANDBOX\Hemolyzed Serum Specimen Example - TTL Representation - FHIR v4.0.1</title>
+    <title>Hemolyzed Serum Specimen Example - TTL Representation - HealtheData1 USCDI4 Sandbox v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.31"}
-    h3,h4,h5,h6{--heading-prefix:"6.31"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.32"}
+    h3,h4,h5,h6{--heading-prefix:"7.32"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -87,6 +87,9 @@
   </li>
   <li>
     <a href="guidance.html">General Guidance</a>
+  </li>
+  <li>
+    <a href="screening-and-assessments.html">Screening and Assessments</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
@@ -201,12 +204,12 @@
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/instance-description&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition and body source site.&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen&gt;     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen&gt;     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/specimen.html#Specimen.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Specimen&lt;/b&gt;&lt;a name=\&quot;example-serum-hemolyzed\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Specimen &amp;quot;example-serum-hemolyzed&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-us-core-specimen.html\&quot;&gt;US Core Specimen Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 20220927-00124&lt;/p&gt;&lt;p&gt;&lt;b&gt;accessionIdentifier&lt;/b&gt;: id: 20220927-00124&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Serum sample &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT[US]&lt;/a&gt;#119364003; &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v2-0487.html\&quot;&gt;specimenType&lt;/a&gt;#SER &amp;quot;Serum&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;http://www.hl7.org/fhir/us/core/Patient/example\&quot;&gt;http://www.hl7.org/fhir/us/core/Patient/example&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Collections&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Collected[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;BodySite&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;2022-09-27 18:07:12+0000&lt;/td&gt;&lt;td&gt;Right arm &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT[US]&lt;/a&gt;#368209003)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Containers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Serum Separator Tube &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;: Hemolyzed &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v2-0493.html\&quot;&gt;specimenCondition&lt;/a&gt;#HEM)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Specimen&lt;/b&gt;&lt;a name=\&quot;example-serum-hemolyzed\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Specimen &amp;quot;example-serum-hemolyzed&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-specimen.html\&quot;&gt;US Core Specimen Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 20220927-00124&lt;/p&gt;&lt;p&gt;&lt;b&gt;accessionIdentifier&lt;/b&gt;: id: 20220927-00124&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Serum sample &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT[US]&lt;/a&gt;#119364003; &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v2-0487.html\&quot;&gt;specimenType&lt;/a&gt;#SER &amp;quot;Serum&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Patient/example&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Collections&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Collected[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;BodySite&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;2022-09-27 18:07:12+0000&lt;/td&gt;&lt;td&gt;Right arm &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT[US]&lt;/a&gt;#368209003)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Containers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Serum Separator Tube &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;: Hemolyzed &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v2-0493.html\&quot;&gt;specimenCondition&lt;/a&gt;#HEM)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/specimen.html#Specimen.identifier">fhir:identifier</a> ( [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/labs/accession-ids&quot;^^xsd:anyURI ] ;
@@ -228,8 +231,7 @@ a sct:119364003 ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Serum&quot; ]     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/specimen.html#Specimen.subject">fhir:subject</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://www.hl7.org/fhir/us/core/Patient/example&gt; ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://www.hl7.org/fhir/us/core/Patient/example&quot; ]
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/example&quot; ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/specimen.html#Specimen.collection">fhir:collection</a> [
 <a href="http://hl7.org/fhir/R4/specimen.html#Specimen.collection.collected[x]">fhir:collected</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2022-09-27T18:07:12Z&quot;^^xsd:dateTime ] ;
@@ -285,7 +287,7 @@ a sct:368209003 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 1, 2023 01:14+0000">2023-09-01</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 10, 2023 17:14+0000">2023-10-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

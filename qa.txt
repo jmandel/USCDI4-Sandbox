@@ -1,17 +1,17 @@
 ﻿USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 15, warn = 6, info = 26
-IG Publisher Version: 1.4.2
-Generated Fri Sep 01 01:19:22 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
- Build Errors : 8 / 0 / 0
+err = 49, warn = 12, info = 25
+IG Publisher Version: 1.4.14
+Generated Tue Oct 10 17:19:11 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+ Build Errors : 12 / 0 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance : 2 / 1 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance : 3 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationStatement-coded-oral-axid-with-compliance : 2 / 1 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-AUDIT-C-item-example-68517-2 : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-AUDIT-C-item-example-68517-2 : 0 / 1 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-AUDIT-C-item-example-68519-8 : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-AUDIT-C-item-example-68520-6 : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-AUDIT-C-item-example-75626-2 : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-AUDIT-C-item-example-75626-2 : 0 / 1 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-AUDIT-C-panel-example-72109-2 : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-EVS-item-example-68516-4 : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-EVS-item-example-89555-7 : 0 / 0 / 1
@@ -25,14 +25,14 @@ Generated Fri Sep 01 01:19:22 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcohol-use-status : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-alcoholic-drinks-per-day : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 1 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience-preference : 1 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-care-experience-preference : 2 / 1 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-day : 0 / 0 / 3
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-exercise-per-week : 0 / 0 / 3
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-intervention-preference : 1 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-intervention-preference : 2 / 1 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-oral-axid : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-oral-axid-boolean : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-medication-adherence-self-tylenol : 0 / 0 / 2
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-serum-glucose : 0 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-serum-glucose : 0 / 1 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-substance-use-status : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-AUDIT-C : 0 / 0 / 5
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Questionnaire-TAPS : 0 / 0 / 5
@@ -42,43 +42,50 @@ Generated Fri Sep 01 01:19:22 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/QuestionnaireResponse-exercise-vital-sign : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Specimen-example-serum-hemolyzed : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/location-hospital : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationrequest-self-tylenol-with-compliance : 3 / 1 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationrequest-self-tylenol-with-compliance : 4 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationstatement-self-tylenol-with-compliance : 2 / 1 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/CodeSystem-uscore-treatment-intervention-preference : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-care-experience-preference : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/CodeSystem-uscore-treatment-intervention-preference : 3 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure : 3 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-care-experience-preference : 5 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-location : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension : 2 / 2 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension : 8 / 2 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-observation-lab : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-specimen : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-treatment-intervention-preference : 0 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient : 3 / 1 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-specimen : 0 / 1 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-treatment-intervention-preference : 7 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-uscore-medicationstatement : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-care-experience-preference : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-medicationstatement-status : 0 / 0 / 2
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-treatment-intervention-preference : 0 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-treatment-intervention-preference : 4 / 1 / 2
 </table>
 == n/a ==
-ERROR: Extension.extension.value: The reference http://hl7.org/fhir/ValueSet/medication-statement-adherence could not be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 227, column 1649: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 266, column 614: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 313, column 1939: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 299, column 1725: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 323, column 1857: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 398, column 1725: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medicationrequest-compliance-extension.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 422, column 1857: The link 'medication-statement-adherence.html' for "medication-statement-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/Observation-average-blood-pressure.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 1099: The link 'Patient-example.html' for "Patient/example: Amy Shaw" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/Observation-average-blood-pressure.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 1265: The link 'Practitioner-practitioner-1.html' for "Practitioner/practitioner-1" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/Observation-care-experience-preference.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 1130: The link 'Patient-example.html' for "Patient/example: Amy Shaw" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/Specimen-example-serum-hemolyzed.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 955: The link 'Patient-example.html' for "Patient/example" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 230, column 1684: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 269, column 614: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 316, column 1974: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 302, column 1714: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 326, column 1846: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 401, column 1714: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 425, column 1846: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 481, column 210: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json ==
 == input/examples/MedicationRequest-coded-oral-axid-with-compliance.json ==
+ERROR: MedicationRequest/coded-oral-axid-with-compliance: MedicationRequest.extension[0]: The extension http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension is unknown, and not allowed here
 ERROR: MedicationRequest/coded-oral-axid-with-compliance: MedicationRequest.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Unknown Code System 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence'
 ERROR: MedicationRequest/coded-oral-axid-with-compliance: MedicationRequest.extension[0].extension[0].value.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve
-WARNING: MedicationRequest/coded-oral-axid-with-compliance: MedicationRequest.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet http://hl7.org/fhir/ValueSet/medication-statement-adherence not found
 == input/examples/MedicationStatement-coded-oral-axid-with-compliance.json ==
 WARNING: MedicationStatement/coded-oral-axid-with-compliance: MedicationStatement: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence from FHIR version {3} is not allowed to be used at this point (allowed = e:MedicationUsage; this element is [[MedicationStatement]; this is a warning since contexts may be renamed between FHIR versions)
 ERROR: MedicationStatement/coded-oral-axid-with-compliance: MedicationStatement.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Unknown Code System 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence'
 ERROR: MedicationStatement/coded-oral-axid-with-compliance: MedicationStatement.extension[0].extension[0].value.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve
 == input/examples/Observation-AUDIT-C-item-example-68517-2.json ==
+WARNING: Observation/AUDIT-C-item-example-68517-2: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {#} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 == input/examples/Observation-AUDIT-C-item-example-68519-8.json ==
 == input/examples/Observation-AUDIT-C-item-example-68520-6.json ==
 == input/examples/Observation-AUDIT-C-item-example-75626-2.json ==
+WARNING: Observation/AUDIT-C-item-example-75626-2: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 == input/examples/Observation-AUDIT-C-panel-example-72109-2.json ==
 == input/examples/Observation-EVS-item-example-68516-4.json ==
 == input/examples/Observation-EVS-item-example-89555-7.json ==
@@ -94,10 +101,11 @@ INFORMATION: Observation/alcohol-use-status: Observation.category[0]: Reference 
 == input/examples/Observation-alcoholic-drinks-per-day.json ==
 INFORMATION: Observation/alcoholic-drinks-per-day: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-average-blood-pressure.json ==
-ERROR: Observation/average-blood-pressure: Observation.effective.ofType(Period): Rule vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' Failed
+ERROR: Observation/average-blood-pressure: Observation.effective.ofType(Period): Constraint failed: vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' (defined in http://hl7.org/fhir/StructureDefinition/vitalsigns)
 == input/examples/Observation-care-experience-preference.json ==
-INFORMATION: Observation/care-experience-preference: Observation.category[0]: This element does not match any known slice defined in the profile http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference|0.0.0
-ERROR: Observation/care-experience-preference: Observation.category[0].coding[0]: Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'
+ERROR: Observation/care-experience-preference: Observation.category[0]: None of the codings provided are in the value set 'US Core Simple Observation Category' (http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category|6.1.0), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference)
+ERROR: Observation/care-experience-preference: Observation.category[0].coding[0]: Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'
+WARNING: Observation/care-experience-preference: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == input/examples/Observation-exercise-per-day.json ==
 INFORMATION: Observation/exercise-per-day: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 INFORMATION: Observation/exercise-per-day: Observation.category[1]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
@@ -105,8 +113,10 @@ INFORMATION: Observation/exercise-per-day: Observation.category[1]: Reference to
 INFORMATION: Observation/exercise-per-week: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 INFORMATION: Observation/exercise-per-week: Observation.category[1]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-intervention-preference.json ==
-INFORMATION: Observation/intervention-preference: Observation.category[0]: This element does not match any known slice defined in the profile http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference|0.0.0
-ERROR: Observation/intervention-preference: Observation.category[0].coding[0]: Unknown Code 'treatment-intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#treatment-intervention-preference'
+INFORMATION: Observation/intervention-preference: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference|0.0.0
+ERROR: Observation/intervention-preference: Observation.category[0].coding[0]: Unknown Code 'treatment-intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#treatment-intervention-preference'
+ERROR: Observation/intervention-preference: Observation.code.coding[0]: Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'
+WARNING: Observation/intervention-preference: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == input/examples/Observation-medication-adherence-oral-axid.json ==
 INFORMATION: Observation/medication-adherence-oral-axid: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-medication-adherence-oral-axid-boolean.json ==
@@ -115,6 +125,7 @@ INFORMATION: Observation/medication-adherence-oral-axid-boolean: Observation.cat
 INFORMATION: Observation/medication-adherence-self-tylenol: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Observation-serum-glucose.json ==
 INFORMATION: Observation/serum-glucose: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+WARNING: Observation/serum-glucose: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == input/examples/Observation-substance-use-status.json ==
 INFORMATION: Observation/substance-use-status: Observation.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 == input/examples/Questionnaire-AUDIT-C.json ==
@@ -136,30 +147,65 @@ INFORMATION: Questionnaire/exercise-vital-sign: Questionnaire.item[1].extension[
 == input/examples/Specimen-example-serum-hemolyzed.json ==
 == input/examples/location-hospital.json ==
 == input/examples/medicationrequest-self-tylenol-with-compliance.json ==
+ERROR: MedicationRequest/self-tylenol-with-compliance: MedicationRequest.extension[0]: The extension http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension is unknown, and not allowed here
 ERROR: MedicationRequest/self-tylenol-with-compliance: MedicationRequest.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Unknown Code System 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence'
 ERROR: MedicationRequest/self-tylenol-with-compliance: MedicationRequest.extension[0].extension[0].value.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve
-WARNING: MedicationRequest/self-tylenol-with-compliance: MedicationRequest.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet http://hl7.org/fhir/ValueSet/medication-statement-adherence not found
 ERROR: MedicationRequest/self-tylenol-with-compliance: MedicationRequest.reasonCode[0]: Wrong Display Name 'Restless legs (disorder) |' for http://snomed.info/sct#32914008 - should be one of 4 choices: 'Restless legs', 'Restless legs syndrome', 'Restless legs (disorder)' or 'Willis-Ekbom disease' (for the language(s) '--') (from Tx-Server)
 == input/examples/medicationstatement-self-tylenol-with-compliance.json ==
 WARNING: MedicationStatement/self-tylenol-with-compliance: MedicationStatement: The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence from FHIR version {3} is not allowed to be used at this point (allowed = e:MedicationUsage; this element is [[MedicationStatement]; this is a warning since contexts may be renamed between FHIR versions)
 ERROR: MedicationStatement/self-tylenol-with-compliance: MedicationStatement.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Unknown Code System 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence'
 ERROR: MedicationStatement/self-tylenol-with-compliance: MedicationStatement.extension[0].extension[0].value.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' does not resolve
 == input/resources/CodeSystem-uscore-treatment-intervention-preference.json ==
+ERROR: CodeSystem.where(url = 'http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/CodeSystem-uscore-treatment-intervention-preference.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference) does not match the URL (http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference)
+ERROR: CodeSystem/uscore-treatment-intervention-preference: CodeSystem: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/CodeSystem-uscore-treatment-intervention-preference: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference vs http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference
 == input/resources/StructureDefinition-us-core-average-blood-pressure.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure)
+ERROR: StructureDefinition/us-core-average-blood-pressure: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure
 == input/resources/StructureDefinition-us-core-care-experience-preference.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-care-experience-preference.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference)
+ERROR: StructureDefinition/us-core-care-experience-preference: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'
+ERROR: StructureDefinition/us-core-care-experience-preference: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'
+ERROR: StructureDefinition/us-core-care-experience-preference: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-care-experience-preference: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference
 == input/resources/StructureDefinition-us-core-location.json ==
 == input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension.json ==
-ERROR: StructureDefinition/us-core-medicationrequest-compliance-extension: StructureDefinition.snapshot.element[7].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/medication-statement-adherence' does not resolve
-ERROR: StructureDefinition/us-core-medicationrequest-compliance-extension: StructureDefinition.differential.element[4].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/medication-statement-adherence' does not resolve
-WARNING: StructureDefinition/us-core-medicationrequest-compliance-extension: StructureDefinition.differential.element[4].binding: The valueSet reference http://hl7.org/fhir/ValueSet/medication-statement-adherence on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition/us-core-medicationrequest-compliance-extension: StructureDefinition.snapshot.element[7].binding: The valueSet reference http://hl7.org/fhir/ValueSet/medication-statement-adherence on element Extension.extension.value[x] could not be resolved
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medication-adherence) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence)
+ERROR: StructureDefinition/us-core-medication-adherence: StructureDefinition: Constraint failed: sdf-9: 'In any snapshot or differential, no label, code or requirements on an element without a "." in the path (e.g. the first element)'
+ERROR: StructureDefinition/us-core-medication-adherence: StructureDefinition.snapshot.element[7].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' does not resolve
+ERROR: StructureDefinition/us-core-medication-adherence: StructureDefinition.differential.element[4].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' does not resolve
+ERROR: StructureDefinition/us-core-medication-adherence: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+WARNING: StructureDefinition/us-core-medication-adherence: StructureDefinition.differential.element[4].binding: The valueSet reference http://hl7.org/fhir/us/core//ValueSet/medication-adherence on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/us-core-medication-adherence: StructureDefinition.snapshot.element[7].binding: The valueSet reference http://hl7.org/fhir/us/core//ValueSet/medication-adherence on element Extension.extension.value[x] could not be resolved
+ERROR: StructureDefinition/us-core-medication-adherence: StructureDefinition.snapshot.element[17]: The element Extension.extension.value[x] has types/profiles/targets that are marked as must support, but the element itself is not marked as must-support
+ERROR: StructureDefinition/us-core-medication-adherence: StructureDefinition: The fixed value for the extension URL is http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension which doesn't match the canonical URL http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medication-adherence vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence
 == input/resources/StructureDefinition-us-core-observation-lab.json ==
+== input/resources/StructureDefinition-us-core-patient.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
+ERROR: StructureDefinition/us-core-patient: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'): The Implementation Guide contains no examples for this profile
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 == input/resources/StructureDefinition-us-core-specimen.json ==
+WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen'): The Implementation Guide contains no examples for this profile
 == input/resources/StructureDefinition-us-core-treatment-intervention-preference.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-treatment-intervention-preference.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference)
+ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'
+ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'
+ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'
+ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'
+ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-treatment-intervention-preference: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference
 == input/resources/StructureDefinition-uscore-medicationstatement.json ==
 == input/resources/ValueSet-uscore-care-experience-preference.json ==
 INFORMATION: ValueSet/uscore-care-experience-preference: ValueSet: The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
 == input/resources/ValueSet-uscore-medicationstatement-status.json ==
 INFORMATION: ValueSet/uscore-medicationstatement-status: ValueSet: The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
 == input/resources/ValueSet-uscore-treatment-intervention-preference.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/uscore-treatment-intervention-preference'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-treatment-intervention-preference.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-treatment-intervention-preference) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-treatment-intervention-preference)
 INFORMATION: ValueSet/uscore-treatment-intervention-preference: ValueSet: The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
+ERROR: ValueSet/uscore-treatment-intervention-preference: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+WARNING: ValueSet/uscore-treatment-intervention-preference: ValueSet.compose.include[0].valueSet[0]: The value set import https://cts.nlm.nih.gov/fhir/res/ValueSet/2.16.840.1.113762.1.4.1115.9 could not be found so cannot be checked
+ERROR: ValueSet.where(id = 'uscore-treatment-intervention-preference'): Unable to find imported value set https://cts.nlm.nih.gov/fhir/res/ValueSet/2.16.840.1.113762.1.4.1115.9 (and Error from http://tx.fhir.org/r4: Unable to find value set "https://cts.nlm.nih.gov/fhir/res/ValueSet/2.16.840.1.113762.1.4.1115.9")
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-treatment-intervention-preference: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-treatment-intervention-preference vs http://hl7.org/fhir/us/core/ValueSet/uscore-treatment-intervention-preference

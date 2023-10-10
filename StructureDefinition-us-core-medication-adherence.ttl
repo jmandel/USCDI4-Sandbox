@@ -1,16 +1,17 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension> a fhir:StructureDefinition ;
+<http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medication-adherence> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "us-core-medicationrequest-compliance-extension"] ; # 
+  fhir:id [ fhir:v "us-core-medication-adherence"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension\" title=\"Whether the medication is or is not being consumed or administered\">Extension</a><a name=\"Extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.extension\">Slices for extension</a><a name=\"Extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.extension:medicationAdherence\" title=\"Slice medicationAdherence: Code indicating whether the medication is or is not being consumed or administered\">extension:medicationAdherence</a><a name=\"Extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">(USCDI) Code indicating whether the medication is or is not being consumed or administered</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck150.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.extension:medicationAdherence.url\">url</a><a name=\"Extension.extension.url\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"color: darkgreen\">&quot;medicationAdherence&quot;</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.extension:medicationAdherence.value[x]\">value[x]</a><a name=\"Extension.extension.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/us/core//ValueSet/medication-adherence\">http://hl7.org/fhir/us/core//ValueSet/medication-adherence</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): Medication Adherence Codes<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.extension:dateAsserted\" title=\"Slice dateAsserted: When the medication adherence was asserted by the information source\">extension:dateAsserted</a><a name=\"Extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">(USCDI) When the medication adherence was asserted</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck150.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.extension:dateAsserted.url\">url</a><a name=\"Extension.extension.url\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"color: darkgreen\">&quot;dateAsserted&quot;</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.extension:dateAsserted.value[x]\">value[x]</a><a name=\"Extension.extension.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.extension:informationSource\" title=\"Slice informationSource: The person or organization that provided the information about the medication adherence\">extension:informationSource</a><a name=\"Extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">(USCDI) Who provided the information about the medication adherence<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck150.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.extension:informationSource.url\">url</a><a name=\"Extension.extension.url\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"color: darkgreen\">&quot;informationSource&quot;</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.extension:informationSource.value[x]\">value[x]</a><a name=\"Extension.extension.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-practitioner.html\">US Core Practitioner Profile</a> | <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-practitionerrole.html\">US Core PractitionerRole Profile</a> | <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html\">US Core Patient Profile</a> | <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-relatedperson.html\">US Core RelatedPerson Profile</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-us-core-medication-adherence-definitions.html#Extension.url\">url</a><a name=\"Extension.url\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"color: darkgreen\">&quot;http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension&quot;</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">value[x]</span><a name=\"Extension.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
@@ -37,12 +38,12 @@
        ] )
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.0.0"] ; # 
-  fhir:name [ fhir:v "USCoreMedicationComplianceExtension"] ; # 
-  fhir:title [ fhir:v "US Core Medication Compliance Extension"] ; # 
+  fhir:name [ fhir:v "USCoreMedicationAdherenceExtension"] ; # 
+  fhir:title [ fhir:v "US Core Medication Adherence Extension"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-11"^^xsd:date] ; # 
+  fhir:date [ fhir:v "2023-09-23"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -50,7 +51,7 @@
        fhir:value [ fhir:v "mailto:ehaas@healthedatainc.com" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered"] ; # 
+  fhir:description [ fhir:v "A MedicationRequest extension representing whether the medication is or is not being consumed or administered."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
@@ -150,7 +151,7 @@
        ] ;
        fhir:short [ fhir:v "Extension" ] ;
        fhir:definition [ fhir:v "An Extension" ] ;
-       fhir:min [ fhir:v "2"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Element.extension" ] ;
@@ -184,13 +185,13 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
      ] [
-       fhir:id [ fhir:v "Extension.extension:medAdherence" ] ;
+       fhir:id [ fhir:v "Extension.extension:medicationAdherence" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Extension.extension" ] ;
-       fhir:sliceName [ fhir:v "medAdherence" ] ;
+       fhir:sliceName [ fhir:v "medicationAdherence" ] ;
        fhir:short [ fhir:v "(USCDI) Code indicating whether the medication is or is not being consumed or administered" ] ;
        fhir:definition [ fhir:v "Code indicating whether the medication is or is not being consumed or administered" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
@@ -228,7 +229,7 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
      ] [
-       fhir:id [ fhir:v "Extension.extension:medAdherence.id" ] ;
+       fhir:id [ fhir:v "Extension.extension:medicationAdherence.id" ] ;
        fhir:path [ fhir:v "Extension.extension.id" ] ;
        fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
        fhir:short [ fhir:v "Unique id for inter-element referencing" ] ;
@@ -254,7 +255,7 @@
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:medAdherence.extension" ] ;
+       fhir:id [ fhir:v "Extension.extension:medicationAdherence.extension" ] ;
        fhir:path [ fhir:v "Extension.extension.extension" ] ;
        fhir:slicing [
          fhir:discriminator ( [
@@ -306,7 +307,7 @@
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:medAdherence.url" ] ;
+       fhir:id [ fhir:v "Extension.extension:medicationAdherence.url" ] ;
        fhir:path [ fhir:v "Extension.extension.url" ] ;
        fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
        fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
@@ -322,7 +323,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:fixed [ fhir:v "medAdherence"^^xsd:anyURI ] ;
+       fhir:fixed [ fhir:v "medicationAdherence"^^xsd:anyURI ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -330,7 +331,7 @@
          fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:medAdherence.value[x]" ] ;
+       fhir:id [ fhir:v "Extension.extension:medicationAdherence.value[x]" ] ;
        fhir:path [ fhir:v "Extension.extension.value[x]" ] ;
        fhir:short [ fhir:v "Value of extension" ] ;
        fhir:definition [ fhir:v "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." ] ;
@@ -361,8 +362,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Medication Adherence Codes" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/medication-statement-adherence"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/medication-statement-adherence>
+           fhir:v "http://hl7.org/fhir/us/core//ValueSet/medication-adherence"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/us/core//ValueSet/medication-adherence>
          ]
        ] ;
        fhir:mapping ( [
@@ -370,16 +371,16 @@
          fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:timeStamp" ] ;
+       fhir:id [ fhir:v "Extension.extension:dateAsserted" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Extension.extension" ] ;
-       fhir:sliceName [ fhir:v "timeStamp" ] ;
-       fhir:short [ fhir:v "(USCDI) Timestamp when it was reported whether the medication is or is not being consumed or administered" ] ;
-       fhir:definition [ fhir:v "imestamp when it was reported whether the medication is or is not being consumed or administered" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:sliceName [ fhir:v "dateAsserted" ] ;
+       fhir:short [ fhir:v "(USCDI) When the medication adherence was asserted" ] ;
+       fhir:definition [ fhir:v "When the medication adherence was asserted by the information source" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Element.extension" ] ;
@@ -414,7 +415,7 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
      ] [
-       fhir:id [ fhir:v "Extension.extension:timeStamp.id" ] ;
+       fhir:id [ fhir:v "Extension.extension:dateAsserted.id" ] ;
        fhir:path [ fhir:v "Extension.extension.id" ] ;
        fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
        fhir:short [ fhir:v "Unique id for inter-element referencing" ] ;
@@ -440,7 +441,7 @@
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:timeStamp.extension" ] ;
+       fhir:id [ fhir:v "Extension.extension:dateAsserted.extension" ] ;
        fhir:path [ fhir:v "Extension.extension.extension" ] ;
        fhir:slicing [
          fhir:discriminator ( [
@@ -492,7 +493,7 @@
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:timeStamp.url" ] ;
+       fhir:id [ fhir:v "Extension.extension:dateAsserted.url" ] ;
        fhir:path [ fhir:v "Extension.extension.url" ] ;
        fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
        fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
@@ -508,7 +509,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:fixed [ fhir:v "timeStamp"^^xsd:anyURI ] ;
+       fhir:fixed [ fhir:v "dateAsserted"^^xsd:anyURI ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -516,7 +517,7 @@
          fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:timeStamp.value[x]" ] ;
+       fhir:id [ fhir:v "Extension.extension:dateAsserted.value[x]" ] ;
        fhir:path [ fhir:v "Extension.extension.value[x]" ] ;
        fhir:short [ fhir:v "Value of extension" ] ;
        fhir:definition [ fhir:v "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." ] ;
@@ -548,17 +549,17 @@
          fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:reporter" ] ;
+       fhir:id [ fhir:v "Extension.extension:informationSource" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Extension.extension" ] ;
-       fhir:sliceName [ fhir:v "reporter" ] ;
-       fhir:short [ fhir:v "(USCDI) Who reported whether the medication is or is not being consumed or administered" ] ;
-       fhir:definition [ fhir:v "Who reported whether the medication is or is not being consumed or administered" ] ;
+       fhir:sliceName [ fhir:v "informationSource" ] ;
+       fhir:short [ fhir:v "(USCDI) Who provided the information about the medication adherence" ] ;
+       fhir:definition [ fhir:v "The person or organization that provided the information about the medication adherence" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
+       fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Element.extension" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -592,7 +593,7 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
      ] [
-       fhir:id [ fhir:v "Extension.extension:reporter.id" ] ;
+       fhir:id [ fhir:v "Extension.extension:informationSource.id" ] ;
        fhir:path [ fhir:v "Extension.extension.id" ] ;
        fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
        fhir:short [ fhir:v "Unique id for inter-element referencing" ] ;
@@ -618,7 +619,7 @@
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:reporter.extension" ] ;
+       fhir:id [ fhir:v "Extension.extension:informationSource.extension" ] ;
        fhir:path [ fhir:v "Extension.extension.extension" ] ;
        fhir:slicing [
          fhir:discriminator ( [
@@ -670,7 +671,7 @@
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:reporter.url" ] ;
+       fhir:id [ fhir:v "Extension.extension:informationSource.url" ] ;
        fhir:path [ fhir:v "Extension.extension.url" ] ;
        fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
        fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
@@ -686,7 +687,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:fixed [ fhir:v "reporter"^^xsd:anyURI ] ;
+       fhir:fixed [ fhir:v "informationSource"^^xsd:anyURI ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -694,7 +695,7 @@
          fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Extension.extension:reporter.value[x]" ] ;
+       fhir:id [ fhir:v "Extension.extension:informationSource.value[x]" ] ;
        fhir:path [ fhir:v "Extension.extension.value[x]" ] ;
        fhir:short [ fhir:v "Value of extension" ] ;
        fhir:definition [ fhir:v "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." ] ;
@@ -709,16 +710,32 @@
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner>
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner> ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "true"^^xsd:boolean ]
+           ] )
          ] [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole>
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole> ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "false"^^xsd:boolean ]
+           ] )
          ] [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient> ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "true"^^xsd:boolean ]
+           ] )
          ] [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson>
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson> ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "false"^^xsd:boolean ]
+           ] )
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -902,6 +919,12 @@
      fhir:element ( [
        fhir:id [ fhir:v "Extension" ] ;
        fhir:path [ fhir:v "Extension" ] ;
+       fhir:code ( [
+         a loinc:71799-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "71799-1" ] ;
+         fhir:display [ fhir:v "Adherence to prescribed medication instructions [Reported]" ]
+       ] ) ;
        fhir:definition [ fhir:v "Whether the medication is or is not being consumed or administered" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ]
@@ -915,15 +938,15 @@
          ] ) ;
          fhir:rules [ fhir:v "open" ]
        ] ;
-       fhir:min [ fhir:v "2"^^xsd:nonNegativeInteger ]
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
-       fhir:id [ fhir:v "Extension.extension:medAdherence" ] ;
+       fhir:id [ fhir:v "Extension.extension:medicationAdherence" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Extension.extension" ] ;
-       fhir:sliceName [ fhir:v "medAdherence" ] ;
+       fhir:sliceName [ fhir:v "medicationAdherence" ] ;
        fhir:short [ fhir:v "(USCDI) Code indicating whether the medication is or is not being consumed or administered" ] ;
        fhir:definition [ fhir:v "Code indicating whether the medication is or is not being consumed or administered" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
@@ -933,16 +956,16 @@
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
-       fhir:id [ fhir:v "Extension.extension:medAdherence.url" ] ;
+       fhir:id [ fhir:v "Extension.extension:medicationAdherence.url" ] ;
        fhir:path [ fhir:v "Extension.extension.url" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:fixed [ fhir:v "medAdherence"^^xsd:anyURI ]
+       fhir:fixed [ fhir:v "medicationAdherence"^^xsd:anyURI ]
      ] [
-       fhir:id [ fhir:v "Extension.extension:medAdherence.value[x]" ] ;
+       fhir:id [ fhir:v "Extension.extension:medicationAdherence.value[x]" ] ;
        fhir:path [ fhir:v "Extension.extension.value[x]" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -953,53 +976,20 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Medication Adherence Codes" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/medication-statement-adherence"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/medication-statement-adherence>
+           fhir:v "http://hl7.org/fhir/us/core//ValueSet/medication-adherence"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/us/core//ValueSet/medication-adherence>
          ]
        ]
      ] [
-       fhir:id [ fhir:v "Extension.extension:timeStamp" ] ;
+       fhir:id [ fhir:v "Extension.extension:dateAsserted" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Extension.extension" ] ;
-       fhir:sliceName [ fhir:v "timeStamp" ] ;
-       fhir:short [ fhir:v "(USCDI) Timestamp when it was reported whether the medication is or is not being consumed or administered" ] ;
-       fhir:definition [ fhir:v "imestamp when it was reported whether the medication is or is not being consumed or administered" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
-       ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:id [ fhir:v "Extension.extension:timeStamp.url" ] ;
-       fhir:path [ fhir:v "Extension.extension.url" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
-       ] ) ;
-       fhir:fixed [ fhir:v "timeStamp"^^xsd:anyURI ]
-     ] [
-       fhir:id [ fhir:v "Extension.extension:timeStamp.value[x]" ] ;
-       fhir:path [ fhir:v "Extension.extension.value[x]" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "Extension.extension:reporter" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "true"^^xsd:boolean ]
-       ] ) ;
-       fhir:path [ fhir:v "Extension.extension" ] ;
-       fhir:sliceName [ fhir:v "reporter" ] ;
-       fhir:short [ fhir:v "(USCDI) Who reported whether the medication is or is not being consumed or administered" ] ;
-       fhir:definition [ fhir:v "Who reported whether the medication is or is not being consumed or administered" ] ;
+       fhir:sliceName [ fhir:v "dateAsserted" ] ;
+       fhir:short [ fhir:v "(USCDI) When the medication adherence was asserted" ] ;
+       fhir:definition [ fhir:v "When the medication adherence was asserted by the information source" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
@@ -1007,16 +997,49 @@
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
-       fhir:id [ fhir:v "Extension.extension:reporter.url" ] ;
+       fhir:id [ fhir:v "Extension.extension:dateAsserted.url" ] ;
        fhir:path [ fhir:v "Extension.extension.url" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:fixed [ fhir:v "reporter"^^xsd:anyURI ]
+       fhir:fixed [ fhir:v "dateAsserted"^^xsd:anyURI ]
      ] [
-       fhir:id [ fhir:v "Extension.extension:reporter.value[x]" ] ;
+       fhir:id [ fhir:v "Extension.extension:dateAsserted.value[x]" ] ;
+       fhir:path [ fhir:v "Extension.extension.value[x]" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Extension.extension:informationSource" ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
+       ] ) ;
+       fhir:path [ fhir:v "Extension.extension" ] ;
+       fhir:sliceName [ fhir:v "informationSource" ] ;
+       fhir:short [ fhir:v "(USCDI) Who provided the information about the medication adherence" ] ;
+       fhir:definition [ fhir:v "The person or organization that provided the information about the medication adherence" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "Extension.extension:informationSource.url" ] ;
+       fhir:path [ fhir:v "Extension.extension.url" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "informationSource"^^xsd:anyURI ]
+     ] [
+       fhir:id [ fhir:v "Extension.extension:informationSource.value[x]" ] ;
        fhir:path [ fhir:v "Extension.extension.value[x]" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1024,16 +1047,32 @@
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner>
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner> ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "true"^^xsd:boolean ]
+           ] )
          ] [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole>
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole> ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "false"^^xsd:boolean ]
+           ] )
          ] [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient> ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "true"^^xsd:boolean ]
+           ] )
          ] [
            fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson>
+           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson> ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "false"^^xsd:boolean ]
+           ] )
          ] )
        ] )
      ] [

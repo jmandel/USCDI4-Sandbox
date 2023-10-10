@@ -1,5 +1,12 @@
 [
   {
+    "id" : "uscore-treatment-intervention-preference",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference",
+    "version" : "0.0.0",
+    "name" : "USCoreTreatmentInterventionPreferenceCodeSystem"
+  },
+  {
     "id" : "AUDIT-C",
     "type" : "Questionnaire",
     "url" : "http://hl7.org/fhir/us/core/Questionnaire/AUDIT-C",
@@ -21,11 +28,46 @@
     "name" : "ExerciseVitalSign"
   },
   {
-    "id" : "uscore-treatment-intervention-preference",
-    "type" : "CodeSystem",
-    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference",
+    "id" : "us-core-average-blood-pressure",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure",
     "version" : "0.0.0",
-    "name" : "USCoreTreatmentInterventionPreferenceCodeSystem"
+    "name" : "USCoreAverageBloodPressureProfile"
+  },
+  {
+    "id" : "us-core-care-experience-preference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference",
+    "version" : "0.0.0",
+    "name" : "USCoreCareExperiencePreferenceProfile"
+  },
+  {
+    "id" : "us-core-medication-adherence",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence",
+    "version" : "0.0.0",
+    "name" : "USCoreMedicationAdherenceExtension"
+  },
+  {
+    "id" : "us-core-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+    "version" : "0.0.0",
+    "name" : "USCorePatientProfile"
+  },
+  {
+    "id" : "us-core-treatment-intervention-preference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference",
+    "version" : "0.0.0",
+    "name" : "USCoreTreatmentInterventionPreferenceProfile"
+  },
+  {
+    "id" : "uscore-treatment-intervention-preference",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-treatment-intervention-preference",
+    "version" : "0.0.0",
+    "name" : "USCoreTreatmentInterventionPreferencValueSet"
   },
   {
     "id" : "uscdi4-sandbox",
@@ -35,32 +77,11 @@
     "name" : "USCDI4_1Sandbox"
   },
   {
-    "id" : "us-core-average-blood-pressure",
-    "type" : "StructureDefinition",
-    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure",
-    "version" : "0.0.0",
-    "name" : "USCoreAverageBloodPressureProfile"
-  },
-  {
-    "id" : "us-core-care-experience-preference",
-    "type" : "StructureDefinition",
-    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference",
-    "version" : "0.0.0",
-    "name" : "USCoreCareExperiencePreferenceProfile"
-  },
-  {
     "id" : "us-core-location",
     "type" : "StructureDefinition",
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location",
     "version" : "0.0.0",
     "name" : "USCoreLocation"
-  },
-  {
-    "id" : "us-core-medicationrequest-compliance-extension",
-    "type" : "StructureDefinition",
-    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension",
-    "version" : "0.0.0",
-    "name" : "USCoreMedicationComplianceExtension"
   },
   {
     "id" : "us-core-medicationstatement",
@@ -84,13 +105,6 @@
     "name" : "USCoreSpecimenProfile"
   },
   {
-    "id" : "us-core-treatment-intervention-preference",
-    "type" : "StructureDefinition",
-    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference",
-    "version" : "0.0.0",
-    "name" : "USCoreTreatmentInterventionPreferenceProfile"
-  },
-  {
     "id" : "uscore-care-experience-preference",
     "type" : "ValueSet",
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference",
@@ -103,12 +117,5 @@
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status",
     "version" : "0.0.0",
     "name" : "USCoreMedicationstatementStatus"
-  },
-  {
-    "id" : "uscore-treatment-intervention-preference",
-    "type" : "ValueSet",
-    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-treatment-intervention-preference",
-    "version" : "0.0.0",
-    "name" : "USCoreTreatmentInterventionPreferencValueSet"
   }
 ]

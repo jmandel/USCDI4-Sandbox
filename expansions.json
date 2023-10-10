@@ -1,11 +1,64 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4be50165-413c-4455-9c14-f2d8dccd88ae",
+  "id" : "82efd93c-7cbf-4253-8bb9-63be482844ce",
   "meta" : {
-    "lastUpdated" : "2023-09-01T01:14:43.445+00:00"
+    "lastUpdated" : "2023-10-10T17:14:38.554+00:00"
   },
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.74</li><li>Loinc v2.74</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-95541-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/95541-9/\">95541-9</a></td><td>http://loinc.org</td><td>Care experience preference</td></tr></table></div>"
+      },
+      "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference",
+      "version" : "0.0.0",
+      "name" : "USCoreCareExperiencePreference",
+      "title" : "US Core Care Experience Preference Codes",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-08-15",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:35da960b-ab9a-4b66-a24c-6267a3f622ab",
+        "timestamp" : "2023-10-10T17:15:51+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.74"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "95541-9",
+          "display" : "Care experience preference"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -27,8 +80,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bc2fe63b-7ada-4387-8352-2f7a3a7a03e1",
-        "timestamp" : "2023-09-01T01:16:14+00:00",
+        "identifier" : "urn:uuid:97bcb587-dc5e-4649-bd96-049275f1cb0b",
+        "timestamp" : "2023-10-10T17:15:51+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -57,100 +110,6 @@
           "system" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
           "code" : "intended",
           "display" : "Intended"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-treatment-intervention-preference",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-uscore-treatment-intervention-preference.html\">codesystem US Core Treatment Intervention Preference CodeSystem v0.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-uscdi4-sandbox-CodeSystem-uscore-treatment-intervention-preference-intervention-preference\"> </a>\u00a0\u00a0<a href=\"CodeSystem-uscore-treatment-intervention-preference.html#uscore-treatment-intervention-preference-intervention-preference\">intervention-preference</a></td><td>http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference</td><td>Intervention Preference</td><td><div><p>A personal preference for a type of medical intervention (treatment) request under certain conditions.</p>\n</div></td></tr></table></div>"
-      },
-      "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-treatment-intervention-preference",
-      "version" : "0.0.0",
-      "name" : "USCoreTreatmentInterventionPreferencValueSet",
-      "title" : "US Core Treatment Intervention Preference ValueSet",
-      "status" : "draft",
-      "experimental" : false,
-      "date" : "2023-08-15",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:c6852447-d1d1-4dc1-82c9-a2e2a50610c1",
-        "timestamp" : "2023-09-01T01:16:18+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference|0.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference",
-          "code" : "intervention-preference",
-          "display" : "Intervention Preference"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.74</li><li>Loinc v2.74</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-95541-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/95541-9/\">95541-9</a></td><td>http://loinc.org</td><td>Care experience preference</td></tr></table></div>"
-      },
-      "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference",
-      "version" : "0.0.0",
-      "name" : "USCoreCareExperiencePreference",
-      "title" : "US Core Care Experience Preference Codes",
-      "status" : "draft",
-      "experimental" : false,
-      "date" : "2023-08-15",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:8e5723d2-f6aa-43ac-833d-7ab707b7e3a3",
-        "timestamp" : "2023-09-01T01:16:18+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-valueset",
-          "valueUri" : "null"
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://loinc.org|2.74"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://loinc.org|2.74"
-        }],
-        "contains" : [{
-          "system" : "http://loinc.org",
-          "code" : "95541-9",
-          "display" : "Care experience preference"
         }]
       }
     }

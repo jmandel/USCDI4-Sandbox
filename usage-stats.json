@@ -5,8 +5,8 @@
   "jurisdiction": "US",
   "extensions": [
     {
-      "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension",
-      "title": "US Core Medication Compliance Extension",
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence",
+      "title": "US Core Medication Adherence Extension",
       "types": [
         "CodeableConcept",
         "dateTime",
@@ -67,8 +67,14 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference",
-        "title": "US Core Treatment Intervention Preference Profile"
+        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab",
+        "title": "US Core Laboratory Result Observation Profile"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+        "title": "US Core Patient Profile"
       }
     ],
     "Location": [
@@ -154,6 +160,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -190,6 +199,24 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation": [
+      "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.differential.element",

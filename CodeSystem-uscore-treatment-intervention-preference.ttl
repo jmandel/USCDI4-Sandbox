@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "uscore-treatment-intervention-preference"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">intervention-preference<a name=\"uscore-treatment-intervention-preference-intervention-preference\"> </a></td><td>Intervention Preference</td><td>A personal preference for a type of medical intervention (treatment) request under certain conditions.</td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
@@ -37,13 +37,13 @@
        ] )
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.0.0"] ; # 
   fhir:name [ fhir:v "USCoreTreatmentInterventionPreferenceCodeSystem"] ; # 
   fhir:title [ fhir:v "US Core Treatment Intervention Preference CodeSystem"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-08-31T01:42:33.501000+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-02"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [

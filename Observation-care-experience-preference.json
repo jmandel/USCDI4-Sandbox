@@ -10,11 +10,11 @@
       "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
       "valueMarkdown" : "This is an care experience preference example for the *Care Experience Profile*.  It is based on the *US Core Simple Observation Profile*."
     }],
-    "profile" : ["http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference"]
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"care-experience-preference\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;care-experience-preference&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-care-experience-preference.html\">US Core Care Experience Preference Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Care Experience Preference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/core/STU6.1/CodeSystem-us-core-category.html\">US Core Category</a>#care-experience-preference &quot;Care experience preference&quot;)</span></p><p><b>code</b>: Care Experience Preference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#95541-9 &quot;Care experience preference&quot;)</span></p><p><b>subject</b>: <a href=\"http://www.hl7.org/fhir/us/core/Patient/example\">http://www.hl7.org/fhir/us/core/Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-30</p><p><b>value</b>: Here are some examples of the things that I would like to have near me, music that I’d like to hear, and other details of my care that would help to keep me happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the Fields</p><p><b>derivedFrom</b>: <a href=\"http://example.org/fhir/DocumentReference/source_document\">http://example.org/fhir/DocumentReference/source_document: Patient's hand written document (e.g., letter, note) or form technically a DocumentReference of an image of the document</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"care-experience-preference\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;care-experience-preference&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-care-experience-preference.html\">US Core Care Experience Preference Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Care Experience Preference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/core/STU6.1/CodeSystem-us-core-category.html\">US Core Category</a>#care-experience-preference &quot;Care experience preference&quot;)</span></p><p><b>code</b>: Care Experience Preference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#95541-9 &quot;Care experience preference&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-30</p><p><b>value</b>: For critical or end-of-life care, here are some examples of the things that I would like to have near me, music that I’d like to hear, and other details of my care that would help to keep me happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the Fields</p><p><b>derivedFrom</b>: <a href=\"http://example.org/fhir/DocumentReference/source_document\">http://example.org/fhir/DocumentReference/source_document: Patient's hand written document (e.g., letter, note) or form technically a DocumentReference of an image of the document</a></p></div>"
   },
   "status" : "final",
   "category" : [{
@@ -34,11 +34,11 @@
     "text" : "Care Experience Preference"
   },
   "subject" : {
-    "reference" : "http://www.hl7.org/fhir/us/core/Patient/example",
+    "reference" : "Patient/example",
     "display" : "Amy Shaw"
   },
   "effectiveDateTime" : "2023-08-30",
-  "valueString" : "Here are some examples of the things that I would like to have near me, music that I’d like to hear, and other details of my care that would help to keep me happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the Fields",
+  "valueString" : "For critical or end-of-life care, here are some examples of the things that I would like to have near me, music that I’d like to hear, and other details of my care that would help to keep me happy and relaxed: Like Bach, especially the cantatas.  St. Martin in the Fields",
   "derivedFrom" : [{
     "reference" : "http://example.org/fhir/DocumentReference/source_document",
     "display" : "Patient's hand written document (e.g., letter, note) or form technically a DocumentReference of an image of the document"
