@@ -35,165 +35,7 @@ dependsOn:
   uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
   id: hl7_fhir_uv_extensions_r4
 definition:
-  grouping:
-  - id: AvgBP
-    name: Average Blood Pressure
-    description: Average Blood Pressure Profile and Examples
-  - id: PE
-    name: Physical Activity
-    description: Physical Activity Health Status Assessment Examples
-  - id: Booze
-    name: Alcohol Use
-    description: Alcohol Use Health Status Assessment Examples
-  - id: Drugs
-    name: Substance Use
-    description: Substance Use Health Status Assessment Examples
-  - id: Labs
-    name: Laboratory
-    description: Laboratory and Specimen Profiles and Examples
-  - id: Facility
-    name: Facility Information
-    description: Location Profiles and Examples
-  - id: Medication
-    name: Medication
-    description: Medication Adherence Examples
-  - id: Preferences
-    name: Goals and Preferences
-    description: Goals and Preferences Profiles and Examples
   resource:
-  - reference:
-      reference: StructureDefinition/us-core-average-blood-pressure
-    description: To promote interoperability and adoption through common implementation,
-      this profile sets minimum expectations for the Observation resource to record,
-      search, and fetch average diastolic and systolic blood pressure observations
-      with standard LOINC codes and UCUM units of measure. It is based on the US Core
-      Vital Signs Profile and identifies which *additional* core elements, extensions,
-      vocabularies, and value sets **SHALL** be present and constrains the way the
-      elements are used when using the profile. It provides the floor for standards
-      development for specific use cases.
-    exampleBoolean: false
-    name: US Core Average Blood Pressure Profile
-    groupingId: AvgBP
-  - reference:
-      reference: Observation/average-blood-pressure
-    description: This is an average blood pressure example for the *Vitalsigns Profile*.  It
-      is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/)
-      [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure).
-    name: Average Blood Pressure Example
-    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure
-    groupingId: AvgBP
-  - reference:
-      reference: Observation/EVS-item-example-68516-4
-    description: This is a Evs Item Example 68516-4 (On those days that you engage
-      in moderate to strenuous exercise, how many minutes, on average, do you exercise?)
-      for the *US Core Observation Screening Assessment Profile*
-    name: Evs Item Example 68516-4
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: PE
-  - reference:
-      reference: Observation/EVS-item-example-89555-7
-    description: This is a Evs Item Example 89555-7 (How many D per W did you engage
-      in moderate to strenuous physical activity in the last 30D) for the *US Core
-      Observation Screening Assessment Profile*
-    name: Evs Item Example 89555-7
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: PE
-  - reference:
-      reference: Observation/EVS-panel-example-89574-8
-    description: This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for
-      the *US Core Observation Screening Assessment Profile*
-    name: Evs Panel Example 89574-8
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: PE
-  - reference:
-      reference: Observation/exercise-per-day
-    description: This is an minutes exercise per day example for the *Simple Observation
-      Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
-      guidance using Simple Observations.
-    name: Exercise Per Day Example
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
-    groupingId: PE
-  - reference:
-      reference: Observation/exercise-per-week
-    description: This is a days exercise per week example for the *Simple Observation
-      Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
-      guidance using Simple Observations.
-    name: Exercise Per Week Example
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
-    groupingId: PE
-  - reference:
-      reference: Questionnaire/exercise-vital-sign
-    description: This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital
-      Sign (EVS) Questionnaire Example. It is based on the on US Core [Screening and
-      Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance
-      using Questionnaire/QuestionnaireResponse resources.
-    name: Exercise Vital Sign Questionnaire Example
-    exampleBoolean: true
-    groupingId: PE
-  - reference:
-      reference: QuestionnaireResponse/exercise-vital-sign
-    description: This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital
-      Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core [Screening
-      and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
-      guidance using Questionnaire/QuestionnaireResponse resources.
-    name: Exercise Vital Sign QuestionnaireResponse Example
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse
-    groupingId: PE
-  - reference:
-      reference: Observation/alcohol-use-status
-    description: This is an alcohol-use-status example for the *Simple Observation
-      Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
-      guidance using Simple Observations.
-    name: Alcohol Use Status Example
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
-    groupingId: Booze
-  - reference:
-      reference: Observation/alcoholic-drinks-per-day
-    description: This is an Alcoholic Drinks Per Day example for the *Simple Observation
-      Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
-      guidance using Simple Observations.
-    name: Alcoholic Drinks Per Day Example
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
-    groupingId: Booze
-  - reference:
-      reference: Observation/AUDIT-C-item-example-68517-2
-    description: This is a Audit-C Item Example 68517-2 (How many times in the past
-      year have you have X or more drinks in a day?) for the *US Core Observation
-      Screening Assessment Profile*
-    name: Audit-C Item Example 68517-2
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Booze
-  - reference:
-      reference: Observation/AUDIT-C-item-example-68519-8
-    description: This is a Audit-C Item Example 68519-8 (How many standard drinks
-      containing alcohol do you have on a typical day?) for the *US Core Observation
-      Screening Assessment Profile*
-    name: Audit-C Item Example 68519-8
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Booze
-  - reference:
-      reference: Observation/AUDIT-C-item-example-68520-6
-    description: This is a Audit-C Item Example 68520-6 (How often do you have 6 or
-      more drinks on 1 occasion?) for the *US Core Observation Screening Assessment
-      Profile*
-    name: Audit-C Item Example 68520-6
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Booze
-  - reference:
-      reference: Observation/AUDIT-C-item-example-75626-2
-    description: This is a Audit-C Item Example 75626-2 (Total score [AUDIT-C]) for
-      the *US Core Observation Screening Assessment Profile*
-    name: Audit-C Item Example 75626-2
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Booze
-  - reference:
-      reference: Observation/AUDIT-C-panel-example-72109-2
-    description: This is a Audit-C Panel Example 72109-2 (Alcohol Use Disorder Identification
-      Test - Consumption [AUDIT-C]) for the *US Core Observation Screening Assessment
-      Profile*
-    name: Audit-C Panel Example 72109-2
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Booze
   - reference:
       reference: Questionnaire/AUDIT-C
     description: Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]
@@ -202,7 +44,6 @@ definition:
     name: Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] Questionnaire
       Example
     exampleBoolean: true
-    groupingId: Booze
   - reference:
       reference: QuestionnaireResponse/AUDIT-C
     description: This is the [LHC Form](https://loinc.org/lhc-forms/) Alcohol Use
@@ -212,7 +53,185 @@ definition:
     name: Alcohol Use Disorder Identification Test - Consumption [AUDIT-C] QuestionnaireResponse
       Example
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse
-    groupingId: Booze
+  - reference:
+      reference: Observation/alcohol-use-status
+    description: This is an alcohol-use-status example for the *Simple Observation
+      Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
+      guidance using Simple Observations.
+    name: Alcohol Use Status Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
+  - reference:
+      reference: Observation/alcoholic-drinks-per-day
+    description: This is an Alcoholic Drinks Per Day example for the *Simple Observation
+      Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
+      guidance using Simple Observations.
+    name: Alcoholic Drinks Per Day Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
+  - reference:
+      reference: Observation/AUDIT-C-item-example-68517-2
+    description: This is a Audit-C Item Example 68517-2 (How many times in the past
+      year have you have X or more drinks in a day?) for the *US Core Observation
+      Screening Assessment Profile*
+    name: Audit-C Item Example 68517-2
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+  - reference:
+      reference: Observation/AUDIT-C-item-example-68519-8
+    description: This is a Audit-C Item Example 68519-8 (How many standard drinks
+      containing alcohol do you have on a typical day?) for the *US Core Observation
+      Screening Assessment Profile*
+    name: Audit-C Item Example 68519-8
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+  - reference:
+      reference: Observation/AUDIT-C-item-example-68520-6
+    description: This is a Audit-C Item Example 68520-6 (How often do you have 6 or
+      more drinks on 1 occasion?) for the *US Core Observation Screening Assessment
+      Profile*
+    name: Audit-C Item Example 68520-6
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+  - reference:
+      reference: Observation/AUDIT-C-item-example-75626-2
+    description: This is a Audit-C Item Example 75626-2 (Total score [AUDIT-C]) for
+      the *US Core Observation Screening Assessment Profile*
+    name: Audit-C Item Example 75626-2
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+  - reference:
+      reference: Observation/AUDIT-C-panel-example-72109-2
+    description: This is a Audit-C Panel Example 72109-2 (Alcohol Use Disorder Identification
+      Test - Consumption [AUDIT-C]) for the *US Core Observation Screening Assessment
+      Profile*
+    name: Audit-C Panel Example 72109-2
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+  - reference:
+      reference: Observation/average-blood-pressure
+    description: This is an average blood pressure example for the *Vitalsigns Profile*.  It
+      is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/)
+      [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure).
+    name: Average Blood Pressure Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure
+  - reference:
+      reference: Observation/care-experience-preference
+    description: This is an care experience preference example for the *Care Experience
+      Profile*.  It is based on the *US Core Simple Observation Profile*.
+    name: Care Experience Preference Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference
+  - reference:
+      reference: Observation/EVS-item-example-68516-4
+    description: This is a Evs Item Example 68516-4 (On those days that you engage
+      in moderate to strenuous exercise, how many minutes, on average, do you exercise?)
+      for the *US Core Observation Screening Assessment Profile*
+    name: Evs Item Example 68516-4
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+  - reference:
+      reference: Observation/EVS-item-example-89555-7
+    description: This is a Evs Item Example 89555-7 (How many D per W did you engage
+      in moderate to strenuous physical activity in the last 30D) for the *US Core
+      Observation Screening Assessment Profile*
+    name: Evs Item Example 89555-7
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+  - reference:
+      reference: Observation/EVS-panel-example-89574-8
+    description: This is a Evs Panel Example 89574-8 (Exercise Vital Sign (EVS)) for
+      the *US Core Observation Screening Assessment Profile*
+    name: Evs Panel Example 89574-8
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
+  - reference:
+      reference: Observation/exercise-per-day
+    description: This is an minutes exercise per day example for the *Simple Observation
+      Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
+      guidance using Simple Observations.
+    name: Exercise Per Day Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
+  - reference:
+      reference: Observation/exercise-per-week
+    description: This is a days exercise per week example for the *Simple Observation
+      Profile*.  It is based on the on US Core [Screening and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
+      guidance using Simple Observations.
+    name: Exercise Per Week Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
+  - reference:
+      reference: Questionnaire/exercise-vital-sign
+    description: This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital
+      Sign (EVS) Questionnaire Example. It is based on the on US Core [Screening and
+      Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html) guidance
+      using Questionnaire/QuestionnaireResponse resources.
+    name: Exercise Vital Sign Questionnaire Example
+    exampleBoolean: true
+  - reference:
+      reference: QuestionnaireResponse/exercise-vital-sign
+    description: This is the [LHC Form](https://loinc.org/lhc-forms/) Exercise Vital
+      Sign (EVS) QuestionnaireResponse Example. It is based on the on US Core [Screening
+      and Assessments](http://hl7.org/fhir/us/core/screening-and-assessments.html)
+      guidance using Questionnaire/QuestionnaireResponse resources.
+    name: Exercise Vital Sign QuestionnaireResponse Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse
+  - reference:
+      reference: Specimen/example-serum-hemolyzed
+    description: This is a serum specimen example for the *US Core Specimen Profile*.
+      It demonstrates the use of the USCDI requirements for specimen condition and
+      body source site.
+    name: Hemolyzed Serum Specimen Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen
+  - reference:
+      reference: Location/hospital
+    description: This is an example hospital location for the *US Core Location Profile*.
+    name: Hospital Location
+    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location
+  - reference:
+      reference: MedicationRequest/coded-oral-axid-with-compliance
+    description: This example demonstrates medication adherence for a prescribed medication
+      example using an extension on the MedicationRequest. The extension value uses
+      SNOMED CT.
+    name: MedicationRequest Coded Oral Axid with Compliance Extension Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest
+  - reference:
+      reference: MedicationRequest/self-tylenol-with-compliance
+    description: This example demonstrates medication adherence for a self-prescribed
+      Tylenol example for the using an extension on the MedicationRequest. The extension
+      value uses SNOMED CT.
+    name: MedicationRequest Self Tylenol with Compliance Extension Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest
+  - reference:
+      reference: MedicationStatement/coded-oral-axid-with-compliance
+    description: This example demonstrates medication adherence for a prescribed medication
+      example using an R5 element extension on the MedicationStatement. The extension
+      value uses MedicationStatement Adherence Codes.
+    name: MedicationStatement Coded Oral Axid with Adherence Extension Example
+    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement
+  - reference:
+      reference: MedicationStatement/self-tylenol-with-compliance
+    description: This example demonstrates medication adherence for a self-prescribed
+      Tylenol example for the using an extension on the MedicationRequest. The extension
+      value uses MedicationStatement Adherence Codes.
+    name: MedicationStatement Self Tylenol with Compliance Extension Example
+    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement
+  - reference:
+      reference: Observation/medication-adherence-oral-axid
+    description: This is a medication adherance for a prescribed  medication example
+      using Observation.  Both the code and value use SNOMED CT and the MedicationRequest
+      is reference using the basedOn element.
+    name: Observation Medication Adherence Oral Axid (Prescribed) Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
+  - reference:
+      reference: Observation/medication-adherence-oral-axid-boolean
+    description: This is a medication adherance for a prescribed  medication example
+      using Observation.   The code uses LOINC with an Ordinal scale and value use
+      boolean values and the MedicationRequest is reference using the basedOn element.
+    name: Observation Medication Adherence Oral Axid (Prescribed) Using Boolean Code
+      Value Pair Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
+  - reference:
+      reference: Observation/medication-adherence-self-tylenol
+    description: This is a medication adherance for a self-prescribed OTC medication
+      example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest
+      is reference using the basedOn element.
+    name: Observation Medication Adherence Self Tylenol (OTC) Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
+  - reference:
+      reference: Observation/serum-glucose
+    description: This is a serum glucose example for the *US Core Observation Lab
+      Profile*.
+    name: Serum Glucose Example
+    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab
   - reference:
       reference: Observation/substance-use-status
     description: This is an Substance-use-status example for the *Simple Observation
@@ -220,7 +239,6 @@ definition:
       guidance using Simple Observations.
     name: Substance Use Status Example
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
-    groupingId: Drugs
   - reference:
       reference: Observation/TAPS-item-example-75889-6
     description: This is a Taps Item Example 75889-6 (How often have you had four
@@ -228,7 +246,6 @@ definition:
       Observation Screening Assessment Profile*
     name: Taps Item Example 75889-6
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Drugs
   - reference:
       reference: Observation/TAPS-item-example-88037-7
     description: This is a Taps Item Example 88037-7 (How often have you had five
@@ -236,7 +253,6 @@ definition:
       Observation Screening Assessment Profile*
     name: Taps Item Example 88037-7
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Drugs
   - reference:
       reference: Observation/TAPS-item-example-96842-0
     description: This is a Taps Item Example 96842-0 (How often have you used any
@@ -244,7 +260,6 @@ definition:
       Profile*
     name: Taps Item Example 96842-0
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Drugs
   - reference:
       reference: Observation/TAPS-item-example-96843-8
     description: This is a Taps Item Example 96843-8 (How often have you used illegal
@@ -252,7 +267,6 @@ definition:
       Assessment Profile*
     name: Taps Item Example 96843-8
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Drugs
   - reference:
       reference: Observation/TAPS-item-example-96844-6
     description: This is a Taps Item Example 96844-6 (How often have you used any
@@ -261,7 +275,6 @@ definition:
       Screening Assessment Profile*
     name: Taps Item Example 96844-6
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Drugs
   - reference:
       reference: Observation/TAPS-panel-example-96841-2
     description: This is a Taps Panel Example 96841-2 (Tobacco, Alcohol, Prescription
@@ -269,7 +282,6 @@ definition:
       Screening Assessment Profile*
     name: Taps Panel Example 96841-2
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment
-    groupingId: Drugs
   - reference:
       reference: Questionnaire/TAPS
     description: Tobacco, Alcohol, Prescription medications, and other Substance use
@@ -279,7 +291,6 @@ definition:
     name: Tobacco, Alcohol, Prescription medications, and other Substance use screen
       [TAPS] Questionnaire Example
     exampleBoolean: true
-    groupingId: Drugs
   - reference:
       reference: QuestionnaireResponse/TAPS
     description: This is the [LHC Form](https://loinc.org/lhc-forms/)  Tobacco, Alcohol,
@@ -289,7 +300,40 @@ definition:
     name: Tobacco, Alcohol, Prescription medications, and other Substance use screen
       [TAPS] QuestionnaireResponse Example
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse
-    groupingId: Drugs
+  - reference:
+      reference: Observation/intervention-preference
+    description: This is an intervention preference example for the *Treatment Intervention
+      Profile*.  It is based on the *US Core Simple Observation Profile*.
+    name: Treatment Intervention Preference Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference
+  - reference:
+      reference: StructureDefinition/us-core-average-blood-pressure
+    description: To promote interoperability and adoption through common implementation,
+      this profile sets minimum expectations for the Observation resource to record,
+      search, and fetch average diastolic and systolic blood pressure observations
+      with standard LOINC codes and UCUM units of measure. It is based on the US Core
+      Vital Signs Profile and identifies which *additional* core elements, extensions,
+      vocabularies, and value sets  **SHALL** be present and constrains the way the
+      elements are used when using the profile.  It provides the floor for standards
+      development for specific use cases.
+    exampleBoolean: false
+    name: US Core Average Blood Pressure Profile
+  - reference:
+      reference: ValueSet/uscore-care-experience-preference
+    description: A code representing an individual's care experience preferences.
+    exampleBoolean: false
+    name: US Core Care Experience Preference Codes
+  - reference:
+      reference: StructureDefinition/us-core-care-experience-preference
+    description: To promote interoperability and adoption through common implementation,
+      this profile sets minimum expectations for the Observation resource to record,
+      search, and fetch for a patient's care experience preferences. It is based on
+      the US Core Simple Profile and identifies which *additional* core elements,
+      extensions, vocabularies, and value sets **SHALL** be present and constrains
+      the way the elements are used when using the profile. It provides the floor
+      for standards development for specific use cases.
+    exampleBoolean: false
+    name: US Core Care Experience Preference Profile
   - reference:
       reference: StructureDefinition/us-core-observation-lab
     description: "The US Core Laboratory Result Observation Profile is based upon\
@@ -310,34 +354,6 @@ definition:
       \ use cases."
     exampleBoolean: false
     name: US Core Laboratory Result Observation Profile
-    groupingId: Labs
-  - reference:
-      reference: StructureDefinition/us-core-specimen
-    description: This profile sets minimum expectations for the Specimen resource
-      to record, search, and fetch "substances being sampled or tested. (e.g., nasopharyngeal
-      swab, whole blood, serum, urine, wound swab)" associated with a patient to promote
-      interoperability and adoption through common implementation.  It identifies
-      which core elements, extensions, vocabularies, and value sets **SHALL** be present
-      in the resource and constrains the way the elements are used when using this
-      profile.  It provides the floor for standards development for specific use cases.
-    exampleBoolean: false
-    name: US Core Specimen Profile
-    groupingId: Labs
-  - reference:
-      reference: Observation/serum-glucose
-    description: This is a serum glucose example for the *US Core Observation Lab
-      Profile*.
-    name: Serum Glucose Example
-    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab
-    groupingId: Labs
-  - reference:
-      reference: Specimen/example-serum-hemolyzed
-    description: This is a serum specimen example for the *US Core Specimen Profile*.
-      It demonstrates the use of the USCDI requirements for specimen condition and
-      body source site.
-    name: Hemolyzed Serum Specimen Example
-    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen
-    groupingId: Labs
   - reference:
       reference: StructureDefinition/us-core-location
     description: This profile sets minimum expectations for the Location resource
@@ -348,61 +364,20 @@ definition:
       specific use cases to promote interoperability and adoption through common implementation.
     exampleBoolean: false
     name: US Core Location Profile
-    groupingId: Facility
   - reference:
-      reference: Location/hospital
-    description: This is an example hospital location for the *US Core Location Profile*.
-    name: Hospital Location
-    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location
-    groupingId: Facility
-  - reference:
-      reference: Observation/medication-adherence-oral-axid
-    description: This is a medication adherance for a prescribed  medication example
-      using Observation.  Both the code and value use SNOMED CT and the MedicationRequest
-      is reference using the basedOn element.
-    name: Observation Medication Adherence Oral Axid (Prescribed) Example
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
-    groupingId: Medication
-  - reference:
-      reference: Observation/medication-adherence-oral-axid-boolean
-    description: This is a medication adherance for a prescribed  medication example
-      using Observation.   The code uses LOINC with an Ordinal scale and value use
-      boolean values and the MedicationRequest is reference using the basedOn element.
-    name: Observation Medication Adherence Oral Axid (Prescribed) Using Boolean Code
-      Value Pair Example
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
-    groupingId: Medication
-  - reference:
-      reference: Observation/medication-adherence-self-tylenol
-    description: This is a medication adherance for a self-prescribed OTC medication
-      example using Observation.  Both the code and value use SNOMED CT and the MedicationRequest
-      is reference using the basedOn element.
-    name: Observation Medication Adherence Self Tylenol (OTC) Example
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
-    groupingId: Medication
-  - reference:
-      reference: StructureDefinition/us-core-medicationrequest-compliance-extension
-    description: A MedicationRequest extension for indicating whether the medication
-      is or is not being consumed or administered
+      reference: StructureDefinition/us-core-medication-adherence
+    description: A MedicationRequest extension representing whether the medication
+      is or is not being consumed or administered.
     exampleBoolean: false
-    name: US Core Medication Compliance Extension
-    groupingId: Medication
+    name: US Core Medication Adherence Extension
   - reference:
-      reference: MedicationRequest/coded-oral-axid-with-compliance
-    description: This example demonstrates medication adherence for a prescribed medication
-      example using an extension on the MedicationRequest. The extension value uses
-      SNOMED CT.
-    name: MedicationRequest Coded Oral Axid with Compliance Extension Example
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest
-    groupingId: Medication
-  - reference:
-      reference: MedicationRequest/self-tylenol-with-compliance
-    description: This example demonstrates medication adherence for a self-prescribed
-      Tylenol example for the using an extension on the MedicationRequest. The extension
-      value uses SNOMED CT.
-    name: MedicationRequest Self Tylenol with Compliance Extension Example
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest
-    groupingId: Medication
+      reference: ValueSet/uscore-medicationstatement-status
+    description: A code specifying the state of the statement.  Generally, this will
+      be active or completed state.  This value set excludes the concept used internally
+      by the FHIR specification, not-taken,on-hold,stopped, and unknown, because they
+      are covered by the medication adherence extension.
+    exampleBoolean: false
+    name: US Core Medication Status Codes
   - reference:
       reference: StructureDefinition/us-core-medicationstatement
     description: 'Profile of MedicationStatement to support medication adherence -
@@ -418,57 +393,37 @@ definition:
       and adoption through common implementation.'
     exampleBoolean: false
     name: US Core MedicationStatement
-    groupingId: Medication
   - reference:
-      reference: ValueSet/uscore-medicationstatement-status
-    description: A code specifying the state of the statement.  Generally, this will
-      be active or completed state.  This value set excludes the concept used internally
-      by the FHIR specification, not-taken,on-hold,stopped, and unknown, because they
-      are covered by the medication adherence extension.
-    exampleBoolean: false
-    name: US Core Medication Status Codes
-    groupingId: Medication
-  - reference:
-      reference: MedicationStatement/coded-oral-axid-with-compliance
-    description: This example demonstrates medication adherence for a prescribed medication
-      example using an R5 element extension on the MedicationStatement. The extension
-      value uses MedicationStatement Adherence Codes.
-    name: MedicationStatement Coded Oral Axid with Adherence Extension Example
-    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement
-    groupingId: Medication
-  - reference:
-      reference: MedicationStatement/self-tylenol-with-compliance
-    description: This example demonstrates medication adherence for a self-prescribed
-      Tylenol example for the using an extension on the MedicationRequest. The extension
-      value uses MedicationStatement Adherence Codes.
-    name: MedicationStatement Self Tylenol with Compliance Extension Example
-    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement
-    groupingId: Medication
-  - reference:
-      reference: StructureDefinition/us-core-care-experience-preference
-    description: To promote interoperability and adoption through common implementation,
-      this profile sets minimum expectations for the Observation resource to record,
-      search, and fetch for a patient's care experience preferences. It is based on
-      the US Core Simple Profile and identifies which *additional* core elements,
-      extensions, vocabularies, and value sets **SHALL** be present and constrains
-      the way the elements are used when using the profile. It provides the floor
+      reference: StructureDefinition/us-core-patient
+    description: The US Core Patient Profile meets the U.S. Core Data for Interoperability
+      (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations
+      for the Patient resource to record, search, and fetch basic demographics and
+      other administrative information about an individual patient. It identifies
+      which core elements, extensions, vocabularies, and value sets **SHALL** be present
+      in the resource when using this profile to promote interoperability and adoption
+      through common implementation.  It identifies which core elements, extensions,
+      vocabularies, and value sets **SHALL** be present in the resource and constrains
+      the way the elements are used when using this profile.  It provides the floor
       for standards development for specific use cases.
     exampleBoolean: false
-    name: US Core Care Experience Preference Profile
-    groupingId: Preferences
+    name: US Core Patient Profile
   - reference:
-      reference: ValueSet/uscore-care-experience-preference
-    description: A code representing an individual's care experience preferences.
+      reference: StructureDefinition/us-core-specimen
+    description: This profile sets minimum expectations for the Specimen resource
+      to record, search, and fetch "substances being sampled or tested. (e.g., nasopharyngeal
+      swab, whole blood, serum, urine, wound swab)" associated with a patient to promote
+      interoperability and adoption through common implementation.  It identifies
+      which core elements, extensions, vocabularies, and value sets **SHALL** be present
+      in the resource and constrains the way the elements are used when using this
+      profile.  It provides the floor for standards development for specific use cases.
     exampleBoolean: false
-    name: US Core Care Experience Preference Codes
-    groupingId: Preferences
+    name: US Core Specimen Profile
   - reference:
-      reference: Observation/care-experience-preference
-    description: This is an care experience preference example for the *Care Experience
-      Profile*.  It is based on the *US Core Simple Observation Profile*.
-    name: Care Experience Preference Example
-    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference
-    groupingId: Preferences
+      reference: CodeSystem/uscore-treatment-intervention-preference
+    description: A code representing an individual's medical intervention (treatment)
+      preferences.
+    exampleBoolean: false
+    name: US Core Treatment Intervention Preference CodeSystem
   - reference:
       reference: StructureDefinition/us-core-treatment-intervention-preference
     description: To promote interoperability and adoption through common implementation,
@@ -480,28 +435,12 @@ definition:
       for standards development for specific use cases.
     exampleBoolean: false
     name: US Core Treatment Intervention Preference Profile
-    groupingId: Preferences
   - reference:
       reference: ValueSet/uscore-treatment-intervention-preference
     description: A code representing an individual's medical intervention (treatment)
       preferences.
     exampleBoolean: false
     name: US Core Treatment Intervention Preference ValueSet
-    groupingId: Preferences
-  - reference:
-      reference: CodeSystem/uscore-treatment-intervention-preference
-    description: A code representing an individual's medical intervention (treatment)
-      preferences.
-    exampleBoolean: false
-    name: US Core Treatment Intervention Preference CodeSystem
-    groupingId: Preferences
-  - reference:
-      reference: Observation/intervention-preference
-    description: This is an intervention preference example for the *Treatment Intervention
-      Profile*.  It is based on the *US Core Simple Observation Profile*.
-    name: Treatment Intervention Preference Example
-    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference
-    groupingId: Preferences
   page:
     nameUrl: toc.html
     title: Table of Contents
@@ -515,6 +454,9 @@ definition:
         valueCode: draft
     - nameUrl: guidance.html
       title: Guidance
+      generation: markdown
+    - nameUrl: screening-and-assessments.html
+      title: Screening and Assessments
       generation: markdown
     - nameUrl: downloads.html
       title: Downloads
@@ -544,8 +486,6 @@ definition:
     value: fsh-generated/resources
   - code: path-resource
     value: input/intro-notes
-  - code: path-liquid
-    value: input/images/liquid
   - code: excludexml
     value: 'true'
   - code: excludejson

@@ -39,6 +39,7 @@ differential:
     short: (USCDI) Specimen identifier
     mustSupport: true
 # === New USCDI requirement ===
+
   - id: Specimen.accessionIdentifier
     extension:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement

@@ -1,11 +1,12 @@
 resourceType: StructureDefinition
-id: us-core-medicationrequest-compliance-extension
-url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension
-name: USCoreMedicationComplianceExtension
-title: US Core Medication Compliance Extension
+id: us-core-medication-adherence
+url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence
+# url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension
+name: USCoreMedicationAdherenceExtension
+title: US Core Medication Adherence Extension
 status: active
-date: '2023-08-11'
-description: A MedicationRequest extension for indicating whether the medication is or is not being consumed or administered
+date: '2023-09-23'
+description: A MedicationRequest extension representing whether the medication is or is not being consumed or administered.
 fhirVersion: '4.0.1'
 kind: complex-type
 abstract: false
@@ -23,6 +24,10 @@ differential:
   element:
   - id: Extension
     path: Extension
+    code:
+    - system: 'http://loinc.org'
+      code: 71799-1
+      display: Adherence to prescribed medication instructions [Reported]
     definition: Whether the medication is or is not being consumed or administered
     min: 0
     max: '*'
@@ -35,14 +40,14 @@ differential:
                 type: value
                 path: url
         rules: open
-    min: 2
+    min: 1
 
-  - id: Extension.extension:medAdherence
+  - id: Extension.extension:medicationAdherence
     extension:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Extension.extension
-    sliceName: medAdherence
+    sliceName: medicationAdherence
     short: (USCDI) Code indicating whether the medication is or is not being consumed or administered
     definition: Code indicating whether the medication is or is not being consumed or administered
     min: 1
@@ -51,16 +56,16 @@ differential:
     - code: Extension
     mustSupport: true
 
-  - id: Extension.extension:medAdherence.url
+  - id: Extension.extension:medicationAdherence.url
     path: Extension.extension.url
     min: 1
     max: '1'
     type:
     - code: uri
-    fixedUri: medAdherence
+    fixedUri: medicationAdherence
 
 
-  - id: Extension.extension:medAdherence.value[x]
+  - id: Extension.extension:medicationAdherence.value[x]
     path: Extension.extension.value[x]
     min: 1
     max: '1'
@@ -69,62 +74,62 @@ differential:
     binding:
       strength: extensible
       description: Medication Adherence Codes
-      valueSet: http://hl7.org/fhir/ValueSet/medication-statement-adherence
+      valueSet: http://hl7.org/fhir/us/core//ValueSet/medication-adherence
 
-  - id: Extension.extension:timeStamp
+  - id: Extension.extension:dateAsserted
     extension:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Extension.extension
-    sliceName: timeStamp
-    short: (USCDI) Timestamp when it was reported whether the medication is or is not being consumed or administered
-    definition: imestamp when it was reported whether the medication is or is not being consumed or administered
-    min: 1
-    max: '1'
-    type:
-    - code: Extension
-    mustSupport: true
-
-  - id: Extension.extension:timeStamp.url
-    path: Extension.extension.url
-    min: 1
-    max: '1'
-    type:
-    - code: uri
-    fixedUri: timeStamp
-
-
-  - id: Extension.extension:timeStamp.value[x]
-    path: Extension.extension.value[x]
-    min: 1
-    max: '1'
-    type:
-    - code: dateTime
-
-  - id: Extension.extension:reporter
-    extension:
-    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
-      valueBoolean: true
-    path: Extension.extension
-    sliceName: reporter
-    short: (USCDI) Who reported whether the medication is or is not being consumed or administered
-    definition: Who reported whether the medication is or is not being consumed or administered
+    sliceName: dateAsserted
+    short: (USCDI) When the medication adherence was asserted
+    definition: When the medication adherence was asserted by the information source
     min: 0
     max: '1'
     type:
     - code: Extension
     mustSupport: true
 
-  - id: Extension.extension:reporter.url
+  - id: Extension.extension:dateAsserted.url
     path: Extension.extension.url
     min: 1
     max: '1'
     type:
     - code: uri
-    fixedUri: reporter
+    fixedUri: dateAsserted
 
 
-  - id: Extension.extension:reporter.value[x]
+  - id: Extension.extension:dateAsserted.value[x]
+    path: Extension.extension.value[x]
+    min: 1
+    max: '1'
+    type:
+    - code: dateTime
+
+  - id: Extension.extension:informationSource
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
+    path: Extension.extension
+    sliceName: informationSource
+    short: (USCDI) Who provided the information about the medication adherence
+    definition: The person or organization that provided the information about the medication adherence
+    min: 0
+    max: '*'
+    type:
+    - code: Extension
+    mustSupport: true
+
+  - id: Extension.extension:informationSource.url
+    path: Extension.extension.url
+    min: 1
+    max: '1'
+    type:
+    - code: uri
+    fixedUri: informationSource
+
+
+  - id: Extension.extension:informationSource.value[x]
     path: Extension.extension.value[x]
     min: 1
     max: '1'
@@ -135,6 +140,21 @@ differential:
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson
+
+      _targetProfile:
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: true
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: true
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+
 
 
 

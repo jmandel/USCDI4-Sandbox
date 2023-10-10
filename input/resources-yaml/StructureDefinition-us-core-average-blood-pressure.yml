@@ -1,16 +1,20 @@
 resourceType: StructureDefinition
 id: us-core-average-blood-pressure
-url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure
+url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure
+# url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure
 name: USCoreAverageBloodPressureProfile
 title: US Core Average Blood Pressure Profile
 status: active
 experimental: false
 date: 2023-08-02
-description: To promote interoperability and adoption through common implementation,
+description: >-
+  To promote interoperability and adoption through common implementation,
   this profile sets minimum expectations for the Observation resource to record, search,
   and fetch average diastolic and systolic blood pressure observations with standard LOINC
   codes and UCUM units of measure. It is based on the US Core Vital Signs Profile
-  and identifies which *additional* core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains the way the elements are used when using the profile. It provides the floor for standards development for specific use cases.
+  and identifies which *additional* core elements, extensions, vocabularies, and value sets 
+  **SHALL** be present and constrains the way the elements are used when using the profile. 
+  It provides the floor for standards development for specific use cases.
 
 
 fhirVersion: 4.0.1

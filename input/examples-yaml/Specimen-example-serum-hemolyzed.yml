@@ -2,8 +2,8 @@ resourceType: Specimen
 id: example-serum-hemolyzed
 meta:
   profile:
-  # - http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen
-  - http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen
+  - http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen
+  # - http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen
   extension:
   - url: http://hl7.org/fhir/StructureDefinition/instance-name
     valueString: Hemolyzed Serum Specimen Example
@@ -23,7 +23,7 @@ type:
     code: SER
     display: Serum
 subject:
-  reference: http://www.hl7.org/fhir/us/core/Patient/example
+  reference: Patient/example
 collection:
   collectedDateTime: '2022-09-27T18:07:12Z'
   bodySite:

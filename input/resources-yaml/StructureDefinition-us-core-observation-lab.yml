@@ -122,6 +122,7 @@ differential:
       description: Observation Interpretation Codes
       valueSet: http://hl7.org/fhir/ValueSet/observation-interpretation
     mustSupport: true
+# =======New  USCDI4 requirements ===========
 
   - id: Observation.specimen
     path: Observation.specimen
@@ -140,3 +141,4 @@ differential:
     short: (USCDI) Result reference range
     comment: Upper and lower limit of test values expected for a designated population of individuals. Reference range values may differ by patient characteristics, laboratory test manufacturer and laboratory test performer.
     mustSupport: true
+# =======New  USCDI4 requirements ===========

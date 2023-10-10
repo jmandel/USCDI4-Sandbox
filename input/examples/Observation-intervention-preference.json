@@ -3,7 +3,7 @@
     "id": "intervention-preference",
     "meta": {
         "profile": [
-            "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference"
         ],
         "extension": [
             {
@@ -32,7 +32,7 @@
     "code": {
         "coding": [
             {
-                "system": "http://www.fhir.org/guides/uscdi4-sandbox/CodeSystem/uscore-treatment-intervention-preference",
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
                 "code": "intervention-preference",
                 "display": "Intervention Preference"
             }

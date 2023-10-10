@@ -3,7 +3,7 @@
     "id": "average-blood-pressure",
     "meta": {
         "profile": [
-            "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure"
         ],
         "extension": [
             {
@@ -41,7 +41,7 @@
     },
     "subject": {
         "display": "Amy Shaw",
-        "reference": "http://www.hl7.org/fhir/us/core/Patient/example"
+        "reference": "Patient/example"
     },
     "effectivePeriod": {
         "start": "2023-08-03T01:06:52.480Z",
@@ -49,7 +49,7 @@
     },
     "performer": [
         {
-            "reference": "https://www.hl7.org/fhir/us/core/Practitioner/practitioner-1"
+            "reference": "Practitioner/practitioner-1"
         }
     ],
     "component": [
