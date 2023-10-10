@@ -3,8 +3,8 @@
 
 err = 49, warn = 12, info = 25
 IG Publisher Version: 1.4.14
-Generated Tue Oct 10 17:19:11 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
- Build Errors : 12 / 0 / 0
+Generated Tue Oct 10 23:16:12 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+ Build Errors : 14 / 0 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance : 3 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationStatement-coded-oral-axid-with-compliance : 2 / 1 / 1
@@ -71,6 +71,8 @@ ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 401, column 1714: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 425, column 1846: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-medication-adherence.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 481, column 210: The link 'http://hl7.org/fhir/us/core//ValueSet/medication-adherence' for "http://hl7.org/fhir/us/core//ValueSet/medication-adherence" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/div/p/a at Line 889, column 47: The link 'assessments-valeusets.csv' for "csv" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/div/p/a at Line 889, column 94: The link 'assessments-valeusets.xlsx' for "excel" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json ==
 == input/examples/MedicationRequest-coded-oral-axid-with-compliance.json ==
 ERROR: MedicationRequest/coded-oral-axid-with-compliance: MedicationRequest.extension[0]: The extension http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension is unknown, and not allowed here
