@@ -1,26 +1,42 @@
-﻿Data Class Number,USCDI Data Element,Category Code,Conformance Strength,ValueSet Title,VSAC Link,VSAC OID,Observation Code Binding Strength
-1,SDOH,sdoh,SHOULD,Caregiver Availability,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1058/expansion,2.16.840.1.113762.1.4.1222.1058,extensible
-,SDOH,sdoh,SHOULD,Caregiver Characteristics,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1057/expansion,2.16.840.1.113762.1.4.1222.1057,extensible
-,SDOH,sdoh,SHOULD,Criminal Justice Involvement or Incarceration History,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1082/expansion,2.16.840.1.113762.1.4.1222.1082,extensible
-,SDOH,sdoh,SHOULD,Current or Former Occupation,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1048/expansion,2.16.840.1.113762.1.4.1222.1048,extensible
-,SDOH,sdoh,SHOULD,Dependents in Home,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1065/expansion,2.16.840.1.113762.1.4.1222.1065,extensible
-,SDOH,sdoh,SHOULD,English Proficiency,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1030/expansion,2.16.840.1.113762.1.4.1222.1030,extensible
-,SDOH,sdoh,SHOULD,Experiences of Discrimination,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1080/expansion,2.16.840.1.113762.1.4.1222.1080,extensible
-,SDOH,sdoh,SHOULD,Exposure to Environmental Hazards,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1075/expansion,2.16.840.1.113762.1.4.1222.1075,extensible
-,SDOH,sdoh,SHOULD,Immigration Status,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1083/expansion,2.16.840.1.113762.1.4.1222.1083,extensible
-,SDOH,sdoh,SHOULD,Income Level,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1053/expansion,2.16.840.1.113762.1.4.1222.1053,extensible
-,SDOH,sdoh,SHOULD,Leisure Activity Engagement,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1069/expansion,2.16.840.1.113762.1.4.1222.1069,extensible
-,SDOH,sdoh,SHOULD,Living Situation,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1060/expansion,2.16.840.1.113762.1.4.1222.1060,extensible
-,SDOH,sdoh,SHOULD,Marital or Spousal Status,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1064/expansion,2.16.840.1.113762.1.4.1222.1064,extensible
-,SDOH,sdoh,SHOULD,Neglect,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1042/expansion,2.16.840.1.113762.1.4.1222.1042,extensible
-,SDOH,sdoh,SHOULD,Physical Activity Level,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1068/expansion,2.16.840.1.113762.1.4.1222.1068,extensible
-,SDOH,sdoh,SHOULD,Unsafe Neighborhood,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1076/expansion,2.16.840.1.113762.1.4.1222.1076,extensible
-,SDOH,sdoh,SHOULD,Work Productivity,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1050/expansion,2.16.840.1.113762.1.4.1222.1050,extensible
-2,Functional Status,functional-status,SHOULD,Functional Status Clinical Assessment,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1008/expansion,2.16.840.1.113762.1.4.1222.1008,extensible
-,Functional Status,functional-status,SHOULD,Functional Status Clinician Interpretation,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1007/expansion,2.16.840.1.113762.1.4.1222.1007,extensible
-3,Disability Status,cognitive-status,SHOULD,Cognitive Function Clinical Assessment,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.981/expansion,2.16.840.1.113762.1.4.1222.981,extensible
-,Disability Status,cognitive-status,SHOULD,Cognitive Function Clinician Interpretation,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion,2.16.840.1.113762.1.4.1222.979,extensible
-4,Mental/Cognitive Status.,disability-status,SHOULD,Disability Status Assessment,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.49/expansion,2.16.840.1.113762.1.4.1099.49,extensible
-5,Physical Activity,activity,SHOULD,Physical Activity Level,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1068/expansion,2.16.840.1.113762.1.4.1222.1068,extensible
-6,Alcohol Use,social-history,SHOULD,Substance Use,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion,2.16.840.1.113762.1.4.1222.1015,extensible
-7,Substance Use,social-history,SHOULD,Substance Use,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion,2.16.840.1.113762.1.4.1222.1015,extensible
+﻿﻿Data Class Number,USCDI Data Element,Category Code,Conformance Strength,ValueSet Name,VSAC Link,VSAC OID,Clinical Judgment Simple Observation,Clinical Judgment Condition,Screening Assessment Simple Observation ,Screening Assessment Observation,Screening Assessment Questionnaire,Screening Assessment Questionnaire-Response,Binding Strength,Comment
+1,SDOH,sdoh,SHOULD,Social Determinants of Health Screening Assessments,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1247.126/expansion,2.16.840.1.113762.1.4.1247.126,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,extensible,Set of SDOH Panel Codes
+,SDOH,sdoh,SHOULD,Caregiver Availability,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1058/expansion,2.16.840.1.113762.1.4.1222.1058,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Caregiver Characteristics,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1057/expansion,2.16.840.1.113762.1.4.1222.1057,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Criminal Justice Involvement or Incarceration History,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1082/expansion,2.16.840.1.113762.1.4.1222.1082,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Current or Former Occupation,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1048/expansion,2.16.840.1.113762.1.4.1222.1048,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Dependents in Home,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1065/expansion,2.16.840.1.113762.1.4.1222.1065,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,English Proficiency,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1030/expansion,2.16.840.1.113762.1.4.1222.1030,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Experiences of Discrimination,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1080/expansion,2.16.840.1.113762.1.4.1222.1080,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Exposure to Environmental Hazards,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1075/expansion,2.16.840.1.113762.1.4.1222.1075,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Immigration Status,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1083/expansion,2.16.840.1.113762.1.4.1222.1083,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Income Level,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1053/expansion,2.16.840.1.113762.1.4.1222.1053,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Leisure Activity Engagement,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1069/expansion,2.16.840.1.113762.1.4.1222.1069,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Living Situation,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1060/expansion,2.16.840.1.113762.1.4.1222.1060,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Marital or Spousal Status,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1064/expansion,2.16.840.1.113762.1.4.1222.1064,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Neglect,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1042/expansion,2.16.840.1.113762.1.4.1222.1042,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Physical Activity Level,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1068/expansion,2.16.840.1.113762.1.4.1222.1068,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Unsafe Neighborhood,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1076/expansion,2.16.840.1.113762.1.4.1222.1076,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,SDOH,sdoh,SHOULD,Work Productivity,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1050/expansion,2.16.840.1.113762.1.4.1222.1050,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+2,Functional Status,functional-status,SHOULD,Functional Status Clinical Assessment,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1008/expansion,2.16.840.1.113762.1.4.1222.1008,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Bathing or grooming/hygiene (ADL/IADL),https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.954/expansion,2.16.840.1.113762.1.4.1222.954,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Bed Mobility (ADL or IADL),https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.962/expansion,2.16.840.1.113762.1.4.1222.962,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Domestic Duties or Household Tasks (ADL/IADL),https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.960/expansion,2.16.840.1.113762.1.4.1222.960,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Dressing (ADL or IADL),https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.955/expansion,2.16.840.1.113762.1.4.1222.955,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Fall Risk,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.711/expansion,2.16.840.1.113762.1.4.1222.711,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Gait Quality,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.826/expansion,2.16.840.1.113762.1.4.1222.826,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Sit to Stand Ability,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.836/expansion,2.16.840.1.113762.1.4.1222.836,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Stair Use (ADL or IADL),https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.963/expansion,2.16.840.1.113762.1.4.1222.963,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Telephone Use (ADL or IADL),https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.961/expansion,2.16.840.1.113762.1.4.1222.961,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Toileting (ADL or IADL),https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.956/expansion,2.16.840.1.113762.1.4.1222.956,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Transferring (ADL or IADL),https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.957/expansion,2.16.840.1.113762.1.4.1222.957,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Walking or ambulation/locomotion (ADL/IADL),https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.958/expansion,2.16.840.1.113762.1.4.1222.958,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Functional Status,functional-status,SHOULD,Functional Status Clinician Interpretation,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1007/expansion,2.16.840.1.113762.1.4.1222.1007,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,extensible,
+,Functional Status,functional-status,SHOULD,Functional Status Related Questionnaire Panel Codes,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1586/expansion,2.16.840.1.113762.1.4.1222.1586,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,extensible,
+3,Mental/Cognitive Status.,cognitive-status,SHOULD,Cognitive Health Related Questionnaire Panel Codes,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1584/expansion,2.16.840.1.113762.1.4.1222.1584,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,extensible,
+,Mental/Cognitive Status.,cognitive-status,SHOULD,Cognitive Function Clinical Assessment,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.981/expansion,2.16.840.1.113762.1.4.1222.981,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Mental/Cognitive Status.,cognitive-status,SHOULD,Cognitive Function Clinician Interpretation,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion,2.16.840.1.113762.1.4.1222.979,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,extensible,
+4,Disability Status,disability-status,SHOULD,Disability Status Assessment,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.49/expansion,2.16.840.1.113762.1.4.1099.49,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,extensible,
+5,Physical Activity,activity,SHOULD,Physical Activity Level,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1068/expansion,2.16.840.1.113762.1.4.1222.1068,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,extensible,
+6,Alcohol Use,social-history,SHOULD,Substance Use,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion,2.16.840.1.113762.1.4.1222.1015,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,extensible,
+,Alcohol Use,social-history,SHOULD,Alcohol Use Related Questionnaire Panel Codes,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1585/expansion,2.16.840.1.113762.1.4.1222.1585,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,extensible,
+7,Substance Use,social-history,SHOULD,Substance Use,https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion,2.16.840.1.113762.1.4.1222.1015,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,extensible,

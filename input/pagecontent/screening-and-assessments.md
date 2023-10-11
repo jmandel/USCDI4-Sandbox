@@ -124,6 +124,8 @@ API consumers may <span class="bg-success" markdown="1">query by categories</spa
 
 <div class="bg-success" markdown="1">
 
+##### USCDI Health Assessments Data Element Category
+
 {% include assessment-category-table-generator.html %}
 
 </div><!-- new-content -->
