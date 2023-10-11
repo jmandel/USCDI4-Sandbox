@@ -145,7 +145,7 @@ Each profile's *Quick Start* section shows searches by category. Although not de
 
 {% include assessment-valueset-table-generator.html %}
 
-This information is also available as a [csv](assessments-valeusets.csv) or [excel](assessments-valeusets.xlsx) file:
+This information is also available as a [csv](assessments-valuesets.csv) or [excel](assessments-valuesets.xlsx) file:
 
 </div><!-- new-content -->
 

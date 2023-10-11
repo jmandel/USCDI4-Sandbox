@@ -12,7 +12,9 @@
 <tr>
 <th>USCDI Data Element</th>
 <th>ValueSet (VSAC link)</th>
-<th>Binding Strength</th>
+<th>Clinical Judgement Codes</th>
+<th>Panel Codes</th>
+<th>Panel Item Codes</th>
 </tr>
 </thead>
 <tbody>
@@ -21,7 +23,10 @@
 <tr>
 <td>{{item["USCDI Data Element"]}}</td>
 <td><a href="{{item["VSAC Link"]}}">{{item["ValueSet Name"]}}</a></td>
-<td><a href="{{site.data.fhir.path}}terminologies.html#{{item["Binding Strength"]}}">{{item["Binding Strength"]}}</a></td>
+{% if item["Clinical Judgement"] == "TRUE" %}<td style="color:green">&#x2714;</td>{% else %}<td></td>{% endif %}
+{% if item["Panel"] == "TRUE" %}<td style="color:green">&#x2714;</td>{% else %}<td></td>{% endif %}
+{% if item["Panel Item"] == "TRUE" %}<td style="color:green">&#x2714;</td>{% else %}<td></td>{% endif %}
+<!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
 </tr>
 
 {% if forloop.last %}
