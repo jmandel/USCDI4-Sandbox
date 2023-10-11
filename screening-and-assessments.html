@@ -173,21 +173,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="introduction">Introduction</h3>
 
-<p>Clinicians use various terms such as <em>assessments</em>, <em>scales</em>, <em>surveys</em>, and <em>screenings</em> to describe the tools and processes to collect health-related information for assessing a patient’s health-related matter. On this page, the term <em>Screening and Assessments</em> refer to recording responses and capturing assertions/determinations resulting from this process and these tools. This page documents how Screening and Assessments are used to identify various problems or health concerns and how US Core Profiles record Screenings and Assessments ranging from simple observations to complex structured evaluations.</p>
+<p>Clinicians use various terms such as <em>assessments</em>, <em>scales</em>, <em>surveys</em>, and <em>screenings</em> to describe the tools and processes to collect health-related information for assessing a patient’s health-related matter. US Cores uses the term <em>Screening and Assessments</em> for the process of recording responses and capturing assertions/determinations resulting from this process and these tools. This page documents how Screening and Assessments are used to identify various problems or health concerns and how US Core Profiles record Screenings and Assessments ranging from simple observations to complex structured evaluations.</p>
 
-<p>The [Gravity Project] and its [SDOH Clinical Care] HL7 Implementation Guide address the screening process and related interventions to address Social Determinant of Health (SDOH). Those efforts helped guide US Core 5.0.1 updates to meet the [USCDI v2] SDOH data elements for Assessments, Goals, Interventions, and Problems/Health Concerns. With the addition of the USCDI v3 Health Status Assessments data <span class="bg-success">elements,</span><!-- new-content --> US Core <span class="bg-success"></span><!-- new-content --> expanded the guidance from an SDOH-only focus to a general framework of Screenings and Assessments for all domains, <span class="bg-success">, including the USCDI Data Elements</span><!-- new-content -->:</p>
+<p>With the addition of the USCDI v3 Health Status Assessments data <span class="bg-success">elements,</span><!-- new-content --> US Core <span class="bg-success"></span><!-- new-content --> expanded the guidance from an Social Determinant of Health (SDOH)-only focus to a general framework of Screenings and Assessments for all domains<span class="bg-success">, including the USCDI Data Elements</span><!-- new-content -->:</p>
 
 <ul>
-  <li>SDOH</li>
+  <li>Social Determinant of Health (SDOH)</li>
   <li>Functional Status</li>
   <li>Disability Status</li>
   <li>Mental/Cognitive Status</li>
-  <li><span class="bg-success"></span><!-- new-content --></li>
+  <li><span class="bg-success">Physical Activity</span><!-- new-content --></li>
   <li><span class="bg-success">Alcohol Use</span><!-- new-content --></li>
   <li><span class="bg-success">Substance Use</span><!-- new-content --></li>
 </ul>
 
 <p>However, implementers <strong>SHOULD</strong> consider more constrained, domain-specific profiles derived from the US Core Profiles to meet the needs of their respective use cases.</p>
+
+<p>The [Gravity Project] and its [SDOH Clinical Care] HL7 Implementation Guide address the screening process and related interventions to address Social Determinant of Health (SDOH). Those efforts helped guide US Core 5.0.1 updates to meet the [USCDI v2] SDOH data elements for Assessments, Goals, Interventions, and Problems/Health Concerns.</p>
 
 <h3 id="related-activities-in-clinical-care">Related Activities in Clinical Care</h3>
 
@@ -319,7 +321,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="category-codes">Category Codes</h4>
 
-<p>API consumers may <span class="bg-success">query by categories</span><!-- new-content --> (for example, <code class="language-plaintext highlighter-rouge">sdoh</code>) when accessing patient information. <span class="bg-success">Category codes for USCDI Health Assessments Data Elements are listed in the table below. They <strong>SHOULD</strong> be used when generating resources that conform to these profiles</span><!-- new-content -->:</p>
+<p>API consumers may <span class="bg-success">query by category</span><!-- new-content --> (for example, <code class="language-plaintext highlighter-rouge">sdoh</code>) when accessing patient information. <span class="bg-success">Category codes for USCDI Health Assessments Data Elements are listed in the table below. They <strong>SHOULD</strong> be used when generating resources that conform to these profiles</span><!-- new-content -->:</p>
 
 <ul>
   <li>US Core Simple Observation Profile</li>
@@ -1362,7 +1364,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 11, 2023 18:26+0000">2023-10-11</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 11, 2023 19:17+0000">2023-10-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

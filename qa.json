@@ -3,11 +3,11 @@
   "name" : "USCDI4_1Sandbox",
   "package-id" : "uscdi4-sandbox",
   "ig-ver" : "0.0.0",
-  "date" : "Wed, 11 Oct, 2023 18:26:50 +0000",
+  "date" : "Wed, 11 Oct, 2023 19:17:51 +0000",
   "errs" : 49,
   "warnings" : 12,
   "hints" : 25,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 3630589968
+  "maxMemory" : 3629414792
 }
