@@ -1,19 +1,21 @@
 
 ### Introduction
 
-Clinicians use various terms such as *assessments*, *scales*, *surveys*, and *screenings* to describe the tools and processes to collect health-related information for assessing a patient's health-related matter. On this page, the term *Screening and Assessments* refer to recording responses and capturing assertions/determinations resulting from this process and these tools. This page documents how Screening and Assessments are used to identify various problems or health concerns and how US Core Profiles record Screenings and Assessments ranging from simple observations to complex structured evaluations.
+Clinicians use various terms such as *assessments*, *scales*, *surveys*, and *screenings* to describe the tools and processes to collect health-related information for assessing a patient's health-related matter. US Cores uses the term *Screening and Assessments* for the process of recording responses and capturing assertions/determinations resulting from this process and these tools. This page documents how Screening and Assessments are used to identify various problems or health concerns and how US Core Profiles record Screenings and Assessments ranging from simple observations to complex structured evaluations.
 
-The [Gravity Project] and its [SDOH Clinical Care] HL7 Implementation Guide address the screening process and related interventions to address Social Determinant of Health (SDOH). Those efforts helped guide US Core 5.0.1 updates to meet the [USCDI v2] SDOH data elements for Assessments, Goals, Interventions, and Problems/Health Concerns. With the addition of the USCDI v3 Health Status Assessments data <span class="bg-success" markdown="1">elements,</span><!-- new-content --> US Core <span class="bg-success" markdown="1"></span><!-- new-content --> expanded the guidance from an SDOH-only focus to a general framework of Screenings and Assessments for all domains, <span class="bg-success" markdown="1">, including the USCDI Data Elements</span><!-- new-content -->:
+With the addition of the USCDI v3 Health Status Assessments data <span class="bg-success" markdown="1">elements,</span><!-- new-content --> US Core <span class="bg-success" markdown="1"></span><!-- new-content --> expanded the guidance from an Social Determinant of Health (SDOH)-only focus to a general framework of Screenings and Assessments for all domains<span class="bg-success" markdown="1">, including the USCDI Data Elements</span><!-- new-content -->:
 
-- SDOH
+- Social Determinant of Health (SDOH)
 - Functional Status
 - Disability Status
 - Mental/Cognitive Status
-- <span class="bg-success" markdown="1"></span><!-- new-content -->
+- <span class="bg-success" markdown="1">Physical Activity</span><!-- new-content -->
 - <span class="bg-success" markdown="1">Alcohol Use</span><!-- new-content -->
 - <span class="bg-success" markdown="1">Substance Use</span><!-- new-content -->
 
 However, implementers **SHOULD** consider more constrained, domain-specific profiles derived from the US Core Profiles to meet the needs of their respective use cases.
+
+The [Gravity Project] and its [SDOH Clinical Care] HL7 Implementation Guide address the screening process and related interventions to address Social Determinant of Health (SDOH). Those efforts helped guide US Core 5.0.1 updates to meet the [USCDI v2] SDOH data elements for Assessments, Goals, Interventions, and Problems/Health Concerns.
 
 ### Related Activities in Clinical Care
 
@@ -115,7 +117,7 @@ In many cases, data might be represented using both mechanisms - the initial raw
 
 #### Category Codes
 
-API consumers may <span class="bg-success" markdown="1">query by categories</span><!-- new-content --> (for example, `sdoh`) when accessing patient information. <span class="bg-success" markdown="1">Category codes for USCDI Health Assessments Data Elements are listed in the table below. They **SHOULD** be used when generating resources that conform to these profiles</span><!-- new-content -->:
+API consumers may <span class="bg-success" markdown="1">query by category</span><!-- new-content --> (for example, `sdoh`) when accessing patient information. <span class="bg-success" markdown="1">Category codes for USCDI Health Assessments Data Elements are listed in the table below. They **SHOULD** be used when generating resources that conform to these profiles</span><!-- new-content -->:
 
 - US Core Simple Observation Profile
 - US Core Observation Screening Assessment Profile
