@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for USCDI4_1Sandbox</h1>
- <p>Generated Thu Oct 12 06:38:49 UTC 2023, FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = <a href="http://www.fhir.org/guides/uscdi4-sandbox">http://www.fhir.org/guides/uscdi4-sandbox</a> (<a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Thu Oct 12 16:51:42 UTC 2023, FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = <a href="http://www.fhir.org/guides/uscdi4-sandbox">http://www.fhir.org/guides/uscdi4-sandbox</a> (<a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.4.14</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = uscdi4-sandbox, Canonical = http://www.fhir.org/guides/uscdi4-sandbox</td></tr>
@@ -164,7 +164,7 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://www.fhir.org/guides/uscdi4-sandbox (Problem #1 with package-list.json at http://www.fhir.org/guides/uscdi4-sandbox: Invalid HTTP response 404 from http://www.fhir.org/guides/uscdi4-sandbox/package-list.json?nocache=1697092445345 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://www.fhir.org/guides/uscdi4-sandbox (Problem #1 with package-list.json at http://www.fhir.org/guides/uscdi4-sandbox: Invalid HTTP response 404 from http://www.fhir.org/guides/uscdi4-sandbox/package-list.json?nocache=1697129210707 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>Summary:</td><td> errors = 117, warn = 12, info = 25, broken links = 12</td></tr>
 </table>
@@ -498,25 +498,25 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/StructureDefinition&#8203;/us-core-care-experience-preference')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-care-experience-preference.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c49201)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c49212)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.extension[1] (l1&#8203;/c89891)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.extension[1] (l1&#8203;/c89902)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.extension[1]&#8203;.url (l1&#8203;/c89870)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.extension[1]&#8203;.url (l1&#8203;/c89881)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c106607)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c106629)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0] (l1&#8203;/c107001)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0] (l1&#8203;/c107023)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0]&#8203;.url (l1&#8203;/c106980)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0]&#8203;.url (l1&#8203;/c107002)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition (l1/c107698)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+     <td><b>StructureDefinition (l1/c107731)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>input&#8203;/resources&#8203;/StructureDefinition-us-core-care-experience-preference</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference</b></td>
@@ -575,163 +575,163 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/StructureDefinition&#8203;/us-core-patient')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.extension[0] (l1&#8203;/c80375)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.extension[0] (l1&#8203;/c80485)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.extension[0]&#8203;.url (l1&#8203;/c80354)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.extension[0]&#8203;.url (l1&#8203;/c80464)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.extension[0] (l1&#8203;/c82122)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.extension[0] (l1&#8203;/c82243)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.extension[0]&#8203;.url (l1&#8203;/c82101)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.extension[0]&#8203;.url (l1&#8203;/c82222)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10]&#8203;.extension[0] (l1&#8203;/c83817)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10]&#8203;.extension[0] (l1&#8203;/c83949)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10]&#8203;.extension[0]&#8203;.url (l1&#8203;/c83796)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10]&#8203;.extension[0]&#8203;.url (l1&#8203;/c83928)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.extension[0] (l1&#8203;/c86496)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.extension[0] (l1&#8203;/c86639)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.extension[0]&#8203;.url (l1&#8203;/c86475)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.extension[0]&#8203;.url (l1&#8203;/c86618)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.extension[0] (l1&#8203;/c87680)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.extension[0] (l1&#8203;/c87834)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.extension[0]&#8203;.url (l1&#8203;/c87659)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.extension[0]&#8203;.url (l1&#8203;/c87813)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28]&#8203;.extension[0] (l1&#8203;/c108042)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28]&#8203;.extension[0] (l1&#8203;/c108207)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28]&#8203;.extension[0]&#8203;.url (l1&#8203;/c108021)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28]&#8203;.extension[0]&#8203;.url (l1&#8203;/c108186)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.extension[0] (l1&#8203;/c113639)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.extension[0] (l1&#8203;/c113815)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.extension[0]&#8203;.url (l1&#8203;/c113618)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.extension[0]&#8203;.url (l1&#8203;/c113794)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[34]&#8203;.extension[0] (l1&#8203;/c114655)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[34]&#8203;.extension[0] (l1&#8203;/c114842)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[34]&#8203;.extension[0]&#8203;.url (l1&#8203;/c114634)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[34]&#8203;.extension[0]&#8203;.url (l1&#8203;/c114821)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.extension[0] (l1&#8203;/c115665)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.extension[0] (l1&#8203;/c115863)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.extension[0]&#8203;.url (l1&#8203;/c115644)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.extension[0]&#8203;.url (l1&#8203;/c115842)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.extension[0] (l1&#8203;/c127712)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.extension[0] (l1&#8203;/c127910)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.extension[0]&#8203;.url (l1&#8203;/c127691)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.extension[0]&#8203;.url (l1&#8203;/c127889)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[49]&#8203;.extension[0] (l1&#8203;/c132574)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[49]&#8203;.extension[0] (l1&#8203;/c132772)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[49]&#8203;.extension[0]&#8203;.url (l1&#8203;/c132553)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[49]&#8203;.extension[0]&#8203;.url (l1&#8203;/c132751)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.extension[0] (l1&#8203;/c142608)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.extension[0] (l1&#8203;/c142817)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.extension[0]&#8203;.url (l1&#8203;/c142587)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.extension[0]&#8203;.url (l1&#8203;/c142796)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[73]&#8203;.extension[0] (l1&#8203;/c160533)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[73]&#8203;.extension[0] (l1&#8203;/c160753)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[73]&#8203;.extension[0]&#8203;.url (l1&#8203;/c160512)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[73]&#8203;.extension[0]&#8203;.url (l1&#8203;/c160732)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.extension[0] (l1&#8203;/c181022)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.extension[0] (l1&#8203;/c181242)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.extension[0]&#8203;.url (l1&#8203;/c181001)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.extension[0]&#8203;.url (l1&#8203;/c181221)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.extension[0] (l1&#8203;/c181480)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.extension[0] (l1&#8203;/c181711)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.extension[0]&#8203;.url (l1&#8203;/c181459)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.extension[0]&#8203;.url (l1&#8203;/c181690)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0] (l1&#8203;/c181961)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0] (l1&#8203;/c182203)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0]&#8203;.url (l1&#8203;/c181940)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0]&#8203;.url (l1&#8203;/c182182)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.extension[0] (l1&#8203;/c182709)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.extension[0] (l1&#8203;/c182962)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.extension[0]&#8203;.url (l1&#8203;/c182688)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.extension[0]&#8203;.url (l1&#8203;/c182941)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.extension[0] (l1&#8203;/c183090)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.extension[0] (l1&#8203;/c183354)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.extension[0]&#8203;.url (l1&#8203;/c183069)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.extension[0]&#8203;.url (l1&#8203;/c183333)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.extension[0] (l1&#8203;/c184900)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.extension[0] (l1&#8203;/c185175)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.extension[0]&#8203;.url (l1&#8203;/c184879)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.extension[0]&#8203;.url (l1&#8203;/c185154)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.extension[0] (l1&#8203;/c185617)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.extension[0] (l1&#8203;/c185903)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.extension[0]&#8203;.url (l1&#8203;/c185596)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.extension[0]&#8203;.url (l1&#8203;/c185882)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.extension[0] (l1&#8203;/c185920)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.extension[0] (l1&#8203;/c186217)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.extension[0]&#8203;.url (l1&#8203;/c185899)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.extension[0]&#8203;.url (l1&#8203;/c186196)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.extension[0] (l1&#8203;/c186224)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.extension[0] (l1&#8203;/c186532)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.extension[0]&#8203;.url (l1&#8203;/c186203)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.extension[0]&#8203;.url (l1&#8203;/c186511)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22]&#8203;.extension[0] (l1&#8203;/c187811)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22]&#8203;.extension[0] (l1&#8203;/c188119)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22]&#8203;.extension[0]&#8203;.url (l1&#8203;/c187790)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22]&#8203;.extension[0]&#8203;.url (l1&#8203;/c188098)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.extension[0] (l1&#8203;/c188155)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.extension[0] (l1&#8203;/c188463)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.extension[0]&#8203;.url (l1&#8203;/c188134)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24]&#8203;.extension[0]&#8203;.url (l1&#8203;/c188442)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.extension[0] (l1&#8203;/c189308)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.extension[0] (l1&#8203;/c189627)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.extension[0]&#8203;.url (l1&#8203;/c189287)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.extension[0]&#8203;.url (l1&#8203;/c189606)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[30]&#8203;.extension[0] (l1&#8203;/c189604)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[30]&#8203;.extension[0] (l1&#8203;/c189934)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[30]&#8203;.extension[0]&#8203;.url (l1&#8203;/c189583)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[30]&#8203;.extension[0]&#8203;.url (l1&#8203;/c189913)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition (l1/c190117)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+     <td><b>StructureDefinition (l1/c190447)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/StructureDefinition&#8203;/us-core-patient')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
@@ -750,28 +750,28 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[26]&#8203;.extension[0] (l1&#8203;/c53937)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[26]&#8203;.extension[0] (l1&#8203;/c53959)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[26]&#8203;.extension[0]&#8203;.url (l1&#8203;/c53916)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[26]&#8203;.extension[0]&#8203;.url (l1&#8203;/c53938)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.extension[0] (l1&#8203;/c76209)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.extension[0] (l1&#8203;/c76242)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.extension[0]&#8203;.url (l1&#8203;/c76188)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.extension[0]&#8203;.url (l1&#8203;/c76221)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.extension[0] (l1&#8203;/c79162)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.extension[0] (l1&#8203;/c79206)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.extension[0]&#8203;.url (l1&#8203;/c79141)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.extension[0]&#8203;.url (l1&#8203;/c79185)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.extension[0] (l1&#8203;/c79626)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.extension[0] (l1&#8203;/c79681)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.extension[0]&#8203;.url (l1&#8203;/c79605)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.extension[0]&#8203;.url (l1&#8203;/c79660)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/www&#8203;.fhir&#8203;.org&#8203;/guides&#8203;/uscdi4-sandbox&#8203;/StructureDefinition&#8203;/us-core-specimen')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
@@ -790,31 +790,31 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/StructureDefinition&#8203;/us-core-treatment-intervention-preference')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-treatment-intervention-preference.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c49334)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c49345)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c50989)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c51000)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.extension[1] (l1&#8203;/c90086)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.extension[1] (l1&#8203;/c90097)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.extension[1]&#8203;.url (l1&#8203;/c90065)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.extension[1]&#8203;.url (l1&#8203;/c90076)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c106806)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c106828)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c107103)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c107125)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0] (l1&#8203;/c107262)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0] (l1&#8203;/c107284)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0]&#8203;.url (l1&#8203;/c107241)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.extension[0]&#8203;.url (l1&#8203;/c107263)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition (l1/c107959)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+     <td><b>StructureDefinition (l1/c107992)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>input&#8203;/resources&#8203;/StructureDefinition-us-core-treatment-intervention-preference</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference</b></td>
