@@ -1,51 +1,61 @@
 resourceType: StructureDefinition
 id: us-core-medication-adherence
 url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence
+# url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension
 name: USCoreMedicationAdherenceExtension
 title: US Core Medication Adherence Extension
 status: active
-date: 2023-10-11
-description: A MedicationRequest extension representing whether the medication is
-  or is not being consumed or administered.
-fhirVersion: 4.0.1
+date: '2023-09-23'
+description: A MedicationRequest extension representing whether the medication is or is not being consumed or administered.
+fhirVersion: '4.0.1'
 kind: complex-type
 abstract: false
 context:
 - type: element
   expression: MedicationRequest
+
 type: Extension
 baseDefinition: http://hl7.org/fhir/StructureDefinition/Extension
 derivation: constraint
+
+
+
 differential:
   element:
   - id: Extension
     path: Extension
     code:
-    - system: http://loinc.org
+    - system: 'http://loinc.org'
       code: 71799-1
       display: Adherence to prescribed medication instructions [Reported]
     definition: Whether the medication is or is not being consumed or administered
     min: 0
     max: '*'
+
   - id: Extension.extension
     path: Extension.extension
     slicing:
-      discriminator:
-      - type: value
-        path: url
-      rules: open
+        discriminator:
+            - 
+                type: value
+                path: url
+        rules: open
     min: 1
+
   - id: Extension.extension:medicationAdherence
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Extension.extension
     sliceName: medicationAdherence
-    short: Code indicating whether the medication is or is not being consumed or administered
-    definition: Code indicating whether the medication is or is not being consumed
-      or administered
+    short: (USCDI) Code indicating whether the medication is or is not being consumed or administered
+    definition: Code indicating whether the medication is or is not being consumed or administered
     min: 1
     max: '1'
     type:
     - code: Extension
     mustSupport: true
+
   - id: Extension.extension:medicationAdherence.url
     path: Extension.extension.url
     min: 1
@@ -53,6 +63,8 @@ differential:
     type:
     - code: uri
     fixedUri: medicationAdherence
+
+
   - id: Extension.extension:medicationAdherence.value[x]
     path: Extension.extension.value[x]
     min: 1
@@ -63,16 +75,21 @@ differential:
       strength: extensible
       description: Medication Adherence Codes
       valueSet: http://hl7.org/fhir/us/core//ValueSet/medication-adherence
+
   - id: Extension.extension:dateAsserted
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Extension.extension
     sliceName: dateAsserted
-    short: When the medication adherence was asserted
+    short: (USCDI) When the medication adherence was asserted
     definition: When the medication adherence was asserted by the information source
     min: 0
     max: '1'
     type:
     - code: Extension
     mustSupport: true
+
   - id: Extension.extension:dateAsserted.url
     path: Extension.extension.url
     min: 1
@@ -80,23 +97,29 @@ differential:
     type:
     - code: uri
     fixedUri: dateAsserted
+
+
   - id: Extension.extension:dateAsserted.value[x]
     path: Extension.extension.value[x]
     min: 1
     max: '1'
     type:
     - code: dateTime
+
   - id: Extension.extension:informationSource
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Extension.extension
     sliceName: informationSource
-    short: Who provided the information about the medication adherence
-    definition: The person or organization that provided the information about the
-      medication adherence
+    short: (USCDI) Who provided the information about the medication adherence
+    definition: The person or organization that provided the information about the medication adherence
     min: 0
     max: '*'
     type:
     - code: Extension
     mustSupport: true
+
   - id: Extension.extension:informationSource.url
     path: Extension.extension.url
     min: 1
@@ -104,6 +127,8 @@ differential:
     type:
     - code: uri
     fixedUri: informationSource
+
+
   - id: Extension.extension:informationSource.value[x]
     path: Extension.extension.value[x]
     min: 1
@@ -115,6 +140,7 @@ differential:
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson
+
       _targetProfile:
       - extension:
         - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
@@ -128,9 +154,14 @@ differential:
       - extension:
         - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
           valueBoolean: false
+
+
+
+
   - id: Extension.url
     path: Extension.url
     fixedUri: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension
+
   - id: Extension.value[x]
     path: Extension.value[x]
     min: 0

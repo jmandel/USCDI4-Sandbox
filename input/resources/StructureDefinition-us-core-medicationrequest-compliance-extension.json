@@ -5,7 +5,7 @@
     "name": "USCoreMedicationAdherenceExtension",
     "title": "US Core Medication Adherence Extension",
     "status": "active",
-    "date": "2023-09-23",
+    "date": "2023-10-11",
     "description": "A MedicationRequest extension representing whether the medication is or is not being consumed or administered.",
     "fhirVersion": "4.0.1",
     "kind": "complex-type",
@@ -51,15 +51,9 @@
             },
             {
                 "id": "Extension.extension:medicationAdherence",
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
-                        "valueBoolean": true
-                    }
-                ],
                 "path": "Extension.extension",
                 "sliceName": "medicationAdherence",
-                "short": "(USCDI) Code indicating whether the medication is or is not being consumed or administered",
+                "short": "Code indicating whether the medication is or is not being consumed or administered",
                 "definition": "Code indicating whether the medication is or is not being consumed or administered",
                 "min": 1,
                 "max": "1",
@@ -100,15 +94,9 @@
             },
             {
                 "id": "Extension.extension:dateAsserted",
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
-                        "valueBoolean": true
-                    }
-                ],
                 "path": "Extension.extension",
                 "sliceName": "dateAsserted",
-                "short": "(USCDI) When the medication adherence was asserted",
+                "short": "When the medication adherence was asserted",
                 "definition": "When the medication adherence was asserted by the information source",
                 "min": 0,
                 "max": "1",
@@ -144,15 +132,9 @@
             },
             {
                 "id": "Extension.extension:informationSource",
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
-                        "valueBoolean": true
-                    }
-                ],
                 "path": "Extension.extension",
                 "sliceName": "informationSource",
-                "short": "(USCDI) Who provided the information about the medication adherence",
+                "short": "Who provided the information about the medication adherence",
                 "definition": "The person or organization that provided the information about the medication adherence",
                 "min": 0,
                 "max": "*",

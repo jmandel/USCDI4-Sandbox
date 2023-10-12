@@ -1,0 +1,254 @@
+resourceType: StructureDefinition
+id: us-core-medicationstatement
+
+# url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement
+url:  http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement
+
+name: USCoreMedicationStatement
+title: US Core MedicationStatement
+status: active
+experimental: false
+date: '2023-08-15'
+
+description: >-
+  Profile of MedicationStatement to support medication adherence - record of a
+  statement of whether a medication has been consumed according to instructions.
+
+  This profile sets minimum expectations for the MedicationStatement resource to record,
+  search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation.
+
+fhirVersion: 4.0.1
+
+kind: resource
+abstract: false
+type: MedicationStatement
+baseDefinition: 'http://hl7.org/fhir/StructureDefinition/MedicationStatement'
+derivation: constraint
+
+differential:
+  element:
+    - id: MedicationStatement
+      path: MedicationStatement
+      mustSupport: false
+
+# ====== New R5 Med Adherence Extension Here ====
+
+    - id: MedicationStatement.extension:med-adherence
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.extension
+      sliceName: med-adherence
+      short: (USCDI) Indicates whether the medication is or is not being consumed or administered
+      definition: >-
+        The FHIR R5 `Medication.adherence` extension to record medication adherence
+      min: 0
+      max: '1'
+      type:
+      - code: Extension
+        profile:
+        - http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence
+      mustSupport: false
+  
+# ====== New R5 Med Adherence Extension Here ====
+
+# ====== New basedOn to reference the MedicationRequest Here ====
+
+    - id: MedicationStatement.basedOn
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.basedOn
+      short: (USCDI) plan, proposal or order this is fulfilling
+      type:
+      - code: Reference
+        targetProfile:
+          - http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest
+          - http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan
+          - http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest
+        _targetProfile:
+          - extension:
+            - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+              valueBoolean: true
+          - extension:
+            - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+              valueBoolean: false
+          - extension:
+            - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+              valueBoolean: false
+      mustSupport: true
+
+# ====== New basedOn to reference the MedicationRequest Here ====
+
+
+    - id: MedicationStatement.status
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      
+        valueBoolean: true
+      path: MedicationStatement.status
+      binding:
+        strength: required
+        # description: >-
+        #   A code specifying the state of the statement.  Generally, this will be
+        #   active or completed state.
+        valueSet: 'http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status'
+      mustSupport: true
+
+
+    - id: MedicationStatement.medication[x]
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.medication[x]
+      short: (USCDI) Medication taken
+      type:
+      - code: CodeableConcept
+      - code: Reference
+        targetProfile:
+        - http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication
+      mustSupport: true
+      binding:
+        strength: extensible
+        valueSet: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4
+
+    - id: MedicationStatement.subject
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.subject
+      short: (USCDI) Who is/was taking the medication
+      type:
+      - code: Reference
+        targetProfile:
+        - http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+      mustSupport: true
+
+    - id: 'MedicationStatement.effective[x]'
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: 'MedicationStatement.effective[x]'
+      short: (USCDI) The date/time or interval when the medication is/was/will be taken
+      mustSupport: true
+
+    - id: MedicationStatement.dateAsserted
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.dateAsserted
+      short: (USCDI) When the statement was asserted
+      # min: 1
+      # max: '1'
+      mustSupport: true
+
+    - id: MedicationStatement.informationSource
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.informationSource
+      short: (USCDI) Person or organization that provided the information about the taking of this medication
+      type:
+        - code: Reference
+          targetProfile:
+          - http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
+          - http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+          - http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+          - http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole
+          - http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson
+          # - http://hl7.org/fhir/StructureDefinition/Device
+          _targetProfile:
+          - extension:
+            - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+              valueBoolean: true
+          - extension:
+            - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+              valueBoolean: true
+          - extension:
+            - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+              valueBoolean: false
+          - extension:
+            - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+              valueBoolean: false
+          - extension:
+            - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+              valueBoolean: false
+          # - extension:
+          #   - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          #     valueBoolean: false
+      mustSupport: true
+
+
+    # - id: MedicationStatement.derivedFrom
+    #   path: MedicationStatement.derivedFrom
+    #   mustSupport: true
+
+    - id: MedicationStatement.reasonCode
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.reasonCode
+      short: (USCDI) Reason for why the medication is being/was taken
+      binding:
+        strength: extensible
+        valueSet: http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code
+
+    - id: MedicationStatement.reasonReference
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.reasonReference
+      short: (USCDI) Condition or observation that supports why the medication is being/was taken
+
+    #=== Use US Core Dosage ====
+
+    - id: MedicationStatement.dosage
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.dosage
+      short: (USCDI) How the medication should be taken
+      mustSupport: true
+    - id: MedicationStatement.dosage.text
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.dosage.text
+      short: (USCDI) Free text dosage instructions e.g. SIG
+      mustSupport: true
+    - id: MedicationStatement.dosage.timing
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.dosage.timing
+      short: (USCDI) When medication should be administered
+      mustSupport: true
+
+    - id: MedicationStatement.dosage.doseAndRate
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.dosage.doseAndRate
+      short: (USCDI) Amount of medication administered
+      mustSupport: true
+
+    - id: MedicationStatement.dosage.doseAndRate.dose[x]
+      extension:
+      - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+        valueBoolean: true
+      path: MedicationStatement.dosage.doseAndRate.dose[x]
+      short: (USCDI) Amount of medication per dose
+      type:
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: true
+        code: Quantity
+      - code: Range
+      mustSupport: true
+      binding:
+        extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet
+          valueCanonical: http://hl7.org/fhir/ValueSet/ucum-units
+        strength: preferred
+        valueSet: http://hl7.org/fhir/ValueSet/ucum-common
+

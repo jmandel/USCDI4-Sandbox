@@ -6,7 +6,7 @@
     "title": "US Core Patient Profile",
     "status": "active",
     "experimental": false,
-    "date": "2022-09-30",
+    "date": "2023-10-11",
     "description": "The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.",
     "fhirVersion": "4.0.1",
     "kind": "resource",
@@ -33,13 +33,13 @@
                 "id": "Patient.extension:race",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.extension",
                 "sliceName": "race",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) US Core Race Extension",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) US Core Race Extension",
                 "min": 0,
                 "max": "1",
                 "type": [
@@ -62,13 +62,13 @@
                 "id": "Patient.extension:ethnicity",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.extension",
                 "sliceName": "ethnicity",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) US Core ethnicity Extension",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) US Core ethnicity Extension",
                 "min": 0,
                 "max": "1",
                 "type": [
@@ -91,13 +91,13 @@
                 "id": "Patient.extension:tribalAffiliation",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.extension",
                 "sliceName": "tribalAffiliation",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) Tribal Affiliation Extension",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) Tribal Affiliation Extension",
                 "min": 0,
                 "max": "*",
                 "type": [
@@ -137,13 +137,13 @@
                 "id": "Patient.extension:sex",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.extension",
                 "sliceName": "sex",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) Sex Extension",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) Sex Extension",
                 "min": 0,
                 "max": "1",
                 "type": [
@@ -160,13 +160,13 @@
                 "id": "Patient.extension:genderIdentity",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.extension",
                 "sliceName": "genderIdentity",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) The individual's gender identity",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) The individual's gender identity",
                 "min": 0,
                 "max": "*",
                 "type": [
@@ -244,12 +244,12 @@
                 "id": "Patient.name.use",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.name.use",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) usual | official | temp | nickname | anonymous | old | maiden"
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) usual | official | temp | nickname | anonymous | old | maiden"
             },
             {
                 "id": "Patient.name.family",
@@ -283,8 +283,14 @@
             },
             {
                 "id": "Patient.name.suffix",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "valueBoolean": true
+                    }
+                ],
                 "path": "Patient.name.suffix",
-                "short": "Parts that come after the name",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: Parts that come after the name",
                 "mustSupport": false,
                 "mapping": [
                     {
@@ -297,12 +303,12 @@
                 "id": "Patient.name.period",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.name.period",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) Time period when name was/is in use",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) Time period when name was/is in use",
                 "mustSupport": false,
                 "mapping": [
                     {
@@ -315,12 +321,12 @@
                 "id": "Patient.telecom",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.telecom",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) A contact detail for the individual",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) A contact detail for the individual",
                 "mustSupport": false,
                 "mapping": [
                     {
@@ -414,12 +420,12 @@
                 "id": "Patient.deceased[x]",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.deceased[x]",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) Indicates if the individual is deceased or not"
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) Indicates if the individual is deceased or not"
             },
             {
                 "id": "Patient.address",
@@ -437,12 +443,12 @@
                 "id": "Patient.address.use",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.address.use",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) home | work | temp | old | billing - purpose of this address"
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) home | work | temp | old | billing - purpose of this address"
             },
             {
                 "id": "Patient.address.line",
@@ -504,12 +510,12 @@
                 "id": "Patient.address.period",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.address.period",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) Time period when address was/is in use",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) Time period when address was/is in use",
                 "mapping": [
                     {
                         "identity": "argonaut-dq-dstu2",
@@ -521,12 +527,12 @@
                 "id": "Patient.communication",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.communication",
-                "short": "\u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) A language which may be used to communicate with the patient about his or her health",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: \u2757(\ud835\uddd4\ud835\uddd7\ud835\uddd7'\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc) A language which may be used to communicate with the patient about his or her health",
                 "mustSupport": false,
                 "mapping": [
                     {
