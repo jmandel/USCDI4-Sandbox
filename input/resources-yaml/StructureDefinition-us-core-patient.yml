@@ -39,7 +39,6 @@ differential:
     path: Patient.extension
     sliceName: race
     short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
       US Core Race Extension"
     min: 0
     max: '1'
@@ -58,7 +57,6 @@ differential:
     path: Patient.extension
     sliceName: ethnicity
     short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
       US Core ethnicity Extension"
     min: 0
     max: '1'
@@ -77,7 +75,6 @@ differential:
     path: Patient.extension
     sliceName: tribalAffiliation
     short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
       Tribal Affiliation Extension"
     min: 0
     max: '*'
@@ -107,7 +104,6 @@ differential:
     path: Patient.extension
     sliceName: sex
     short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
       Sex Extension"
     min: 0
     max: '1'
@@ -123,7 +119,6 @@ differential:
     path: Patient.extension
     sliceName: genderIdentity
     short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
       The individual's gender identity"
     min: 0
     max: '*'
@@ -179,7 +174,6 @@ differential:
       valueBoolean: true
     path: Patient.name.use
     short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
       usual | official | temp | nickname | anonymous | old | maiden"
   - id: Patient.name.family
     path: Patient.name.family
@@ -216,7 +210,6 @@ differential:
       valueBoolean: true
     path: Patient.name.period
     short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
       Time period when name was/is in use"
     mustSupport: false
     mapping:
@@ -227,9 +220,6 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi
       valueBoolean: true
     path: Patient.telecom
-    short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
-      A contact detail for the individual"
     mustSupport: false
     mapping:
     - identity: argonaut-dq-dstu2
@@ -289,9 +279,6 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi
       valueBoolean: true
     path: Patient.deceased[x]
-    short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
-      Indicates if the individual is deceased or not"
   - id: Patient.address
     path: Patient.address
     short: An address for the individual
@@ -305,7 +292,6 @@ differential:
       valueBoolean: true
     path: Patient.address.use
     short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
       home | work | temp | old | billing - purpose of this address"
   - id: Patient.address.line
     path: Patient.address.line
@@ -347,7 +333,6 @@ differential:
       valueBoolean: true
     path: Patient.address.period
     short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
       Time period when address was/is in use"
     mapping:
     - identity: argonaut-dq-dstu2
@@ -357,10 +342,6 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi
       valueBoolean: true
     path: Patient.communication
-    short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      \u2757(\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC)
-      A language which may be used to communicate with the patient about his or her
-      health"
     mustSupport: false
     mapping:
     - identity: argonaut-dq-dstu2
