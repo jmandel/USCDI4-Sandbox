@@ -5,7 +5,7 @@ name: USCoreSpecimenProfile
 title: US Core Specimen Profile
 status: active
 experimental: false
-date: 2023-10-11
+date: 2023-10-12
 description: This profile sets minimum expectations for the Specimen resource to record,
   search, and fetch "substances being sampled or tested. (e.g., nasopharyngeal swab,
   whole blood, serum, urine, wound swab)" associated with a patient to promote interoperability
@@ -56,8 +56,8 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi
       valueBoolean: true
     path: Specimen.collection.bodySite
-    short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      Specimen Source Site"
+    short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
+      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Specimen Source Site"
     comment: Body location from where a specimen was obtained. Examples include but
       are not limited to right internal jugular, left arm, and right eye.
     binding:
@@ -68,8 +68,8 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi
       valueBoolean: true
     path: Specimen.condition
-    short: "\U0001D5D4\U0001D5D7\U0001D5D7'\U0001D5DF \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC:
-      Specimen condition acceptability"
+    short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
+      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Specimen condition acceptability"
     comment: Information regarding a specimen, including the container, that does
       not meet a laboratory's criteria for acceptability. Examples include but are
       not limited to hemolyzed, clotted, container leaking, and missing patient name.

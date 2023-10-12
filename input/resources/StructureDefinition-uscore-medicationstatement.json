@@ -6,7 +6,7 @@
     "title": "US Core MedicationStatement",
     "status": "active",
     "experimental": false,
-    "date": "2023-10-11",
+    "date": "2023-10-12",
     "description": "Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.\nThis profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation.",
     "fhirVersion": "4.0.1",
     "kind": "resource",

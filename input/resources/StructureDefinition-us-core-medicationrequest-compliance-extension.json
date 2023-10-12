@@ -5,7 +5,7 @@
     "name": "USCoreMedicationAdherenceExtension",
     "title": "US Core Medication Adherence Extension",
     "status": "active",
-    "date": "2023-10-11",
+    "date": "2023-10-12",
     "description": "A MedicationRequest extension representing whether the medication is or is not being consumed or administered.",
     "fhirVersion": "4.0.1",
     "kind": "complex-type",

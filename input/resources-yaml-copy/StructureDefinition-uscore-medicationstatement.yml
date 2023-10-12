@@ -5,7 +5,7 @@ name: USCoreMedicationStatement
 title: US Core MedicationStatement
 status: active
 experimental: false
-date: 2023-10-11
+date: 2023-10-12
 description: 'Profile of MedicationStatement to support medication adherence - record
   of a statement of whether a medication has been consumed according to instructions.
 
