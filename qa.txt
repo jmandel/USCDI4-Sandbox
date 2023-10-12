@@ -1,9 +1,9 @@
 ﻿USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 49, warn = 12, info = 25
+err = 117, warn = 12, info = 25
 IG Publisher Version: 1.4.14
-Generated Wed Oct 11 19:22:32 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+Generated Thu Oct 12 06:14:33 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
  Build Errors : 12 / 0 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/MedicationRequest-coded-oral-axid-with-compliance : 3 / 0 / 1
@@ -46,13 +46,13 @@ Generated Wed Oct 11 19:22:32 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/medicationstatement-self-tylenol-with-compliance : 2 / 1 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/CodeSystem-uscore-treatment-intervention-preference : 3 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure : 3 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-care-experience-preference : 5 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-care-experience-preference : 9 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-location : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest-compliance-extension : 8 / 2 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-observation-lab : 0 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient : 3 / 1 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-specimen : 0 / 1 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-treatment-intervention-preference : 7 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient : 55 / 1 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-specimen : 8 / 1 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-treatment-intervention-preference : 11 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-uscore-medicationstatement : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-care-experience-preference : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-medicationstatement-status : 0 / 0 / 2
@@ -166,7 +166,11 @@ ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/Structure
 == input/resources/StructureDefinition-us-core-care-experience-preference.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-care-experience-preference.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference)
 ERROR: StructureDefinition/us-core-care-experience-preference: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'
+ERROR: StructureDefinition/us-core-care-experience-preference: StructureDefinition.snapshot.element[41].extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-care-experience-preference: StructureDefinition.snapshot.element[41].extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
 ERROR: StructureDefinition/us-core-care-experience-preference: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'care-experience-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#care-experience-preference'
+ERROR: StructureDefinition/us-core-care-experience-preference: StructureDefinition.differential.element[3].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-care-experience-preference: StructureDefinition.differential.element[3].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
 ERROR: StructureDefinition/us-core-care-experience-preference: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-care-experience-preference: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-care-experience-preference vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference
 == input/resources/StructureDefinition-us-core-location.json ==
@@ -184,17 +188,81 @@ ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/Structure
 == input/resources/StructureDefinition-us-core-observation-lab.json ==
 == input/resources/StructureDefinition-us-core-patient.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[8].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[8].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[9].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[9].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[10].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[10].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[12].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[12].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[13].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[13].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[28].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[28].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[33].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[33].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[34].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[34].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[35].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[35].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[45].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[45].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[49].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[49].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[58].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[58].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[73].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.snapshot.element[73].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[1].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[1].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[2].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[2].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[3].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[3].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[5].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[5].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[6].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[6].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[11].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[11].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[14].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[14].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[15].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[15].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[16].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[16].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[22].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[22].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[24].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[24].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[29].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[29].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[30].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-patient: StructureDefinition.differential.element[30].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
 ERROR: StructureDefinition/us-core-patient: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 == input/resources/StructureDefinition-us-core-specimen.json ==
+ERROR: StructureDefinition/us-core-specimen: StructureDefinition.snapshot.element[26].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-specimen: StructureDefinition.snapshot.element[26].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-specimen: StructureDefinition.snapshot.element[46].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-specimen: StructureDefinition.snapshot.element[46].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-specimen: StructureDefinition.differential.element[6].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-specimen: StructureDefinition.differential.element[6].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
+ERROR: StructureDefinition/us-core-specimen: StructureDefinition.differential.element[7].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-specimen: StructureDefinition.differential.element[7].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
 WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen'): The Implementation Guide contains no examples for this profile
 == input/resources/StructureDefinition-us-core-treatment-intervention-preference.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-treatment-intervention-preference.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference)
 ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'
 ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'
+ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.snapshot.element[41].extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.snapshot.element[41].extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
 ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'
 ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Unknown Code 'intervention-preference' in the system 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0' for 'http://hl7.org/fhir/us/core/CodeSystem/us-core-category#intervention-preference'
+ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.differential.element[3].extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi is unknown, and not allowed here
+ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition.differential.element[3].extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi' does not resolve
 ERROR: StructureDefinition/us-core-treatment-intervention-preference: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-treatment-intervention-preference: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-treatment-intervention-preference vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference
 == input/resources/StructureDefinition-uscore-medicationstatement.json ==

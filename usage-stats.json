@@ -218,8 +218,11 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation": [
       "Patient"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi": [
       "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.snapshot.element"
     ],
     "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension": [
