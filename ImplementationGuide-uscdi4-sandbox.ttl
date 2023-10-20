@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "USCDI4_1Sandbox"] ; # 
   fhir:title [ fhir:v "HealtheData1 USCDI4 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-12T16:46:52+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-20T05:42:23+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -942,10 +942,7 @@
        ] ;
        fhir:name [ fhir:v "Hospital Location" ] ;
        fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile*." ] ;
-       fhir:example [
-         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location"^^xsd:anyURI ;
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1054,6 +1051,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Procedure/defib-implant> ;
+         fhir:reference [ fhir:v "Procedure/defib-implant" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure Defibrillator Implant Example" ] ;
+       fhir:description [ fhir:v "This *US Core Procedure Profile* is an example of an Defibrillator implant Procedure. In this example, the reason for a referral is communicated through `Procedure.code'." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -1062,10 +1074,7 @@
        ] ;
        fhir:name [ fhir:v "Serum Glucose Example" ] ;
        fhir:description [ fhir:v "This is a serum glucose example for the *US Core Observation Lab Profile*." ] ;
-       fhir:example [
-         fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab"^^xsd:anyURI ;
-         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1283,7 +1292,7 @@
          fhir:reference [ fhir:v "StructureDefinition/us-core-medication-adherence" ]
        ] ;
        fhir:name [ fhir:v "US Core Medication Adherence Extension" ] ;
-       fhir:description [ fhir:v "A MedicationRequest extension representing whether the medication is or is not being consumed or administered." ] ;
+       fhir:description [ fhir:v "A MedicationRequest extension representing reported adherence to prescribed medication instructions.  In other words, whether a medication was consumed according to instructions." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1320,6 +1329,18 @@
        ] ;
        fhir:name [ fhir:v "US Core Patient Profile" ] ;
        fhir:description [ fhir:v "The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Procedure Profile" ] ;
+       fhir:description [ fhir:v "The US Core Procedure Profile is based upon the core FHIR Procedure Resource and meets the U.S. Core Data for Interoperability (USCDI) v2 'Procedures' requirements. This profile sets minimum expectations for the Procedure resource to record, search, and fetch procedures associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1392,6 +1413,29 @@
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Home" ] ;
          fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "informative" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "future.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "future.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Futures Page Mock UP" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "informative" ]
+           ] [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "fhir-write.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "fhir-write.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "FHIR Write Guidance for Vital Sign Observations" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;

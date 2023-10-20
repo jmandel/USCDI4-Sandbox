@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>FHIR Write Guidance for Vital Sign Observations - HealtheData1 USCDI4 Sandbox v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HealtheData1 USCDI4 Sandbox</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - CI Build
+
+
+
+  <img src="assets/images/usa.svg" alt="United States of America flag" title="United States of America" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">General Guidance</a>
+  </li>
+  <li>
+    <a href="future.html">Future</a>
+  </li>
+  <li>
+    <a href="screening-and-assessments.html">Screening and Assessments</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="ImplementationGuide.html">IG Page</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="future.html"><b>Futures Page Mock UP</b></a></li><li><b>FHIR Write Guidance for Vital Sign Observations</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">HealtheData1 USCDI4 Sandbox - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>FHIR Write Guidance for Vital Sign Observations</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#smart-configuration" id="markdown-toc-smart-configuration">SMART Configuration</a></li>
+  <li><a href="#writing-from-patient-facing-apps" id="markdown-toc-writing-from-patient-facing-apps">Writing from Patient-Facing Apps</a></li>
+  <li><a href="#writing-from-provider-facing-apps" id="markdown-toc-writing-from-provider-facing-apps">Writing from Provider-Facing Apps</a></li>
+  <li><a href="#resource-submission" id="markdown-toc-resource-submission">Resource Submission</a></li>
+  <li><a href="#discarding-observations" id="markdown-toc-discarding-observations">Discarding Observations</a></li>
+  <li><a href="#updating-previously-submitted-observations" id="markdown-toc-updating-previously-submitted-observations">Updating Previously Submitted Observations</a></li>
+  <li><a href="#including-provenance-information" id="markdown-toc-including-provenance-information">Including Provenance Information</a></li>
+</ul>
+
+</div>
+
+<h3 id="smart-configuration">SMART Configuration</h3>
+<p>EHR systems with support for writing FHIR vital sign Observation resources from patient-facing apps, provider-facing apps or system apps SHALL include a <code class="language-plaintext highlighter-rouge">vitals-write</code> capability in <code class="language-plaintext highlighter-rouge">.well-known/smart-configuration</code> <a href="https://build.fhir.org/ig/HL7/smart-app-launch/conformance.html#launch-context-for-standalone-launch">capabilities array</a>.</p>
+
+<h3 id="writing-from-patient-facing-apps">Writing from Patient-Facing Apps</h3>
+
+<p>EHR systems providing the ability to write FHIR vital sign Observation resources from patient-facing apps SHALL support the registration and authorization of apps with the <code class="language-plaintext highlighter-rouge">patient/Observation.c</code> SMART scope and MAY require limiting this scope to <code class="language-plaintext highlighter-rouge">category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>. Note that <code class="language-plaintext highlighter-rouge">read</code> and <code class="language-plaintext highlighter-rouge">search</code> capabilities are already implied by <a href="http://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-vital-signs.html">US Core Vital Signs profile</a>.</p>
+
+<p><a name="l348">​</a>EHR systems providing the ability to write FHIR vital sign Observation resources from patient-facing apps SHOULD also support the registration and authorization of apps with either <code class="language-plaintext highlighter-rouge">patient/Observation.u</code> or <code class="language-plaintext highlighter-rouge">patient/Observation.u?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code> SMART scope. Note, systems are allowed to only support limited <a href="#Updating-Previously-Submitted-Observations">update</a> capabilities.</p>
+
+<p>When offering a patient write capability, health systems MAY choose to enable or disable this capability in the system based on factors such as the provider, patient, payer, app, and vital type, or MAY choose to enable the capability broadly. If patients and/or apps attempting to write data are not enabled, and this can be discerned during the authorization process, the EHR SHALL omit these unsupported scopes from the resulting access token. If an app uses an access token without the required scopes to submit an <code class="language-plaintext highlighter-rouge">Observation</code> or the patient is not enabled to write data, the EHR SHALL return an error and SHOULD include an <code class="language-plaintext highlighter-rouge">OperationOutcome</code> in the response body.</p>
+
+<p>Examples:</p>
+<ul>
+  <li>Direct write - a provider creates an order in the EHR for patient home monitoring. Then, the patient’s blood pressure cuff sends data to an app on the patient’s phone that uses SMART to write the data into their record. The EHR automatically associates the blood pressure data with the appropriate order.</li>
+  <li>Mediated write - a patient uses a SMART app to write vitals from an outside source (e.g., specialist visit summary).</li>
+</ul>
+
+<h3 id="writing-from-provider-facing-apps">Writing from Provider-Facing Apps</h3>
+
+<p>EHR systems providing the ability to write FHIR vital sign Observation resources from provider-facing apps SHALL support the registration and authorization of apps with the <code class="language-plaintext highlighter-rouge">user/Observation.c</code> and <code class="language-plaintext highlighter-rouge">system/Observation.c</code> SMART scopes and MAY require limiting these scopes to <code class="language-plaintext highlighter-rouge">category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>. Note that <code class="language-plaintext highlighter-rouge">read</code> and <code class="language-plaintext highlighter-rouge">search</code> capabilities are already implied by <a href="http://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-vital-signs.html">US Core Vital Signs profile</a>.</p>
+
+<p><a name="l405">​</a>EHR systems providing the ability to write FHIR vital sign Observation resources from patient-facing apps SHOULD also support the registration and authorization of apps with either <code class="language-plaintext highlighter-rouge">user/Observation.u</code> and <code class="language-plaintext highlighter-rouge">system/Observation.u</code> SMART scopes, or <code class="language-plaintext highlighter-rouge">user/Observation.u?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code> and <code class="language-plaintext highlighter-rouge">system/Observation.u?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code> SMART scopes. Note, systems are allowed to only support limited <a href="#Updating-Previously-Submitted-Observations">update</a> capabilities.</p>
+
+<p>Examples:</p>
+<ul>
+  <li>Direct write - a blood pressure cuff sends readings to a standalone launch SMART app on a practice tablet that a clinical user then uses to write the data to a patient’s record in the EHR.</li>
+  <li>Mediated write - a patient app saves data to a repository controlled by the app developer. Then, the patient uses a “share with provider” function to enable the provider to access this data with a SMART app. The provider writes some or all of the observations into the patient’s record in the EHR.</li>
+</ul>
+
+<h3 id="resource-submission">Resource Submission</h3>
+
+<p>EHR systems SHALL support the submission of Observation resources that <em>are not</em> the result of a calculation and validate against a <a href="https://build.fhir.org/ig/HL7/US-Core/profiles-and-extensions.html#observation">US Core Vital Sign Profile</a> that corresponds to a version used by the EHR for vital sign Observation read requests.</p>
+
+<p>EHR systems MAY support the submission of Observation resources that <em>are</em> the result of a calculation (such as the “US Core Pediatric BMI for Age Observation Profile”) and validate against a <a href="https://build.fhir.org/ig/HL7/US-Core/profiles-and-extensions.html#observation">US Core Vital Sign Profile</a> that corresponds to a version used by the EHR for vital sign Observation read requests.</p>
+
+<p>EHR systems SHALL respond to supported and valid vital sign Observation creation requests with a status code of <code class="language-plaintext highlighter-rouge">200 OK</code> and a content location header, or with a status code of <code class="language-plaintext highlighter-rouge">202 Accepted</code>. If a content location header is provided, the resources SHALL be visible in subsequent read API calls and accessible within the EHR in the same manner as other patient submitted data. If a content location header is not provided, and EHR systems do not subsequently make the resource accessible in read API calls, the EHR system SHALL have a documented and discoverable reason why it was discarded (e.g., a log entry describing rejection during a review workflow or the applicability of a condition in the “Discarding” section below).</p>
+
+<p>EHR systems SHALL support the creation of a single vital sign through a FHIR <code class="language-plaintext highlighter-rouge">create</code> operation and MAY support the creation of multiple vitals signs by submitting a FHIR <code class="language-plaintext highlighter-rouge">Batch</code> bundle. When batch creation is supported, clients MAY use this approach to indicate that a set of Observation resources should be reviewed as a group and EHR systems MAY use this information when sending notifications or displaying the data.</p>
+
+<p>EHRs may choose to segregate data that originated from a patient from other vital sign data for the patient (for example, showing it on a separate patient flow sheet).</p>
+
+<p>Workflow for submitted Observations is the responsibility of the receiving system and is out of scope for this version of the IG (e.g., requiring provider review for patient submitted resources before fully integrating them in the chart).</p>
+
+<h4 id="observation-elements">Observation Elements</h4>
+
+<p><code class="language-plaintext highlighter-rouge">meta.tag</code></p>
+<ul>
+  <li>Client - When writing patient-mediated data into the EHR, provider-facing apps SHALL include a <code class="language-plaintext highlighter-rouge">Meta.tag</code> with a system of <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/us/core/CodeSystem/us-core-tags</code> and a value of <code class="language-plaintext highlighter-rouge">patient-supplied</code> to indicate that the data was supplied by a patient or patient designee (such as a parent or spouse) rather than by a healthcare provider.</li>
+  <li>EHRs SHALL associate the <code class="language-plaintext highlighter-rouge">patient-supplied</code> tag with vital signs supplied by a patient written through this API, and MAY associate the tag with vital signs supplied by a patient regardless of how they arrive in the EHR. Provider-facing apps writing data supplied by a patient SHALL include this tag in the Observation resources being submitted. The EHR MAY subsequently dissociate the tag from the data through an explicit reconciliation process.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">encounter</code></p>
+<ul>
+  <li>Client - If populating this element, apps SHALL use a reference to an Encounter resource in the EHR, and MAY use the value returned by the <code class="language-plaintext highlighter-rouge">launch/encounter</code> SMART scope.</li>
+  <li>EHR - Systems SHOULD document whether the <code class="language-plaintext highlighter-rouge">encounter</code> element is required to create a vital sign. When not required, EHRs MAY determine this value based on context if it is omitted.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">subject</code></p>
+<ul>
+  <li>Client - Apps SHALL populate the <code class="language-plaintext highlighter-rouge">subject</code> reference with a reference to a Patient resource in the EHR. Patient-facing apps SHOULD populate this element based on the value returned as part of the <code class="language-plaintext highlighter-rouge">launch/patient</code> SMART scope.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">device</code></p>
+<ul>
+  <li>Client - Apps MAY populate the <code class="language-plaintext highlighter-rouge">device</code> reference with a reference to Device resource in the EHR, or a contained Device resource within the Observation. This is the device used to measure the vital sign (e.g., a BP cuff), not the device used to transmit the data (e.g., a phone). Contained device resources SHALL populate at least one <code class="language-plaintext highlighter-rouge">deviceName</code> element.</li>
+  <li>EHR - When provided by an app, systems SHOULD log this data, but do not need to expose it in EHR user interface or in the <code class="language-plaintext highlighter-rouge">device</code> element when returning the Observation.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">performer</code></p>
+<ul>
+  <li>Client - Apps SHOULD populate the <code class="language-plaintext highlighter-rouge">performer</code> element with a reference to a resource in the EHR when the resource exists or the app has the ability to create it. For patient-facing apps, if the app knows that a patient collected this data, the app SHALL set the <code class="language-plaintext highlighter-rouge">performer</code> to a reference to the patient based on the the SMART launch context (this should also match the <code class="language-plaintext highlighter-rouge">Observation.subject</code>). If the relevant resource does not exist and the app is unable to create it, the app SHOULD populate <code class="language-plaintext highlighter-rouge">performer.display</code>.</li>
+  <li>EHR - Systems SHALL persist this value when it is provided.</li>
+</ul>
+
+<h3 id="discarding-observations">Discarding Observations</h3>
+
+<p>For a given vital sign type, if many Observations are submitted that have <code class="language-plaintext highlighter-rouge">effectiveDateTime</code> or <code class="language-plaintext highlighter-rouge">effectivePeriod</code> values that are close in time, an EHR MAY choose to discard a portion of these Observations or MAY reject submitted Observations with an appropriate OperationOutcome. EHRs SHALL clearly document this behavior or the ways in which this  behavior may be customized by health systems in the APIs documentation.</p>
+
+<p>If an EHR determines that a vital sign is a duplicate of one it has already stored, the EHR MAY ignore the Observation or MAY reject the submitted Observation with an appropriate OperationOutcome. EHRs SHALL clearly document this behavior or the ways in which this behavior may be customized by health systems in the APIs documentation.</p>
+
+<h3 id="updating-previously-submitted-observations">Updating Previously Submitted Observations</h3>
+
+<p>EHR systems SHOULD support the ability for patients-facing apps to update the <code class="language-plaintext highlighter-rouge">status</code> element of a vital sign resource the user previously wrote to the system from any app to <code class="language-plaintext highlighter-rouge">entered-in-error</code> through an <code class="language-plaintext highlighter-rouge">update</code> interaction. This capability SHOULD only be used by apps to address data mistakes in data submission.</p>
+
+<h3 id="including-provenance-information">Including Provenance Information</h3>
+
+<p>EHR systems MAY ignore contained Provenance resources in an Observation being submitted, but SHALL not return an error due to their presence.</p>
+
+<h4 id="resource-retrieved-from-an-external-organization">Resource retrieved from an external organization</h4>
+
+<p><img src="https://hackmd.io/_uploads/S1h87epp2.png" alt="null"/></p>
+
+<p>When writing an Observation that was retrieved from an external organization (e.g., a health system’s EHR or a device manufacturer’s cloud data store):</p>
+
+<ul>
+  <li>Apps SHALL pass through any Provenance resources received from the source system, unaltered (except for references, as described below), as contained resources on the Observation. A source system compliant with the US Core FHIR profiles SHOULD include a Provenance resource with <code class="language-plaintext highlighter-rouge">agent.type = author</code> that the app can pass through. The app SHALL also pass through resources referenced in elements that are labeled as “Must Support” in the USCDI Provenance profile and populated in the Provenance resources, including them as contained resources in the Observation and updating the references to them.</li>
+  <li>When a Provenance resource with <code class="language-plaintext highlighter-rouge">agent.type = author</code> is not received from the source system, apps SHALL generate a contained Provenance resource with:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">recorded</code> set to date and time recorded</li>
+      <li><code class="language-plaintext highlighter-rouge">agent.type = author</code> that has <code class="language-plaintext highlighter-rouge">agent.who</code> set to the organization/provider that authored the content, with at least the <code class="language-plaintext highlighter-rouge">who.display</code> element populated.
+        <ul>
+          <li>When available, a <code class="language-plaintext highlighter-rouge">who.identifier.value</code> should be set to the url where that data was retrieved and <code class="language-plaintext highlighter-rouge">who.identifier.system</code> should be set to <code class="language-plaintext highlighter-rouge">urn:ietf:rfc:3986</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Apps MAY include a Provenance resource with <code class="language-plaintext highlighter-rouge">agent.type = transmitter</code> with information on the entity that submitted the data. EHR systems MAY store and display this information and/or MAY populate this information based on the SMART context associated with the write.</li>
+</ul>
+
+<p>Example:</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Observation</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">contained</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Provenance</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">contained_1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">target</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span><span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">#</span><span class="dl">"</span><span class="p">}],</span>
+    <span class="dl">"</span><span class="s2">recorded</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2019-07-09T15:26:23.217+00:00</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">agent</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+      <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+          <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.hl7.org/CodeSystem/provenance-participant-type</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">author</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Author</span><span class="dl">"</span>
+        <span class="p">}]</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">who</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Saint Luke</span><span class="se">\</span><span class="s2">'s Hospital of Kansas City</span><span class="dl">"</span><span class="p">,</span>
+        <span class="c1">// identifier could be an url as in Patient Access Brands</span>
+        <span class="dl">"</span><span class="s2">identifier</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">urn:ietf:rfc:3986</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://stlukes.example.org</span><span class="dl">"</span>
+        <span class="p">}</span>  
+      <span class="p">}</span>
+    <span class="p">},{</span>
+      <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+          <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.hl7.org/CodeSystem/provenance-participant-type</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">transmitter</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Transmitter</span><span class="dl">"</span>
+        <span class="p">}]</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">who</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="c1">//this is the user submitting the data</span>
+        <span class="c1">//can be populated by the EHR based on the SMART context if omitted</span>
+        <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Patient/123</span><span class="dl">"</span>
+      <span class="p">}</span>
+    <span class="p">}]</span>
+  <span class="p">}]</span>
+  <span class="c1">// ... other Observation elements</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="resources-not-retrieved-from-an-external-organization">Resources not retrieved from an external organization</h4>
+
+<p><img src="https://hackmd.io/_uploads/B1PWv1pah.png" alt="null"/></p>
+
+<p>When writing an Observation that was not retrieved from an external organization (e.g., transmitted by a home blood pressure cuff, or manually entered by a patient):</p>
+
+<ul>
+  <li>
+    <p>App MAY include a contained Provenance resource with <code class="language-plaintext highlighter-rouge">agent.type = author</code> with information on the party that wrote the data. EHR systems MAY store and display this information and/or MAY populate this information based on the SMART context associated with the write.</p>
+  </li>
+  <li>
+    <p>App MAY include one or more contained Provenance resources with <code class="language-plaintext highlighter-rouge">agent.type = composer</code> and/or <code class="language-plaintext highlighter-rouge">agent.type = assembler</code> with information on the device, app, or apps that captured or passed along the data.</p>
+  </li>
+</ul>
+
+<p>Example:</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[{</span>
+  <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Provenance</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">target</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span><span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">#</span><span class="dl">"</span><span class="p">}],</span>
+  <span class="dl">"</span><span class="s2">recorded</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2019-07-08</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">agent</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.hl7.org/CodeSystem/provenance-participant-type</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">composer</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Composer</span><span class="dl">"</span>
+      <span class="p">}]</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">who</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="c1">//this is the app that provided the original data</span>
+      <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">OMRON for iOS</span><span class="dl">"</span>
+    <span class="p">}</span>
+  <span class="p">},{</span>
+    <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.hl7.org/CodeSystem/provenance-participant-type</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">author</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Author</span><span class="dl">"</span>
+      <span class="p">}]</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">who</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Patient/123</span><span class="dl">"</span>
+    <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">},{</span>
+  <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Provenance</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">target</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span><span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">#</span><span class="dl">"</span><span class="p">}],</span>
+  <span class="dl">"</span><span class="s2">recorded</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2019-07-09T10:26:23.217+00:00</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">agent</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.hl7.org/CodeSystem/provenance-participant-type</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">assembler</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Assembler</span><span class="dl">"</span>
+      <span class="p">}]</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">who</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="c1">//this is the app that's transmitting the data</span>
+      <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Healthkit</span><span class="dl">"</span> 
+    <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">}]</span>
+</code></pre></div></div>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 20, 2023 05:42+0000">2023-10-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

@@ -42,6 +42,13 @@
     "name" : "USCoreCareExperiencePreferenceProfile"
   },
   {
+    "id" : "us-core-location",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
+    "version" : "0.0.0",
+    "name" : "USCoreLocation"
+  },
+  {
     "id" : "us-core-medication-adherence",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence",
@@ -49,11 +56,32 @@
     "name" : "USCoreMedicationAdherenceExtension"
   },
   {
+    "id" : "us-core-observation-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
+    "version" : "0.0.0",
+    "name" : "USCoreLaboratoryResultObservationProfile"
+  },
+  {
     "id" : "us-core-patient",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
     "version" : "0.0.0",
     "name" : "USCorePatientProfile"
+  },
+  {
+    "id" : "us-core-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
+    "version" : "0.0.0",
+    "name" : "USCoreProcedureProfile"
+  },
+  {
+    "id" : "us-core-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen",
+    "version" : "0.0.0",
+    "name" : "USCoreSpecimenProfile"
   },
   {
     "id" : "us-core-treatment-intervention-preference",
@@ -77,32 +105,11 @@
     "name" : "USCDI4_1Sandbox"
   },
   {
-    "id" : "us-core-location",
-    "type" : "StructureDefinition",
-    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location",
-    "version" : "0.0.0",
-    "name" : "USCoreLocation"
-  },
-  {
     "id" : "us-core-medicationstatement",
     "type" : "StructureDefinition",
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement",
     "version" : "0.0.0",
     "name" : "USCoreMedicationStatement"
-  },
-  {
-    "id" : "us-core-observation-lab",
-    "type" : "StructureDefinition",
-    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab",
-    "version" : "0.0.0",
-    "name" : "USCoreLaboratoryResultObservationProfile"
-  },
-  {
-    "id" : "us-core-specimen",
-    "type" : "StructureDefinition",
-    "url" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen",
-    "version" : "0.0.0",
-    "name" : "USCoreSpecimenProfile"
   },
   {
     "id" : "uscore-care-experience-preference",

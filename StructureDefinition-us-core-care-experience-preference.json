@@ -31,7 +31,7 @@
   "title" : "US Core Care Experience Preference Profile",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-10-12",
+  "date" : "2023-10-19",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -2026,10 +2026,6 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
         "valueBoolean" : true
-      },
-      {
-        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
-        "valueBoolean" : true
       }],
       "path" : "Observation.derivedFrom",
       "short" : "𝗔𝗗𝗗𝗜𝗧𝗜𝗢𝗡𝗔𝗟 𝗨𝗦𝗖𝗗𝗜: US Core Profiles or other resource the observation is made from",
@@ -2521,7 +2517,7 @@
     {
       "id" : "Observation.derivedFrom",
       "extension" : [{
-        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
         "valueBoolean" : true
       }],
       "path" : "Observation.derivedFrom",

@@ -17,7 +17,7 @@
   <name value="USCDI4_1Sandbox"/>
   <title value="HealtheData1 USCDI4 Sandbox"/>
   <status value="active"/>
-  <date value="2023-10-12T16:46:52+00:00"/>
+  <date value="2023-10-20T05:42:23+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -787,7 +787,7 @@
       </reference>
       <name value="Hospital Location"/>
       <description value="This is an example hospital location for the *US Core Location Profile*."/>
-      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -868,6 +868,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/defib-implant"/>
+      </reference>
+      <name value="Procedure Defibrillator Implant Example"/>
+      <description value="This *US Core Procedure Profile* is an example of an Defibrillator implant Procedure. In this example, the reason for a referral is communicated through `Procedure.code'."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -875,7 +886,7 @@
       </reference>
       <name value="Serum Glucose Example"/>
       <description value="This is a serum glucose example for the *US Core Observation Lab Profile*."/>
-      <exampleCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1050,7 +1061,7 @@
         <reference value="StructureDefinition/us-core-medication-adherence"/>
       </reference>
       <name value="US Core Medication Adherence Extension"/>
-      <description value="A MedicationRequest extension representing whether the medication is or is not being consumed or administered."/>
+      <description value="A MedicationRequest extension representing reported adherence to prescribed medication instructions.  In other words, whether a medication was consumed according to instructions."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1084,6 +1095,17 @@
       </reference>
       <name value="US Core Patient Profile"/>
       <description value="The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-procedure"/>
+      </reference>
+      <name value="US Core Procedure Profile"/>
+      <description value="The US Core Procedure Profile is based upon the core FHIR Procedure Resource and meets the U.S. Core Data for Interoperability (USCDI) v2 'Procedures' requirements. This profile sets minimum expectations for the Procedure resource to record, search, and fetch procedures associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1150,6 +1172,28 @@
         <nameUrl value="index.html"/>
         <title value="Home"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="future.html"/>
+        </extension>
+        <nameUrl value="future.html"/>
+        <title value="Futures Page Mock UP"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="fhir-write.html"/>
+          </extension>
+          <nameUrl value="fhir-write.html"/>
+          <title value="FHIR Write Guidance for Vital Sign Observations"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

@@ -44,7 +44,7 @@
   fhir:title [ fhir:v "US Core Care Experience Preference Profile"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-10-12"^^xsd:date] ; # 
+  fhir:date [ fhir:v "2023-10-19"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -2131,9 +2131,6 @@
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true"^^xsd:boolean ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Observation.derivedFrom" ] ;
        fhir:short [ fhir:v "𝗔𝗗𝗗𝗜𝗧𝗜𝗢𝗡𝗔𝗟 𝗨𝗦𝗖𝗗𝗜: US Core Profiles or other resource the observation is made from" ] ;
@@ -2643,7 +2640,7 @@
      ] [
        fhir:id [ fhir:v "Observation.derivedFrom" ] ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi"^^xsd:anyURI ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
        fhir:path [ fhir:v "Observation.derivedFrom" ] ;

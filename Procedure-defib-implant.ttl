@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi4-sandbox/Procedure/defib-implant> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "defib-implant"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Procedure Defibrillator Implant Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "This *US Core Procedure Profile* is an example of an Defibrillator implant Procedure. In this example, the reason for a referral is communicated through `Procedure.code'." ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"defib-implant\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;defib-implant&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-procedure.html\">US Core Procedure Profile</a></p></div><p><b>identifier</b>: id: urn:uuid:b2a737f2-2fdb-49c1-b097-dac173d07aff</p><p><b>status</b>: completed</p><p><b>code</b>: Insertion or replacement of permanent implantable defibrillator system with transvenous lead(s), single or dual chamber <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#33249)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Patient/example</a></p><p><b>encounter</b>: <a href=\"Encounter-example-1.html\">Encounter/example-1: Office Visit</a></p><p><b>performed</b>: 2019-03-26 12:55:26-0700 --&gt; 2019-03-26 13:25:26-0700</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-practitioner-1.html\">Practitioner/practitioner-1</a></td></tr></table><p><b>reasonCode</b>: Ventricular fibrillation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#I49.01)</span></p><h3>FocalDevices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Manipulated</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Device-udi-2.html\">Device/udi-2</a></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:b2a737f2-2fdb-49c1-b097-dac173d07aff" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "33249" ]
+     ] ) ;
+     fhir:text [ fhir:v "Insertion or replacement of permanent implantable defibrillator system with transvenous lead(s), single or dual chamber" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Encounter/example-1> ;
+     fhir:reference [ fhir:v "Encounter/example-1" ] ;
+     fhir:display [ fhir:v "Office Visit" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2019-03-26T12:55:26-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-03-26T13:25:26-07:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Practitioner/practitioner-1> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-1" ]
+     ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "I49.01" ] ;
+       fhir:display [ fhir:v "Ventricular fibrillation" ]
+     ] ) ;
+     fhir:text [ fhir:v "Ventricular fibrillation" ]
+  ] ) ; # 
+  fhir:focalDevice ( [
+     fhir:manipulated [
+       fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/Device/udi-2> ;
+       fhir:reference [ fhir:v "Device/udi-2" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

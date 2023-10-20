@@ -67,8 +67,14 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab",
-        "title": "US Core Laboratory Result Observation Profile"
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference",
+        "title": "US Core Treatment Intervention Preference Profile"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
+        "title": "US Core Location Profile"
       }
     ],
     "Patient": [
@@ -77,22 +83,22 @@
         "title": "US Core Patient Profile"
       }
     ],
-    "Location": [
+    "Procedure": [
       {
-        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location",
-        "title": "US Core Location Profile"
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
+        "title": "US Core Procedure Profile"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen",
+        "title": "US Core Specimen Profile"
       }
     ],
     "MedicationStatement": [
       {
         "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement",
         "title": "US Core MedicationStatement"
-      }
-    ],
-    "Specimen": [
-      {
-        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen",
-        "title": "US Core Specimen Profile"
       }
     ]
   },
@@ -131,6 +137,7 @@
       "MedicationRequest.meta",
       "MedicationStatement.meta",
       "Observation.meta",
+      "Procedure.meta",
       "Questionnaire.meta",
       "QuestionnaireResponse.meta",
       "Specimen.meta"
@@ -140,6 +147,7 @@
       "MedicationRequest.meta",
       "MedicationStatement.meta",
       "Observation.meta",
+      "Procedure.meta",
       "Questionnaire.meta",
       "QuestionnaireResponse.meta",
       "Specimen.meta"
@@ -180,6 +188,7 @@
       "ImplementationGuide",
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page",
       "StructureDefinition",
       "StructureDefinition.snapshot.element",
       "ValueSet"
@@ -189,7 +198,8 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
-      "ImplementationGuide.definition.page.page"
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
@@ -218,11 +228,8 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation": [
       "Patient"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi": [
-      "StructureDefinition.differential.element",
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
+      "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
     ],
     "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension": [

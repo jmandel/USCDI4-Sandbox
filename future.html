@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Futures Page Mock UP - HealtheData1 USCDI4 Sandbox v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HealtheData1 USCDI4 Sandbox</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - CI Build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">General Guidance</a>
+  </li>
+  <li>
+    <a href="future.html">Future</a>
+  </li>
+  <li>
+    <a href="screening-and-assessments.html">Screening and Assessments</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="ImplementationGuide.html">IG Page</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Futures Page Mock UP</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HealtheData1 USCDI4 Sandbox - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Futures Page Mock UP</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#us-core-yearly-updates" id="markdown-toc-us-core-yearly-updates">US Core Yearly Updates</a></li>
+  <li><a href="#growth-path-of-us-core" id="markdown-toc-growth-path-of-us-core">Growth Path of US Core</a></li>
+  <li><a href="#future-candidate-requirements-under-consideration" id="markdown-toc-future-candidate-requirements-under-consideration">Future Candidate Requirements Under Consideration</a></li>
+</ul>
+
+</div>
+
+<p>The US Core FHIR Profiles are designed to be the base set of requirements for FHIR implementation in the US. All US Realm implementation guides <strong>SHALL</strong> use the US Core Profiles or <strong>SHALL</strong> explicitly state why they are unable to use. Throughout the development of US Core, implementers, the government, and the clinical community have brought forward additional requirements for US Core. This section outlines the approach to growth and a place for items that may be added to US Core.</p>
+
+<h3 id="us-core-yearly-updates">US Core Yearly Updates</h3>
+
+<p>Yearly US Core updates reflect changes to [U.S. Core Data for Interoperability (USCDI)] and requests from the US Realm FHIR community. This approach is outlined in the figure below:</p>
+
+<h3 id="growth-path-of-us-core">Growth Path of US Core</h3>
+
+<p>The US Core implementation Guide will grow following these steps:</p>
+
+<ol>
+  <li>Declare candidacy - this step can be completed by presenting a Project Proposal to the US Realm Steering Committee.</li>
+  <li>Get published - Develop a formal profile, an implementation guide, or get requirements directly published in  FHIR Core. The initial publication could be an outside consortium or vendor publication.</li>
+  <li>Pilot - coordinate with three or more implementers an in-person or virtual connectathon. Testing and piloting is the way to identify issues with the new proposal.</li>
+  <li>Propose candidate for US Core to US Realm Steering Committee - receive formal approval from the US Realm SC to add.</li>
+  <li>Submit formal STU comments, or propose through a ballot</li>
+</ol>
+
+<p>A new US Regulatory requirement may jump over some of these steps. However, regulators <strong>SHOULD</strong> be encouraged to complete pilot testing. With pilot testing, it is easier to understand how a change will affect real-world implementation.</p>
+
+<h3 id="future-candidate-requirements-under-consideration">Future Candidate Requirements Under Consideration</h3>
+
+<p>Past Balloters, STU commenters, and Accelerator Project teams submitted the following items for consideration to add US Core. Additional requirements gathering is required before testing may occur on these items:</p>
+
+<h4 id="additional-pilot-testing-of-udi-elements">Additional pilot Testing of UDI elements</h4>
+<p>In the January ballot of 2019 we tested this process with the FDA requesting US Core include all the parts of UDI. In prior efforts, the FDA had successfully enhanced the base FHIR specification to include the UDI components.</p>
+
+<h4 id="device">[Device]</h4>
+<p>The US Core Implantable Device Profile is intended to <em>only</em> be used for implantable devices. Please submit your successful implementation of a general non-implantable Device Profile (for example, software or crutches) for consideration in a future update of US Core.</p>
+
+<h4 id="medicationadministration">[MedicationAdministration]</h4>
+<p>The US Core design is based on the assumption that access to the Active Medication List is through searching MedicationRequest. (See: https://build.fhir.org/ig/HL7/US-Core/medication-list-guidance.html)  The orders (MedicationRequest) capture all the medications, whether they have been fulfilled. MedicationAdministration can be used as well, but systems will need to be careful to link to appropriate MedicationRequest.  Future versions of US Core may test and add MedicationAdministration.</p>
+
+<h4 id="searching-for-multiple-patients">Searching for Multiple Patients</h4>
+<p>Searching for multiple patients has been called out in the ONC Health IT Certification Program.  Defining capabilities for multiple patient access would focus on querying real-time data for a user-facing provider app across patients. Examples of the type of queries that would be addressed include searching for all of a provider’s patients:</p>
+
+<ul>
+  <li>with recent lab results</li>
+  <li>currently in the Emergency Department</li>
+  <li>with an Allergy to X</li>
+  <li>being seen by a provider for the day</li>
+</ul>
+
+<h4 id="timezones-and-time-offsets">Timezones and Time Offsets</h4>
+<p>Clients currently face challenges displaying the source data’s times and timezone regardless of the end user’s current timezone.  A solution is to define requirements and best practices for servers to preserve and represent time offsets and time zones.</p>
+
+<blockquote>
+  <p>A <em>timezone</em> is a geographical region in which residents observe the same standard time. A <em>time offset</em> is an amount of time subtracted from or added to Coordinated Universal Time (UTC) time to get the current civil time, whether it is standard time or daylight saving time (DST).<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+</blockquote>
+
+<p>Common practice is to preserve the source data time offsets as the original offset or converted to Coordinated Universal Time (UTC) time. Making this a requirement is one consideration.  Another consideration is the addition of server best practices for preserving source timezones using the FHIR standard [timezone extension]. A third consideration is providing a client algorithm for resolving time offsets and time zones.</p>
+
+<h4 id="record-or-update-data">Record or Update Data</h4>
+
+<div class="bg-success">
+
+  <p>Systems may use operations that create and update resources for any of the profiles in this IG.  However, more guidance is needed on writing and updating data in the context of US Core Profiles to support consistency between implementations.  Multiple issues will need to be considered when defining expected behavior by the various actors to support updates and writes to the data, including:</p>
+
+  <ul>
+    <li>Defining the overall approach
+      <ul>
+        <li>direct updates to a particular resource via FHIR RESTful transactions</li>
+        <li>new Profiles to represent the context and issue and request</li>
+      </ul>
+    </li>
+    <li>Write failure scenarios (e.g., insufficient data to create)</li>
+    <li>Recording and updating data in the context of the Must Support fields</li>
+    <li>Indicating the source of the update</li>
+  </ul>
+
+  <p>The Argonaut project has defined <a href="fhir-write.html">FHIR Write Guidance for Vital Sign Observations</a> for creating and updating vital sign Observations resources from patient-facing and provider-facing applications and expects to develop similar guidance for other Observation categories and resource types. After adequate testing by implementers, we will assess the feasibility of incorporating this guidance into the US Core API.</p>
+
+</div>
+<!-- new-content -->
+
+<hr />
+<p>Footnotes</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>https://en.wikipedia.org/w/index.php?title=UTC_offset#Time_zones_and_time_offsets <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 20, 2023 05:42+0000">2023-10-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

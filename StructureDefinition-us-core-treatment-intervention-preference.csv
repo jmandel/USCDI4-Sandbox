@@ -53,7 +53,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","(USCDI) Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://hl7.org/fhir/us/core/CodeSystem/us-core-category""/>
-    <code value=""intervention-preference""/>
+    <code value=""treatment-intervention-preference""/>
   </coding>
 </valueCodeableConcept>","","","",,"required","Note that other codes are permitted, see [Required Bindings When Slicing by Value Sets](http://hl7.org/fhir/us/core/general-requirements.html#required-bindings-when-slicing-by-valuesets)","http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","FiveWs.class"
@@ -62,7 +62,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Treatment intervention preferences code","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://hl7.org/fhir/us/core/CodeSystem/us-core-category""/>
-    <code value=""intervention-preference""/>
+    <code value=""treatment-intervention-preference""/>
   </coding>
 </valueCodeableConcept>","","","",,"preferred","","http://hl7.org/fhir/ValueSet/observation-codes","",,,,"Observation.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]","116680003 |Is a|"

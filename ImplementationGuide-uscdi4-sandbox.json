@@ -18,7 +18,7 @@
   "name" : "USCDI4_1Sandbox",
   "title" : "HealtheData1 USCDI4 Sandbox",
   "status" : "active",
-  "date" : "2023-10-12T16:46:52+00:00",
+  "date" : "2023-10-20T05:42:23+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -1005,7 +1005,7 @@
       },
       "name" : "Hospital Location",
       "description" : "This is an example hospital location for the *US Core Location Profile*.",
-      "exampleCanonical" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1094,6 +1094,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/defib-implant"
+      },
+      "name" : "Procedure Defibrillator Implant Example",
+      "description" : "This *US Core Procedure Profile* is an example of an Defibrillator implant Procedure. In this example, the reason for a referral is communicated through `Procedure.code'.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1101,7 +1113,7 @@
       },
       "name" : "Serum Glucose Example",
       "description" : "This is a serum glucose example for the *US Core Observation Lab Profile*.",
-      "exampleCanonical" : "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1292,7 +1304,7 @@
         "reference" : "StructureDefinition/us-core-medication-adherence"
       },
       "name" : "US Core Medication Adherence Extension",
-      "description" : "A MedicationRequest extension representing whether the medication is or is not being consumed or administered.",
+      "description" : "A MedicationRequest extension representing reported adherence to prescribed medication instructions.  In other words, whether a medication was consumed according to instructions.",
       "exampleBoolean" : false
     },
     {
@@ -1329,6 +1341,18 @@
       },
       "name" : "US Core Patient Profile",
       "description" : "The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-procedure"
+      },
+      "name" : "US Core Procedure Profile",
+      "description" : "The US Core Procedure Profile is based upon the core FHIR Procedure Resource and meets the U.S. Core Data for Interoperability (USCDI) v2 'Procedures' requirements. This profile sets minimum expectations for the Procedure resource to record, search, and fetch procedures associated with a patient to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.",
       "exampleBoolean" : false
     },
     {
@@ -1403,6 +1427,32 @@
         "nameUrl" : "index.html",
         "title" : "Home",
         "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+          "valueCode" : "informative"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "future.html"
+        }],
+        "nameUrl" : "future.html",
+        "title" : "Futures Page Mock UP",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode" : "informative"
+          },
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "fhir-write.html"
+          }],
+          "nameUrl" : "fhir-write.html",
+          "title" : "FHIR Write Guidance for Vital Sign Observations",
+          "generation" : "markdown"
+        }]
       },
       {
         "extension" : [{
