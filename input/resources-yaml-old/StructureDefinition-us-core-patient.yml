@@ -36,8 +36,8 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.extension
-    sliceName: race 
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) US Core Race Extension
+    sliceName: race
+    short: (USCDI) US Core Race Extension
     min: 0
     max: '1'
     type:
@@ -54,7 +54,7 @@ differential:
       valueBoolean: true
     path: Patient.extension
     sliceName: ethnicity
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) US Core ethnicity Extension
+    short: (USCDI) US Core ethnicity Extension
     min: 0
     max: '1'
     type:
@@ -71,7 +71,7 @@ differential:
       valueBoolean: true
     path: Patient.extension
     sliceName: tribalAffiliation
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) Tribal Affiliation Extension
+    short: (USCDI) Tribal Affiliation Extension
     min: 0
     max: '*'
     type:
@@ -105,7 +105,7 @@ differential:
       valueBoolean: true
     path: Patient.extension
     sliceName: sex
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) Sex Extension
+    short: (USCDI) Sex Extension
     min: 0
     max: '1'
     type:
@@ -121,7 +121,7 @@ differential:
       valueBoolean: true
     path: Patient.extension
     sliceName: genderIdentity
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) The individual's gender identity
+    short: (USCDI) The individual's gender identity
     min: 0
     max: '*'
     type:
@@ -130,36 +130,44 @@ differential:
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity
     mustSupport: false
   - id: Patient.identifier
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.identifier
-    short: An identifier for this patient
+    short: (USCDI) An identifier for this patient
     min: 1
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
       map: Patient.identifier
   - id: Patient.identifier.system
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.identifier.system
-    short: The namespace for the identifier value
+    short: (USCDI) The namespace for the identifier value
     min: 1
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
       map: Patient.identifier.system
   - id: Patient.identifier.value
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.identifier.value
-    short: The value that is unique within the system.
+    short: (USCDI) The value that is unique within the system.
     min: 1
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
       map: Patient.identifier.value
   - id: Patient.name
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.name
-    short: A name associated with the patient
+    short: (USCDI) A name associated with the patient
     min: 1
     constraint:
     - key: us-core-6
@@ -179,11 +187,13 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.name.use
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) usual | official | temp | nickname | anonymous | old | maiden
+    short: (USCDI) usual | official | temp | nickname | anonymous | old | maiden
   - id: Patient.name.family
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.name.family
-    short: Family name (often called 'Surname')
+    short: (USCDI) Family name (often called 'Surname')
     condition:
     - us-core-6
     mustSupport: true
@@ -191,9 +201,11 @@ differential:
     - identity: argonaut-dq-dstu2
       map: Patient.name.family
   - id: Patient.name.given
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.name.given
-    short: Given names (not always 'first'). Includes middle names
+    short: (USCDI) Given names (not always 'first'). Includes middle names
     condition:
     - us-core-6
     mustSupport: true
@@ -201,9 +213,11 @@ differential:
     - identity: argonaut-dq-dstu2
       map: Patient.name.given
   - id: Patient.name.suffix
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.name.suffix
-    short: Parts that come after the name
+    short: (USCDI) Parts that come after the name
     mustSupport: false
     mapping:
     - identity: argonaut-dq-dstu2
@@ -213,7 +227,7 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.name.period
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) Time period when name was/is in use
+    short: (USCDI) Time period when name was/is in use
     mustSupport: false
     mapping:
     - identity: argonaut-dq-dstu2
@@ -223,15 +237,17 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.telecom
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) A contact detail for the individual
+    short: (USCDI) A contact detail for the individual
     mustSupport: false
     mapping:
     - identity: argonaut-dq-dstu2
       map: NA
   - id: Patient.telecom.system
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.telecom.system
-    short: phone | fax | email | pager | url | sms | other
+    short: (USCDI) phone | fax | email | pager | url | sms | other
     min: 1
     mustSupport: true
     binding:
@@ -242,18 +258,22 @@ differential:
     - identity: argonaut-dq-dstu2
       map: NA
   - id: Patient.telecom.value
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.telecom.value
-    short: The actual contact point details
+    short: (USCDI) The actual contact point details
     min: 1
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
       map: NA
   - id: Patient.telecom.use
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.telecom.use
-    short: home | work | temp | old | mobile - purpose of this
+    short: (USCDI) home | work | temp | old | mobile - purpose of this
       contact point
     mustSupport: true
     binding:
@@ -263,9 +283,11 @@ differential:
     - identity: argonaut-dq-dstu2
       map: NA
   - id: Patient.gender
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.gender
-    short: male | female | other | unknown
+    short: (USCDI) male | female | other | unknown
     min: 1
     type:
     - code: code
@@ -277,9 +299,11 @@ differential:
     - identity: argonaut-dq-dstu2
       map: Patient.gender
   - id: Patient.birthDate
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.birthDate
-    short: The date of birth for the individual
+    short: (USCDI) The date of birth for the individual
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
@@ -289,10 +313,13 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.deceased[x]
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) Indicates if the individual is deceased or not
+    short: (USCDI) Indicates if the individual is deceased or not
   - id: Patient.address
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.address
-    short: An address for the individual
+    short: (USCDI) An address for the individual
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
@@ -302,28 +329,34 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.address.use
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) home | work | temp | old | billing - purpose of this
+    short: (USCDI) home | work | temp | old | billing - purpose of this
       address
   - id: Patient.address.line
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.address.line
-    short: Street name, number, direction & P.O. Box etc.
+    short: (USCDI) Street name, number, direction & P.O. Box etc.
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
       map: NA
   - id: Patient.address.city
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.address.city
-    short: Name of city, town etc.
+    short: (USCDI) Name of city, town etc.
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
       map: NA
   - id: Patient.address.state
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.address.state
-    short: Sub-unit of country (abbreviations ok)
+    short: (USCDI) Sub-unit of country (abbreviations ok)
     mustSupport: true
     binding:
       strength: extensible
@@ -333,9 +366,11 @@ differential:
     - identity: argonaut-dq-dstu2
       map: NA
   - id: Patient.address.postalCode
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.address.postalCode
-    short: US Zip Codes
+    short: (USCDI) US Zip Codes
     alias:
     - Zip Code
     mustSupport: true
@@ -347,7 +382,7 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.address.period
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) Time period when address was/is in use
+    short: (USCDI) Time period when address was/is in use
     # mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
@@ -357,16 +392,18 @@ differential:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.communication
-    short: ❗(𝗔𝗗𝗗'𝗟 𝗨𝗦𝗖𝗗𝗜) A language which may be used to communicate with the
+    short: (USCDI) A language which may be used to communicate with the
       patient about his or her health
     mustSupport: false
     mapping:
     - identity: argonaut-dq-dstu2
       map: Patient.communication
   - id: Patient.communication.language
-
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.communication.language
-    short: The language which can be used to communicate with
+    short: (USCDI) The language which can be used to communicate with
       the patient about his or her health
     mustSupport: true
     binding:

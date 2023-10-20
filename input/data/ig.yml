@@ -175,7 +175,7 @@ definition:
       reference: Location/hospital
     description: This is an example hospital location for the *US Core Location Profile*.
     name: Hospital Location
-    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location
+    exampleBoolean: true
   - reference:
       reference: MedicationRequest/coded-oral-axid-with-compliance
     description: This example demonstrates medication adherence for a prescribed medication
@@ -227,11 +227,18 @@ definition:
     name: Observation Medication Adherence Self Tylenol (OTC) Example
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation
   - reference:
+      reference: Procedure/defib-implant
+    description: This *US Core Procedure Profile* is an example of an Defibrillator
+      implant Procedure. In this example, the reason for a referral is communicated
+      through `Procedure.code'.
+    name: Procedure Defibrillator Implant Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure
+  - reference:
       reference: Observation/serum-glucose
     description: This is a serum glucose example for the *US Core Observation Lab
       Profile*.
     name: Serum Glucose Example
-    exampleCanonical: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab
+    exampleBoolean: true
   - reference:
       reference: Observation/substance-use-status
     description: This is an Substance-use-status example for the *Simple Observation
@@ -366,8 +373,9 @@ definition:
     name: US Core Location Profile
   - reference:
       reference: StructureDefinition/us-core-medication-adherence
-    description: A MedicationRequest extension representing whether the medication
-      is or is not being consumed or administered.
+    description: A MedicationRequest extension representing reported adherence to
+      prescribed medication instructions.  In other words, whether a medication was
+      consumed according to instructions.
     exampleBoolean: false
     name: US Core Medication Adherence Extension
   - reference:
@@ -407,6 +415,18 @@ definition:
       for standards development for specific use cases.
     exampleBoolean: false
     name: US Core Patient Profile
+  - reference:
+      reference: StructureDefinition/us-core-procedure
+    description: The US Core Procedure Profile is based upon the core FHIR Procedure
+      Resource and meets the U.S. Core Data for Interoperability (USCDI) v2 'Procedures'
+      requirements. This profile sets minimum expectations for the Procedure resource
+      to record, search, and fetch procedures associated with a patient to promote
+      interoperability and adoption through common implementation.  It identifies
+      which core elements, extensions, vocabularies, and value sets **SHALL** be present
+      in the resource and constrains the way the elements are used when using this
+      profile.  It provides the floor for standards development for specific use cases.
+    exampleBoolean: false
+    name: US Core Procedure Profile
   - reference:
       reference: StructureDefinition/us-core-specimen
     description: This profile sets minimum expectations for the Specimen resource
@@ -452,6 +472,13 @@ definition:
       extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: draft
+    - nameUrl: future.html
+      title: Futures Page Mock UP
+      generation: markdown
+      page:
+      - nameUrl: fhir-write.html
+        title: FHIR Write Guidance for Vital Sign Observations
+        generation: markdown
     - nameUrl: guidance.html
       title: Guidance
       generation: markdown

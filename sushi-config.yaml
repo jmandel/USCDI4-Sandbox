@@ -148,6 +148,11 @@ pages:
   # background.md:
   # # specification.md:
   # #   exchanging-clinical-data.md:
+  future.md:
+    title: Futures Page Mock UP
+    fhir-write.md:
+      title: FHIR Write Guidance for Vital Sign Observations
+
   guidance.md:
     title: Guidance
 
@@ -210,6 +215,7 @@ releaseLabel: CI Build
 menu:
   IG Home: index.html
   General Guidance: guidance.html
+  Future: future.html
   Screening and Assessments: screening-and-assessments.html
   #Table of Contents: toc.html
   Artifact Index: artifacts.html

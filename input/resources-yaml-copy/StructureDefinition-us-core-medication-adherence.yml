@@ -4,9 +4,10 @@ url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherenc
 name: USCoreMedicationAdherenceExtension
 title: US Core Medication Adherence Extension
 status: active
-date: 2023-10-12
-description: A MedicationRequest extension representing whether the medication is
-  or is not being consumed or administered.
+date: 2023-10-19
+description: A MedicationRequest extension representing reported adherence to prescribed
+  medication instructions.  In other words, whether a medication was consumed according
+  to instructions.
 fhirVersion: 4.0.1
 kind: complex-type
 abstract: false
@@ -20,11 +21,7 @@ differential:
   element:
   - id: Extension
     path: Extension
-    code:
-    - system: http://loinc.org
-      code: 71799-1
-      display: Adherence to prescribed medication instructions [Reported]
-    definition: Whether the medication is or is not being consumed or administered
+    definition: Reported adherence to prescribed medication instructions.
     min: 0
     max: '*'
   - id: Extension.extension
@@ -38,14 +35,19 @@ differential:
   - id: Extension.extension:medicationAdherence
     path: Extension.extension
     sliceName: medicationAdherence
-    short: Code indicating whether the medication is or is not being consumed or administered
-    definition: Code indicating whether the medication is or is not being consumed
-      or administered
+    code:
+    - system: http://loinc.org
+      code: 71799-1
+      display: Adherence to prescribed medication instructions [Reported]
+    short: Medication adherence code
+    definition: Code stating whether the patient is consuming or being administered
+      the medication has according to instructions.  For example, the patient in not
+      taking the medication as prescribed, or the patient is taking the medication
+      as prescribed.
     min: 1
     max: '1'
     type:
     - code: Extension
-    mustSupport: true
   - id: Extension.extension:medicationAdherence.url
     path: Extension.extension.url
     min: 1
@@ -62,7 +64,7 @@ differential:
     binding:
       strength: extensible
       description: Medication Adherence Codes
-      valueSet: http://hl7.org/fhir/us/core//ValueSet/medication-adherence
+      valueSet: http://hl7.org/fhir/us/core/ValueSet/medication-adherence
   - id: Extension.extension:dateAsserted
     path: Extension.extension
     sliceName: dateAsserted
@@ -72,7 +74,6 @@ differential:
     max: '1'
     type:
     - code: Extension
-    mustSupport: true
   - id: Extension.extension:dateAsserted.url
     path: Extension.extension.url
     min: 1
@@ -96,7 +97,6 @@ differential:
     max: '*'
     type:
     - code: Extension
-    mustSupport: true
   - id: Extension.extension:informationSource.url
     path: Extension.extension.url
     min: 1
@@ -128,9 +128,10 @@ differential:
       - extension:
         - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
           valueBoolean: false
+    mustSupport: true
   - id: Extension.url
     path: Extension.url
-    fixedUri: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension
+    fixedUri: http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence
   - id: Extension.value[x]
     path: Extension.value[x]
     min: 0

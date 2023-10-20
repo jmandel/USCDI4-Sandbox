@@ -5,7 +5,7 @@ name: USCoreAverageBloodPressureProfile
 title: US Core Average Blood Pressure Profile
 status: active
 experimental: false
-date: 2023-10-12
+date: 2023-10-19
 description: To promote interoperability and adoption through common implementation,
   this profile sets minimum expectations for the Observation resource to record, search,
   and fetch average diastolic and systolic blood pressure observations with standard
@@ -41,6 +41,7 @@ differential:
     short: clinically relevant time-period for the average of blood pressure (BP)
       readings
     type:
+    - code: dateTime
     - extension:
       - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
         valueBoolean: true
@@ -83,7 +84,6 @@ differential:
     mustSupport: true
   - id: Observation.component:systolic.valueQuantity.value
     path: Observation.component.valueQuantity.value
-    short: Numerical value (with implicit precision)
     min: 1
     max: '1'
     type:
@@ -91,7 +91,6 @@ differential:
     mustSupport: true
   - id: Observation.component:systolic.valueQuantity.unit
     path: Observation.component.valueQuantity.unit
-    short: Unit representation
     min: 1
     max: '1'
     type:
@@ -99,7 +98,6 @@ differential:
     mustSupport: true
   - id: Observation.component:systolic.valueQuantity.system
     path: Observation.component.valueQuantity.system
-    short: System that defines coded unit form
     min: 1
     max: '1'
     type:
@@ -108,7 +106,6 @@ differential:
     mustSupport: true
   - id: Observation.component:systolic.valueQuantity.code
     path: Observation.component.valueQuantity.code
-    short: Coded form of the unit
     min: 1
     max: '1'
     type:
@@ -140,7 +137,6 @@ differential:
     mustSupport: true
   - id: Observation.component:diastolic.valueQuantity.value
     path: Observation.component.valueQuantity.value
-    short: Numerical value (with implicit precision)
     min: 1
     max: '1'
     type:
@@ -148,7 +144,6 @@ differential:
     mustSupport: true
   - id: Observation.component:diastolic.valueQuantity.unit
     path: Observation.component.valueQuantity.unit
-    short: Unit representation
     min: 1
     max: '1'
     type:
@@ -156,7 +151,6 @@ differential:
     mustSupport: true
   - id: Observation.component:diastolic.valueQuantity.system
     path: Observation.component.valueQuantity.system
-    short: System that defines coded unit form
     min: 1
     max: '1'
     type:
@@ -165,7 +159,6 @@ differential:
     mustSupport: true
   - id: Observation.component:diastolic.valueQuantity.code
     path: Observation.component.valueQuantity.code
-    short: Coded form of the unit
     min: 1
     max: '1'
     type:

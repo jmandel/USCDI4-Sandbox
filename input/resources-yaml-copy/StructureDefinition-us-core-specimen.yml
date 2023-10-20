@@ -1,11 +1,11 @@
 resourceType: StructureDefinition
 id: us-core-specimen
-url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen
+url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen
 name: USCoreSpecimenProfile
 title: US Core Specimen Profile
 status: active
 experimental: false
-date: 2023-10-12
+date: 2023-10-19
 description: This profile sets minimum expectations for the Specimen resource to record,
   search, and fetch "substances being sampled or tested. (e.g., nasopharyngeal swab,
   whole blood, serum, urine, wound swab)" associated with a patient to promote interoperability
@@ -30,10 +30,6 @@ differential:
     path: Specimen.identifier
     short: Specimen identifier
     mustSupport: true
-  - id: Specimen.accessionIdentifier
-    path: Specimen.accessionIdentifier
-    short: Specimen identifier assigned by the lab
-    mustSupport: true
   - id: Specimen.type
     path: Specimen.type
     min: 1
@@ -53,7 +49,7 @@ differential:
     path: Specimen.collection
   - id: Specimen.collection.bodySite
     extension:
-    - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Specimen.collection.bodySite
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
@@ -65,7 +61,7 @@ differential:
       valueSet: http://hl7.org/fhir/ValueSet/body-site
   - id: Specimen.condition
     extension:
-    - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Specimen.condition
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF

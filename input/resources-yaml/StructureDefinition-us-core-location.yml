@@ -1,11 +1,11 @@
 resourceType: StructureDefinition
 id: us-core-location
-url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location
+url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
 name: USCoreLocation
 title: US Core Location Profile
 status: active
 experimental: false
-date: 2023-10-12
+date: 2023-10-19
 description: This profile sets minimum expectations for the Location resource for
   recording, searching, and fetching a "physical place of available services or resources."  It
   identifies which core elements, extensions, vocabularies, and value sets **SHALL**
@@ -34,7 +34,6 @@ differential:
     mustSupport: true
   - id: Location.status
     path: Location.status
-    short: active | suspended | inactive
     mustSupport: true
   - id: Location.name
     path: Location.name
@@ -53,31 +52,26 @@ differential:
       valueSet: http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType
   - id: Location.telecom
     path: Location.telecom
-    short: Contact details of the location
     mustSupport: true
   - id: Location.address
     path: Location.address
-    short: Physical location
     mustSupport: true
     mapping:
     - identity: servd
       map: n/a
   - id: Location.address.line
     path: Location.address.line
-    short: Street name, number, direction & P.O. Box etc.
     max: '*'
     type:
     - code: string
     mustSupport: true
   - id: Location.address.city
     path: Location.address.city
-    short: Name of city, town etc.
     type:
     - code: string
     mustSupport: true
   - id: Location.address.state
     path: Location.address.state
-    short: Sub-unit of country (abbreviations ok)
     type:
     - code: string
     mustSupport: true
@@ -96,7 +90,6 @@ differential:
     mustSupport: true
   - id: Location.managingOrganization
     path: Location.managingOrganization
-    short: Organization responsible for provisioning and upkeep
     type:
     - code: Reference
       targetProfile:

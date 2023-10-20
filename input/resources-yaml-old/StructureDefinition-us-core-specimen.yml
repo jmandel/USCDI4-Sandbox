@@ -1,13 +1,11 @@
 resourceType: StructureDefinition
 id: us-core-specimen
-# url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen
-url:  http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-specimen
+url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen
 name: USCoreSpecimenProfile
 title: US Core Specimen Profile
 status: active
 experimental: false
-date: 2023-08-04
-
+date: 2022-09-27
 description: This profile sets minimum expectations for the Specimen resource to record,
   search, and fetch "substances being sampled or tested. (e.g., nasopharyngeal swab,
   whole blood, serum, urine, wound swab)" associated with a patient to promote interoperability
@@ -15,7 +13,6 @@ description: This profile sets minimum expectations for the Specimen resource to
   extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when
   using this profile.  It provides the floor for standards development for specific
   use cases.
-
 fhirVersion: 4.0.1
 kind: resource
 abstract: false
@@ -39,14 +36,6 @@ differential:
     short: (USCDI) Specimen identifier
     mustSupport: true
 # === New USCDI requirement ===
-
-  - id: Specimen.accessionIdentifier
-    extension:
-    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
-      valueBoolean: true
-    path: Specimen.accessionIdentifier
-    short: (USCDI) Specimen identifier assigned by the lab
-    mustSupport: true
 
   - id: Specimen.type
     extension:

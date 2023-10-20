@@ -6,7 +6,7 @@
     "title": "US Core Patient Profile",
     "status": "active",
     "experimental": false,
-    "date": "2023-10-12",
+    "date": "2023-10-19",
     "description": "The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.",
     "fhirVersion": "4.0.1",
     "kind": "resource",
@@ -33,7 +33,7 @@
                 "id": "Patient.extension:race",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
@@ -62,7 +62,7 @@
                 "id": "Patient.extension:ethnicity",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
@@ -91,7 +91,7 @@
                 "id": "Patient.extension:tribalAffiliation",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
@@ -137,7 +137,7 @@
                 "id": "Patient.extension:sex",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
@@ -160,7 +160,7 @@
                 "id": "Patient.extension:genderIdentity",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
@@ -182,7 +182,6 @@
             {
                 "id": "Patient.identifier",
                 "path": "Patient.identifier",
-                "short": "An identifier for this patient",
                 "min": 1,
                 "mustSupport": true,
                 "mapping": [
@@ -195,7 +194,6 @@
             {
                 "id": "Patient.identifier.system",
                 "path": "Patient.identifier.system",
-                "short": "The namespace for the identifier value",
                 "min": 1,
                 "mustSupport": true,
                 "mapping": [
@@ -221,7 +219,6 @@
             {
                 "id": "Patient.name",
                 "path": "Patient.name",
-                "short": "A name associated with the patient",
                 "min": 1,
                 "constraint": [
                     {
@@ -244,7 +241,7 @@
                 "id": "Patient.name.use",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
@@ -254,7 +251,6 @@
             {
                 "id": "Patient.name.family",
                 "path": "Patient.name.family",
-                "short": "Family name (often called 'Surname')",
                 "condition": [
                     "us-core-6"
                 ],
@@ -269,7 +265,6 @@
             {
                 "id": "Patient.name.given",
                 "path": "Patient.name.given",
-                "short": "Given names (not always 'first'). Includes middle names",
                 "condition": [
                     "us-core-6"
                 ],
@@ -285,7 +280,7 @@
                 "id": "Patient.name.suffix",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
@@ -303,7 +298,7 @@
                 "id": "Patient.name.period",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
@@ -321,11 +316,12 @@
                 "id": "Patient.telecom",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.telecom",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: A contact detail for the individual",
                 "mustSupport": false,
                 "mapping": [
                     {
@@ -337,7 +333,6 @@
             {
                 "id": "Patient.telecom.system",
                 "path": "Patient.telecom.system",
-                "short": "phone | fax | email | pager | url | sms | other",
                 "min": 1,
                 "mustSupport": true,
                 "binding": {
@@ -355,7 +350,6 @@
             {
                 "id": "Patient.telecom.value",
                 "path": "Patient.telecom.value",
-                "short": "The actual contact point details",
                 "min": 1,
                 "mustSupport": true,
                 "mapping": [
@@ -368,7 +362,6 @@
             {
                 "id": "Patient.telecom.use",
                 "path": "Patient.telecom.use",
-                "short": "home | work | temp | old | mobile - purpose of this contact point",
                 "mustSupport": true,
                 "binding": {
                     "strength": "required",
@@ -384,7 +377,6 @@
             {
                 "id": "Patient.gender",
                 "path": "Patient.gender",
-                "short": "male | female | other | unknown",
                 "min": 1,
                 "type": [
                     {
@@ -406,7 +398,6 @@
             {
                 "id": "Patient.birthDate",
                 "path": "Patient.birthDate",
-                "short": "The date of birth for the individual",
                 "mustSupport": true,
                 "mapping": [
                     {
@@ -419,16 +410,16 @@
                 "id": "Patient.deceased[x]",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
-                "path": "Patient.deceased[x]"
+                "path": "Patient.deceased[x]",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: Indicates if the individual is deceased or not"
             },
             {
                 "id": "Patient.address",
                 "path": "Patient.address",
-                "short": "An address for the individual",
                 "mustSupport": true,
                 "mapping": [
                     {
@@ -441,7 +432,7 @@
                 "id": "Patient.address.use",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
@@ -451,7 +442,6 @@
             {
                 "id": "Patient.address.line",
                 "path": "Patient.address.line",
-                "short": "Street name, number, direction & P.O. Box etc.",
                 "mustSupport": true,
                 "mapping": [
                     {
@@ -463,7 +453,6 @@
             {
                 "id": "Patient.address.city",
                 "path": "Patient.address.city",
-                "short": "Name of city, town etc.",
                 "mustSupport": true,
                 "mapping": [
                     {
@@ -475,7 +464,6 @@
             {
                 "id": "Patient.address.state",
                 "path": "Patient.address.state",
-                "short": "Sub-unit of country (abbreviations ok)",
                 "mustSupport": true,
                 "binding": {
                     "strength": "extensible",
@@ -508,7 +496,7 @@
                 "id": "Patient.address.period",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
@@ -525,11 +513,12 @@
                 "id": "Patient.communication",
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-uscdi",
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
                 "path": "Patient.communication",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: A language which may be used to communicate with the patient about his or her health",
                 "mustSupport": false,
                 "mapping": [
                     {
@@ -541,7 +530,6 @@
             {
                 "id": "Patient.communication.language",
                 "path": "Patient.communication.language",
-                "short": "The language which can be used to communicate with the patient about his or her health",
                 "mustSupport": true,
                 "binding": {
                     "strength": "extensible",

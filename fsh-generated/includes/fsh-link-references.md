@@ -25,6 +25,7 @@
 [medication-adherence-oral-axid]: Observation-medication-adherence-oral-axid.html
 [medication-adherence-oral-axid-boolean]: Observation-medication-adherence-oral-axid-boolean.html
 [medication-adherence-self-tylenol]: Observation-medication-adherence-self-tylenol.html
+[defib-implant]: Procedure-defib-implant.html
 [serum-glucose]: Observation-serum-glucose.html
 [substance-use-status]: Observation-substance-use-status.html
 [TAPS-item-example-75889-6]: Observation-TAPS-item-example-75889-6.html
@@ -45,6 +46,7 @@
 [USCoreMedicationstatementStatus]: ValueSet-uscore-medicationstatement-status.html
 [USCoreMedicationStatement]: StructureDefinition-us-core-medicationstatement.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
+[USCoreProcedureProfile]: StructureDefinition-us-core-procedure.html
 [USCoreSpecimenProfile]: StructureDefinition-us-core-specimen.html
 [USCoreTreatmentInterventionPreferenceCodeSystem]: CodeSystem-uscore-treatment-intervention-preference.html
 [USCoreTreatmentInterventionPreferenceProfile]: StructureDefinition-us-core-treatment-intervention-preference.html

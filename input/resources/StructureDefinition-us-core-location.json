@@ -1,12 +1,12 @@
 {
     "resourceType": "StructureDefinition",
     "id": "us-core-location",
-    "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-location",
+    "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
     "name": "USCoreLocation",
     "title": "US Core Location Profile",
     "status": "active",
     "experimental": false,
-    "date": "2023-10-12",
+    "date": "2023-10-19",
     "description": "This profile sets minimum expectations for the Location resource for recording, searching, and fetching a \"physical place of available services or resources.\"  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used when using the profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation.",
     "fhirVersion": "4.0.1",
     "kind": "resource",
@@ -38,7 +38,6 @@
             {
                 "id": "Location.status",
                 "path": "Location.status",
-                "short": "active | suspended | inactive",
                 "mustSupport": true
             },
             {
@@ -67,13 +66,11 @@
             {
                 "id": "Location.telecom",
                 "path": "Location.telecom",
-                "short": "Contact details of the location",
                 "mustSupport": true
             },
             {
                 "id": "Location.address",
                 "path": "Location.address",
-                "short": "Physical location",
                 "mustSupport": true,
                 "mapping": [
                     {
@@ -85,7 +82,6 @@
             {
                 "id": "Location.address.line",
                 "path": "Location.address.line",
-                "short": "Street name, number, direction & P.O. Box etc.",
                 "max": "*",
                 "type": [
                     {
@@ -97,7 +93,6 @@
             {
                 "id": "Location.address.city",
                 "path": "Location.address.city",
-                "short": "Name of city, town etc.",
                 "type": [
                     {
                         "code": "string"
@@ -108,7 +103,6 @@
             {
                 "id": "Location.address.state",
                 "path": "Location.address.state",
-                "short": "Sub-unit of country (abbreviations ok)",
                 "type": [
                     {
                         "code": "string"
@@ -141,7 +135,6 @@
             {
                 "id": "Location.managingOrganization",
                 "path": "Location.managingOrganization",
-                "short": "Organization responsible for provisioning and upkeep",
                 "type": [
                     {
                         "code": "Reference",

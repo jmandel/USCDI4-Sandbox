@@ -1,7 +1,6 @@
 resourceType: StructureDefinition
 id: us-core-observation-lab
-# url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab
-url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab
+url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab
 name: USCoreLaboratoryResultObservationProfile
 title: US Core Laboratory Result Observation Profile
 status: active
@@ -21,8 +20,6 @@ description: "The US Core Laboratory Result Observation Profile is based upon th
   which core elements, extensions, vocabularies, and value sets SHALL be present in
   the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development
   for specific use cases."
-
-
 fhirVersion: 4.0.1
 kind: resource
 abstract: false
@@ -109,6 +106,7 @@ differential:
     mapping:
     - identity: argonaut-dq-dstu2
       map: Observation.value[x]
+
 # =======New  USCDI4 requirements ===========
   - id: Observation.interpretation
     extension:
@@ -125,6 +123,9 @@ differential:
 # =======New  USCDI4 requirements ===========
 
   - id: Observation.specimen
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Observation.specimen
     short: (USCDI) Specimen used for this observation
     type:
@@ -132,6 +133,7 @@ differential:
       targetProfile:
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen
     mustSupport: true
+
 # =======New  USCDI4 requirements ===========
   - id: Observation.referenceRange
     extension:
@@ -142,3 +144,4 @@ differential:
     comment: Upper and lower limit of test values expected for a designated population of individuals. Reference range values may differ by patient characteristics, laboratory test manufacturer and laboratory test performer.
     mustSupport: true
 # =======New  USCDI4 requirements ===========
+

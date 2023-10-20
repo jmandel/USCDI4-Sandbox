@@ -44,7 +44,7 @@ differential:
     patternCodeableConcept:
       coding:
       - system: http://hl7.org/fhir/us/core/CodeSystem/us-core-category  # get a LOINC code for this see stu note
-        code: intervention-preference
+        code: treatment-intervention-preference
     mustSupport: true
 
 
@@ -59,7 +59,7 @@ differential:
     patternCodeableConcept:
       coding:
       - system: http://hl7.org/fhir/us/core/CodeSystem/us-core-category  # get a LOINC code for this see stu note
-        code: intervention-preference
+        code: treatment-intervention-preference
     mustSupport: true
     # binding:
     #   strength: extensible

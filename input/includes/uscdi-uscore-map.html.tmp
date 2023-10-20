@@ -74,13 +74,13 @@
             {% assign profiles = item.uscore_profile | split: "|" %}
             {% for profile in profiles %}
             {% capture title %}{{profile | strip}}{% endcapture %}
-            <a href="{% include sd_link.html title = title %}">{{ title }}</a>
+            <a href="{% include sd_link.html title = title  %}">{{ profile }}</a>
             {% unless forloop.last %}
             <br />
             {% endunless %}
             {% endfor %}
           </th>
-          <th class="col-sm-2"></th>
+          <th class="col-sm-2"><a href="{{ item.comment_link }}">{{ item.comment }}</a></th>
         </tr>
       </thead>
       <tbody>
@@ -94,7 +94,7 @@
             {% assign profiles = item.uscore_profile | split: "|" %}
             {% for profile in profiles %}
             {% capture title %}{{profile | strip}}{% endcapture %}
-            <a href="{% include sd_link.html title = title %}">{{ title }}</a>
+            <a href="{% include sd_link.html title = title %}">{{ profile }}</a>
             {% unless forloop.last %}
             <br />
             {% endunless %}

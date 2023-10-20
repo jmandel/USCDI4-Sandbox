@@ -1,11 +1,11 @@
 resourceType: StructureDefinition
 id: us-core-observation-lab
-url: http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-observation-lab
+url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab
 name: USCoreLaboratoryResultObservationProfile
 title: US Core Laboratory Result Observation Profile
 status: active
 experimental: false
-date: 2023-10-12
+date: 2023-10-19
 description: "The US Core Laboratory Result Observation Profile is based upon the
   US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport
   Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability
@@ -31,7 +31,6 @@ differential:
   - id: Observation.category:us-core
     path: Observation.category
     sliceName: us-core
-    short: Classification of  type of observation
     min: 1
     max: '1'
     patternCodeableConcept:
@@ -111,7 +110,6 @@ differential:
       valueSet: http://hl7.org/fhir/ValueSet/observation-interpretation
   - id: Observation.specimen
     path: Observation.specimen
-    short: (USCDI) Specimen used for this observation
     type:
     - code: Reference
       targetProfile:
