@@ -40,11 +40,14 @@
 [USCoreAverageBloodPressureProfile]: StructureDefinition-us-core-average-blood-pressure.html
 [USCoreCareExperiencePreference]: ValueSet-uscore-care-experience-preference.html
 [USCoreCareExperiencePreferenceProfile]: StructureDefinition-us-core-care-experience-preference.html
+[USCoreCommonSDOHAssessments]: ValueSet-uscore-common-sdoh-assessments.html
 [USCoreLaboratoryResultObservationProfile]: StructureDefinition-us-core-observation-lab.html
 [USCoreLocation]: StructureDefinition-us-core-location.html
 [USCoreMedicationAdherenceExtension]: StructureDefinition-us-core-medication-adherence.html
 [USCoreMedicationstatementStatus]: ValueSet-uscore-medicationstatement-status.html
+[USCoreMedicationRequestProfile]: StructureDefinition-us-core-medicationrequest.html
 [USCoreMedicationStatement]: StructureDefinition-us-core-medicationstatement.html
+[USCorePaCodesValueSet]: ValueSet-uscore-pa-codes.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
 [USCoreProcedureProfile]: StructureDefinition-us-core-procedure.html
 [USCoreSpecimenProfile]: StructureDefinition-us-core-specimen.html

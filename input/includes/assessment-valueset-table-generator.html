@@ -4,7 +4,7 @@
 {% assign rows = site.data.assessments-valuesets %}
 
 {% for item in rows %}
-
+{% if item["USCoreStarterCodes"] == "TRUE" %}
 {% if forloop.first %}
 
 <table class="grid">
@@ -33,5 +33,5 @@
 </tbody>
 </table>
 {% endif %}
-
+{% endif %}
 {% endfor %}

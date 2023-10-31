@@ -5,7 +5,7 @@ name: USCoreSpecimenProfile
 title: US Core Specimen Profile
 status: active
 experimental: false
-date: 2023-10-19
+date: 2023-10-20
 description: This profile sets minimum expectations for the Specimen resource to record,
   search, and fetch "substances being sampled or tested. (e.g., nasopharyngeal swab,
   whole blood, serum, urine, wound swab)" associated with a patient to promote interoperability
@@ -46,7 +46,12 @@ differential:
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
     mustSupport: true
   - id: Specimen.collection
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Specimen.collection
+    short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
+      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Collection details"
   - id: Specimen.collection.bodySite
     extension:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement

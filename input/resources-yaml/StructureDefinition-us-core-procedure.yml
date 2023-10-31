@@ -5,7 +5,7 @@ name: USCoreProcedureProfile
 title: US Core Procedure Profile
 status: active
 experimental: false
-date: 2023-10-19
+date: 2023-10-20
 publisher: HL7 US Realm Steering Committee
 description: The US Core Procedure Profile is based upon the core FHIR Procedure Resource
   and meets the U.S. Core Data for Interoperability (USCDI) v2 'Procedures' requirements.

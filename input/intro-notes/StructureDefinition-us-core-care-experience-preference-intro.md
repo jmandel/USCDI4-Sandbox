@@ -42,4 +42,6 @@ The following are example usage scenarios for this profile:
    
 - The observation **MAY** be derived from or reference a document (for example an advance directive document.) using `Observation.derivedFrom'.
 
+{% include quickstart-intro.md %}
+
 {% include link-list.md %}

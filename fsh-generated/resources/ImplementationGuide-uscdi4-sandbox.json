@@ -397,6 +397,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/uscore-common-sdoh-assessments"
+        },
+        "description": "Common SDOH assessment concepts covering the following categories (Gravity Project SDOH Domains):\n - Food (Food Insecurity)\n - Housing (Housing Instability)\n - Health (Social Connection, Stress)\n - Employment (Employment Status)\n - Care (SDOH Category Unspecified)\n - Transit (Transportation Insecurity)\n - Money (Financial Insecurity)\n - Goods (Material Hardship)\n - Education (SDOH Category Unspecified)\n - Legal (SDOH Category Unspecified)",
+        "exampleBoolean": false,
+        "name": "US Core Common SDOH Assessments ValueSet"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/us-core-observation-lab"
         },
         "description": "The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases.",
@@ -415,7 +423,7 @@
         "reference": {
           "reference": "StructureDefinition/us-core-medication-adherence"
         },
-        "description": "A MedicationRequest extension representing reported adherence to prescribed medication instructions.  In other words, whether a medication was consumed according to instructions.",
+        "description": "The Medication Adherence Extension is a statement of whether a medication has been consumed according to instructions for discharge, community-prescribed, and self-prescribed medications. This extension is not intended to track adherence to the Inpatient Medication Administration Record (MAR). In FHIR, [MedicationAdministration](https://hl7.org/fhir/R4/medicationadministration.html) is typically used to monitor compliance with the MAR.",
         "exampleBoolean": false,
         "name": "US Core Medication Adherence Extension"
       },
@@ -429,11 +437,27 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/us-core-medicationrequest"
+        },
+        "description": "The US Core Medication Request Profile is based upon the core FHIR MedicationRequest Resource and meets the U.S. Core Data for Interoperability (USCDI) v2 *Medications* requirements. The MedicationRequest resource can be used to record a patient's medication prescription or order.  This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.",
+        "exampleBoolean": false,
+        "name": "US Core MedicationRequest Profile"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/us-core-medicationstatement"
         },
         "description": "Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.\nThis profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation.",
         "exampleBoolean": false,
         "name": "US Core MedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/uscore-pa-codes"
+        },
+        "description": "A starter set of Physical Activity codes based off the [Physical activity IG](https://hl7.org/fhir/us/physical-activity/)",
+        "exampleBoolean": false,
+        "name": "US Core PA Codes ValueSet"
       },
       {
         "reference": {
@@ -515,7 +539,14 @@
         {
           "nameUrl": "guidance.html",
           "title": "Guidance",
-          "generation": "markdown"
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "scopes.html",
+              "title": "US Core SMART Scopes",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "screening-and-assessments.html",

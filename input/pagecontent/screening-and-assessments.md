@@ -141,13 +141,21 @@ Each profile's *Quick Start* section shows searches by category. Although not de
 
 #### Screening and Assessment Codes
 
-  The US Core Observation Screening Assessment Profile, SDC Base Questionnaire, and US Core Simple Observation Profiles have a [preferred] or [example] bindings to broadly defined LOINC value sets.  These value sets contain concepts that span many use cases and are not bound to any USCDI Health Assessments Data Element. The table below lists the domain specific value sets from the [Value Set Authority Center (VSAC)] for which USCDI Health Assessments Data Element **SHOULD** be used.  Note that because the value sets listed in this table are not bound to a US Core Profile, “automatic” validation (confirmation) that a code is a member of a value set will not occur using the standard validation tools.
+The US Core Observation Screening Assessment Profile, SDC Base Questionnaire, and US Core Simple Observation Profiles have [preferred] or [example] bindings to broadly defined LOINC value sets. These value sets contain concepts that span many use cases and are not bound to any USCDI Health Assessments Data Element.  
 
 ##### USCDI Health Assessments Data Element ValueSets
+
+The table below lists the USCDI Health Assessments Data Elements and the associated value sets for each USCDI Data Element.  This table and guidance intend to promote interoperability by introducing domain-specific value sets as "starter sets" that implementers **SHOULD** use. Implementers **SHALL?/SHOULD?** treat them as having an [extensible] binding to the corresponding US Core Profile. For example, the *Functional Status Clinician Interpretation ValueSet* is **extensibly** bound to the US Core Simple Observation Profile for clinical judgment observations when communicating Functional Status Observations.  However, the value sets in this table are not formally bound to a US Core Profile in the StructureDefinitions, and "automatic" validation (confirmation) that a code is a member of a value set will not occur using the standard validation tools.
 
 {% include assessment-valueset-table-generator.html %}
 
 This information is also available as a [csv](assessments-valuesets.csv) or [excel](assessments-valuesets.xlsx) file:
+
+##### Gravity SDOH ValueSets
+
+The Gravity project created several value sets for the USCDI Health Assessments Data Element, SDOH, and they are listed below. Implementers **SHOULD** use to them to extend the panel item codes when gaps in the *US Core SDOH Panel Item Codes* concepts are encountered.
+
+{% include gravity-valueset-list-generator.html %}
 
 </div><!-- new-content -->
 

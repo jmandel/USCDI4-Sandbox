@@ -155,6 +155,8 @@ pages:
 
   guidance.md:
     title: Guidance
+    scopes.md:
+      title: US Core SMART Scopes
 
   screening-and-assessments.md:
     title: Screening and Assessments
@@ -214,7 +216,9 @@ releaseLabel: CI Build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
-  General Guidance: guidance.html
+  Guidance: #guidance.html
+    General Guidance: guidance.html
+    US Core SMART Scopes: scopes.html
   Future: future.html
   Screening and Assessments: screening-and-assessments.html
   #Table of Contents: toc.html

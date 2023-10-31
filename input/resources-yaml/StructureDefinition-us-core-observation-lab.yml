@@ -5,7 +5,7 @@ name: USCoreLaboratoryResultObservationProfile
 title: US Core Laboratory Result Observation Profile
 status: active
 experimental: false
-date: 2023-10-19
+date: 2023-10-20
 description: "The US Core Laboratory Result Observation Profile is based upon the
   US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport
   Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability
