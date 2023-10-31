@@ -55,7 +55,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Why the specimen was collected","Details concerning a service request that required a specimen to be collected.","The request may be explicit or implied such with a ServiceRequest that requires a blood draw.","","","","","","","","",,,,,"",,,,"Specimen.request",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","outboundRelationship[typeCode=FLFS].target","FiveWs.why[x]","ORC? OBR-2/3?"
 "Specimen.collection","Specimen.collection","","","",0,1,"","","","BackboneElement {[]} {[]}
-","Collection details","Details concerning the specimen collection.","","","","","","","","","",,,,,"",,,,"Specimen.collection",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","𝗔𝗗𝗗𝗜𝗧𝗜𝗢𝗡𝗔𝗟 𝗨𝗦𝗖𝗗𝗜: Collection details","Details concerning the specimen collection.","","","","","","","","","",,,,,"",,,,"Specimen.collection",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode=SBJ].act[classCode=SPECCOLLECT, moodCode=EVN]","SPM-14"
 "Specimen.collection.id","Specimen.collection.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="uscore-common-sdoh-assessments"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/88123-5/">88123-5</a></td><td style="color: #cccccc">Within the past 12 months the food we bought just didn't last and we didn't have money to get more [U.S. FSS]</td></tr><tr><td><a href="https://loinc.org/88122-7/">88122-7</a></td><td style="color: #cccccc">Within the past 12 months we worried whether our food would run out before we got money to buy more [U.S. FSS]</td></tr><tr><td><a href="https://loinc.org/96779-4/">96779-4</a></td><td style="color: #cccccc">Has the electric, gas, oil, or water company threatened to shut off services in your home in past 12 months</td></tr><tr><td><a href="https://loinc.org/71802-3/">71802-3</a></td><td style="color: #cccccc">Housing status</td></tr><tr><td><a href="https://loinc.org/93029-7/">93029-7</a></td><td style="color: #cccccc">How often do you see or talk to people that you care about and feel close to [PRAPARE]</td></tr><tr><td><a href="https://loinc.org/76437-3/">76437-3</a></td><td style="color: #cccccc">Primary insurance</td></tr><tr><td><a href="https://loinc.org/81375-8/">81375-8</a></td><td style="color: #cccccc">Self assessment of health status [Reported]</td></tr><tr><td><a href="https://loinc.org/93038-8/">93038-8</a></td><td style="color: #cccccc">Stress level</td></tr><tr><td><a href="https://loinc.org/96780-2/">96780-2</a></td><td style="color: #cccccc">Wants help finding or keeping work or a job</td></tr><tr><td><a href="https://loinc.org/67875-5/">67875-5</a></td><td style="color: #cccccc">Employment status - current</td></tr><tr><td><a href="https://loinc.org/95618-5/">95618-5</a></td><td style="color: #cccccc">Physically hurt you [HITS]</td></tr><tr><td><a href="https://loinc.org/93031-3/">93031-3</a></td><td style="color: #cccccc">Have you or any family members you live with been unable to get any of the following when it was really needed in past 1 year [PRAPARE]</td></tr><tr><td><a href="https://loinc.org/93030-5/">93030-5</a></td><td style="color: #cccccc">Has lack of transportation kept you from medical appointments, meetings, work, or from getting things needed for daily living</td></tr><tr><td><a href="https://loinc.org/63586-2/">63586-2</a></td><td style="color: #cccccc">What was your best estimate of the total income of all family members from all sources, before taxes, in last year [PhenX]</td></tr><tr><td><a href="https://loinc.org/93031-3/">93031-3</a></td><td style="color: #cccccc">Have you or any family members you live with been unable to get any of the following when it was really needed in past 1 year [PRAPARE]</td></tr><tr><td><a href="https://loinc.org/93031-3/">93031-3</a></td><td style="color: #cccccc">Have you or any family members you live with been unable to get any of the following when it was really needed in past 1 year [PRAPARE]</td></tr><tr><td><a href="https://loinc.org/93031-3/">93031-3</a></td><td style="color: #cccccc">Have you or any family members you live with been unable to get any of the following when it was really needed in past 1 year [PRAPARE]</td></tr><tr><td><a href="https://loinc.org/96782-8/">96782-8</a></td><td style="color: #cccccc">Wants help with school or training</td></tr><tr><td><a href="https://loinc.org/93677-3/">93677-3</a></td><td style="color: #cccccc">Do you need help with legal issues [WellRx]</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments"/>
+  <version value="0.0.0"/>
+  <name value="USCoreCommonSDOHAssessments"/>
+  <title value="US Core Common SDOH Assessments ValueSet"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2021-11-15"/>
+  <publisher value="Health eData Inc"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:ehaas@healthedatainc.com"/>
+    </telecom>
+  </contact>
+  <description value="Common SDOH assessment concepts covering the following categories (Gravity Project SDOH Domains):&#xA; - Food (Food Insecurity)&#xA; - Housing (Housing Instability)&#xA; - Health (Social Connection, Stress)&#xA; - Employment (Employment Status)&#xA; - Care (SDOH Category Unspecified)&#xA; - Transit (Transportation Insecurity)&#xA; - Money (Financial Insecurity)&#xA; - Goods (Material Hardship)&#xA; - Education (SDOH Category Unspecified)&#xA; - Legal (SDOH Category Unspecified)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="88123-5"/>
+      </concept>
+      <concept>
+        <code value="88122-7"/>
+      </concept>
+      <concept>
+        <code value="96779-4"/>
+      </concept>
+      <concept>
+        <code value="71802-3"/>
+      </concept>
+      <concept>
+        <code value="93029-7"/>
+      </concept>
+      <concept>
+        <code value="76437-3"/>
+      </concept>
+      <concept>
+        <code value="81375-8"/>
+      </concept>
+      <concept>
+        <code value="93038-8"/>
+      </concept>
+      <concept>
+        <code value="96780-2"/>
+      </concept>
+      <concept>
+        <code value="67875-5"/>
+      </concept>
+      <concept>
+        <code value="95618-5"/>
+      </concept>
+      <concept>
+        <code value="93031-3"/>
+      </concept>
+      <concept>
+        <code value="93030-5"/>
+      </concept>
+      <concept>
+        <code value="63586-2"/>
+      </concept>
+      <concept>
+        <code value="93031-3"/>
+      </concept>
+      <concept>
+        <code value="93031-3"/>
+      </concept>
+      <concept>
+        <code value="93031-3"/>
+      </concept>
+      <concept>
+        <code value="96782-8"/>
+      </concept>
+      <concept>
+        <code value="93677-3"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

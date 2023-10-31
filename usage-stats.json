@@ -77,6 +77,12 @@
         "title": "US Core Location Profile"
       }
     ],
+    "MedicationRequest": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
+        "title": "US Core MedicationRequest Profile"
+      }
+    ],
     "Patient": [
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
@@ -218,6 +224,9 @@
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity": [
       "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence": [
+      "MedicationRequest"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"

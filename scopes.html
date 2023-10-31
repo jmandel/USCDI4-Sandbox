@@ -1,0 +1,1311 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>US Core SMART Scopes - HealtheData1 USCDI4 Sandbox v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.1"}
+    h3,h4,h5,h6{--heading-prefix:"3.1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HealtheData1 USCDI4 Sandbox</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - CI Build
+
+
+
+  <img src="assets/images/usa.svg" alt="United States of America flag" title="United States of America" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="scopes.html">US Core SMART Scopes</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="future.html">Future</a>
+  </li>
+  <li>
+    <a href="screening-and-assessments.html">Screening and Assessments</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="ImplementationGuide.html">IG Page</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="guidance.html"><b>Guidance</b></a></li><li><b>US Core SMART Scopes</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">HealtheData1 USCDI4 Sandbox - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>US Core SMART Scopes</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<p><del>Because of FHIR’s resource-based data model, related but distinct data tend to be grouped together in the same FHIR resource type. The original SMART on FHIR scope syntax (and US regulation) tends to limit authorization servers to granting access to all data in the same FHIR resource type, or not giving access to all. For example, a patient can only share an encounter diagnosis if they share their entire problem list, or a health system can only enable backend access to a patient cohort’s SDOH data if it enables access to labs.</del></p>
+
+<p><del>Since version 2.0.0 of [SMART App Launch] clients and servers have more specific control over shared data within a specific resource type using <a href="https://hl7.org/fhir/smart-app-launch/scopes-and-launch-context.html#finer-grained-resource-constraints-using-search-parameters"><em>granular scopes</em></a>. US core encourages user experimentation with granular scope and is seeking general feedback.  In addition, specific feedback is sought on best practices around <a href="https://hl7.org/fhir/smart-app-launch/scopes-and-launch-context.html#scope-size-over-the-wire">scope string length</a> and JWT-based tokens.</del></p>
+
+<p>Introductory text…</p>
+
+<h3 id="granular-scopes">Granular Scopes</h3>
+
+<p><a name="l321">​</a>To meet the ONC’s granular scope requirement in <a href="[+https://www.federalregister.gov/d/2023-07229/p-991+]">HTI-1 proposed rule</a>. US Core API requires support for  <em>granular scopes</em> as defined in Version 2.0.0 of [SMART App Launch]. US Core requires scopes for:</p>
+
+<ol>
+  <li>specific data types defined in US Core and</li>
+  <li>those of particular interest to US citizens and health systems.</li>
+</ol>
+
+<h4 id="scopes-format">Scopes Format</h4>
+<p>Version 2.0.0 of [SMART App Launch] introduced a scope syntax of: <code class="language-plaintext highlighter-rouge">&lt;patient|user|system&gt; / &lt;fhir-resource&gt;. &lt;c | r | u | d |s&gt; [?param=value]</code></p>
+
+<p>For example, to limit read and search access to a specific patient’s laboratory observations but not other observations, the server grants the following scope:</p>
+
+<p><code class="language-plaintext highlighter-rouge">patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory</code>.</p>
+
+<p>The example scopes below use a single FHIR search parameter of category applied to Condition and Observation. They use a <code class="language-plaintext highlighter-rouge">system/</code> prefix, but implementers can also support <code class="language-plaintext highlighter-rouge">patient/</code> and <code class="language-plaintext highlighter-rouge">user/</code>.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">system/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis</code></li>
+  <li><code class="language-plaintext highlighter-rouge">system/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item</code></li>
+  <li><code class="language-plaintext highlighter-rouge">system/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern</code></li>
+  <li><code class="language-plaintext highlighter-rouge">system/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|clinical-test</code></li>
+  <li><code class="language-plaintext highlighter-rouge">system/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory</code></li>
+</ul>
+
+<h4 id="us-core-scopes">US Core Scopes</h4>
+
+<p>The table below summarizes the US Core scope requirements. The same information can be found in each US Core Profile page’s “Quick Start” section.</p>
+
+  <!-- This liquid script creates a US Core scope requirements table using input data from input/data/scopes.csv -->
+
+<table class="grid">
+<thead>
+<tr>
+<th>US Core Profile</th>
+<th>Resource Level Scopes</th>
+<th>Granular Scopes</th>
+</tr>
+</thead>
+<tbody>
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l419">​</a><a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l433">​</a><a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l447">​</a><a href="StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l461">​</a><a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l478">​</a><a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item</code>
+  
+  
+  <br/><code>http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern`</code>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l499">​</a><a href="StructureDefinition-us-core-coverage.html">US Core Coverage Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l513">​</a><a href="StructureDefinition-us-core-implantable-device.html">US Core Implantable Device Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l527">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://loinc.org|LP29684-5</code>
+  
+  
+  <br/><code>http://loinc.org|LP29708-2	</code>
+  
+  
+  <br/><code>http://loinc.org|LP7839-6		</code>
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l552">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/v2-0074|LAB</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l569">​</a><a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category|clinical-note</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l586">​</a><a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l600">​</a><a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l614">​</a><a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td><a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l642">​</a><a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|laboratory</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l673">​</a><a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html|social-history</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l690">​</a><a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html|social-history</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l707">​</a><a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html|social-history</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l724">​</a><a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l741">​</a><a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l755">​</a><a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l772">​</a><a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l789">​</a><a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l806">​</a><a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l823">​</a><a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html|social-history</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l840">​</a><a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html|social-history</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l857">​</a><a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l874">​</a><a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l891">​</a><a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l908">​</a><a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|survey</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l942">​</a><a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l959">​</a><a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|imaging</code>
+  
+  
+  <br/><code>http://terminology.hl7.org/CodeSystem/observation-category|procedure</code>
+  
+  
+  <br/><code>http://terminology.hl7.org/CodeSystem/observation-category|laboratory</code>
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l984">​</a><a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l1001">​</a><a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l1018">​</a><a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l1035">​</a><a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l1052">​</a><a href="StructureDefinition-us-core-organization.html">US Core Organization Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l1080">​</a><a href="StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l1094">​</a><a href="StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l1122">​</a><a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l1136">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l1150">​</a><a href="StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a name="l1164">​</a><a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://hl7.org/fhir/us/core/CodeSystem/us-core-category|sdoh</code>
+  
+  
+  <br/><code>http://hl7.org/fhir/us/core/CodeSystem/us-core-category|functional-status</code>
+  
+  
+  <br/><code>http://snomed.info/sct|surgical-procedure</code>
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a href="StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://hl7.org/fhir/us/core/CodeSystem/us-core-category|treatment-intervention-preference</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+<td><a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a></td>
+<td><code>patient/.rs</code></td>
+<td>
+  <code>http://hl7.org/fhir/us/core/CodeSystem/us-core-category|care-experience-preference</code>
+  
+  
+  
+  </td>
+</tr>
+
+
+
+</tbody>
+</table>
+
+<h4 id="us-core-server-obligations">US Core Server Obligations</h4>
+
+<p>The scopes are formally defined in a server hosts a <a href="http://www.hl7.org/fhir/smart-app-launch/conformance.html#using-well-known">smart-configuration file</a> at <code class="language-plaintext highlighter-rouge">[url]/.well-known/smart-configuration</code> that is available to both authenticated and unauthenticated clients.</p>
+
+<ul>
+  <li>
+    <p>The server <strong>SHALL</strong> support all scopes listed here; additional scopes MAY be supported (so clients should not consider this an exhaustive list).</p>
+  </li>
+  <li>
+    <p>Servers <strong>MAY</strong> limit clients’ scopes to those configured at registration time. Servers <strong>SHOULD</strong> allow users to select a subset of the requested scopes at the approval time. The app <strong>SHOULD</strong> inspect the returned scopes and accommodate the differences from the scopes it requested and registered.</p>
+  </li>
+</ul>
+
+<p>Example .well-known/smart-configuration file …with all the US Core scopes…</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/json</span>
+</code></pre></div></div>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"issuer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"jwks_uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/.well-known/jwks.json"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"authorization_endpoint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/auth/authorize"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"token_endpoint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/auth/token"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"token_endpoint_auth_methods_supported"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"client_secret_basic"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"private_key_jwt"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"grant_types_supported"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"authorization_code"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"client_credentials"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"registration_endpoint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/auth/register"</span><span class="p">,</span><span class="w">
+   </span><span class="err">///</span><span class="w"> </span><span class="err">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;ADD</span><span class="w"> </span><span class="err">All</span><span class="w"> </span><span class="err">US</span><span class="w"> </span><span class="err">Core</span><span class="w"> </span><span class="err">Scopes</span><span class="w"> </span><span class="err">HERE?&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span><span class="w">
+  </span><span class="nl">"scopes_supported"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"openid"</span><span class="p">,</span><span class="w"> </span><span class="s2">"profile"</span><span class="p">,</span><span class="w"> </span><span class="s2">"launch"</span><span class="p">,</span><span class="w"> </span><span class="s2">"launch/patient"</span><span class="p">,</span><span class="w"> </span><span class="s2">"patient/*.rs"</span><span class="p">,</span><span class="w"> </span><span class="s2">"user/*.rs"</span><span class="p">,</span><span class="w"> </span><span class="s2">"offline_access"</span><span class="p">],</span><span class="w">
+   </span><span class="err">///</span><span class="w"> </span><span class="err">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span><span class="w">
+  </span><span class="nl">"response_types_supported"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"code"</span><span class="p">],</span><span class="w">
+  </span><span class="nl">"management_endpoint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/user/manage"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"introspection_endpoint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/user/introspect"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"revocation_endpoint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/user/revoke"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"code_challenge_methods_supported"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"S256"</span><span class="p">],</span><span class="w">
+  </span><span class="nl">"capabilities"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"launch-ehr"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"permission-patient"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"permission-v2"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"client-public"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"client-confidential-symmetric"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"context-ehr-patient"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"sso-openid-connect"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 31, 2023 19:05+0000">2023-10-31</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

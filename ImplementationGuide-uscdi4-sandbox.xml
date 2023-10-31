@@ -17,7 +17,7 @@
   <name value="USCDI4_1Sandbox"/>
   <title value="HealtheData1 USCDI4 Sandbox"/>
   <status value="active"/>
-  <date value="2023-10-20T05:42:23+00:00"/>
+  <date value="2023-10-31T19:05:13+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -1033,6 +1033,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/uscore-common-sdoh-assessments"/>
+      </reference>
+      <name value="US Core Common SDOH Assessments ValueSet"/>
+      <description value="Common SDOH assessment concepts covering the following categories (Gravity Project SDOH Domains):&#xA; - Food (Food Insecurity)&#xA; - Housing (Housing Instability)&#xA; - Health (Social Connection, Stress)&#xA; - Employment (Employment Status)&#xA; - Care (SDOH Category Unspecified)&#xA; - Transit (Transportation Insecurity)&#xA; - Money (Financial Insecurity)&#xA; - Goods (Material Hardship)&#xA; - Education (SDOH Category Unspecified)&#xA; - Legal (SDOH Category Unspecified)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1061,7 +1072,7 @@
         <reference value="StructureDefinition/us-core-medication-adherence"/>
       </reference>
       <name value="US Core Medication Adherence Extension"/>
-      <description value="A MedicationRequest extension representing reported adherence to prescribed medication instructions.  In other words, whether a medication was consumed according to instructions."/>
+      <description value="The Medication Adherence Extension is a statement of whether a medication has been consumed according to instructions for discharge, community-prescribed, and self-prescribed medications. This extension is not intended to track adherence to the Inpatient Medication Administration Record (MAR). In FHIR, [MedicationAdministration](https://hl7.org/fhir/R4/medicationadministration.html) is typically used to monitor compliance with the MAR."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1080,10 +1091,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/us-core-medicationrequest"/>
+      </reference>
+      <name value="US Core MedicationRequest Profile"/>
+      <description value="The US Core Medication Request Profile is based upon the core FHIR MedicationRequest Resource and meets the U.S. Core Data for Interoperability (USCDI) v2 *Medications* requirements. The MedicationRequest resource can be used to record a patient's medication prescription or order.  This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/us-core-medicationstatement"/>
       </reference>
       <name value="US Core MedicationStatement"/>
       <description value="Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.&#xA;This profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/uscore-pa-codes"/>
+      </reference>
+      <name value="US Core PA Codes ValueSet"/>
+      <description value="A starter set of Physical Activity codes based off the [Physical activity IG](https://hl7.org/fhir/us/physical-activity/)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1205,6 +1238,17 @@
         <nameUrl value="guidance.html"/>
         <title value="Guidance"/>
         <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="scopes.html"/>
+          </extension>
+          <nameUrl value="scopes.html"/>
+          <title value="US Core SMART Scopes"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

@@ -83,8 +83,18 @@
   <li>
     <a href="index.html">IG Home</a>
   </li>
-  <li>
-    <a href="guidance.html">General Guidance</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="scopes.html">US Core SMART Scopes</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="future.html">Future</a>
@@ -212,6 +222,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-us-core-medicationrequest.html"
+                  title="StructureDefinition/us-core-medicationrequest">US Core MedicationRequest Profile</a>
+            </td>
+            <td>
+<p>The US Core Medication Request Profile is based upon the core FHIR MedicationRequest Resource and meets the U.S. Core Data for Interoperability (USCDI) v2 <em>Medications</em> requirements. The MedicationRequest resource can be used to record a patient’s medication prescription or order.  This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient’s medication to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-us-core-medicationstatement.html"
                   title="StructureDefinition/us-core-medicationstatement">US Core MedicationStatement</a>
             </td>
@@ -270,7 +289,7 @@ This profile sets minimum expectations for the MedicationStatement resource to r
                   title="StructureDefinition/us-core-medication-adherence">US Core Medication Adherence Extension</a>
             </td>
             <td>
-<p>A MedicationRequest extension representing reported adherence to prescribed medication instructions.  In other words, whether a medication was consumed according to instructions.</p>
+<p>The Medication Adherence Extension is a statement of whether a medication has been consumed according to instructions for discharge, community-prescribed, and self-prescribed medications. This extension is not intended to track adherence to the Inpatient Medication Administration Record (MAR). In FHIR, <a href="https://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a> is typically used to monitor compliance with the MAR.</p>
 </td>
          </tr>
       </tbody>
@@ -292,11 +311,40 @@ This profile sets minimum expectations for the MedicationStatement resource to r
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-uscore-common-sdoh-assessments.html"
+                  title="ValueSet/uscore-common-sdoh-assessments">US Core Common SDOH Assessments ValueSet</a>
+            </td>
+            <td>
+<p>Common SDOH assessment concepts covering the following categories (Gravity Project SDOH Domains):</p>
+<ul>
+  <li>Food (Food Insecurity)</li>
+  <li>Housing (Housing Instability)</li>
+  <li>Health (Social Connection, Stress)</li>
+  <li>Employment (Employment Status)</li>
+  <li>Care (SDOH Category Unspecified)</li>
+  <li>Transit (Transportation Insecurity)</li>
+  <li>Money (Financial Insecurity)</li>
+  <li>Goods (Material Hardship)</li>
+  <li>Education (SDOH Category Unspecified)</li>
+  <li>Legal (SDOH Category Unspecified)</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-uscore-medicationstatement-status.html"
                   title="ValueSet/uscore-medicationstatement-status">US Core Medication Status Codes</a>
             </td>
             <td>
 <p>A code specifying the state of the statement.  Generally, this will be active or completed state.  This value set excludes the concept used internally by the FHIR specification, not-taken,on-hold,stopped, and unknown, because they are covered by the medication adherence extension.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-uscore-pa-codes.html" title="ValueSet/uscore-pa-codes">US Core PA Codes ValueSet</a>
+            </td>
+            <td>
+<p>A starter set of Physical Activity codes based off the <a href="https://hl7.org/fhir/us/physical-activity/">Physical activity IG</a></p>
 </td>
          </tr>
          <tr>
@@ -705,7 +753,7 @@ This profile sets minimum expectations for the MedicationStatement resource to r
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 20, 2023 05:42+0000">2023-10-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 31, 2023 19:05+0000">2023-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -18,7 +18,7 @@
   "name" : "USCDI4_1Sandbox",
   "title" : "HealtheData1 USCDI4 Sandbox",
   "status" : "active",
-  "date" : "2023-10-20T05:42:23+00:00",
+  "date" : "2023-10-31T19:05:13+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -1274,6 +1274,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/uscore-common-sdoh-assessments"
+      },
+      "name" : "US Core Common SDOH Assessments ValueSet",
+      "description" : "Common SDOH assessment concepts covering the following categories (Gravity Project SDOH Domains):\n - Food (Food Insecurity)\n - Housing (Housing Instability)\n - Health (Social Connection, Stress)\n - Employment (Employment Status)\n - Care (SDOH Category Unspecified)\n - Transit (Transportation Insecurity)\n - Money (Financial Insecurity)\n - Goods (Material Hardship)\n - Education (SDOH Category Unspecified)\n - Legal (SDOH Category Unspecified)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1304,7 +1316,7 @@
         "reference" : "StructureDefinition/us-core-medication-adherence"
       },
       "name" : "US Core Medication Adherence Extension",
-      "description" : "A MedicationRequest extension representing reported adherence to prescribed medication instructions.  In other words, whether a medication was consumed according to instructions.",
+      "description" : "The Medication Adherence Extension is a statement of whether a medication has been consumed according to instructions for discharge, community-prescribed, and self-prescribed medications. This extension is not intended to track adherence to the Inpatient Medication Administration Record (MAR). In FHIR, [MedicationAdministration](https://hl7.org/fhir/R4/medicationadministration.html) is typically used to monitor compliance with the MAR.",
       "exampleBoolean" : false
     },
     {
@@ -1325,10 +1337,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/us-core-medicationrequest"
+      },
+      "name" : "US Core MedicationRequest Profile",
+      "description" : "The US Core Medication Request Profile is based upon the core FHIR MedicationRequest Resource and meets the U.S. Core Data for Interoperability (USCDI) v2 *Medications* requirements. The MedicationRequest resource can be used to record a patient's medication prescription or order.  This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/us-core-medicationstatement"
       },
       "name" : "US Core MedicationStatement",
       "description" : "Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.\nThis profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/uscore-pa-codes"
+      },
+      "name" : "US Core PA Codes ValueSet",
+      "description" : "A starter set of Physical Activity codes based off the [Physical activity IG](https://hl7.org/fhir/us/physical-activity/)",
       "exampleBoolean" : false
     },
     {
@@ -1465,7 +1501,20 @@
         }],
         "nameUrl" : "guidance.html",
         "title" : "Guidance",
-        "generation" : "markdown"
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode" : "informative"
+          },
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "scopes.html"
+          }],
+          "nameUrl" : "scopes.html",
+          "title" : "US Core SMART Scopes",
+          "generation" : "markdown"
+        }]
       },
       {
         "extension" : [{

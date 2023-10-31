@@ -56,6 +56,13 @@
     "name" : "USCoreMedicationAdherenceExtension"
   },
   {
+    "id" : "us-core-medicationrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
+    "version" : "0.0.0",
+    "name" : "USCoreMedicationRequestProfile"
+  },
+  {
     "id" : "us-core-observation-lab",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
@@ -89,6 +96,20 @@
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference",
     "version" : "0.0.0",
     "name" : "USCoreTreatmentInterventionPreferenceProfile"
+  },
+  {
+    "id" : "uscore-common-sdoh-assessments",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments",
+    "version" : "0.0.0",
+    "name" : "USCoreCommonSDOHAssessments"
+  },
+  {
+    "id" : "uscore-pa-codes",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes",
+    "version" : "0.0.0",
+    "name" : "USCorePaCodesValueSet"
   },
   {
     "id" : "uscore-treatment-intervention-preference",

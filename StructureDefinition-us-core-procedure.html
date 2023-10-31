@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.7"}
-    h3,h4,h5,h6{--heading-prefix:"8.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.8"}
+    h3,h4,h5,h6{--heading-prefix:"8.8"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -83,8 +83,18 @@
   <li>
     <a href="index.html">IG Home</a>
   </li>
-  <li>
-    <a href="guidance.html">General Guidance</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="scopes.html">US Core SMART Scopes</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="future.html">Future</a>
@@ -292,7 +302,7 @@ up to three LOINCs (1 or 3 required)
 for example
  {% include additional-requirements-intro.md type="Patient" plural="true" %} or {% include additional-requirements-intro.md type="DocumentReference" %} -->
 
-<p><a name="l415">​</a>For ONC’s USCDI requirements, each Procedure Must Support the following additional element as <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a>. This element is included in the formal definition of the profile and the Procedure examples.</p>
+<p><a name="l432">​</a>For ONC’s USCDI requirements, each Procedure Must Support the following additional element as <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a>. This element is included in the formal definition of the profile and the Procedure examples.</p>
 
 <ol>
   <li>a reason or indication for referral or consultation*</li>
@@ -315,13 +325,13 @@ for example
       <li><code class="language-plaintext highlighter-rouge">ServiceRequest.reason</code> or <code class="language-plaintext highlighter-rouge">ServiceRequest.reason</code>, and <code class="language-plaintext highlighter-rouge">Procedure.basedOn</code> that links the Procedure to the US Core ServiceRequest Profile.
         <ul>
           <li><code class="language-plaintext highlighter-rouge">ServiceRequest.reasonCode</code> and <code class="language-plaintext highlighter-rouge">ServiceRequest.reasonReference</code> are marked as Additional USCDI Requirements. The certifying server system is not required to support both but <strong>SHALL</strong> support at least one of these elements. The certifying client application <strong>SHALL</strong> support both elements.</li>
-          <li><a name="l490">​</a>As documented <a href="general-guidance.html#referencing-us-core-profiles">here</a>, when using  <code class="language-plaintext highlighter-rouge">ServiceRequest.reasonReference</code>, the referenced resources <strong>SHOULD</strong> be a US Core Profile.</li>
+          <li><a name="l507">​</a>As documented <a href="general-guidance.html#referencing-us-core-profiles">here</a>, when using  <code class="language-plaintext highlighter-rouge">ServiceRequest.reasonReference</code>, the referenced resources <strong>SHOULD</strong> be a US Core Profile.</li>
         </ul>
       </li>
       <li><code class="language-plaintext highlighter-rouge">Procedure.reasonCode</code> or <code class="language-plaintext highlighter-rouge">Procedure.reasonReference</code> when the Procedure does not have an associated ServiceRequest.
         <ul>
           <li>Although both <code class="language-plaintext highlighter-rouge">Procedure.reasonCode</code> and <code class="language-plaintext highlighter-rouge">Procedure.reasonReference</code> are marked as Additional USCDI Requirements. The certifying server system is not required to support both but <strong>SHALL</strong> support at least one of these elements. The certifying client application <strong>SHALL</strong> support both elements.</li>
-          <li><a name="l528">​</a>As documented <a href="general-guidance.html#referencing-us-core-profiles">here</a>, when using  <code class="language-plaintext highlighter-rouge">Procedure.reasonReference</code>, the referenced resources <strong>SHOULD</strong> be a US Core Profile.</li>
+          <li><a name="l545">​</a>As documented <a href="general-guidance.html#referencing-us-core-profiles">here</a>, when using  <code class="language-plaintext highlighter-rouge">Procedure.reasonReference</code>, the referenced resources <strong>SHOULD</strong> be a US Core Profile.</li>
         </ul>
       </li>
     </ol>
@@ -1047,7 +1057,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 20, 2023 05:42+0000">2023-10-20</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 31, 2023 19:05+0000">2023-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

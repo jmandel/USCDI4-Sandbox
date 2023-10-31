@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "USCDI4_1Sandbox"] ; # 
   fhir:title [ fhir:v "HealtheData1 USCDI4 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-20T05:42:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-31T19:05:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -1261,6 +1261,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments> ;
+         fhir:reference [ fhir:v "ValueSet/uscore-common-sdoh-assessments" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Common SDOH Assessments ValueSet" ] ;
+       fhir:description [ fhir:v "Common SDOH assessment concepts covering the following categories (Gravity Project SDOH Domains):\n - Food (Food Insecurity)\n - Housing (Housing Instability)\n - Health (Social Connection, Stress)\n - Employment (Employment Status)\n - Care (SDOH Category Unspecified)\n - Transit (Transportation Insecurity)\n - Money (Financial Insecurity)\n - Goods (Material Hardship)\n - Education (SDOH Category Unspecified)\n - Legal (SDOH Category Unspecified)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -1292,7 +1304,7 @@
          fhir:reference [ fhir:v "StructureDefinition/us-core-medication-adherence" ]
        ] ;
        fhir:name [ fhir:v "US Core Medication Adherence Extension" ] ;
-       fhir:description [ fhir:v "A MedicationRequest extension representing reported adherence to prescribed medication instructions.  In other words, whether a medication was consumed according to instructions." ] ;
+       fhir:description [ fhir:v "The Medication Adherence Extension is a statement of whether a medication has been consumed according to instructions for discharge, community-prescribed, and self-prescribed medications. This extension is not intended to track adherence to the Inpatient Medication Administration Record (MAR). In FHIR, [MedicationAdministration](https://hl7.org/fhir/R4/medicationadministration.html) is typically used to monitor compliance with the MAR." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1312,11 +1324,35 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-medicationrequest" ]
+       ] ;
+       fhir:name [ fhir:v "US Core MedicationRequest Profile" ] ;
+       fhir:description [ fhir:v "The US Core Medication Request Profile is based upon the core FHIR MedicationRequest Resource and meets the U.S. Core Data for Interoperability (USCDI) v2 *Medications* requirements. The MedicationRequest resource can be used to record a patient's medication prescription or order.  This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement> ;
          fhir:reference [ fhir:v "StructureDefinition/us-core-medicationstatement" ]
        ] ;
        fhir:name [ fhir:v "US Core MedicationStatement" ] ;
        fhir:description [ fhir:v "Profile of MedicationStatement to support medication adherence - record of a statement of whether a medication has been consumed according to instructions.\nThis profile sets minimum expectations for the MedicationStatement resource to record, search, and fetch a record of a statement of whether a medication has been consumed according to instructions.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases to promote interoperability and adoption through common implementation." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-pa-codes> ;
+         fhir:reference [ fhir:v "ValueSet/uscore-pa-codes" ]
+       ] ;
+       fhir:name [ fhir:v "US Core PA Codes ValueSet" ] ;
+       fhir:description [ fhir:v "A starter set of Physical Activity codes based off the [Physical activity IG](https://hl7.org/fhir/us/physical-activity/)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1446,7 +1482,19 @@
          ] ) ;
          fhir:name [ fhir:v "guidance.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Guidance" ] ;
-         fhir:generation [ fhir:v "markdown" ]
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "informative" ]
+           ] [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "scopes.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "scopes.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "US Core SMART Scopes" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;

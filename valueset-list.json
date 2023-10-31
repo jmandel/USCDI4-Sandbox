@@ -1,0 +1,51 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "USCoreCommonSDOHAssessments",
+      "title" : "US Core Common SDOH Assessments ValueSet",
+      "description" : "Common SDOH assessment concepts covering the following categories (Gravity Project SDOH Domains):\n - Food (Food Insecurity)\n - Housing (Housing Instability)\n - Health (Social Connection, Stress)\n - Employment (Employment Status)\n - Care (SDOH Category Unspecified)\n - Transit (Transportation Insecurity)\n - Money (Financial Insecurity)\n - Goods (Material Hardship)\n - Education (SDOH Category Unspecified)\n - Legal (SDOH Category Unspecified)",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes",
+      "version" : "0.0.0",
+      "status" : "draft",
+      "name" : "USCorePaCodesValueSet",
+      "title" : "US Core PA Codes ValueSet",
+      "description" : "A starter set of Physical Activity codes based off the [Physical activity IG](https://hl7.org/fhir/us/physical-activity/)",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-treatment-intervention-preference",
+      "version" : "0.0.0",
+      "status" : "draft",
+      "name" : "USCoreTreatmentInterventionPreferencValueSet",
+      "title" : "US Core Treatment Intervention Preference ValueSet",
+      "description" : "A code representing an individual's medical intervention (treatment) preferences.",
+      "systems" : [
+        "http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference"
+      ]
+    },
+    {
+      "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-care-experience-preference",
+      "version" : "0.0.0",
+      "status" : "draft",
+      "name" : "USCoreCareExperiencePreference",
+      "title" : "US Core Care Experience Preference Codes",
+      "description" : "A code representing an individual's care experience preferences.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-medicationstatement-status",
+      "version" : "0.0.0",
+      "status" : "draft",
+      "name" : "USCoreMedicationstatementStatus",
+      "title" : "US Core Medication Status Codes",
+      "description" : "A code specifying the state of the statement.  Generally, this will be active or completed state.  This value set excludes the concept used internally by the FHIR specification, not-taken,on-hold,stopped, and unknown, because they are covered by the medication adherence extension.",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-statement-status"]
+    }
+  ]
+}

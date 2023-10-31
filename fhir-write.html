@@ -83,8 +83,18 @@
   <li>
     <a href="index.html">IG Home</a>
   </li>
-  <li>
-    <a href="guidance.html">General Guidance</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="scopes.html">US Core SMART Scopes</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="future.html">Future</a>
@@ -184,7 +194,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>EHR systems providing the ability to write FHIR vital sign Observation resources from patient-facing apps SHALL support the registration and authorization of apps with the <code class="language-plaintext highlighter-rouge">patient/Observation.c</code> SMART scope and MAY require limiting this scope to <code class="language-plaintext highlighter-rouge">category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>. Note that <code class="language-plaintext highlighter-rouge">read</code> and <code class="language-plaintext highlighter-rouge">search</code> capabilities are already implied by <a href="http://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-vital-signs.html">US Core Vital Signs profile</a>.</p>
 
-<p><a name="l348">​</a>EHR systems providing the ability to write FHIR vital sign Observation resources from patient-facing apps SHOULD also support the registration and authorization of apps with either <code class="language-plaintext highlighter-rouge">patient/Observation.u</code> or <code class="language-plaintext highlighter-rouge">patient/Observation.u?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code> SMART scope. Note, systems are allowed to only support limited <a href="#Updating-Previously-Submitted-Observations">update</a> capabilities.</p>
+<p><a name="l365">​</a>EHR systems providing the ability to write FHIR vital sign Observation resources from patient-facing apps SHOULD also support the registration and authorization of apps with either <code class="language-plaintext highlighter-rouge">patient/Observation.u</code> or <code class="language-plaintext highlighter-rouge">patient/Observation.u?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code> SMART scope. Note, systems are allowed to only support limited <a href="#Updating-Previously-Submitted-Observations">update</a> capabilities.</p>
 
 <p>When offering a patient write capability, health systems MAY choose to enable or disable this capability in the system based on factors such as the provider, patient, payer, app, and vital type, or MAY choose to enable the capability broadly. If patients and/or apps attempting to write data are not enabled, and this can be discerned during the authorization process, the EHR SHALL omit these unsupported scopes from the resulting access token. If an app uses an access token without the required scopes to submit an <code class="language-plaintext highlighter-rouge">Observation</code> or the patient is not enabled to write data, the EHR SHALL return an error and SHOULD include an <code class="language-plaintext highlighter-rouge">OperationOutcome</code> in the response body.</p>
 
@@ -198,7 +208,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>EHR systems providing the ability to write FHIR vital sign Observation resources from provider-facing apps SHALL support the registration and authorization of apps with the <code class="language-plaintext highlighter-rouge">user/Observation.c</code> and <code class="language-plaintext highlighter-rouge">system/Observation.c</code> SMART scopes and MAY require limiting these scopes to <code class="language-plaintext highlighter-rouge">category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code>. Note that <code class="language-plaintext highlighter-rouge">read</code> and <code class="language-plaintext highlighter-rouge">search</code> capabilities are already implied by <a href="http://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-vital-signs.html">US Core Vital Signs profile</a>.</p>
 
-<p><a name="l405">​</a>EHR systems providing the ability to write FHIR vital sign Observation resources from patient-facing apps SHOULD also support the registration and authorization of apps with either <code class="language-plaintext highlighter-rouge">user/Observation.u</code> and <code class="language-plaintext highlighter-rouge">system/Observation.u</code> SMART scopes, or <code class="language-plaintext highlighter-rouge">user/Observation.u?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code> and <code class="language-plaintext highlighter-rouge">system/Observation.u?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code> SMART scopes. Note, systems are allowed to only support limited <a href="#Updating-Previously-Submitted-Observations">update</a> capabilities.</p>
+<p><a name="l422">​</a>EHR systems providing the ability to write FHIR vital sign Observation resources from patient-facing apps SHOULD also support the registration and authorization of apps with either <code class="language-plaintext highlighter-rouge">user/Observation.u</code> and <code class="language-plaintext highlighter-rouge">system/Observation.u</code> SMART scopes, or <code class="language-plaintext highlighter-rouge">user/Observation.u?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code> and <code class="language-plaintext highlighter-rouge">system/Observation.u?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code> SMART scopes. Note, systems are allowed to only support limited <a href="#Updating-Previously-Submitted-Observations">update</a> capabilities.</p>
 
 <p>Examples:</p>
 <ul>
@@ -417,7 +427,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 20, 2023 05:42+0000">2023-10-20</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 31, 2023 19:05+0000">2023-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
