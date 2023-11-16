@@ -6,7 +6,7 @@
     "title": "US Core Patient Profile",
     "status": "active",
     "experimental": false,
-    "date": "2023-10-20",
+    "date": "2023-10-17",
     "description": "The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.",
     "fhirVersion": "4.0.1",
     "kind": "resource",
@@ -442,6 +442,22 @@
             {
                 "id": "Patient.address.line",
                 "path": "Patient.address.line",
+                "example": [
+                    {
+                        "label": "General",
+                        "valueString": "49 MEADOW ST"
+                    }
+                ],
+                "_example": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-suppress",
+                                "valueBoolean": true
+                            }
+                        ]
+                    }
+                ],
                 "mustSupport": true,
                 "mapping": [
                     {
@@ -453,6 +469,12 @@
             {
                 "id": "Patient.address.city",
                 "path": "Patient.address.city",
+                "example": [
+                    {
+                        "label": "General",
+                        "valueString": "EVERYTOWN"
+                    }
+                ],
                 "mustSupport": true,
                 "mapping": [
                     {
@@ -464,6 +486,12 @@
             {
                 "id": "Patient.address.state",
                 "path": "Patient.address.state",
+                "example": [
+                    {
+                        "label": "General",
+                        "valueString": "OK"
+                    }
+                ],
                 "mustSupport": true,
                 "binding": {
                     "strength": "extensible",
@@ -483,6 +511,12 @@
                 "short": "US Zip Codes",
                 "alias": [
                     "Zip Code"
+                ],
+                "example": [
+                    {
+                        "label": "General",
+                        "valueString": "74047"
+                    }
                 ],
                 "mustSupport": true,
                 "mapping": [

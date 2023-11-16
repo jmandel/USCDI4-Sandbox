@@ -172,4 +172,11 @@ US Core uses broadly defined value sets that contain concepts used across use ca
 
 <!-- {% raw %} {% include img-med.html img="sdoh_condition.svg" caption="SDOH Grouped Value Set Reuse in US Core" %} {% endraw %} -->
 
+### Examples
+
+These are example instances that show what Screening and Assessments data produced and consumed by systems conforming with this implementation guide might look like.
+
+{% include assessment_examples.md %}
+
+
 {% include link-list.md %}

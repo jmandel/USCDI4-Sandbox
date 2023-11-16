@@ -5,7 +5,7 @@ name: USCorePatientProfile
 title: US Core Patient Profile
 status: active
 experimental: false
-date: 2023-10-20
+date: 2023-10-17
 description: The US Core Patient Profile meets the U.S. Core Data for Interoperability
   (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations
   for the Patient resource to record, search, and fetch basic demographics and other
@@ -295,18 +295,36 @@ differential:
       | billing - purpose of this address"
   - id: Patient.address.line
     path: Patient.address.line
+    example:
+    - 
+        label: General
+        valueString: '49 MEADOW ST'
+    
+    _example:
+    - extension:
+      - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-suppress
+        valueBoolean: true
+
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
       map: NA
   - id: Patient.address.city
     path: Patient.address.city
+    example:
+    - 
+        label: General
+        valueString: 'EVERYTOWN'
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2
       map: NA
   - id: Patient.address.state
     path: Patient.address.state
+    example:
+    - 
+        label: General
+        valueString: 'OK'
     mustSupport: true
     binding:
       strength: extensible
@@ -320,6 +338,10 @@ differential:
     short: US Zip Codes
     alias:
     - Zip Code
+    example:
+    - 
+        label: General
+        valueString: '74047'
     mustSupport: true
     mapping:
     - identity: argonaut-dq-dstu2

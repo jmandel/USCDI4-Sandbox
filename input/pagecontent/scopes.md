@@ -110,9 +110,14 @@ Content-Type: application/json
     "client_credentials"
   ],
   "registration_endpoint": "https://ehr.example.com/auth/register",
-   /// <<<<<<<<<ADD All US Core Scopes HERE?>>>>>>>>
-  "scopes_supported": ["openid", "profile", "launch", "launch/patient", "patient/*.rs", "user/*.rs", "offline_access"],
-   /// <<<<<<<<<>>>>>>>>
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "launch",
+    "launch/patient",
+    "offline_access",
+{% include comma-sep-scopes.md %}
+  ],
   "response_types_supported": ["code"],
   "management_endpoint": "https://ehr.example.com/user/manage",
   "introspection_endpoint": "https://ehr.example.com/user/introspect",
@@ -130,6 +135,35 @@ Content-Type: application/json
 }
 ~~~
  
+{% assign rows = site.data.scopes -%}
+{%  assign my_array = '' -%}
+{% for item in rows -%}
+{% unless forloop.first -%}
+{% unless item.add_scope == "FALSE" -%}
+{%  assign scope = item.resource_type | prepend: '"patient/' | append: '.rs", ' -%}
+{%  assign my_array =  my_array | append: scope -%}
+{% if item.category_1 -%}
+{%  assign resource_type = scope | replace: '", ' | append: '?category=' -%}
+{% assign category = item.category_1 | append: '", ' -%}
+{% assign scope =  resource_type | append: category -%}
+{%  assign my_array =  my_array | append: scope -%}
+{% endif -%}
+{% if item.category_2 -%}
+{% assign category = item.category_2 | append: '", ' -%}
+{% assign scope =  resource_type | append: category -%}
+{%  assign my_array =  my_array | append: scope -%}
+{% endif -%}
+{% if item.category_3 -%}
+{% assign category = item.category_3 | append: '", ' -%}
+{% assign scope =  resource_type | append: category -%}
+{%  assign my_array =  my_array | append: scope -%}
+{% endif -%}
+{% endunless -%}
+{% endunless -%}
+{% endfor -%}
+{% assign my_array = my_array | split: ", " -%}
+{{ my_array | uniq | sort | join: ", " }}
+
 
 
 
