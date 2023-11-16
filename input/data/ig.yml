@@ -56,6 +56,22 @@ definition:
     exampleBoolean: false
     name: US Core Average Blood Pressure Profile
   - reference:
+      reference: ValueSet/uscore-common-sdoh-assessments
+    description: "Common SDOH assessment concepts covering the following categories\
+      \ (Gravity Project SDOH Domains):\n - Food (Food Insecurity)\n - Housing (Housing\
+      \ Instability)\n - Health (Social Connection, Stress)\n - Employment (Employment\
+      \ Status)\n - Care (SDOH Category Unspecified)\n - Transit (Transportation Insecurity)\n\
+      \ - Money (Financial Insecurity)\n - Goods (Material Hardship)\n - Education\
+      \ (SDOH Category Unspecified)\n - Legal (SDOH Category Unspecified)"
+    exampleBoolean: false
+    name: US Core Common SDOH Assessments ValueSet
+  - reference:
+      reference: ValueSet/uscore-pa-codes
+    description: A starter set of Physical Activity codes based off the [Physical
+      activity IG](https://hl7.org/fhir/us/physical-activity/)
+    exampleBoolean: false
+    name: US Core PA Codes ValueSet
+  - reference:
       reference: StructureDefinition/us-core-patient
     description: The US Core Patient Profile meets the U.S. Core Data for Interoperability
       (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations
