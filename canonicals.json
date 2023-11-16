@@ -14,6 +14,20 @@
     "name" : "USCorePatientProfile"
   },
   {
+    "id" : "uscore-common-sdoh-assessments",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments",
+    "version" : "0.0.0",
+    "name" : "USCoreCommonSDOHAssessments"
+  },
+  {
+    "id" : "uscore-pa-codes",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes",
+    "version" : "0.0.0",
+    "name" : "USCorePaCodesValueSet"
+  },
+  {
     "id" : "uscdi4-sandbox",
     "type" : "ImplementationGuide",
     "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox",

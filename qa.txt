@@ -1,14 +1,16 @@
 ﻿USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 8, warn = 1, info = 6
+err = 14, warn = 1, info = 6
 IG Publisher Version: 1.5.4
-Generated Thu Nov 16 20:32:41 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
- Build Errors : 70 / 0 / 0
+Generated Thu Nov 16 20:49:10 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+ Build Errors : 68 / 0 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 1 / 0 / 8
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure : 3 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient : 4 / 1 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments : 3 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes : 3 / 0 / 1
 </table>
 == n/a ==
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/Observation-average-blood-pressure.html#/html/body/div/div/div/div/div/div/p/a at Line 200, column 1207: The link 'Patient-example.html' for "Patient/example: Amy Shaw" cannot be resolved
@@ -77,8 +79,6 @@ ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/scopes.html#/html/bo
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/scopes.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 1144, column 6: The link 'StructureDefinition-us-core-specimen.html' for "US Core Specimen Profile" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/scopes.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 1160, column 6: The link 'StructureDefinition-us-core-treatment-intervention-preference.html' for "US Core Treatment Intervention Preference Profile" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/scopes.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 1178, column 6: The link 'StructureDefinition-us-core-care-experience-preference.html' for "US Core Care Experience Preference Profile" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 749, column 6: The link 'ValueSet-uscore-common-sdoh-assessments.html' for "US Core SDOH Panel Item Codes" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 927, column 6: The link 'ValueSet-uscore-pa-codes.html' for "US Core PA Codes" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/div/p/a at Line 983, column 47: The link 'assessments-valuesets.csv' for "csv" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/div/p/a at Line 983, column 94: The link 'assessments-valuesets.xlsx' for "excel" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json ==
@@ -100,3 +100,11 @@ ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDef
 ERROR: StructureDefinition/us-core-patient: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+== input/resources/ValueSet-uscore-common-sdoh-assessments.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments)
+ERROR: ValueSet/uscore-common-sdoh-assessments: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments vs http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments
+== input/resources/ValueSet-uscore-pa-codes.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-pa-codes) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes)
+ERROR: ValueSet/uscore-pa-codes: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-pa-codes vs http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes

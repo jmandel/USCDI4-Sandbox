@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 70, errors = 8, warn = 1, info = 6-->
+<!-- broken links = 68, errors = 14, warn = 1, info = 6-->
 <head>
   <title>USCDI4_1Sandbox : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for USCDI4_1Sandbox</h1>
- <p>Generated Thu Nov 16 20:32:41 UTC 2023, FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = <a href="http://www.fhir.org/guides/uscdi4-sandbox">http://www.fhir.org/guides/uscdi4-sandbox</a> (<a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Thu Nov 16 20:49:10 UTC 2023, FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = <a href="http://www.fhir.org/guides/uscdi4-sandbox">http://www.fhir.org/guides/uscdi4-sandbox</a> (<a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.4</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = uscdi4-sandbox, Canonical = http://www.fhir.org/guides/uscdi4-sandbox</td></tr>
@@ -66,7 +66,7 @@
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-standards-status.html">standards-status</a>
- (13 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-fmm.html">fmm</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-fmm.html">fmm</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
  (15 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice.html">bestpractice</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice-explanation.html">bestpractice-explanation</a>
@@ -113,12 +113,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/extension-structured
   </li>
   <li>
 hl7.fhir.uv.extensions.r4#1.0.0:     <a href="http://hl7.org/fhir/extensions/1.0.0/StructureDefinition-structuredefinition-conformance-derivedFrom.html">SDStatusDerivation</a>
- (4 uses),     <a href="http://hl7.org/fhir/extensions/1.0.0/StructureDefinition-elementdefinition-type-must-support.html">TypeMustSupport</a>
+ (6 uses),     <a href="http://hl7.org/fhir/extensions/1.0.0/StructureDefinition-elementdefinition-type-must-support.html">TypeMustSupport</a>
  (5 uses)
   </li>
   <li>
 hl7.fhir.uv.tools#current:     <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig//StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (3 uses)
+ (5 uses)
   </li>
   <li>
 hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">ObservationCategoryCodes</a>
@@ -127,16 +127,16 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://www.fhir.org/guides/uscdi4-sandbox (Problem #1 with package-list.json at http://www.fhir.org/guides/uscdi4-sandbox: Invalid HTTP response 404 from http://www.fhir.org/guides/uscdi4-sandbox/package-list.json?nocache=1700166583727 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://www.fhir.org/guides/uscdi4-sandbox (Problem #1 with package-list.json at http://www.fhir.org/guides/uscdi4-sandbox: Invalid HTTP response 404 from http://www.fhir.org/guides/uscdi4-sandbox/package-list.json?nocache=1700167539569 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 8, warn = 1, info = 6, broken links = 70</td></tr>
+ <tr><td>Summary:</td><td> errors = 14, warn = 1, info = 6, broken links = 68</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>70</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>68</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_USCDI4-Sandbox_USCDI4-Sandbox_fsh-generated_resources_ImplementationGuide-uscdi4-sandbox"><b>/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -149,6 +149,12 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_USCDI4-Sandbox_USCDI4-Sandbox_input_resources_StructureDefinition-us-core-patient"><b>/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_USCDI4-Sandbox_USCDI4-Sandbox_input_resources_ValueSet-uscore-common-sdoh-assessments"><b>/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_USCDI4-Sandbox_USCDI4-Sandbox_input_resources_ValueSet-uscore-pa-codes"><b>/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -355,12 +361,6 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
      <td><b><a href="scopes.html#l1220">docs&#8203;/scopes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 1178, column 6</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-us-core-care-experience-preference.html' for &quot;US Core Care Experience Preference Profile&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="screening-and-assessments.html#l870">docs&#8203;/screening-and-assessments&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 749, column 6</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-uscore-common-sdoh-assessments.html' for &quot;US Core SDOH Panel Item Codes&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="screening-and-assessments.html#l1022">docs&#8203;/screening-and-assessments&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 927, column 6</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-uscore-pa-codes.html' for &quot;US Core PA Codes&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="screening-and-assessments.html#l1095">docs&#8203;/screening-and-assessments&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 983, column 47</a></b></td><td><b>error</b></td><td><b>The link 'assessments-valuesets.csv' for &quot;csv&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -387,25 +387,25 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation.code.coding[1] (l30/c8)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl70" class="flip" onclick="flip('l70')">Show Reasoning</span><div id="l70" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.code.coding[1]: discriminator = true and $this.where((system = 'http://loinc.org') and (code = '96607-7')).exists()</li></ul></div></td>
+     <td><b><a href="">Observation.code.coding[1] (l30/c8)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl68" class="flip" onclick="flip('l68')">Show Reasoning</span><div id="l68" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.code.coding[1]: discriminator = true and $this.where((system = 'http://loinc.org') and (code = '96607-7')).exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation&#8203;.effective&#8203;.ofType(Period) (l41&#8203;/c4)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/vitalsigns#vs-1"><b>Constraint failed: vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' (defined in http://hl7.org/fhir/StructureDefinition/vitalsigns)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation&#8203;.component[0]&#8203;.code&#8203;.coding[1] (l60&#8203;/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl72" class="flip" onclick="flip('l72')">Show Reasoning</span><div id="l72" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.component[0].code.coding[1]: discriminator = true and $this.where((system = 'http://loinc.org') and (code = '96608-5')).exists()</li></ul></div></td>
+     <td><b><a href="">Observation&#8203;.component[0]&#8203;.code&#8203;.coding[1] (l60&#8203;/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl70" class="flip" onclick="flip('l70')">Show Reasoning</span><div id="l70" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.component[0].code.coding[1]: discriminator = true and $this.where((system = 'http://loinc.org') and (code = '96608-5')).exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation&#8203;.component[1]&#8203;.code&#8203;.coding[1] (l83&#8203;/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl73" class="flip" onclick="flip('l73')">Show Reasoning</span><div id="l73" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.component[1].code.coding[1]: discriminator = true and $this.where((system = 'http://loinc.org') and (code = '96609-3')).exists()</li></ul></div></td>
+     <td><b><a href="">Observation&#8203;.component[1]&#8203;.code&#8203;.coding[1] (l83&#8203;/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl71" class="flip" onclick="flip('l71')">Show Reasoning</span><div id="l71" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.component[1].code.coding[1]: discriminator = true and $this.where((system = 'http://loinc.org') and (code = '96609-3')).exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation.code.coding[0] (l25/c8)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl74" class="flip" onclick="flip('l74')">Show Reasoning</span><div id="l74" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.code.coding[0]: discriminator = true and ('85354-9' in code) and ('http://loinc.org' in system)</li></ul></div></td>
+     <td><b><a href="">Observation.code.coding[0] (l25/c8)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl72" class="flip" onclick="flip('l72')">Show Reasoning</span><div id="l72" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.code.coding[0]: discriminator = true and ('85354-9' in code) and ('http://loinc.org' in system)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation&#8203;.component[0]&#8203;.code&#8203;.coding[0] (l55&#8203;/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl75" class="flip" onclick="flip('l75')">Show Reasoning</span><div id="l75" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.component[0].code.coding[0]: discriminator = true and ('8480-6' in code) and ('http://loinc.org' in system)</li></ul></div></td>
+     <td><b><a href="">Observation&#8203;.component[0]&#8203;.code&#8203;.coding[0] (l55&#8203;/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl73" class="flip" onclick="flip('l73')">Show Reasoning</span><div id="l73" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.component[0].code.coding[0]: discriminator = true and ('8480-6' in code) and ('http://loinc.org' in system)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation&#8203;.component[1]&#8203;.code&#8203;.coding[0] (l78&#8203;/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl76" class="flip" onclick="flip('l76')">Show Reasoning</span><div id="l76" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.component[1].code.coding[0]: discriminator = true and ('8462-4' in code) and ('http://loinc.org' in system)</li></ul></div></td>
+     <td><b><a href="">Observation&#8203;.component[1]&#8203;.code&#8203;.coding[0] (l78&#8203;/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl74" class="flip" onclick="flip('l74')">Show Reasoning</span><div id="l74" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.component[1].code.coding[0]: discriminator = true and ('8462-4' in code) and ('http://loinc.org' in system)</li></ul></div></td>
    </tr>
 </table>
 <hr/>
@@ -452,6 +452,44 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
      <td><b>input&#8203;/resources&#8203;/StructureDefinition-us-core-patient</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</b></td>
    </tr>
 </table>
+<hr/>
+<a name="_home_runner_work_USCDI4-Sandbox_USCDI4-Sandbox_input_resources_ValueSet-uscore-common-sdoh-assessments"> </a>
+<h2><a href="ValueSet-uscore-common-sdoh-assessments.html">input/resources/ValueSet-uscore-common-sdoh-assessments.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/ValueSet&#8203;/uscore-common-sdoh-assessments')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c5814)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input&#8203;/resources&#8203;/ValueSet-uscore-common-sdoh-assessments</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments vs http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_USCDI4-Sandbox_USCDI4-Sandbox_input_resources_ValueSet-uscore-pa-codes"> </a>
+<h2><a href="ValueSet-uscore-pa-codes.html">input/resources/ValueSet-uscore-pa-codes.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/ValueSet&#8203;/uscore-pa-codes')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-pa-codes) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c3627)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input&#8203;/resources&#8203;/ValueSet-uscore-pa-codes</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-pa-codes vs http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes</b></td>
+   </tr>
+</table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
@@ -466,6 +504,12 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-patient.html">input/resources/StructureDefinition-us-core-patient.json</a></td><td><b>Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)</b></td>
    </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-uscore-common-sdoh-assessments.html">input/resources/ValueSet-uscore-common-sdoh-assessments.json</a></td><td><b>Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-uscore-pa-codes.html">input/resources/ValueSet-uscore-pa-codes.json</a></td><td><b>Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-pa-codes) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes)</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="VALIDATION_HL7_WG_NEEDED"> </a>
@@ -476,6 +520,12 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-patient.html">input/resources/StructureDefinition-us-core-patient.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-uscore-common-sdoh-assessments.html">input/resources/ValueSet-uscore-common-sdoh-assessments.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-uscore-pa-codes.html">input/resources/ValueSet-uscore-pa-codes.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
    </tr>
 </table>
 </body>

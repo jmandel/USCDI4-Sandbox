@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uscore-common-sdoh-assessments"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/88123-5/\">88123-5</a></td><td style=\"color: #cccccc\">Within the past 12 months the food we bought just didn't last and we didn't have money to get more [U.S. FSS]</td></tr><tr><td><a href=\"https://loinc.org/88122-7/\">88122-7</a></td><td style=\"color: #cccccc\">Within the past 12 months we worried whether our food would run out before we got money to buy more [U.S. FSS]</td></tr><tr><td><a href=\"https://loinc.org/96779-4/\">96779-4</a></td><td style=\"color: #cccccc\">Has the electric, gas, oil, or water company threatened to shut off services in your home in past 12 months</td></tr><tr><td><a href=\"https://loinc.org/71802-3/\">71802-3</a></td><td style=\"color: #cccccc\">Housing status</td></tr><tr><td><a href=\"https://loinc.org/93029-7/\">93029-7</a></td><td style=\"color: #cccccc\">How often do you see or talk to people that you care about and feel close to [PRAPARE]</td></tr><tr><td><a href=\"https://loinc.org/76437-3/\">76437-3</a></td><td style=\"color: #cccccc\">Primary insurance</td></tr><tr><td><a href=\"https://loinc.org/81375-8/\">81375-8</a></td><td style=\"color: #cccccc\">Self assessment of health status [Reported]</td></tr><tr><td><a href=\"https://loinc.org/93038-8/\">93038-8</a></td><td style=\"color: #cccccc\">Stress level</td></tr><tr><td><a href=\"https://loinc.org/96780-2/\">96780-2</a></td><td style=\"color: #cccccc\">Wants help finding or keeping work or a job</td></tr><tr><td><a href=\"https://loinc.org/67875-5/\">67875-5</a></td><td style=\"color: #cccccc\">Employment status - current</td></tr><tr><td><a href=\"https://loinc.org/95618-5/\">95618-5</a></td><td style=\"color: #cccccc\">Physically hurt you [HITS]</td></tr><tr><td><a href=\"https://loinc.org/93031-3/\">93031-3</a></td><td style=\"color: #cccccc\">Have you or any family members you live with been unable to get any of the following when it was really needed in past 1 year [PRAPARE]</td></tr><tr><td><a href=\"https://loinc.org/93030-5/\">93030-5</a></td><td style=\"color: #cccccc\">Has lack of transportation kept you from medical appointments, meetings, work, or from getting things needed for daily living</td></tr><tr><td><a href=\"https://loinc.org/63586-2/\">63586-2</a></td><td style=\"color: #cccccc\">What was your best estimate of the total income of all family members from all sources, before taxes, in last year [PhenX]</td></tr><tr><td><a href=\"https://loinc.org/93031-3/\">93031-3</a></td><td style=\"color: #cccccc\">Have you or any family members you live with been unable to get any of the following when it was really needed in past 1 year [PRAPARE]</td></tr><tr><td><a href=\"https://loinc.org/93031-3/\">93031-3</a></td><td style=\"color: #cccccc\">Have you or any family members you live with been unable to get any of the following when it was really needed in past 1 year [PRAPARE]</td></tr><tr><td><a href=\"https://loinc.org/93031-3/\">93031-3</a></td><td style=\"color: #cccccc\">Have you or any family members you live with been unable to get any of the following when it was really needed in past 1 year [PRAPARE]</td></tr><tr><td><a href=\"https://loinc.org/96782-8/\">96782-8</a></td><td style=\"color: #cccccc\">Wants help with school or training</td></tr><tr><td><a href=\"https://loinc.org/93677-3/\">93677-3</a></td><td style=\"color: #cccccc\">Do you need help with legal issues [WellRx]</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox"^^xsd:anyURI ;
+           fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.0"] ; # 
+  fhir:name [ fhir:v "USCoreCommonSDOHAssessments"] ; # 
+  fhir:title [ fhir:v "US Core Common SDOH Assessments ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-11-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Health eData Inc"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "mailto:ehaas@healthedatainc.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Common SDOH assessment concepts covering the following categories (Gravity Project SDOH Domains):\n - Food (Food Insecurity)\n - Housing (Housing Instability)\n - Health (Social Connection, Stress)\n - Employment (Employment Status)\n - Care (SDOH Category Unspecified)\n - Transit (Transportation Insecurity)\n - Money (Financial Insecurity)\n - Goods (Material Hardship)\n - Education (SDOH Category Unspecified)\n - Legal (SDOH Category Unspecified)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "88123-5" ]
+       ] [
+         fhir:code [ fhir:v "88122-7" ]
+       ] [
+         fhir:code [ fhir:v "96779-4" ]
+       ] [
+         fhir:code [ fhir:v "71802-3" ]
+       ] [
+         fhir:code [ fhir:v "93029-7" ]
+       ] [
+         fhir:code [ fhir:v "76437-3" ]
+       ] [
+         fhir:code [ fhir:v "81375-8" ]
+       ] [
+         fhir:code [ fhir:v "93038-8" ]
+       ] [
+         fhir:code [ fhir:v "96780-2" ]
+       ] [
+         fhir:code [ fhir:v "67875-5" ]
+       ] [
+         fhir:code [ fhir:v "95618-5" ]
+       ] [
+         fhir:code [ fhir:v "93031-3" ]
+       ] [
+         fhir:code [ fhir:v "93030-5" ]
+       ] [
+         fhir:code [ fhir:v "63586-2" ]
+       ] [
+         fhir:code [ fhir:v "93031-3" ]
+       ] [
+         fhir:code [ fhir:v "93031-3" ]
+       ] [
+         fhir:code [ fhir:v "93031-3" ]
+       ] [
+         fhir:code [ fhir:v "96782-8" ]
+       ] [
+         fhir:code [ fhir:v "93677-3" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

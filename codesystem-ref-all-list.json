@@ -130,7 +130,9 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-vital-signs.html" : "US Core Vital Signs ValueSet"
+      "ValueSet-uscore-pa-codes.html" : "US Core PA Codes ValueSet",
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-vital-signs.html" : "US Core Vital Signs ValueSet",
+      "ValueSet-uscore-common-sdoh-assessments.html" : "US Core Common SDOH Assessments ValueSet"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -143,8 +145,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -264,8 +266,8 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier",
-      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
     }
   ]
 }

@@ -67,6 +67,24 @@
       "uses" : {
       },
       "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "USCoreCommonSDOHAssessments",
+      "title" : "US Core Common SDOH Assessments ValueSet",
+      "description" : "Common SDOH assessment concepts covering the following categories (Gravity Project SDOH Domains):\n - Food (Food Insecurity)\n - Housing (Housing Instability)\n - Health (Social Connection, Stress)\n - Employment (Employment Status)\n - Care (SDOH Category Unspecified)\n - Transit (Transportation Insecurity)\n - Money (Financial Insecurity)\n - Goods (Material Hardship)\n - Education (SDOH Category Unspecified)\n - Legal (SDOH Category Unspecified)",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes",
+      "version" : "0.0.0",
+      "status" : "draft",
+      "name" : "USCorePaCodesValueSet",
+      "title" : "US Core PA Codes ValueSet",
+      "description" : "A starter set of Physical Activity codes based off the [Physical activity IG](https://hl7.org/fhir/us/physical-activity/)",
+      "systems" : ["http://loinc.org"]
     }
   ]
 }

@@ -13,10 +13,16 @@
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient.json: line 1, col 190969, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient.json: line 0, col 0, Error - URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient (BUSINESSRULE)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments.json: line 0, col 0, Error - Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments) (INVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments.json: line 1, col 5814, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments.json: line 0, col 0, Error - URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments vs http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments (BUSINESSRULE)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes.json: line 0, col 0, Error - Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-pa-codes) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes) (INVALID)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes.json: line 1, col 3627, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
+/home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes.json: line 0, col 0, Error - URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-pa-codes vs http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes (BUSINESSRULE)
 
 USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 8, warn = 1, info = 6
+err = 14, warn = 1, info = 6
 IG Publisher Version: 1.5.4
-Generated Thu Nov 16 20:32:41 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+Generated Thu Nov 16 20:49:10 UTC 2023. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
