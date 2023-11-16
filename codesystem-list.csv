@@ -1,2 +1,1 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Used
-http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference,0.0.0,active,,USCoreTreatmentInterventionPreferenceCodeSystem,US Core Treatment Intervention Preference CodeSystem,"A code representing an individual's medical intervention (treatment) preferences.",

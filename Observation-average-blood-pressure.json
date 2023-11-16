@@ -2,19 +2,11 @@
   "resourceType" : "Observation",
   "id" : "average-blood-pressure",
   "meta" : {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-      "valueString" : "Average Blood Pressure Example"
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-      "valueMarkdown" : "This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)."
-    }],
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"average-blood-pressure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;average-blood-pressure&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-average-blood-pressure.html\">US Core Average Blood Pressure Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Avg Blood pressure systolic and diastolic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96607-7 &quot;Blood pressure panel mean systolic and mean diastolic&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-03 01:06:52+0000 --&gt; 2023-08-03 13:07:01+0000</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-1.html\">Practitioner/practitioner-1</a></p><p><b>note</b>: Average blood pressure is calculated from 12 measurements taken over 12 hours.</p><blockquote><p><b>component</b></p><p><b>code</b>: Average systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96608-5 &quot;Systolic blood pressure mean&quot;)</span></p><p><b>value</b>: 109 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Average diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96609-3 &quot;Diastolic blood pressure mean&quot;)</span></p><p><b>value</b>: 44 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"average-blood-pressure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;average-blood-pressure&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-average-blood-pressure.html\">US Core Average Blood Pressure Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Avg Blood pressure systolic and diastolic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96607-7 &quot;Blood pressure panel mean systolic and mean diastolic&quot;; <a href=\"https://loinc.org/\">LOINC</a>#85354-9 &quot;Blood pressure panel with all children optional&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Patient/example: Amy Shaw</a></p><p><b>effective</b>: 2023-08-03 01:06:52+0000 --&gt; 2023-08-03 13:07:01+0000</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-1.html\">Practitioner/practitioner-1</a></p><p><b>note</b>: Average blood pressure is calculated from 12 measurements taken over 12 hours.</p><blockquote><p><b>component</b></p><p><b>code</b>: Average systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96608-5 &quot;Systolic blood pressure mean&quot;; <a href=\"https://loinc.org/\">LOINC</a>#8480-6 &quot;Systolic blood pressure&quot;)</span></p><p><b>value</b>: 109 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Average diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#96609-3 &quot;Diastolic blood pressure mean&quot;; <a href=\"https://loinc.org/\">LOINC</a>#8462-4 &quot;Diastolic blood pressure&quot;)</span></p><p><b>value</b>: 44 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
   },
   "status" : "final",
   "category" : [{
@@ -30,6 +22,11 @@
       "system" : "http://loinc.org",
       "code" : "96607-7",
       "display" : "Blood pressure panel mean systolic and mean diastolic"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "85354-9",
+      "display" : "Blood pressure panel with all children optional"
     }],
     "text" : "Avg Blood pressure systolic and diastolic"
   },
@@ -53,6 +50,11 @@
         "system" : "http://loinc.org",
         "code" : "96608-5",
         "display" : "Systolic blood pressure mean"
+      },
+      {
+        "system" : "http://loinc.org",
+        "code" : "8480-6",
+        "display" : "Systolic blood pressure"
       }],
       "text" : "Average systolic blood pressure"
     },
@@ -69,6 +71,11 @@
         "system" : "http://loinc.org",
         "code" : "96609-3",
         "display" : "Diastolic blood pressure mean"
+      },
+      {
+        "system" : "http://loinc.org",
+        "code" : "8462-4",
+        "display" : "Diastolic blood pressure"
       }],
       "text" : "Average diastolic blood pressure"
     },

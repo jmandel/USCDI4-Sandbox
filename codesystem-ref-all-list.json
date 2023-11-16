@@ -1,42 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "Medication Status Codes",
-      "title" : "Medication  status  codes",
-      "description" : "Medication Status Codes",
-      "oids" : ["2.16.840.1.113883.4.642.4.1379"],
-      "uses" : {
-      },
-      "ValueSet-uscore-medicationstatement-status.html" : "US Core Medication Status Codes"
-    },
-    {
-      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "medicationRequest Intent",
-      "title" : "Medication request  intent",
-      "description" : "MedicationRequest Intent Codes",
-      "oids" : ["2.16.840.1.113883.4.642.4.1378"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html" : "Medication request  intent"
-    },
-    {
-      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "medicationrequest Status",
-      "title" : "Medicationrequest  status",
-      "description" : "MedicationRequest Status Codes",
-      "oids" : ["2.16.840.1.113883.4.642.4.1377"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
-    },
-    {
       "url" : "http://hl7.org/fhir/address-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -97,30 +61,6 @@
       "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
     },
     {
-      "url" : "http://hl7.org/fhir/days-of-week",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "DaysOfWeek",
-      "title" : "DaysOfWeek",
-      "description" : "The days of the week.",
-      "oids" : ["2.16.840.1.113883.4.642.4.513"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
-    },
-    {
-      "url" : "http://hl7.org/fhir/event-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "EventStatus",
-      "title" : "EventStatus",
-      "description" : "Codes identifying the lifecycle stage of an event.",
-      "oids" : ["2.16.840.1.113883.4.642.4.110"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-event-status.html" : "EventStatus"
-    },
-    {
       "url" : "http://hl7.org/fhir/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -143,30 +83,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
-    },
-    {
-      "url" : "http://hl7.org/fhir/location-mode",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "LocationMode",
-      "title" : "LocationMode",
-      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
-      "oids" : ["2.16.840.1.113883.4.642.4.331"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-location-mode.html" : "LocationMode"
-    },
-    {
-      "url" : "http://hl7.org/fhir/location-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "LocationStatus",
-      "title" : "LocationStatus",
-      "description" : "Indicates whether the location is still in use.",
-      "oids" : ["2.16.840.1.113883.4.642.4.333"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-location-status.html" : "LocationStatus"
     },
     {
       "url" : "http://hl7.org/fhir/name-use",
@@ -205,64 +121,6 @@
       "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
     },
     {
-      "url" : "http://hl7.org/fhir/request-priority",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "RequestPriority",
-      "title" : "RequestPriority",
-      "description" : "Identifies the level of importance to be assigned to actioning the request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.116"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
-    },
-    {
-      "url" : "http://hl7.org/fhir/sid/icd-10-cm",
-      "version" : "2.0.1",
-      "status" : "active",
-      "name" : "Icd10CM",
-      "title" : "International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)",
-      "description" : "The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM), describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases. The ICD-10-CM codes can be used as the value of the Act.cd attribute.",
-      "oids" : ["2.16.840.1.113883.6.90"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
-    },
-    {
-      "url" : "http://hl7.org/fhir/specimen-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "SpecimenStatus",
-      "title" : "SpecimenStatus",
-      "description" : "Codes providing the status/availability of a specimen.",
-      "oids" : ["2.16.840.1.113883.4.642.4.472"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-specimen-status.html" : "SpecimenStatus"
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
-      "version" : "6.1.0",
-      "status" : "active",
-      "name" : "USCoreCategory",
-      "title" : "US Core Category",
-      "description" : "Category codes used across US Core Profiles and resource types. They are typically used when there is a need for categorization for searching and finding resources or workflow hints.",
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category"
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/core/CodeSystem/uscore-treatment-intervention-preference",
-      "version" : "0.0.0",
-      "status" : "active",
-      "name" : "USCoreTreatmentInterventionPreferenceCodeSystem",
-      "title" : "US Core Treatment Intervention Preference CodeSystem",
-      "description" : "A code representing an individual's medical intervention (treatment) preferences.",
-      "uses" : {
-      },
-      "ValueSet-uscore-treatment-intervention-preference.html" : "US Core Treatment Intervention Preference ValueSet"
-    },
-    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -272,13 +130,7 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-laboratory-test-codes.html" : "US Core Laboratory Test Codes",
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
-      "ValueSet-uscore-pa-codes.html" : "US Core PA Codes ValueSet",
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-vital-signs.html" : "US Core Vital Signs ValueSet",
-      "ValueSet-uscore-common-sdoh-assessments.html" : "US Core Common SDOH Assessments ValueSet",
-      "ValueSet-uscore-care-experience-preference.html" : "US Core Care Experience Preference Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-vital-signs.html" : "US Core Vital Signs ValueSet"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -290,29 +142,9 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
-      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
-      "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
-      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.54/expansion" : "Specimen type",
-      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method"
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -327,78 +159,6 @@
       "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "DoseAndRateType",
-      "title" : "DoseAndRateType",
-      "description" : "The kind of dose or rate specified.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1069"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-dose-rate-type.html" : "DoseAndRateType"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "LocationType",
-      "title" : "Location type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1108"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "Medication usage category codes",
-      "title" : "Medication usage category codes",
-      "description" : "Medication Status Codes",
-      "oids" : ["2.16.840.1.113883.4.642.4.1120"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-medication-statement-category.html" : "Medication usage category codes"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "MedicationRequestCategoryCodes",
-      "title" : "MedicationRequest Category Codes",
-      "description" : "MedicationRequest Category Codes",
-      "oids" : ["2.16.840.1.113883.4.642.1.1323"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-medicationrequest-category.html" : "Medication request  category  codes"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "MedicationRequestCourseOfTherapyCodes",
-      "title" : "MedicationRequest Course of Therapy Codes",
-      "description" : "MedicationRequest Course of Therapy Codes",
-      "oids" : ["2.16.840.1.113883.4.642.1.1327"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html" : "Medication request  course of  therapy  codes"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "MedicationRequestStatusReasonCodes",
-      "title" : "MedicationRequest Status Reason Codes",
-      "description" : "MedicationRequest Status Reason Codes",
-      "oids" : ["2.16.840.1.113883.4.642.1.1325"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html" : "Medication request  status  reason  codes"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "version" : "0.1.0",
       "status" : "draft",
@@ -408,9 +168,7 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1125"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes",
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-clinical-result-observation-category.html" : "US Core Clinical Result Observation Category",
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category"
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
@@ -423,18 +181,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v2-0116",
-      "version" : "2.2.0",
-      "status" : "active",
-      "name" : "BedStatus",
-      "title" : "bedStatus",
-      "description" : "Code system of concepts which specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.  Used in HL7 Version 2.x messaging in the DLD and PV1 segments.",
-      "oids" : ["2.16.840.1.113883.18.47"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -459,66 +205,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v2-0371",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "AdditivePreservative",
-      "title" : "additivePreservative",
-      "description" : "HL7-defined code system of concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in HL7 Version 2.x messaging in the SPM and SAC segments.",
-      "oids" : ["2.16.840.1.113883.18.229"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "Treatment",
-      "title" : "treatment",
-      "description" : "Code system of concepts that identify the specimen treatment performed during lab processing.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
-      "oids" : ["2.16.840.1.113883.18.231"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-specimen-processing-procedure.html" : "Specimen processing procedure"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v2-0493",
-      "version" : "2.2.0",
-      "status" : "active",
-      "name" : "SpecimenCondition",
-      "title" : "specimenCondition",
-      "description" : "Code system of concepts specifying a mode or state of being that describes the nature of the specimen.  Used in HL7 Version 2.x messaging in the SPM segment.",
-      "oids" : ["2.16.840.1.113883.18.317"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
-      "version" : "2.2.0",
-      "status" : "active",
-      "name" : "RelevantClincialInformation",
-      "title" : "relevantClincialInformation",
-      "description" : "Code system of concepts specifying additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies. Used in HL7 Version 2.x messaging in the OBR segment.",
-      "oids" : ["2.16.840.1.113883.18.422"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "ActReason",
-      "title" : "ActReason",
-      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
-      "oids" : ["2.16.840.1.113883.5.8"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
@@ -557,30 +243,6 @@
       "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-      "version" : "2.2.0",
-      "status" : "active",
-      "name" : "RoleCode",
-      "title" : "RoleCode",
-      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
-      "oids" : ["2.16.840.1.113883.5.111"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "SubstanceAdminSubstitution",
-      "title" : "Substance Admin Substitution",
-      "description" : "Identifies what sort of change is permitted or has occurred between the therapy that was ordered and the therapy that was/will be provided.",
-      "oids" : ["2.16.840.1.113883.5.1070"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
-    },
-    {
       "url" : "http://unitsofmeasure.org",
       "version" : "3.0.1",
       "status" : "active",
@@ -590,56 +252,7 @@
       "oids" : ["2.16.840.1.113883.6.8"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units",
-      "http://hl7.org/fhir/R4/valueset-ucum-common.html" : "Common UCUM units"
-    },
-    {
-      "url" : "http://www.ada.org/cdt",
-      "version" : "3.0.1",
-      "status" : "active",
-      "name" : "CDT",
-      "title" : "Code on Dental Procedures and Nomenclature",
-      "description" : "The purpose of the CDT Code is to achieve uniformity, consistency and specificity in accurately documenting dental treatment. One use of the CDT Code is to provide for the efficient processing of dental claims, and another is to populate an Electronic Health Record.",
-      "oids" : ["2.16.840.1.113883.6.13"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
-    },
-    {
-      "url" : "http://www.ama-assn.org/go/cpt",
-      "version" : "3.0.1",
-      "status" : "active",
-      "name" : "CPT",
-      "title" : "Current Procedural Terminology (CPT®)",
-      "description" : "The Current Procedural Terminology (CPT) code set, created and maintained by the American Medical Association, is the language of medicine today and the code to its future. This system of terminology is the most widely accepted medical nomenclature used to report medical procedures and services under public and private health insurance programs. CPT coding is also used for administrative management purposes such as claims processing and developing guidelines for medical care review. Each year, via a rigorous, evidence-based and transparent process, the independent CPT Editorial Panel revises, creates or deletes hundreds of codes in order to reflect current medical practice.\r\n\r\nDesignated by the U.S. Department of Health and Human Services under the Health Insurance Portability and Accountability Act (HIPAA) as a national coding set for physician and other health care professional services and procedures, CPT’s evidence-based codes accurately encompass the full range of health care services.\r\n\r\nAll CPT codes are five-digits and can be either numeric or alphanumeric, depending on the category. CPT code descriptors are clinically focused and utilize common standards so that a diverse set of users can have common understanding across the clinical health care paradigm.\r\n\r\nThere are various types of CPT codes:\r\n\r\nCategory I: These codes have descriptors that correspond to a procedure or service. Codes range from 00100–99499 and are generally ordered into sub-categories based on procedure/service type and anatomy.\r\n\r\nCategory II: These alphanumeric tracking codes are supplemental codes used for performance measurement. Using them is optional and not required for correct coding.\r\n\r\nCategory III: These are temporary alphanumeric codes for new and developing technology, procedures and services. They were created for data collection, assessment and in some instances, payment of new services and procedures that currently don’t meet the criteria for a Category I code.\r\n\r\nProprietary Laboratory Analyses (PLA) codes: These codes describe proprietary clinical laboratory analyses and can be either provided by a single (“solesource”) laboratory or licensed or marketed to multiple providing laboratories that are cleared or approved by the Food and Drug Administration (FDA)). This category includes but is not limited to Advanced Diagnostic Laboratory Tests (ADLTs) and Clinical Diagnostic Laboratory Tests (CDLTs), as defined under the Protecting Access to Medicare Act of 2014 (PAMA).",
-      "oids" : ["2.16.840.1.113883.6.12"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
-    },
-    {
-      "url" : "http://www.cms.gov/Medicare/Coding/ICD10",
-      "version" : "2.0.1",
-      "status" : "active",
-      "name" : "Icd10PCS",
-      "title" : "ICD-10 Procedure Codes",
-      "description" : "ICD Procedure Coding System (ICD 10 PCS)",
-      "oids" : ["2.16.840.1.113883.6.4"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
-    },
-    {
-      "url" : "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "HCPCSLevelII",
-      "title" : "Healthcare Common Procedure Coding System (HCPCS) level II alphanumeric codes",
-      "description" : "The Level II HCPCS codes, which are established by CMS's Alpha-Numeric Editorial Panel, primarily represent items and supplies and non-physician services not covered by the American Medical Association's Current Procedural Terminology-4 (CPT-4) codes; Medicare, Medicaid, and private health insurers use HCPCS procedure and modifier codes for claims processing.  Level II alphanumeric procedure and modifier codes comprise the A to V range.",
-      "oids" : ["2.16.840.1.113883.6.285"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+      "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units"
     },
     {
       "url" : "urn:ietf:bcp:47",
@@ -651,8 +264,8 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier",
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
     }
   ]
 }

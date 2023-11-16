@@ -3,84 +3,12 @@
   "version": "0.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
-  "extensions": [
-    {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence",
-      "title": "US Core Medication Adherence Extension",
-      "types": [
-        "CodeableConcept",
-        "dateTime",
-        "Reference",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
     "Observation": [
       {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference",
-        "title": "US Core Treatment Intervention Preference Profile"
-      }
-    ],
-    "Location": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
-        "title": "US Core Location Profile"
-      }
-    ],
-    "MedicationRequest": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
-        "title": "US Core MedicationRequest Profile"
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure",
+        "title": "US Core Average Blood Pressure Profile"
       }
     ],
     "Patient": [
@@ -88,32 +16,10 @@
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
         "title": "US Core Patient Profile"
       }
-    ],
-    "Procedure": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
-        "title": "US Core Procedure Profile"
-      }
-    ],
-    "Specimen": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen",
-        "title": "US Core Specimen Profile"
-      }
-    ],
-    "MedicationStatement": [
-      {
-        "url": "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationstatement",
-        "title": "US Core MedicationStatement"
-      }
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationUsage.adherence": [
-      "MedicationStatement"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
-      "StructureDefinition.differential.element.constraint",
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
@@ -122,11 +28,7 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
-      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
@@ -134,70 +36,27 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
       "StructureDefinition.differential.element.type",
-      "StructureDefinition.differential.element.type.targetProfile",
-      "StructureDefinition.snapshot.element.type",
-      "StructureDefinition.snapshot.element.type.targetProfile"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/instance-description": [
-      "Location.meta",
-      "MedicationRequest.meta",
-      "MedicationStatement.meta",
-      "Observation.meta",
-      "Procedure.meta",
-      "Questionnaire.meta",
-      "QuestionnaireResponse.meta",
-      "Specimen.meta"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/instance-name": [
-      "Location.meta",
-      "MedicationRequest.meta",
-      "MedicationStatement.meta",
-      "Observation.meta",
-      "Procedure.meta",
-      "Questionnaire.meta",
-      "QuestionnaireResponse.meta",
-      "Specimen.meta"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/ordinalValue": [
-      "Questionnaire.item.answerOption"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl": [
-      "Questionnaire.item",
-      "Questionnaire.item.item"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix": [
-      "Questionnaire.item.answerOption"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/questionnaire-unit": [
-      "Questionnaire.item"
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
-      "CodeSystem",
       "ImplementationGuide",
-      "StructureDefinition",
-      "ValueSet"
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "CodeSystem",
       "ImplementationGuide",
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",
       "ImplementationGuide.definition.page.page.page",
-      "StructureDefinition",
-      "StructureDefinition.snapshot.element",
-      "ValueSet"
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -225,9 +84,6 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity": [
       "Patient"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence": [
-      "MedicationRequest"
-    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
     ],
@@ -240,9 +96,6 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
-    ],
-    "http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-medicationrequest-compliance-extension": [
-      "MedicationRequest"
     ]
   }
 }
