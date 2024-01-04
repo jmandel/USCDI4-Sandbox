@@ -444,18 +444,17 @@
                 "path": "Patient.address.line",
                 "example": [
                     {
-                        "label": "General",
+                        "label": "US Core",
                         "valueString": "49 MEADOW ST"
-                    }
-                ],
-                "_example": [
+                    },
                     {
                         "extension": [
                             {
                                 "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-suppress",
                                 "valueBoolean": true
                             }
-                        ]
+                        ],
+                        "label": "General"
                     }
                 ],
                 "mustSupport": true,

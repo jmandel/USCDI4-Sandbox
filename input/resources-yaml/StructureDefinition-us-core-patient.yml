@@ -293,17 +293,19 @@ differential:
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
       \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: home | work | temp | old
       | billing - purpose of this address"
+
   - id: Patient.address.line
     path: Patient.address.line
     example:
-    - 
-        label: General
-        valueString: '49 MEADOW ST'
-    
-    _example:
+    - label: US Core
+      valueString: 49 MEADOW ST
     - extension:
       - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-suppress
         valueBoolean: true
+      # label: $all
+      label: General
+      valueString: 137 Nowhere Street
+
 
     mustSupport: true
     mapping:

@@ -37,7 +37,7 @@ Value Set Sources:
 {% endif %}
 {% assign base_URL = item.URL | split: 'ValueSet/' | first %}
 {% assign stem_URL = item.URL | split: 'ValueSet/' | last %}
-{% assign vs_link = site.data.source[base_URL][1] | replace: "{{stem_URL}}", stem_URL | replace: "{{site.data.fhir.path}}", {{site.data.fhir.path}} %}
+{% assign vs_link = site.data.source[base_URL][1] | replace: "{{stem_URL}}", stem_URL | replace: "{{site.data.fhir.path}}", {{site.data.fhir.path}} | replace: "v2-2.7-0360", "v2-0360" %}
 <tr>
 <td>{{forloop.index}}</td>
 <td><a href="{{vs_link}}">{{item.Title}}</a></td>
