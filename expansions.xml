@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e0d624b8-a8ee-45cd-9cdc-1f910ca60e83"/>
+  <id value="f207ddd5-464f-4d5a-8dc6-e7ff8ffdf472"/>
   <meta>
-    <lastUpdated value="2023-11-16T20:45:40.298+00:00"/>
+    <lastUpdated value="2024-01-04T19:46:43.836+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,7 +13,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 16 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -21,6 +20,7 @@
                 <li>Loinc v2.74</li>
               </ul>
             </div>
+            <p>This value set contains 16 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -178,8 +178,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:55cab732-79c5-40e8-b4b7-31fb0ef1dce9"/>
-          <timestamp value="2023-11-16T20:46:21+00:00"/>
+          <identifier value="urn:uuid:7fb631a5-6f65-4d7b-a6e3-73eeea9e7abe"/>
+          <timestamp value="2024-01-04T19:47:28+00:00"/>
           <total value="16"/>
           <parameter>
             <name value="excludeNested"/>
@@ -292,7 +292,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 11 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -300,6 +299,7 @@
                 <li>Loinc v2.74</li>
               </ul>
             </div>
+            <p>This value set contains 11 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -417,8 +417,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:26f578b5-7d5d-4be8-a7ad-fdf6d9226ac2"/>
-          <timestamp value="2023-11-16T20:46:21+00:00"/>
+          <identifier value="urn:uuid:cdafc2e0-acfd-4a29-9295-32b60d825418"/>
+          <timestamp value="2024-01-04T19:47:28+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>

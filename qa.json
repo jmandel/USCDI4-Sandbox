@@ -1,13 +1,16 @@
 {
   "url" : "http://www.fhir.org/guides/uscdi4-sandbox/ImplementationGuide/uscdi4-sandbox",
   "name" : "USCDI4_1Sandbox",
+  "title" : "HealtheData1 USCDI4 Sandbox",
+  "description" : "This is a **Healthedata1** sandbox for creation of USCDI4 resources and examples",
+  "status" : "active",
   "package-id" : "uscdi4-sandbox",
   "ig-ver" : "0.0.0",
-  "date" : "Thu, 16 Nov, 2023 20:45:40 +0000",
+  "date" : "Thu, 04 Jan, 2024 19:46:43 +0000",
   "errs" : 14,
   "warnings" : 1,
-  "hints" : 6,
+  "hints" : 5,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 4113652752
+  "maxMemory" : 3442242464
 }

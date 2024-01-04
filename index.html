@@ -146,7 +146,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">HealtheData1 USCDI4 Sandbox - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">HealtheData1 USCDI4 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Home</h2>
   
 
@@ -290,9 +290,9 @@ updated:
 
 <tr>
 <td>1</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
-<td>FHIR</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode">ActEncounterCode</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>THO</td>
 </tr>
 
 
@@ -305,9 +305,9 @@ updated:
 
 <tr>
 <td>2</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
-<td>FHIR</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType">ActPharmacySupplyType</a></td>
+<td>StructureDefinition/us-core-medicationdispense</td>
+<td>THO</td>
 </tr>
 
 
@@ -320,9 +320,9 @@ updated:
 
 <tr>
 <td>3</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-observation-category.html">Observation Category Codes</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
-<td>FHIR</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v3-ActPriority">ActPriority</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>THO</td>
 </tr>
 
 
@@ -335,9 +335,9 @@ updated:
 
 <tr>
 <td>4</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">Observation Interpretation Codes</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
-<td>FHIR</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode">ActSubstanceAdminSubstitutionCode</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-medicationdispense</td>
+<td>THO</td>
 </tr>
 
 
@@ -350,8 +350,8 @@ updated:
 
 <tr>
 <td>5</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">Observation Methods</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-address-type.html">AddressType</a></td>
+<td>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-patient<br/>StructureDefinition/us-core-location<br/>StructureDefinition/us-core-organization</td>
 <td>FHIR</td>
 </tr>
 
@@ -365,8 +365,8 @@ updated:
 
 <tr>
 <td>6</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">Observation Reference Range Applies To Codes</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-address-use.html">AddressUse</a></td>
+<td>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-patient<br/>StructureDefinition/us-core-location<br/>StructureDefinition/us-core-organization</td>
 <td>FHIR</td>
 </tr>
 
@@ -380,8 +380,8 @@ updated:
 
 <tr>
 <td>7</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">Observation Reference Range Meaning Codes</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-administrative-gender.html">AdministrativeGender</a></td>
+<td>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-patient<br/>StructureDefinition/us-core-relatedperson</td>
 <td>FHIR</td>
 </tr>
 
@@ -395,8 +395,8 @@ updated:
 
 <tr>
 <td>8</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-encounter-admit-source.html">Admit source</a></td>
+<td>StructureDefinition/us-core-encounter</td>
 <td>FHIR</td>
 </tr>
 
@@ -410,8 +410,8 @@ updated:
 
 <tr>
 <td>9</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-quantity-comparator.html">QuantityComparator</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-allergyintolerance-clinical.html">AllergyIntolerance Clinical Status Codes</a></td>
+<td>StructureDefinition/us-core-allergyintolerance</td>
 <td>FHIR</td>
 </tr>
 
@@ -425,8 +425,8 @@ updated:
 
 <tr>
 <td>10</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMED CT Body Structures</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-allergyintolerance-verification.html">AllergyIntolerance Verification Status Codes</a></td>
+<td>StructureDefinition/us-core-allergyintolerance</td>
 <td>FHIR</td>
 </tr>
 
@@ -440,9 +440,9 @@ updated:
 
 <tr>
 <td>11</td>
-<td><a name="l603">​</a><a href="ValueSet-us-core-vital-signs.html">US Core Vital Signs ValueSet</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
-<td>US CORE</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-allergy-intolerance-category.html">AllergyIntoleranceCategory</a></td>
+<td>StructureDefinition/us-core-allergyintolerance</td>
+<td>FHIR</td>
 </tr>
 
 
@@ -455,9 +455,3144 @@ updated:
 
 <tr>
 <td>12</td>
-<td><a href="http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html">Vital Signs Units</a></td>
-<td>StructureDefinition/us-core-average-blood-pressure</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-allergy-intolerance-criticality.html">AllergyIntoleranceCriticality</a></td>
+<td>StructureDefinition/us-core-allergyintolerance</td>
 <td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>13</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-reaction-event-severity.html">AllergyIntoleranceSeverity</a></td>
+<td>StructureDefinition/us-core-allergyintolerance</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>14</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-allergy-intolerance-type.html">AllergyIntoleranceType</a></td>
+<td>StructureDefinition/us-core-allergyintolerance</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>15</td>
+<td><a name="l685">​</a><a href="ValueSet-birthsex.html">Birth Sex</a></td>
+<td>StructureDefinition/us-core-birthsex</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>16</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-ucum-bodylength.html">Body Length Units</a></td>
+<td>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-height</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>17</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-ucum-bodytemp.html">Body Temperature Units</a></td>
+<td>StructureDefinition/us-core-body-temperature</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>18</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html">Body Weight Units</a></td>
+<td>StructureDefinition/us-core-body-weight</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>19</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1010.6/expansion">CVX Vaccines Administered Vaccine Set</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>20</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html">Care Plan Activity Kind</a></td>
+<td>StructureDefinition/us-core-careplan</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>21</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html">Care Plan Activity Outcome</a></td>
+<td>StructureDefinition/us-core-careplan</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>22</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-care-plan-category.html">Care Plan Category</a></td>
+<td>StructureDefinition/us-core-careplan</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>23</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-care-plan-intent.html">Care Plan Intent</a></td>
+<td>StructureDefinition/us-core-careplan</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>24</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.30/expansion">Care Team Member Function</a></td>
+<td>StructureDefinition/us-core-careteam<br/>StructureDefinition/us-core-practitionerrole</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>25</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-care-team-category.html">Care Team category</a></td>
+<td>StructureDefinition/us-core-careteam</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>26</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-status.html">CarePlanActivityStatus</a></td>
+<td>StructureDefinition/us-core-careplan</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>27</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-care-team-status.html">CareTeamStatus</a></td>
+<td>StructureDefinition/us-core-careteam</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>28</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-site.html">Codes for Immunization Site of Administration</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>29</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a></td>
+<td>StructureDefinition/us-core-specimen<br/>StructureDefinition/us-core-documentreference<br/>StructureDefinition/us-core-observation-pregnancyintent<br/>StructureDefinition/us-core-procedure<br/>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/us-core-careplan<br/>StructureDefinition/us-core-organization<br/>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-practitionerrole<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-smokingstatus<br/>StructureDefinition/us-core-patient<br/>StructureDefinition/us-core-provenance<br/>StructureDefinition/us-core-observation-clinical-result<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-questionnaireresponse<br/>StructureDefinition/us-core-condition-encounter-diagnosis<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-implantable-device<br/>StructureDefinition/us-core-observation-pregnancystatus<br/>StructureDefinition/us-core-medicationdispense<br/>StructureDefinition/us-core-treatment-intervention-preference<br/>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/us-core-diagnosticreport-lab<br/>StructureDefinition/us-core-encounter<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-coverage<br/>StructureDefinition/us-core-servicerequest<br/>StructureDefinition/us-core-simple-observation<br/>StructureDefinition/us-core-diagnosticreport-note<br/>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-care-experience-preference<br/>StructureDefinition/us-core-medication<br/>StructureDefinition/us-core-careteam<br/>StructureDefinition/us-core-goal<br/>StructureDefinition/us-core-observation-screening-assessment<br/>StructureDefinition/us-core-relatedperson<br/>StructureDefinition/us-core-immunization<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-observation-occupation<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-observation-sexual-orientation<br/>StructureDefinition/us-core-location<br/>StructureDefinition/us-core-allergyintolerance<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>30</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1186.8/expansion">Common substances for allergy and intolerance documentation including refutations</a></td>
+<td>StructureDefinition/us-core-allergyintolerance</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>31</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>32</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-condition-category.html">Condition Category Codes</a></td>
+<td>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-condition-encounter-diagnosis</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>33</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">Condition Clinical Status Codes</a></td>
+<td>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-condition-encounter-diagnosis</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>34</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">Condition Stage</a></td>
+<td>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-condition-encounter-diagnosis</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>35</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">Condition Stage Type</a></td>
+<td>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-condition-encounter-diagnosis</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>36</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/Diagnosis Severity</a></td>
+<td>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-condition-encounter-diagnosis</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>37</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/Diagnosis Codes</a></td>
+<td>StructureDefinition/us-core-procedure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>38</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a></td>
+<td>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-condition-encounter-diagnosis</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>39</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">Contact entity type</a></td>
+<td>StructureDefinition/us-core-organization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>40</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-contact-point-system.html">ContactPointSystem</a></td>
+<td>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-patient<br/>StructureDefinition/us-core-practitionerrole<br/>StructureDefinition/us-core-organization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>41</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-contact-point-use.html">ContactPointUse</a></td>
+<td>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-patient<br/>StructureDefinition/us-core-practitionerrole<br/>StructureDefinition/us-core-organization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>42</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-coverage-class.html">Coverage Class Codes</a></td>
+<td>StructureDefinition/us-core-coverage</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>43</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-coverage-copay-type.html">Coverage Copay Type Codes</a></td>
+<td>StructureDefinition/us-core-coverage</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>44</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a></td>
+<td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/us-core-observation-pregnancyintent<br/>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/us-core-simple-observation<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-smokingstatus<br/>StructureDefinition/us-core-care-experience-preference<br/>StructureDefinition/us-core-observation-clinical-result<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-observation-screening-assessment<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-observation-pregnancystatus<br/>StructureDefinition/us-core-observation-occupation<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-treatment-intervention-preference<br/>StructureDefinition/us-core-observation-sexual-orientation<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>45</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-days-of-week.html">DaysOfWeek</a></td>
+<td>StructureDefinition/us-core-practitionerrole<br/>StructureDefinition/us-core-location</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>46</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.877/expansion">Detailed Ethnicity</a></td>
+<td>ValueSet/detailed-ethnicity</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>47</td>
+<td><a name="l1377">​</a><a href="ValueSet-detailed-race.html">Detailed Race</a></td>
+<td>StructureDefinition/us-core-race</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>48</td>
+<td><a name="l1393">​</a><a href="ValueSet-detailed-ethnicity.html">Detailed ethnicity</a></td>
+<td>StructureDefinition/us-core-ethnicity</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>49</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-device-nametype.html">DeviceNameType</a></td>
+<td>StructureDefinition/us-core-implantable-device</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>50</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>51</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html">Diagnostic Service Section Codes</a></td>
+<td>StructureDefinition/us-core-diagnosticreport-note<br/>StructureDefinition/us-core-diagnosticreport-lab</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>52</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html">DiagnosticReportStatus</a></td>
+<td>StructureDefinition/us-core-diagnosticreport-note<br/>StructureDefinition/us-core-diagnosticreport-lab</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>53</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-encounter-diet.html">Diet</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>54</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-document-classcodes.html">Document Class Value Set</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>55</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html">Document Type Value Set</a></td>
+<td>OperationDefinition/docref</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>56</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-formatcodes.html">DocumentReference Format Code Set</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>57</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>58</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>59</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-dose-rate-type.html">DoseAndRateType</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-medicationdispense</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>60</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">Encounter Reason Codes</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>61</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-encounter-location-status.html">EncounterLocationStatus</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>62</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>63</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.837/expansion">Ethnicity</a></td>
+<td>ValueSet/omb-ethnicity-category</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>64</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-event-status.html">EventStatus</a></td>
+<td>StructureDefinition/us-core-procedure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>65</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-coverage-financial-exception.html">Example Coverage Financial Exception Codes</a></td>
+<td>StructureDefinition/us-core-coverage</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>66</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.24/expansion">Extended Pregnancy Status</a></td>
+<td>ValueSet/us-core-pregnancy-status</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>67</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-device-kind.html">FHIR Device Types</a></td>
+<td>StructureDefinition/us-core-implantable-device<br/>StructureDefinition/us-core-procedure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>68</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-specimen-collection-method.html">FHIR Specimen Collection Method</a></td>
+<td>StructureDefinition/us-core-specimen</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>69</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-device-status.html">FHIRDeviceStatus</a></td>
+<td>StructureDefinition/us-core-implantable-device</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>70</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-device-status-reason.html">FHIRDeviceStatusReason</a></td>
+<td>StructureDefinition/us-core-implantable-device</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>71</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html">Facility Type Code Value Set</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>72</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-fm-status.html">Financial Resource Status Codes</a></td>
+<td>StructureDefinition/us-core-coverage</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>73</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.32/expansion">Gender Identity</a></td>
+<td>StructureDefinition/us-core-genderIdentity</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>74</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-goal-achievement.html">Goal achievement status</a></td>
+<td>StructureDefinition/us-core-goal</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>75</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-goal-category.html">Goal category</a></td>
+<td>StructureDefinition/us-core-goal</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>76</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-goal-priority.html">Goal priority</a></td>
+<td>StructureDefinition/us-core-goal</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>77</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-goal-start-event.html">Goal start event</a></td>
+<td>StructureDefinition/us-core-goal</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>78</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-goal-status.html">GoalLifecycleStatus</a></td>
+<td>StructureDefinition/us-core-goal</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>79</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion">Healthcare Provider Taxonomy</a></td>
+<td>StructureDefinition/us-core-practitionerrole</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>80</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-identifier-type.html">IdentifierType</a></td>
+<td>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-patient<br/>StructureDefinition/us-core-encounter<br/>StructureDefinition/us-core-coverage<br/>StructureDefinition/us-core-organization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>81</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-identifier-use.html">IdentifierUse</a></td>
+<td>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-patient<br/>StructureDefinition/us-core-encounter<br/>StructureDefinition/us-core-coverage<br/>StructureDefinition/us-core-organization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>82</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-function.html">Immunization Function Codes</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>83</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-funding-source.html">Immunization Funding Source</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>84</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-origin.html">Immunization Origin Codes</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>85</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-program-eligibility.html">Immunization Program Eligibility</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>86</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-reason.html">Immunization Reason Codes</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>87</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-route.html">Immunization Route Codes</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>88</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-status.html">Immunization Status Codes</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>89</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-status-reason.html">Immunization Status Reason Codes</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>90</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-subpotent-reason.html">Immunization Subpotent Reason</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>91</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-immunization-target-disease.html">Immunization Target Disease Codes</a></td>
+<td>StructureDefinition/us-core-immunization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>92</td>
+<td><a href="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7900">Industry NAICS Detail (ODH)</a></td>
+<td>StructureDefinition/us-core-observation-occupation</td>
+<td>PHINVADS</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>93</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINC Codes</a></td>
+<td>StructureDefinition/us-core-care-experience-preference<br/>StructureDefinition/us-core-observation-pregnancystatus<br/>StructureDefinition/us-core-goal<br/>StructureDefinition/us-core-observation-occupation<br/>StructureDefinition/us-core-observation-pregnancyintent<br/>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-observation-clinical-result<br/>StructureDefinition/us-core-treatment-intervention-preference<br/>StructureDefinition/us-core-observation-screening-assessment<br/>StructureDefinition/us-core-observation-sexual-orientation<br/>StructureDefinition/us-core-smokingstatus<br/>StructureDefinition/us-core-simple-observation</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>94</td>
+<td><a name="l2175">​</a><a href="ValueSet-simple-language.html">Language codes with language and optionally a region modifier</a></td>
+<td>StructureDefinition/us-core-patient</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>95</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-link-type.html">LinkType</a></td>
+<td>StructureDefinition/us-core-patient</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>96</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">Location type</a></td>
+<td>StructureDefinition/us-core-encounter<br/>StructureDefinition/us-core-location</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>97</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-location-mode.html">LocationMode</a></td>
+<td>StructureDefinition/us-core-location</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>98</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a></td>
+<td>StructureDefinition/us-core-location</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>99</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">Manifestation and Symptom Codes</a></td>
+<td>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-condition-encounter-diagnosis</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>100</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-marital-status.html">MaritalStatus</a></td>
+<td>StructureDefinition/us-core-patient</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>101</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medication-status.html">Medication  status  codes</a></td>
+<td>StructureDefinition/us-core-medication</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>102</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1010.4/expansion">Medication Clinical Drug</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-medication<br/>StructureDefinition/us-core-medicationdispense</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>103</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medicationdispense-category.html">Medication dispense  category  codes</a></td>
+<td>StructureDefinition/us-core-medicationdispense</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>104</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medicationdispense-performer-function.html">Medication dispense  performer  function  codes</a></td>
+<td>StructureDefinition/us-core-medicationdispense</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>105</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medicationdispense-status.html">Medication dispense  status  codes</a></td>
+<td>StructureDefinition/us-core-medicationdispense</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>106</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medicationdispense-status-reason.html">Medication dispense  status  reason  codes</a></td>
+<td>StructureDefinition/us-core-medicationdispense</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>107</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">Medication request  category  codes</a></td>
+<td>StructureDefinition/us-core-medicationrequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>108</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html">Medication request  course of  therapy  codes</a></td>
+<td>StructureDefinition/us-core-medicationrequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>109</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">Medication request  intent</a></td>
+<td>StructureDefinition/us-core-medicationrequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>110</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html">Medication request  status  reason  codes</a></td>
+<td>StructureDefinition/us-core-medicationrequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>111</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">Medicationrequest  status</a></td>
+<td>StructureDefinition/us-core-medicationrequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>112</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-mimetypes.html">MimeType</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>113</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-name-use.html">NameUse</a></td>
+<td>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-patient</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>114</td>
+<td><a name="l2505">​</a><a href="ValueSet-omb-ethnicity-category.html">OMB Ethnicity Categories</a></td>
+<td>StructureDefinition/us-core-ethnicity</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>115</td>
+<td><a name="l2521">​</a><a href="ValueSet-omb-race-category.html">OMB Race Categories</a></td>
+<td>StructureDefinition/us-core-race</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>116</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1/expansion">ONC Administrative Sex</a></td>
+<td>ValueSet/birthsex</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>117</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-observation-category.html">Observation Category Codes</a></td>
+<td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/us-core-observation-pregnancyintent<br/>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/us-core-simple-observation<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-smokingstatus<br/>StructureDefinition/us-core-care-experience-preference<br/>StructureDefinition/us-core-observation-clinical-result<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-observation-screening-assessment<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-observation-pregnancystatus<br/>StructureDefinition/us-core-observation-occupation<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-treatment-intervention-preference<br/>StructureDefinition/us-core-observation-sexual-orientation<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>118</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">Observation Interpretation Codes</a></td>
+<td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/us-core-observation-pregnancyintent<br/>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/us-core-simple-observation<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-smokingstatus<br/>StructureDefinition/us-core-care-experience-preference<br/>StructureDefinition/us-core-observation-clinical-result<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-observation-screening-assessment<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-observation-pregnancystatus<br/>StructureDefinition/us-core-observation-occupation<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-treatment-intervention-preference<br/>StructureDefinition/us-core-observation-sexual-orientation<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>119</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">Observation Methods</a></td>
+<td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/us-core-observation-pregnancyintent<br/>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/us-core-simple-observation<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-smokingstatus<br/>StructureDefinition/us-core-care-experience-preference<br/>StructureDefinition/us-core-observation-clinical-result<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-observation-screening-assessment<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-observation-pregnancystatus<br/>StructureDefinition/us-core-observation-occupation<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-treatment-intervention-preference<br/>StructureDefinition/us-core-observation-sexual-orientation<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>120</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">Observation Reference Range Applies To Codes</a></td>
+<td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/us-core-observation-pregnancyintent<br/>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/us-core-simple-observation<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-smokingstatus<br/>StructureDefinition/us-core-care-experience-preference<br/>StructureDefinition/us-core-observation-clinical-result<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-observation-screening-assessment<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-observation-pregnancystatus<br/>StructureDefinition/us-core-observation-occupation<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-treatment-intervention-preference<br/>StructureDefinition/us-core-observation-sexual-orientation<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>121</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">Observation Reference Range Meaning Codes</a></td>
+<td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/us-core-observation-pregnancyintent<br/>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/us-core-simple-observation<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-smokingstatus<br/>StructureDefinition/us-core-care-experience-preference<br/>StructureDefinition/us-core-observation-clinical-result<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-observation-screening-assessment<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-observation-pregnancystatus<br/>StructureDefinition/us-core-observation-occupation<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-treatment-intervention-preference<br/>StructureDefinition/us-core-observation-sexual-orientation<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>122</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a></td>
+<td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/us-core-care-experience-preference<br/>StructureDefinition/us-core-observation-pregnancyintent<br/>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-observation-clinical-result<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/us-core-observation-screening-assessment<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/us-core-simple-observation<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-observation-pregnancystatus<br/>StructureDefinition/us-core-observation-occupation<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-treatment-intervention-preference<br/>StructureDefinition/us-core-observation-sexual-orientation<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>123</td>
+<td><a href="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7901">Occupation ONETSOC Detail (ODH)</a></td>
+<td>StructureDefinition/us-core-observation-occupation</td>
+<td>PHINVADS</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>124</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-organization-type.html">Organization type</a></td>
+<td>StructureDefinition/us-core-organization</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>125</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.103/expansion">Other or unknown or refused to answer</a></td>
+<td>ValueSet/birthsex<br/>ValueSet/detailed-ethnicity<br/>ValueSet/detailed-race</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>126</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-participant-role.html">Participant Roles</a></td>
+<td>StructureDefinition/us-core-servicerequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>127</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">Participant type</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>128</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html">Patient Contact Relationship </a></td>
+<td>StructureDefinition/us-core-patient</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>129</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html">Patient relationship type</a></td>
+<td>StructureDefinition/us-core-relatedperson</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>130</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.3591/expansion">Payer Type</a></td>
+<td>StructureDefinition/us-core-coverage</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>131</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-c80-practice-codes.html">Practice Setting Code Value Set</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>132</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1166.22/expansion">Pregnancy Intention</a></td>
+<td>ValueSet/us-core-pregnancy-intent</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>133</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-procedure-category.html">Procedure Category Codes (SNOMED CT)</a></td>
+<td>StructureDefinition/us-core-procedure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>134</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">Procedure Codes (SNOMED CT)</a></td>
+<td>StructureDefinition/us-core-careplan</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>135</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-device-action.html">Procedure Device Action Codes</a></td>
+<td>StructureDefinition/us-core-procedure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>136</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-procedure-followup.html">Procedure Follow up Codes (SNOMED CT)</a></td>
+<td>StructureDefinition/us-core-procedure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>137</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html">Procedure Not Performed Reason (SNOMED-CT)</a></td>
+<td>StructureDefinition/us-core-procedure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>138</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-procedure-outcome.html">Procedure Outcome Codes (SNOMED CT)</a></td>
+<td>StructureDefinition/us-core-procedure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>139</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-performer-role.html">Procedure Performer Role Codes</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-procedure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>140</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-provenance-activity-type.html">Provenance activity type</a></td>
+<td>StructureDefinition/us-core-provenance</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>141</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-provenance-agent-type.html">Provenance participant type</a></td>
+<td>StructureDefinition/us-core-provenance</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>142</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-provenance-entity-role.html">ProvenanceEntityRole</a></td>
+<td>StructureDefinition/us-core-provenance</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>143</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse">PurposeOfUse</a></td>
+<td>StructureDefinition/us-core-provenance</td>
+<td>THO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>144</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-quantity-comparator.html">QuantityComparator</a></td>
+<td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>145</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">Questionnaire Answer Codes</a></td>
+<td>StructureDefinition/us-core-questionnaireresponse</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>146</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-questionnaire-answers-status.html">QuestionnaireResponseStatus</a></td>
+<td>StructureDefinition/us-core-questionnaireresponse</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>147</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.836/expansion">Race</a></td>
+<td>ValueSet/omb-race-category</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>148</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.14914/expansion">Race Value Set</a></td>
+<td>ValueSet/detailed-race</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>149</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-request-priority.html">Request priority</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-servicerequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>150</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-request-intent.html">RequestIntent</a></td>
+<td>StructureDefinition/us-core-servicerequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>151</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-request-status.html">RequestStatus</a></td>
+<td>StructureDefinition/us-core-careplan<br/>StructureDefinition/us-core-servicerequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>152</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-resource-types.html">Resource Types</a></td>
+<td>StructureDefinition/us-core-provenance</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>153</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html">SNOMED CT Additional Dosage Instructions</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-medicationdispense</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>154</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-administration-method-codes.html">SNOMED CT Administration Method Codes</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-medicationdispense</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>155</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-approach-site-codes.html">SNOMED CT Anatomical Structure for Administration Site Codes</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-medicationdispense</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>156</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMED CT Body Structures</a></td>
+<td>StructureDefinition/us-core-specimen<br/>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/us-core-observation-pregnancyintent<br/>StructureDefinition/us-core-procedure<br/>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/us-core-servicerequest<br/>StructureDefinition/us-core-simple-observation<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-smokingstatus<br/>StructureDefinition/us-core-care-experience-preference<br/>StructureDefinition/us-core-observation-clinical-result<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-observation-screening-assessment<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/us-core-condition-encounter-diagnosis<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-observation-pregnancystatus<br/>StructureDefinition/us-core-observation-occupation<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-treatment-intervention-preference<br/>StructureDefinition/us-core-observation-sexual-orientation<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>157</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-clinical-findings.html">SNOMED CT Clinical Findings</a></td>
+<td>StructureDefinition/us-core-diagnosticreport-note<br/>StructureDefinition/us-core-diagnosticreport-lab<br/>StructureDefinition/us-core-careteam<br/>StructureDefinition/us-core-goal<br/>StructureDefinition/us-core-careplan<br/>StructureDefinition/us-core-allergyintolerance</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>158</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medication-form-codes.html">SNOMED CT Form Codes</a></td>
+<td>StructureDefinition/us-core-medication</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>159</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMED CT Medication As Needed Reason Codes</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-medicationdispense<br/>StructureDefinition/us-core-servicerequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>160</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMED CT Medication Codes</a></td>
+<td>StructureDefinition/us-core-careplan</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>161</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-route-codes.html">SNOMED CT Route Codes</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-medicationdispense<br/>StructureDefinition/us-core-allergyintolerance</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>162</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-security-labels.html">SecurityLabels</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>163</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a></td>
+<td>StructureDefinition/us-core-provenance</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>164</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-servicerequest-category.html">Service Request Category Codes</a></td>
+<td>ValueSet/us-core-servicerequest-category<br/>StructureDefinition/us-core-servicerequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>165</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html">Service Request Order Details Codes</a></td>
+<td>StructureDefinition/us-core-servicerequest</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>166</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-service-type.html">Service type</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>167</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType">ServiceDeliveryLocationRoleType</a></td>
+<td>StructureDefinition/us-core-location<br/>StructureDefinition/us-core-servicerequest</td>
+<td>THO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>168</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.3/expansion">Sex</a></td>
+<td>StructureDefinition/us-core-sex</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>169</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.38/expansion">Smoking Status</a></td>
+<td>StructureDefinition/us-core-smokingstatus</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>170</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html">Special arrangements</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>171</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html">Special courtesy</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>172</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-specimen-container-type.html">Specimen Container Type</a></td>
+<td>StructureDefinition/us-core-specimen</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>173</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-specimen-processing-procedure.html">Specimen processing procedure</a></td>
+<td>StructureDefinition/us-core-specimen</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>174</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.54/expansion">Specimen type</a></td>
+<td>StructureDefinition/us-core-specimen</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>175</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-specimen-status.html">SpecimenStatus</a></td>
+<td>StructureDefinition/us-core-specimen</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>176</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-subscriber-relationship.html">SubscriberPolicyholder Relationship Codes</a></td>
+<td>StructureDefinition/us-core-coverage</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>177</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-substance-code.html">Substance Code</a></td>
+<td>StructureDefinition/us-core-allergyintolerance</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>178</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason">SubstanceAdminSubstitutionReason</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-medicationdispense</td>
+<td>THO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>179</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v3-TribalEntityUS">TribalEntityUS</a></td>
+<td>StructureDefinition/us-core-tribal-affiliation</td>
+<td>THO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>180</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-udi-entry-type.html">UDIEntryType</a></td>
+<td>StructureDefinition/us-core-implantable-device</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>181</td>
+<td><a name="l3985">​</a><a href="ValueSet-us-core-clinical-note-type.html">US Core Clinical Note Type</a></td>
+<td></td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>182</td>
+<td><a name="l4000">​</a><a href="ValueSet-us-core-clinical-result-observation-category.html">US Core Clinical Result Observation Category</a></td>
+<td>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-observation-clinical-result</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>183</td>
+<td><a name="l4018">​</a><a href="ValueSet-us-core-condition-code.html">US Core Condition Codes</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-procedure<br/>StructureDefinition/us-core-servicerequest<br/>StructureDefinition/us-core-condition-encounter-diagnosis</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>184</td>
+<td><a name="l4042">​</a><a href="ValueSet-us-core-diagnosticreport-category.html">US Core Diagnostic Report Category Codes</a></td>
+<td>StructureDefinition/us-core-diagnosticreport-note</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>185</td>
+<td><a name="l4058">​</a><a href="ValueSet-us-core-discharge-disposition.html">US Core Discharge Disposition</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>186</td>
+<td><a name="l4074">​</a><a href="ValueSet-us-core-documentreference-category.html">US Core DocumentReference Category</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>187</td>
+<td><a name="l4090">​</a><a href="ValueSet-us-core-documentreference-type.html">US Core DocumentReference Type</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>188</td>
+<td><a name="l4106">​</a><a href="ValueSet-us-core-encounter-type.html">US Core Encounter Type</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>189</td>
+<td><a name="l4122">​</a><a href="ValueSet-us-core-goal-description.html">US Core Goal Codes</a></td>
+<td>StructureDefinition/us-core-goal</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>190</td>
+<td><a name="l4138">​</a><a href="ValueSet-us-core-laboratory-test-codes.html">US Core Laboratory Test Codes</a></td>
+<td>StructureDefinition/us-core-diagnosticreport-lab<br/>StructureDefinition/us-core-observation-lab</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>191</td>
+<td><a name="l4156">​</a><a href="ValueSet-us-core-narrative-status.html">US Core Narrative Status</a></td>
+<td>StructureDefinition/us-core-careplan</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>192</td>
+<td><a name="l4172">​</a><a href="ValueSet-us-core-diagnosticreport-report-and-note-codes.html">US Core Non Laboratory Codes</a></td>
+<td>StructureDefinition/us-core-diagnosticreport-note</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>193</td>
+<td><a name="l4188">​</a><a href="ValueSet-us-core-observation-value-codes.html">US Core Observation Value Codes (SNOMED-CT)</a></td>
+<td></td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>194</td>
+<td><a name="l4203">​</a><a href="ValueSet-us-core-pregnancy-intent.html">US Core Pregnancy Intent Codes</a></td>
+<td>StructureDefinition/us-core-observation-pregnancyintent</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>195</td>
+<td><a name="l4219">​</a><a href="ValueSet-us-core-pregnancy-status.html">US Core Pregnancy Status Codes</a></td>
+<td>StructureDefinition/us-core-observation-pregnancystatus</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>196</td>
+<td><a name="l4235">​</a><a href="ValueSet-us-core-problem-or-health-concern.html">US Core Problem or Health Concern</a></td>
+<td>StructureDefinition/us-core-condition-problems-health-concerns</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>197</td>
+<td><a name="l4251">​</a><a href="ValueSet-us-core-procedure-code.html">US Core Procedure Codes</a></td>
+<td>StructureDefinition/us-core-procedure<br/>StructureDefinition/us-core-servicerequest</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>198</td>
+<td><a name="l4269">​</a><a href="ValueSet-us-core-provenance-participant-type.html">US Core Provenance Participant Type Codes</a></td>
+<td>StructureDefinition/us-core-provenance</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>199</td>
+<td><a name="l4285">​</a><a href="ValueSet-us-core-screening-assessment-condition-category.html">US Core Screening Assessment Condition Category</a></td>
+<td>StructureDefinition/us-core-condition-problems-health-concerns</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>200</td>
+<td><a name="l4301">​</a><a href="ValueSet-us-core-screening-assessment-observation-category.html">US Core Screening Assessment Observation Category</a></td>
+<td>StructureDefinition/us-core-observation-screening-assessment</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>201</td>
+<td><a name="l4317">​</a><a href="ValueSet-us-core-servicerequest-category.html">US Core ServiceRequest Category Codes</a></td>
+<td>StructureDefinition/us-core-servicerequest</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>202</td>
+<td><a name="l4333">​</a><a href="ValueSet-us-core-sexual-orientation.html">US Core Sexual Orientation</a></td>
+<td>StructureDefinition/us-core-observation-sexual-orientation</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>203</td>
+<td><a name="l4349">​</a><a href="ValueSet-us-core-simple-observation-category.html">US Core Simple Observation Category</a></td>
+<td>StructureDefinition/us-core-simple-observation</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>204</td>
+<td><a name="l4365">​</a><a href="ValueSet-simple-observation.html">US Core Simple Observation Codes</a></td>
+<td></td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>205</td>
+<td><a name="l4380">​</a><a href="ValueSet-us-core-observation-smokingstatus-max.html">US Core Smoking Status Max-Binding</a></td>
+<td></td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>206</td>
+<td><a name="l4395">​</a><a href="ValueSet-us-core-smoking-status-observation-codes.html">US Core Smoking Status Observation Codes</a></td>
+<td>StructureDefinition/us-core-smokingstatus</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>207</td>
+<td><a name="l4411">​</a><a href="ValueSet-us-core-observation-smoking-status-status.html">US Core Status for Smoking Status Observation</a></td>
+<td>StructureDefinition/us-core-smokingstatus</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>208</td>
+<td><a name="l4427">​</a><a href="ValueSet-us-core-survey-codes.html">US Core Survey Codes</a></td>
+<td>StructureDefinition/us-core-observation-screening-assessment</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>209</td>
+<td><a name="l4443">​</a><a href="ValueSet-us-core-vital-signs.html">US Core Vital Signs ValueSet</a></td>
+<td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>210</td>
+<td><a name="l4485">​</a><a href="ValueSet-us-core-usps-state.html">USPS Two Letter Alphabetic Codes</a></td>
+<td>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-patient<br/>StructureDefinition/us-core-location<br/>StructureDefinition/us-core-jurisdiction<br/>StructureDefinition/us-core-organization</td>
+<td>US CORE</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>211</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.102/expansion">Unknown or refused to answer</a></td>
+<td>ValueSet/omb-ethnicity-category<br/>ValueSet/omb-race-category</td>
+<td>VSAC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>212</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html">Vital Signs</a></td>
+<td>ValueSet/us-core-vital-signs</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>213</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html">Vital Signs Units</a></td>
+<td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-blood-pressure</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>214</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v2-0371">hl7VS-additivePreservative</a></td>
+<td>StructureDefinition/us-core-specimen</td>
+<td>THO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>215</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v2-0116">hl7VS-bedStatus</a></td>
+<td>StructureDefinition/us-core-location</td>
+<td>THO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>216</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v2-0092">hl7VS-re-admissionIndicator</a></td>
+<td>StructureDefinition/us-core-encounter</td>
+<td>THO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>217</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v2-0916">hl7VS-relevantClincialInformation</a></td>
+<td>StructureDefinition/us-core-specimen</td>
+<td>THO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>218</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v2-0493">hl7VS-specimenCondition</a></td>
+<td>StructureDefinition/us-core-specimen</td>
+<td>THO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>219</td>
+<td><a href="http://hl7.org/fhir/R4/valueset-ucum-common.html">null</a></td>
+<td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-medicationdispense</td>
+<td>FHIR</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>220</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v2-0360">v2 table 0360</a></td>
+<td>FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)</td>
+<td>THO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>221</td>
+<td><a href="http://terminology.hl7.org/ValueSet/v3-ActCode">v3 Code System ActCode</a></td>
+<td>StructureDefinition/us-core-documentreference</td>
+<td>THO</td>
 </tr>
 
 
@@ -485,12 +3620,13 @@ updated:
 
 <ul>
   <li><a href="http://hl7.org/fhir/R4/">FHIR</a></li>
-  <li><a name="l652">​</a><a href="terminology.html">US CORE</a>
+  <li><a name="l4732">​</a><a href="terminology.html">US CORE</a>
   <!-- - [PHINVADS](http://phinvads.cdc.gov/fhir/) --></li>
   <li><a href="http://terminology.hl7.org/">THO</a></li>
   <li><a href="http://snomed.info/sct">SNOMED</a></li>
   <li><a href="http://loinc.org">LOINC</a></li>
   <li><a href="http://unitsofmeasure.org">UCUM</a></li>
+  <li><a href="https://www.cdc.gov/index.htm">CDC</a></li>
   <li>Code systems published by other standards organizations</li>
 </ul>
 
@@ -506,6 +3642,7 @@ updated:
 </thead>
 <tbody>
  
+
 
    <!-- THO -->
 
@@ -524,6 +3661,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -540,6 +3678,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -558,6 +3697,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -575,9 +3715,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>5</td>
@@ -594,9 +3737,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>6</td>
@@ -613,9 +3759,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>7</td>
@@ -631,6 +3780,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -649,13 +3799,16 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
 
+  <!-- fix bad link -->
+
 <tr>
 <td>9</td>
-<td><a name="l896">​</a><a href="http://hl7.org/fhir/R4/codesystem-fhir-types.html">All FHIR Types</a></td>
+<td><a href="http://hl7.org/fhir/codesystem-fhir-types.html">All FHIR Types</a></td>
 <td><code>http://hl7.org/fhir/fhir-types</code></td>
 <td>ValueSet/resource-types</td>
 <td>FHIR</td>
@@ -667,6 +3820,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -685,6 +3839,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -702,9 +3857,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>12</td>
@@ -721,9 +3879,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>13</td>
@@ -740,9 +3901,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>14</td>
@@ -759,9 +3923,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>15</td>
@@ -778,9 +3945,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>16</td>
@@ -797,9 +3967,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>17</td>
@@ -815,7 +3988,8 @@ updated:
 
 
  
-   <!-- rest e.g. UCUM , SNOMED, LOiNC -->
+
+   <!-- Other sources - us URL as link -->
 
 <tr>
 <td>18</td>
@@ -832,9 +4006,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>19</td>
@@ -850,6 +4027,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -868,6 +4046,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -884,6 +4063,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -902,6 +4082,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -919,9 +4100,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>24</td>
@@ -938,9 +4122,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>25</td>
@@ -956,6 +4143,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -974,6 +4162,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -991,6 +4180,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1007,7 +4197,8 @@ updated:
 
 
  
-   <!-- rest e.g. UCUM , SNOMED, LOiNC -->
+
+   <!-- Other sources - us URL as link -->
 
 <tr>
 <td>29</td>
@@ -1023,6 +4214,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1041,6 +4233,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1058,9 +4251,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>32</td>
@@ -1077,9 +4273,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>33</td>
@@ -1095,6 +4294,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1113,9 +4313,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>35</td>
@@ -1131,6 +4334,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1149,6 +4353,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1166,9 +4371,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>38</td>
@@ -1185,9 +4393,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>39</td>
@@ -1203,6 +4414,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1221,9 +4433,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>41</td>
@@ -1239,6 +4454,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1257,9 +4473,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>43</td>
@@ -1276,9 +4495,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>44</td>
@@ -1294,6 +4516,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1312,9 +4535,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>46</td>
@@ -1330,6 +4556,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1348,9 +4575,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>48</td>
@@ -1366,6 +4596,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1384,6 +4615,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1400,6 +4632,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1418,9 +4651,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>52</td>
@@ -1436,7 +4672,8 @@ updated:
 
 
  
-   <!-- rest e.g. UCUM , SNOMED, LOiNC -->
+
+   <!-- Other sources - us URL as link -->
 
 <tr>
 <td>53</td>
@@ -1452,7 +4689,8 @@ updated:
 
 
  
-   <!-- rest e.g. UCUM , SNOMED, LOiNC -->
+
+   <!-- Other sources - us URL as link -->
 
 <tr>
 <td>54</td>
@@ -1469,9 +4707,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>55</td>
@@ -1487,6 +4728,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1505,6 +4747,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1521,6 +4764,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1539,6 +4783,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1556,16 +4801,16 @@ updated:
 
  
 
-   <!-- fhir -->
+
 
 
 
 <tr>
 <td>60</td>
-<td><a name="l2024">​</a><a href="http://hl7.org/fhir/R4/codesystem-sid/icd-10-cm.html">International Classification of Diseases</a></td>
+<td><a href="https://www.cdc.gov/nchs/icd/icd-10-cm.htm">International Classification of Diseases</a></td>
 <td><code>http://hl7.org/fhir/sid/icd-10-cm</code></td>
 <td> Clinical Modification (ICD-10-CM)</td>
-<td>FHIR</td>
+<td>CDC</td>
 </tr>
 
 
@@ -1575,9 +4820,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>61</td>
@@ -1593,6 +4841,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1611,9 +4860,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>63</td>
@@ -1630,9 +4882,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>64</td>
@@ -1651,6 +4906,7 @@ updated:
 
 
 
+
 <tr>
 <td>65</td>
 <td><a href="http://loinc.org">Logical Observation Identifiers Names and Codes (LOINC)</a></td>
@@ -1665,6 +4921,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1682,6 +4939,7 @@ updated:
 
 
  
+
 
    <!-- fhir -->
 
@@ -1701,14 +4959,17 @@ updated:
 
 
  
-   <!-- rest e.g. UCUM , SNOMED, LOiNC -->
+
+
+   <!-- THO -->
+
 
 <tr>
 <td>68</td>
-<td><a name="l2226">​</a><a href="http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category">Medication dispense  category  codes</a></td>
+<td>Medication dispense  category  codes</td>
 <td><code>http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category</code></td>
 <td>ValueSet/medicationdispense-category</td>
-<td>Other</td>
+<td>THO</td>
 </tr>
 
 
@@ -1718,11 +4979,13 @@ updated:
 
  
 
+
    <!-- THO -->
+
 
 <tr>
 <td>69</td>
-<td><a name="l2248">​</a><a href="http://terminology.hl7.org/CodeSystem/medicationdispense-status">Medication dispense  status  codes</a></td>
+<td>Medication dispense  status  codes</td>
 <td><code>http://terminology.hl7.org/CodeSystem/medicationdispense-status</code></td>
 <td>ValueSet/medicationdispense-status</td>
 <td>THO</td>
@@ -1734,14 +4997,17 @@ updated:
 
 
  
-   <!-- rest e.g. UCUM , SNOMED, LOiNC -->
+
+
+   <!-- THO -->
+
 
 <tr>
 <td>70</td>
-<td><a name="l2270">​</a><a href="http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason">Medication dispense  status  reason  codes</a></td>
+<td>Medication dispense  status  reason  codes</td>
 <td><code>http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason</code></td>
 <td>ValueSet/medicationdispense-status-reason</td>
-<td>Other</td>
+<td>THO</td>
 </tr>
 
 
@@ -1750,6 +5016,7 @@ updated:
 
 
  
+
 
    <!-- fhir -->
 
@@ -1770,6 +5037,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1786,6 +5054,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1804,6 +5073,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1821,6 +5091,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1837,6 +5108,7 @@ updated:
 
 
  
+
 
    <!-- fhir -->
 
@@ -1857,9 +5129,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>77</td>
@@ -1876,9 +5151,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>78</td>
@@ -1894,6 +5172,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1912,6 +5191,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1928,6 +5208,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1946,6 +5227,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -1963,9 +5245,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>83</td>
@@ -1981,6 +5266,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -1999,6 +5285,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2015,6 +5302,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2033,6 +5321,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2049,6 +5338,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2067,6 +5357,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2084,9 +5375,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>90</td>
@@ -2103,9 +5397,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>91</td>
@@ -2122,9 +5419,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>92</td>
@@ -2141,9 +5441,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>93</td>
@@ -2160,9 +5463,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>94</td>
@@ -2179,9 +5485,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>95</td>
@@ -2198,9 +5507,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>96</td>
@@ -2216,6 +5528,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2234,6 +5547,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2250,6 +5564,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2270,6 +5585,7 @@ updated:
 
 
 
+
 <tr>
 <td>100</td>
 <td><a href="http://snomed.info/sct">SNOMED CT (all versions)</a></td>
@@ -2284,6 +5600,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2302,6 +5619,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2318,7 +5636,8 @@ updated:
 
 
  
-   <!-- rest e.g. UCUM , SNOMED, LOiNC -->
+
+   <!-- Other sources - us URL as link -->
 
 <tr>
 <td>103</td>
@@ -2334,6 +5653,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2352,9 +5672,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>105</td>
@@ -2370,6 +5693,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2388,6 +5712,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2405,7 +5730,8 @@ updated:
 
  
 
-   <!-- no link e.g urn or OID -->
+   <!-- rest with no link e.g urn or OID -->
+
 
 <tr>
 <td>108</td>
@@ -2421,6 +5747,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2439,9 +5766,12 @@ updated:
 
  
 
+
    <!-- fhir -->
 
 
+
+  <!-- fix bad link -->
 
 <tr>
 <td>110</td>
@@ -2458,13 +5788,14 @@ updated:
 
  
 
+
   <!-- US Core -->
 
 
 
 <tr>
 <td>111</td>
-<td><a name="l3301">​</a><a href="CodeSystem-us-core-category.html">US Core Category</a></td>
+<td><a name="l7460">​</a><a href="CodeSystem-us-core-category.html">US Core Category</a></td>
 <td><code>http://hl7.org/fhir/us/core/CodeSystem/us-core-category</code></td>
 <td>ValueSet/us-core-screening-assessment-observation-category<br/>ValueSet/us-core-simple-observation-category<br/>ValueSet/us-core-screening-assessment-condition-category<br/>ValueSet/us-core-servicerequest-category</td>
 <td>US CORE</td>
@@ -2477,13 +5808,14 @@ updated:
 
  
 
+
   <!-- US Core -->
 
 
 
 <tr>
 <td>112</td>
-<td><a name="l3329">​</a><a href="CodeSystem-condition-category.html">US Core Condition Category Extension Codes</a></td>
+<td><a name="l7488">​</a><a href="CodeSystem-condition-category.html">US Core Condition Category Extension Codes</a></td>
 <td><code>http://hl7.org/fhir/us/core/CodeSystem/condition-category</code></td>
 <td>ValueSet/us-core-problem-or-health-concern</td>
 <td>US CORE</td>
@@ -2496,13 +5828,14 @@ updated:
 
  
 
+
   <!-- US Core -->
 
 
 
 <tr>
 <td>113</td>
-<td><a name="l3351">​</a><a href="CodeSystem-us-core-documentreference-category.html">US Core DocumentReferences Category Codes</a></td>
+<td><a name="l7510">​</a><a href="CodeSystem-us-core-documentreference-category.html">US Core DocumentReferences Category Codes</a></td>
 <td><code>http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category</code></td>
 <td>ValueSet/us-core-documentreference-category</td>
 <td>US CORE</td>
@@ -2515,13 +5848,14 @@ updated:
 
  
 
+
   <!-- US Core -->
 
 
 
 <tr>
 <td>114</td>
-<td><a name="l3373">​</a><a href="CodeSystem-us-core-provenance-participant-type.html">US Core Provenance Participant Type Extension Codes</a></td>
+<td><a name="l7532">​</a><a href="CodeSystem-us-core-provenance-participant-type.html">US Core Provenance Participant Type Extension Codes</a></td>
 <td><code>http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type</code></td>
 <td>ValueSet/us-core-provenance-participant-type</td>
 <td>US CORE</td>
@@ -2533,6 +5867,7 @@ updated:
 
 
  
+
 
 
 
@@ -2551,16 +5886,16 @@ updated:
 
  
 
-   <!-- fhir -->
+
 
 
 
 <tr>
 <td>116</td>
-<td><a name="l3423">​</a><a href="http://hl7.org/fhir/R4/codesystem-sid/cvx.html">Vaccine Administered Code Set (CVX)</a></td>
+<td><a href="https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx">Vaccine Administered Code Set (CVX)</a></td>
 <td><code>http://hl7.org/fhir/sid/cvx</code></td>
 <td>ValueSet/2.16.840.1.113762.1.4.1010.6</td>
-<td>FHIR</td>
+<td>CDC</td>
 </tr>
 
 
@@ -2569,6 +5904,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2587,6 +5923,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2603,6 +5940,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2621,6 +5959,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2638,6 +5977,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2654,7 +5994,8 @@ updated:
 
 
  
-   <!-- rest e.g. UCUM , SNOMED, LOiNC -->
+
+   <!-- Other sources - us URL as link -->
 
 <tr>
 <td>122</td>
@@ -2670,6 +6011,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2688,6 +6030,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2704,6 +6047,7 @@ updated:
 
 
  
+
 
    <!-- THO -->
 
@@ -2722,6 +6066,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2739,6 +6084,7 @@ updated:
 
  
 
+
    <!-- THO -->
 
 <tr>
@@ -2751,6 +6097,8 @@ updated:
 
 </tbody>
 </table>
+
+<p>http://hl7.org/fhir/R4/codesystem-fhir-types.html</p>
 
 <p>☝☝☝</p>
 
@@ -2779,7 +6127,7 @@ updated:
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 16, 2023 20:45+0000">2023-11-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 4, 2024 19:46+0000">2024-01-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
