@@ -46,8 +46,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-uscore-common-sdoh-assessments.html" : "US Core Common SDOH Assessments ValueSet",
-      "ValueSet-uscore-pa-codes.html" : "US Core PA Codes ValueSet"
+      "ValueSet-uscore-pa-codes.html" : "US Core PA Codes ValueSet",
+      "ValueSet-uscore-common-sdoh-assessments.html" : "US Core Common SDOH Assessments ValueSet"
     },
     {
       "url" : "urn:ietf:bcp:47",

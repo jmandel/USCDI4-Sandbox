@@ -1,7 +1,7 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json	7817	-	0	0	0	0	0	0	4	111	0	0	0	0	0	0	0	0	0	0	123	148	0	0	1	5	0	3
-input/examples/Observation-average-blood-pressure.json	3720	24	0	0	0	0	0	0	0	258	0	0	0	0	0	0	0	0	0	0	24	33	0	0	0	0	0	0
-input/resources/StructureDefinition-us-core-average-blood-pressure.json	7404	27	0	0	0	0	0	388	1	323	0	0	1	0	0	0	0	2	0	0	658	3058	0	0	0	29	0	5
-input/resources/StructureDefinition-us-core-patient.json	23836	46	1	0	0	0	0	235	0	265	0	0	0	0	0	0	0	1	0	0	596	1084	0	0	0	23	0	5
-input/resources/ValueSet-uscore-common-sdoh-assessments.json	3041	20	0	0	0	0	0	0	0	174	0	0	0	0	0	0	0	0	0	0	22	16223	0	0	0	1	0	0
-input/resources/ValueSet-uscore-pa-codes.json	2547	30	0	0	0	0	0	0	0	50	0	0	0	0	0	0	0	0	0	0	15	254	0	0	0	1	0	0
+/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json	7817	-	0	0	0	0	0	0	4	102	0	0	0	0	0	0	0	0	0	0	128	130	0	0	0	4	0	2
+input/examples/Observation-average-blood-pressure.json	3720	21	1	0	0	0	0	0	1	295	0	0	0	0	0	0	0	0	1	0	27	36	0	0	0	0	0	0
+input/resources/StructureDefinition-us-core-average-blood-pressure.json	7404	17	0	0	1	0	0	344	0	267	0	0	0	0	0	0	0	4	0	0	739	2831	0	0	0	28	0	6
+input/resources/StructureDefinition-us-core-patient.json	23836	46	0	0	0	0	0	265	0	234	0	0	1	0	0	0	0	2	0	0	592	841	0	0	0	23	1	4
+input/resources/ValueSet-uscore-common-sdoh-assessments.json	3041	20	0	0	0	0	0	0	0	178	0	0	0	0	0	0	0	0	0	0	32	16541	0	0	0	1	0	0
+input/resources/ValueSet-uscore-pa-codes.json	2547	18	0	0	0	0	0	0	0	47	0	0	0	0	0	0	0	0	0	0	22	247	0	0	0	1	0	0

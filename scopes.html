@@ -178,7 +178,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#smart-on-fhir-server-capabilities" id="markdown-toc-smart-on-fhir-server-capabilities">SMART on FHIR Server Capabilities</a>    <ul>
       <li><a href="#servers-shall-support-the-following-smart-on-fhir-capabilities" id="markdown-toc-servers-shall-support-the-following-smart-on-fhir-capabilities">Servers SHALL support the following SMART on FHIR capabilities*:</a></li>
-      <li><a href="#servers-shall-support-token-introspection-" id="markdown-toc-servers-shall-support-token-introspection-">Servers SHALL support Token introspection ….</a></li>
+      <li><a href="#servers-shall-support-token-introspection" id="markdown-toc-servers-shall-support-token-introspection">Servers SHALL support Token introspection</a></li>
       <li><a href="#smart-scopes" id="markdown-toc-smart-scopes">SMART Scopes</a></li>
       <li><a href="#servers-shall-support-the-following-metadata-in-their-well-knownsmart-configuration" id="markdown-toc-servers-shall-support-the-following-metadata-in-their-well-knownsmart-configuration">Servers SHALL support the following metadata in their <code class="language-plaintext highlighter-rouge">/.well-known/smart-configuration</code></a></li>
     </ul>
@@ -203,17 +203,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>…</li>
 </ol>
 
-<p>*these encompass all the capability sets listed in SMART)</p>
+<p>*these encompass all the capability sets listed in SMART</p>
 
-<h3 id="servers-shall-support-token-introspection-">Servers SHALL support Token introspection ….</h3>
+<h3 id="servers-shall-support-token-introspection">Servers SHALL support Token introspection</h3>
 
 <p>intro text  … Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla dui, dignissim sed ultrices vel, ultricies non mauris. Vestibulum sit amet lorem interdum, consequat urna eu, rutrum sapien. Morbi scelerisque, purus non volutpat maximus, orci massa congue nisl, nec lobortis nunc eros et leo.</p>
 
 <h3 id="smart-scopes">SMART Scopes</h3>
 
-<p>To meet the ONC’s granular scope requirement in [HTI-1 proposed rule], the US Core API requires servers to support both [resource level scopes] and [granular scopes] as defined in Version 2.0.0 of [SMART App Launch]. US Core clients should follow the [principle of least privilege] and access only the necessary resources. In other words, if a client needs only vital sign observations, it should request access only to Observations with a category of “vital-signs”. US Core requires scopes (SHALL) for <strong><em>named in the HTI-1 final rule, which requires support for Condition and Observation category scopes, and recommends (SHOULD) granular scopes for specific US Core Profiles defined in US Core and of particular interest to US citizens and health systems.</em></strong></p>
+<p>To meet the ONC’s granular scope requirement in [HTA-1 proposed rule], the US Core API requires servers to support both [resource level scopes] and [granular scopes] as defined in Version 2.0.0 of [SMART App Launch]. US Core clients should follow the [principle of least privilege] and access only the necessary resources. In other words, if a client needs only vital sign observations, it should request access only to Observations with a category of “vital-signs”. US Core requires scopes (SHALL) <strong><em>named in the HTA-1 final rule, which requires support for Condition and Observation category scopes, and recommends (SHOULD) granular scopes for specific US Core Profiles defined in US Core and of particular interest to US citizens and health systems.</em></strong></p>
 
-<p><strong><em>Future versions of US Core will add new required (SHALL) granular scopes based on current or pending federal regulations, and will add new recommended (SHOULD) granular scopes when formally propose new profile with new categories.</em></strong></p>
+<p><strong><em>Future versions of US Core will add required granular scopes based on current or pending federal regulations, and will add recommended granular scopes when formally propose new profile with new categories.</em></strong></p>
 
 <h4 id="scopes-format">Scopes Format</h4>
 <p>Version 2.0.0 of [SMART App Launch] introduced a scope syntax of: <code class="language-plaintext highlighter-rouge">&lt;patient|user|system&gt; / &lt;fhir-resource&gt;. &lt;c | r | u | d |s&gt; [?param=value]</code></p>
@@ -222,15 +222,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><code class="language-plaintext highlighter-rouge">patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory</code>.</p>
 
-<p>The example scopes below use a single FHIR search parameter of category applied to Condition and Observation. They use a <code class="language-plaintext highlighter-rouge">patient/</code> prefix, but implementers can also support <code class="language-plaintext highlighter-rouge">system/</code> and <code class="language-plaintext highlighter-rouge">user/</code>.</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis</code></li>
-  <li><code class="language-plaintext highlighter-rouge">patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item</code></li>
-  <li><code class="language-plaintext highlighter-rouge">patient/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern</code></li>
-  <li><code class="language-plaintext highlighter-rouge">patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|clinical-test</code></li>
-  <li><code class="language-plaintext highlighter-rouge">patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory</code></li>
-</ul>
+<p>This example scopes uses a <code class="language-plaintext highlighter-rouge">patient/</code> prefix, but implementers can also support <code class="language-plaintext highlighter-rouge">system/</code> and <code class="language-plaintext highlighter-rouge">user/</code>.</p>
 
 <h4 id="us-core-scopes">US Core Scopes</h4>
 
@@ -354,6 +346,25 @@ include parameters: conformance='SHALL'|'SHOULD' and crud='cruds' not currently 
 <!-- This liquid script creates a US Core scope requirements table using input data from input/data/scopes.csv 
 include parameters: conformance='SHALL'|'SHOULD' see below for how used, and crud='cruds' not currently used -->
 
+<!--   
+<table class="grid">
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Granular Scope</th>
+</tr>
+</thead>
+<tbody>
+{% for scope in scopes -%}
+<tr>
+<td>{{scope | split: '.' | first }}</td>
+<td><code>{{ scope | prepend: 'patient/' }}</code></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+ -->
+
 <table class="grid">
 <thead>
 <tr>
@@ -364,43 +375,43 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
 <tbody>
 <tr>
 <td>Condition</td>
-<td><code>Condition?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern</code></td>
+<td><code>patient/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern</code></td>
 </tr>
 <tr>
 <td>Condition</td>
-<td><code>Condition?category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis</code></td>
+<td><code>patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis</code></td>
 </tr>
 <tr>
 <td>Condition</td>
-<td><code>Condition?category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item</code></td>
+<td><code>patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|sdoh</code></td>
+<td><code>patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|sdoh</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://terminology.hl7.org//CodeSystem-observation-category.html|social-history</code></td>
+<td><code>patient/Observation.rs?category=http://terminology.hl7.org//CodeSystem-observation-category|social-history</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://terminology.hl7.org/CodeSystem/observation-category|imaging</code></td>
+<td><code>patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|imaging</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory</code></td>
+<td><code>patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://terminology.hl7.org/CodeSystem/observation-category|procedure</code></td>
+<td><code>patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|procedure</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://terminology.hl7.org/CodeSystem/observation-category|survey</code></td>
+<td><code>patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|survey</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code></td>
+<td><code>patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs</code></td>
 </tr>
 
 </tbody>
@@ -411,6 +422,25 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
 <!-- This liquid script creates a US Core scope requirements table using input data from input/data/scopes.csv 
 include parameters: conformance='SHALL'|'SHOULD' see below for how used, and crud='cruds' not currently used -->
 
+<!--   
+<table class="grid">
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Granular Scope</th>
+</tr>
+</thead>
+<tbody>
+{% for scope in scopes -%}
+<tr>
+<td>{{scope | split: '.' | first }}</td>
+<td><code>{{ scope | prepend: 'patient/' }}</code></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+ -->
+
 <table class="grid">
 <thead>
 <tr>
@@ -421,67 +451,67 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
 <tbody>
 <tr>
 <td>DiagnosticReport</td>
-<td><code>DiagnosticReport?category=http://loinc.org|LP29684-5</code></td>
+<td><code>patient/DiagnosticReport.rs?category=http://loinc.org|LP29684-5</code></td>
 </tr>
 <tr>
 <td>DiagnosticReport</td>
-<td><code>DiagnosticReport?category=http://loinc.org|LP29708-2</code></td>
+<td><code>patient/DiagnosticReport.rs?category=http://loinc.org|LP29708-2</code></td>
 </tr>
 <tr>
 <td>DiagnosticReport</td>
-<td><code>DiagnosticReport?category=http://loinc.org|LP7839-6</code></td>
+<td><code>patient/DiagnosticReport.rs?category=http://loinc.org|LP7839-6</code></td>
 </tr>
 <tr>
 <td>DiagnosticReport</td>
-<td><code>DiagnosticReport?category=http://terminology.hl7.org/CodeSystem/v2-0074|LAB</code></td>
+<td><code>patient/DiagnosticReport.rs?category=http://terminology.hl7.org/CodeSystem/v2-0074|LAB</code></td>
 </tr>
 <tr>
 <td>DocumentReference</td>
-<td><code>DocumentReference?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category|clinical-note</code></td>
+<td><code>patient/DocumentReference.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category|clinical-note</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=BAR</code></td>
+<td><code>patient/Observation.rs?category=BAR</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=FOO</code></td>
+<td><code>patient/Observation.rs?category=FOO</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|care-experience-preference</code></td>
+<td><code>patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|care-experience-preference</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|cognitive-status</code></td>
+<td><code>patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|cognitive-status</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|disability-status</code></td>
+<td><code>patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|disability-status</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|functional-status</code></td>
+<td><code>patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|functional-status</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|treatment-intervention-preference</code></td>
+<td><code>patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|treatment-intervention-preference</code></td>
 </tr>
 <tr>
 <td>Observation</td>
-<td><code>Observation?category=http://terminology.hl7.org/CodeSystem/observation-category|activity</code></td>
+<td><code>patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|activity</code></td>
 </tr>
 <tr>
 <td>ServiceRequest</td>
-<td><code>ServiceRequest?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|functional-status</code></td>
+<td><code>patient/ServiceRequest.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|functional-status</code></td>
 </tr>
 <tr>
 <td>ServiceRequest</td>
-<td><code>ServiceRequest?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|sdoh</code></td>
+<td><code>patient/ServiceRequest.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|sdoh</code></td>
 </tr>
 <tr>
 <td>ServiceRequest</td>
-<td><code>ServiceRequest?category=http://snomed.info/sct|surgical-procedure</code></td>
+<td><code>patient/ServiceRequest.rs?category=http://snomed.info/sct|surgical-procedure</code></td>
 </tr>
 
 </tbody>
@@ -530,6 +560,28 @@ servers <strong>SHALL</strong> document their SMART capabilities in the <code cl
 <span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/json</span>
 </code></pre></div></div>
 
+<!-- This liquid script creates a US Core scope requirements table using input data from input/data/scopes.csv 
+include parameters: conformance='SHALL'|'SHOULD' see below for how used, and crud='cruds' not currently used -->
+
+<!--   
+<table class="grid">
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Granular Scope</th>
+</tr>
+</thead>
+<tbody>
+{% for scope in scopes -%}
+<tr>
+<td>{{scope | split: '.' | first }}</td>
+<td><code>{{ scope | prepend: 'patient/' }}</code></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+ -->
+
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"issuer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"jwks_uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/.well-known/jwks.json"</span><span class="p">,</span><span class="w">
@@ -550,54 +602,32 @@ servers <strong>SHALL</strong> document their SMART capabilities in the <code cl
     </span><span class="s2">"launch"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"launch/patient"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"offline_access"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/AllergyIntolerance.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/CarePlan.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/CareTeam.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Condition.rs"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Coverage.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Device.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/DiagnosticReport.rs"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/DiagnosticReport.rs?category=http://loinc.org|LP29684-5"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/DiagnosticReport.rs?category=http://loinc.org|LP29708-2"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/DiagnosticReport.rs?category=http://loinc.org|LP7839-6"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/DiagnosticReport.rs?category=http://terminology.hl7.org/CodeSystem/v2-0074|LAB"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/DocumentReference.rs"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/DocumentReference.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category|clinical-note"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Encounter.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Goal.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Immunization.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/MedicationDispense.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/MedicationRequest.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Observation.rs"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=BAR"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=FOO"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|care-experience-preference"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|cognitive-status"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|disability-status"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|functional-status"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|sdoh"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|treatment-intervention-preference"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org//CodeSystem-observation-category.html|social-history"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org//CodeSystem-observation-category|social-history"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|activity"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|imaging"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|procedure"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|survey"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Organization.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Patient.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Practitioner.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/PractitionerRole.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Procedure.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Provenance.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/QuestionnaireResponse.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/RelatedPerson.rs"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/ServiceRequest.rs"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/ServiceRequest.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|functional-status"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/ServiceRequest.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|sdoh"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/ServiceRequest.rs?category=http://snomed.info/sct|surgical-procedure"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Specimen.rs"</span><span class="w">
+    </span><span class="s2">"patient/ServiceRequest.rs?category=http://snomed.info/sct|surgical-procedure"</span><span class="w">
 
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"response_types_supported"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"code"</span><span class="p">],</span><span class="w">
@@ -642,7 +672,7 @@ servers <strong>SHALL</strong> document their SMART capabilities in the <code cl
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 20, 2024 08:01+0000">2024-02-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 20, 2024 19:37+0000">2024-02-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
