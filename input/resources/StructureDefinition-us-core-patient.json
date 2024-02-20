@@ -454,7 +454,8 @@
                                 "valueBoolean": true
                             }
                         ],
-                        "label": "General"
+                        "label": "General",
+                        "valueString": "137 Nowhere Street"
                     }
                 ],
                 "mustSupport": true,

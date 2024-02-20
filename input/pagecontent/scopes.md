@@ -1,17 +1,30 @@
-~~Because of FHIR's resource-based data model, related but distinct data tend to be grouped together in the same FHIR resource type. The original SMART on FHIR scope syntax (and US regulation) tends to limit authorization servers to granting access to all data in the same FHIR resource type, or not giving access to all. For example, a patient can only share an encounter diagnosis if they share their entire problem list, or a health system can only enable backend access to a patient cohort's SDOH data if it enables access to labs.~~
 
-~~Since version 2.0.0 of [SMART App Launch] clients and servers have more specific control over shared data within a specific resource type using [*granular scopes*](https://hl7.org/fhir/smart-app-launch/scopes-and-launch-context.html#finer-grained-resource-constraints-using-search-parameters). US core encourages user experimentation with granular scope and is seeking general feedback.  In addition, specific feedback is sought on best practices around [scope string length](https://hl7.org/fhir/smart-app-launch/scopes-and-launch-context.html#scope-size-over-the-wire) and JWT-based tokens.~~
+This page is new content for US Core Version 7.0.0
+{:.new-content}
 
+## SMART on FHIR Server Capabilities
 
-Introductory text...
+intro text  ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla dui, dignissim sed ultrices vel, ultricies non mauris. Vestibulum sit amet lorem interdum, consequat urna eu, rutrum sapien. Morbi scelerisque, purus non volutpat maximus, orci massa congue nisl, nec lobortis nunc eros et leo.
+### Servers SHALL support the following SMART on FHIR capabilities*:
 
+intro text  ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla dui, dignissim sed ultrices vel, ultricies non mauris. Vestibulum sit amet lorem interdum, consequat urna eu, rutrum sapien. Morbi scelerisque, purus non volutpat maximus, orci massa congue nisl, nec lobortis nunc eros et leo.
 
-### Granular Scopes
+1. `launch-standalone`
+2. `context-standalone-patient`
+3. `permission-patient`
+4. ...
+   
+\*these encompass all the capability sets listed in SMART)
 
-To meet the ONC's granular scope requirement in [HTI-1 proposed rule]([+https://www.federalregister.gov/d/2023-07229/p-991+]). US Core API requires support for  *granular scopes* as defined in Version 2.0.0 of [SMART App Launch]. US Core requires scopes for:
+### Servers SHALL support Token introspection ....
 
-1. specific data types defined in US Core and 
-2. those of particular interest to US citizens and health systems.
+intro text  ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla dui, dignissim sed ultrices vel, ultricies non mauris. Vestibulum sit amet lorem interdum, consequat urna eu, rutrum sapien. Morbi scelerisque, purus non volutpat maximus, orci massa congue nisl, nec lobortis nunc eros et leo.
+
+### SMART Scopes
+
+To meet the ONC's granular scope requirement in [HTI-1 proposed rule], the US Core API requires servers to support both [resource level scopes] and [granular scopes] as defined in Version 2.0.0 of [SMART App Launch]. US Core clients should follow the [principle of least privilege] and access only the necessary resources. In other words, if a client needs only vital sign observations, it should request access only to Observations with a category of "vital-signs". US Core requires scopes (SHALL) for ***named in the HTI-1 final rule, which requires support for Condition and Observation category scopes, and recommends (SHOULD) granular scopes for specific US Core Profiles defined in US Core and of particular interest to US citizens and health systems.***
+
+***Future versions of US Core will add new required (SHALL) granular scopes based on current or pending federal regulations, and will add new recommended (SHOULD) granular scopes when formally propose new profile with new categories.***
 
 #### Scopes Format
 Version 2.0.0 of [SMART App Launch] introduced a scope syntax of: `<patient|user|system> / <fhir-resource>. <c | r | u | d |s> [?param=value]`
@@ -21,73 +34,58 @@ For example, to limit read and search access to a specific patient's laboratory 
 `patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory`.
 
 
+The example scopes below use a single FHIR search parameter of category applied to Condition and Observation. They use a `patient/` prefix, but implementers can also support `system/` and `user/`.
 
-The example scopes below use a single FHIR search parameter of category applied to Condition and Observation. They use a `system/` prefix, but implementers can also support `patient/` and `user/`.
-
-* `system/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis`
-* `system/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item`
-* `system/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern`
-* `system/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|clinical-test`
-* `system/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory`
+* `patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis`
+* `patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item`
+* `patient/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern`
+* `patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|clinical-test`
+* `patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory`
 
 #### US Core Scopes
 
-The table below summarizes the US Core scope requirements. The same information can be found in each US Core Profile page's "Quick Start" section.
+The table below summarizes the US Core scope requirements (**SHALL**) and best practice recommendations (**SHOULD**) for both resource-level and granular scopes. The same information can be found in each US Core Profile page's "Quick Start" section.
 
-<!-- This liquid script creates a US Core scope requirements table using input data from input/data/scopes.csv -->
+##### The Following Resource Level Scopes **SHALL** Be Supported
 
-{% assign rows = site.data.scopes %}
-{% assign data_element = "" %}
+{% include resource-scopes-table.md conformance="SHALL" crud='rs'%}
 
-{% for item in rows %}
-{% if forloop.first %}
+##### The Following Granular Scopes **SHALL** Be Supported
 
-<table class="grid">
-<thead>
-<tr>
-<th>US Core Profile</th>
-<th>Resource Level Scopes</th>
-<th>Granular Scopes</th>
-</tr>
-</thead>
-<tbody>
-{% endif %}
+{% include granular-scopes-table.md conformance="SHALL" crud='rs' %}
 
-{% unless item.add_scope == "FALSE" %}
-<tr>
-<td><a href="{{item.page_path}}">{{item.profile_title}}</a></td>
-<td><code>patient/{{ scope.resource_type }}.rs</code></td>
-<td>{% if item.category_1 %}
-  <code>{{item.category_1}}</code>
-  {% endif %}
-  {% if item.category_2 %}
-  <br /><code>{{item.category_2}}</code>
-  {% endif %}
-  {% if item.category_3 %}
-  <br /><code>{{item.category_3}}</code>
-  {% endif %}
-  </td>
-</tr>
-{% endunless %}
+##### The Following Granular Scopes **SHOULD** Be Supported
 
-{% if forloop.last %}
-</tbody>
-</table>
-{% endif %}
+{% include granular-scopes-table.md conformance="SHOULD" crud ='rs' %}
 
-{% endfor %}
+### Servers SHALL support the following metadata in their `/.well-known/smart-configuration`
 
- 
+In addition to the capabilities defined in the server's CapabilityStatement,
+servers **SHALL** document their SMART capabilities in the `.well-known/smart-configuration`.
 
-#### US Core Server Obligations
+#### Required Metadata Inherited from SMART:
 
-The scopes are formally defined in a server hosts a [smart-configuration file](http://www.hl7.org/fhir/smart-app-launch/conformance.html#using-well-known) at `[url]/.well-known/smart-configuration` that is available to both authenticated and unauthenticated clients. 
+The following metadata is inherited from SMART.
 
-- The server **SHALL** support all scopes listed here; additional scopes MAY be supported (so clients should not consider this an exhaustive list).
+- `issuer` (conditional)
+- `jwks_uri` (conditional)
+- `authorization_endpoint`
+- `grant_types_supported`
+- `token_endpoint`
+- `capabilities`
+- `code_challenge_methods_supported`
 
-- Servers **MAY** limit clients' scopes to those configured at registration time. Servers **SHOULD** allow users to select a subset of the requested scopes at the approval time. The app **SHOULD** inspect the returned scopes and accommodate the differences from the scopes it requested and registered.
+#### Additional US Core requirements
 
-Example .well-known/smart-configuration file ...with all the US Core scopes...
+- `scopes_supported` : Servers **SHALL** document supported scopes as an array in in the file
+    - The server **SHALL** support all scopes listed in the table above for the US Core Profiles they support; additional scopes **MAY** be supported (so clients should not consider this an exhaustive list). 
+
+    - Servers **MAY** limit clients' scopes to those configured at registration time. Servers **SHALL** allow users to select a subset of the requested scopes at the approval time. The app **SHOULD** inspect the returned scopes and accommodate the differences from the scopes it requested and registered.
+- `introspection_endpoint`: Servers **SHALL** document this endpoint in the file
+
+#### Example `.well-known/smart-configuration` File
+
+This example `.well-known/smart-configuration` file contains all the US Core scopes listed in the capabilities array.  See the [SMART App Launch] Implementation Guide for more example and details.
 
 
 ~~~http
@@ -135,37 +133,8 @@ Content-Type: application/json
 }
 ~~~
  
-{% assign rows = site.data.scopes -%}
-{%  assign my_array = '' -%}
-{% for item in rows -%}
-{% unless forloop.first -%}
-{% unless item.add_scope == "FALSE" -%}
-{%  assign scope = item.resource_type | prepend: '"patient/' | append: '.rs", ' -%}
-{%  assign my_array =  my_array | append: scope -%}
-{% if item.category_1 -%}
-{%  assign resource_type = scope | replace: '", ' | append: '?category=' -%}
-{% assign category = item.category_1 | append: '", ' -%}
-{% assign scope =  resource_type | append: category -%}
-{%  assign my_array =  my_array | append: scope -%}
-{% endif -%}
-{% if item.category_2 -%}
-{% assign category = item.category_2 | append: '", ' -%}
-{% assign scope =  resource_type | append: category -%}
-{%  assign my_array =  my_array | append: scope -%}
-{% endif -%}
-{% if item.category_3 -%}
-{% assign category = item.category_3 | append: '", ' -%}
-{% assign scope =  resource_type | append: category -%}
-{%  assign my_array =  my_array | append: scope -%}
-{% endif -%}
-{% endunless -%}
-{% endunless -%}
-{% endfor -%}
-{% assign my_array = my_array | split: ", " -%}
-{{ my_array | uniq | sort | join: ", " }}
 
-
-
+{% include link-list.md %}
 
 
 
