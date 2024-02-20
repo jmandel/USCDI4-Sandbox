@@ -14,17 +14,17 @@ intro text  ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nul
 3. `permission-patient`
 4. ...
    
-\*these encompass all the capability sets listed in SMART)
+\*these encompass all the capability sets listed in SMART
 
-### Servers SHALL support Token introspection ....
+### Servers SHALL support Token introspection
 
 intro text  ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla dui, dignissim sed ultrices vel, ultricies non mauris. Vestibulum sit amet lorem interdum, consequat urna eu, rutrum sapien. Morbi scelerisque, purus non volutpat maximus, orci massa congue nisl, nec lobortis nunc eros et leo.
 
 ### SMART Scopes
 
-To meet the ONC's granular scope requirement in [HTI-1 proposed rule], the US Core API requires servers to support both [resource level scopes] and [granular scopes] as defined in Version 2.0.0 of [SMART App Launch]. US Core clients should follow the [principle of least privilege] and access only the necessary resources. In other words, if a client needs only vital sign observations, it should request access only to Observations with a category of "vital-signs". US Core requires scopes (SHALL) for ***named in the HTI-1 final rule, which requires support for Condition and Observation category scopes, and recommends (SHOULD) granular scopes for specific US Core Profiles defined in US Core and of particular interest to US citizens and health systems.***
+To meet the ONC's granular scope requirement in [HTA-1 proposed rule], the US Core API requires servers to support both [resource level scopes] and [granular scopes] as defined in Version 2.0.0 of [SMART App Launch]. US Core clients should follow the [principle of least privilege] and access only the necessary resources. In other words, if a client needs only vital sign observations, it should request access only to Observations with a category of "vital-signs". US Core requires scopes (SHALL) ***named in the HTA-1 final rule, which requires support for Condition and Observation category scopes, and recommends (SHOULD) granular scopes for specific US Core Profiles defined in US Core and of particular interest to US citizens and health systems.***
 
-***Future versions of US Core will add new required (SHALL) granular scopes based on current or pending federal regulations, and will add new recommended (SHOULD) granular scopes when formally propose new profile with new categories.***
+***Future versions of US Core will add required granular scopes based on current or pending federal regulations, and will add recommended granular scopes when formally propose new profile with new categories.***
 
 #### Scopes Format
 Version 2.0.0 of [SMART App Launch] introduced a scope syntax of: `<patient|user|system> / <fhir-resource>. <c | r | u | d |s> [?param=value]`
@@ -34,13 +34,8 @@ For example, to limit read and search access to a specific patient's laboratory 
 `patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory`.
 
 
-The example scopes below use a single FHIR search parameter of category applied to Condition and Observation. They use a `patient/` prefix, but implementers can also support `system/` and `user/`.
+This example scopes uses a `patient/` prefix, but implementers can also support `system/` and `user/`.
 
-* `patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis`
-* `patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item`
-* `patient/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern`
-* `patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|clinical-test`
-* `patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory`
 
 #### US Core Scopes
 
@@ -54,9 +49,43 @@ The table below summarizes the US Core scope requirements (**SHALL**) and best p
 
 {% include granular-scopes-table.md conformance="SHALL" crud='rs' %}
 
+<table class="grid">
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Granular Scope</th>
+</tr>
+</thead>
+<tbody>
+{% for scope in scopes -%}
+<tr>
+<td>{{scope | split: '.' | first }}</td>
+<td><code>{{ scope | prepend: 'patient/' }}</code></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
 ##### The Following Granular Scopes **SHOULD** Be Supported
 
 {% include granular-scopes-table.md conformance="SHOULD" crud ='rs' %}
+
+<table class="grid">
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Granular Scope</th>
+</tr>
+</thead>
+<tbody>
+{% for scope in scopes -%}
+<tr>
+<td>{{scope | split: '.' | first }}</td>
+<td><code>{{ scope | prepend: 'patient/' }}</code></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 
 ### Servers SHALL support the following metadata in their `/.well-known/smart-configuration`
 
@@ -93,6 +122,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ~~~
 
+{% include granular-scopes-table.md %}
+
 ~~~json
 {
   "issuer": "https://ehr.example.com",
@@ -114,7 +145,9 @@ Content-Type: application/json
     "launch",
     "launch/patient",
     "offline_access",
-{% include comma-sep-scopes.md %}
+{% for scope in scopes -%}
+    {{ scope | prepend: '    "patient/'}}"{% unless forloop.last %},{% endunless %}
+{% endfor %}
   ],
   "response_types_supported": ["code"],
   "management_endpoint": "https://ehr.example.com/user/manage",
