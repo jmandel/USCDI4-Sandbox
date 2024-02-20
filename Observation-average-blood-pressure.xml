@@ -3,6 +3,12 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="average-blood-pressure"/>
   <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Average Blood Pressure Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)."/>
+    </extension>
     <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure"/>
   </meta>
   <text>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f207ddd5-464f-4d5a-8dc6-e7ff8ffdf472"/>
+  <id value="b4aa64a8-6dfb-4032-bbe3-ea0e5b1f4ed9"/>
   <meta>
-    <lastUpdated value="2024-01-04T19:46:43.836+00:00"/>
+    <lastUpdated value="2024-02-20T08:01:34.171+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,14 +13,8 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>Loinc v2.74</li>
-                <li>Loinc v2.74</li>
-              </ul>
-            </div>
-            <p>This value set contains 16 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has 19 codes in it. In order to keep the publication size manageable, only a selection (16 codes) of the whole set of codes is shown.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -178,9 +172,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7fb631a5-6f65-4d7b-a6e3-73eeea9e7abe"/>
-          <timestamp value="2024-01-04T19:47:28+00:00"/>
-          <total value="16"/>
+          <identifier value="urn:uuid:5ecbdfec-d407-4c34-a8fd-fa10f7151be5"/>
+          <timestamp value="2024-02-20T08:02:04+00:00"/>
+          <total value="19"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -188,10 +191,6 @@
           <parameter>
             <name value="used-valueset"/>
             <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -292,14 +291,8 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>Loinc v2.74</li>
-                <li>Loinc v2.74</li>
-              </ul>
-            </div>
-            <p>This value set contains 11 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <p>This value set contains 11 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -417,9 +410,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cdafc2e0-acfd-4a29-9295-32b60d825418"/>
-          <timestamp value="2024-01-04T19:47:28+00:00"/>
+          <identifier value="urn:uuid:06b95ca7-762f-422a-87ea-b402a6dc5040"/>
+          <timestamp value="2024-02-20T08:02:04+00:00"/>
           <total value="11"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -427,10 +429,6 @@
           <parameter>
             <name value="used-valueset"/>
             <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
