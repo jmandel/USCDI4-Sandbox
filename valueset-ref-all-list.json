@@ -138,8 +138,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile",
-      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
+      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
