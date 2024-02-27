@@ -2,9 +2,8 @@
 include parameters: conformance='SHALL'|'SHOULD' see below for how used, and crud='cruds' not currently used -->
 
 {% assign rows = site.data.scopes -%}
-{%- assign scopes = '' -%}
+{%- assign granular_scopes = '' -%}
 {%- for item in rows -%}
-{%- unless forloop.first -%}
 {%- unless item.add_scope == "FALSE" -%}
 {% for i in (1..6) %}
 {%- assign category =  'category_' | append: i -%}
@@ -12,7 +11,9 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
 
 {%- assign conformance = false -%}
 {%- unless include.conformance -%}
+{%- if 'SHALLSHOULD' contains item[category_conformance] -%}
 {%- assign conformance = true -%}
+{%- endif -%}
 {%- endunless -%}
 {%- if item[category_conformance] == include.conformance -%}
 {%- assign conformance = true -%}
@@ -22,29 +23,9 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
 {%- assign resource_type = item.resource_type | strip | replace: ',' -%}
 {%- assign category = item[category] | strip | append: ',' -%}
 {%- assign scope =  resource_type | append: '.rs?category=' | append: category -%}
-{%- assign scopes =  scopes | append: scope -%}
+{%- assign granular_scopes =  granular_scopes | append: scope -%}
 {%- endif -%}
 {%- endfor -%}
 {%- endunless -%}
-{%- endunless -%}
 {%- endfor -%}
-{%- assign scopes = scopes | split: "," | uniq | sort  %}
-
-<!-- {% raw %}  
-<table class="grid">
-<thead>
-<tr>
-<th>Resource Type</th>
-<th>Granular Scope</th>
-</tr>
-</thead>
-<tbody>
-{% for scope in scopes -%}
-<tr>
-<td>{{scope | split: '.' | first }}</td>
-<td><code>{{ scope | prepend: 'patient/' }}</code></td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-{% endraw %} -->
+{%- assign granular_scopes = granular_scopes | split: "," | uniq | sort  %}

@@ -43,6 +43,23 @@ The table below summarizes the US Core scope requirements (**SHALL**) and best p
 
 {% include resource-scopes-table.md conformance="SHALL" crud='rs'%}
 
+<table class="grid">
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Resource Level Scope</th>
+</tr>
+</thead>
+<tbody>
+{% for resource_scope in resource_scopes -%}
+<tr>
+<td>{{resource_scope}}</td>
+<td><code>{{ resource_scope | prepend: 'patient/' | append: '.rs' }}</code></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
 ##### The Following Granular Scopes **SHALL** Be Supported
 
 {% include granular-scopes-table.md conformance="SHALL" crud='rs' %}
@@ -55,10 +72,10 @@ The table below summarizes the US Core scope requirements (**SHALL**) and best p
 </tr>
 </thead>
 <tbody>
-{% for scope in scopes -%}
+{% for granular_scope in granular_scopes -%}
 <tr>
-<td>{{scope | split: '.' | first }}</td>
-<td><code>{{ scope | prepend: 'patient/' }}</code></td>
+<td>{{granular_scope | split: '.' | first }}</td>
+<td><code>{{ granular_scope | prepend: 'patient/' }}</code></td>
 </tr>
 {% endfor %}
 </tbody>
@@ -76,10 +93,10 @@ The table below summarizes the US Core scope requirements (**SHALL**) and best p
 </tr>
 </thead>
 <tbody>
-{% for scope in scopes -%}
+{% for granular_scope in granular_scopes -%}
 <tr>
-<td>{{scope | split: '.' | first }}</td>
-<td><code>{{ scope | prepend: 'patient/' }}</code></td>
+<td>{{granular_scope | split: '.' | first }}</td>
+<td><code>{{ granular_scope | prepend: 'patient/' }}</code></td>
 </tr>
 {% endfor %}
 </tbody>
@@ -143,9 +160,12 @@ Content-Type: application/json
     "launch",
     "launch/patient",
     "offline_access",
-{% for scope in scopes -%}
-    {{ scope | prepend: '    "patient/'}}"{% unless forloop.last %},{% endunless %}
-{% endfor %}
+{% for resource_scope in resource_scopes -%}
+    {{ resource_scope | prepend: '    "patient/'}}",
+{% endfor -%}
+{% for granular_scope in granular_scopes -%}
+    {{ granular_scope | prepend: '    "patient/'}}"{% unless forloop.last %},{% endunless %}
+{% endfor -%}
   ],
   "response_types_supported": ["code"],
   "management_endpoint": "https://ehr.example.com/user/manage",
