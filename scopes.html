@@ -211,10 +211,14 @@ intro text  … Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nul
 
 <h3 id="smart-scopes">SMART Scopes</h3>
 
-<p>The US Core API requires servers to support both patient-specific [resource level scopes] and [granular scopes] as defined in Version 2.0.0 of [SMART App Launch]. <strong>US Core’s required scopes (SHALL) are based on community-based consensus that the scope meets a system requirement, clinical need, or federal regulation. Similarly, additions to US Core’s recommended scopes (SHOULD) rely on community-based consensus that the scope meets a system requirement or clinical need as a best practice.</strong>
-The US Core required scopes listed below are named in the HTA-1 final rule, which requires support for Condition and Observation category scopes, and the recommends granular scope listed below is of particular interest to patients and health systems.</p>
+<div class="bg-success">
+  <p>SMART’s scopes defined in Version 2.0.0 of the [SMART App Launch] implementation guide allow a client to request the delegation of a specific set of access rights. The US Core API requires servers to support patient-specific [resource level scopes] and [granular scopes] allowing access to specific data about a single patient. US Core’s required scopes (<strong>SHALL</strong>) are based on community-based consensus that the scope meets a system requirement, clinical need, or federal regulation. Similarly, US Core’s recommended scopes (<strong>SHOULD</strong>) rely on community-based consensus that the scope meets a system requirement or clinical need as a best practice.</p>
 
-<p><strong>Although these scopes are limited to patient-specific scopes. servers MAY support other patient-specific, user-level, and system-level scopes.</strong> US Core clients should follow the [principle of least privilege] and access only the necessary resources. In other words, if a client needs only vital sign observations, it should request access only to Observations with a category of “vital-signs”.</p>
+  <p>The US Core required scopes listed below are named in the HTA-1 final rule, which requires support for Condition and Observation category scopes, and the recommended granular scope listed below is of particular interest to patients and health systems.</p>
+
+  <p>Although these scopes are limited to patient-specific scopes. servers MAY support other patient-specific, user-level, and system-level scopes.  US Core clients should follow the [principle of least privilege] and access only the necessary resources. In other words, if a client needs only vital sign observations, it should request access only to Observations with a category of “vital-signs”.</p>
+</div>
+<!-- new-content -->
 
 <h4 id="scopes-format">Scopes Format</h4>
 <p>Version 2.0.0 of [SMART App Launch] introduced a scope syntax of: <code class="language-plaintext highlighter-rouge">&lt;patient|user|system&gt; / &lt;fhir-resource&gt;. &lt;c | r | u | d |s&gt; [?param=value]</code></p>
@@ -562,7 +566,7 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 19:22+0000">2024-02-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 20:05+0000">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
