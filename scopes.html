@@ -265,6 +265,10 @@ include parameters: conformance='SHALL'|'SHOULD' and crud='cruds' not currently 
 <td><code>patient/Device.rs</code></td>
 </tr>
 <tr>
+<td>DiagnosticReport</td>
+<td><code>patient/DiagnosticReport.rs</code></td>
+</tr>
+<tr>
 <td>DocumentReference</td>
 <td><code>patient/DocumentReference.rs</code></td>
 </tr>
@@ -325,6 +329,10 @@ include parameters: conformance='SHALL'|'SHOULD' and crud='cruds' not currently 
 <td><code>patient/RelatedPerson.rs</code></td>
 </tr>
 <tr>
+<td>ServiceRequest</td>
+<td><code>patient/ServiceRequest.rs</code></td>
+</tr>
+<tr>
 <td>Specimen</td>
 <td><code>patient/Specimen.rs</code></td>
 </tr>
@@ -336,25 +344,6 @@ include parameters: conformance='SHALL'|'SHOULD' and crud='cruds' not currently 
 
 <!-- This liquid script creates a US Core scope requirements table using input data from input/data/scopes.csv 
 include parameters: conformance='SHALL'|'SHOULD' see below for how used, and crud='cruds' not currently used -->
-
-<!--   
-<table class="grid">
-<thead>
-<tr>
-<th>Resource Type</th>
-<th>Granular Scope</th>
-</tr>
-</thead>
-<tbody>
-{% for scope in scopes -%}
-<tr>
-<td>{{scope | split: '.' | first }}</td>
-<td><code>{{ scope | prepend: 'patient/' }}</code></td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
- -->
 
 <table class="grid">
 <thead>
@@ -404,25 +393,6 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
 
 <!-- This liquid script creates a US Core scope requirements table using input data from input/data/scopes.csv 
 include parameters: conformance='SHALL'|'SHOULD' see below for how used, and crud='cruds' not currently used -->
-
-<!--   
-<table class="grid">
-<thead>
-<tr>
-<th>Resource Type</th>
-<th>Granular Scope</th>
-</tr>
-</thead>
-<tbody>
-{% for scope in scopes -%}
-<tr>
-<td>{{scope | split: '.' | first }}</td>
-<td><code>{{ scope | prepend: 'patient/' }}</code></td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
- -->
 
 <table class="grid">
 <thead>
@@ -494,25 +464,6 @@ servers <strong>SHALL</strong> document their SMART capabilities in the <code cl
 <!-- This liquid script creates a US Core scope requirements table using input data from input/data/scopes.csv 
 include parameters: conformance='SHALL'|'SHOULD' see below for how used, and crud='cruds' not currently used -->
 
-<!--   
-<table class="grid">
-<thead>
-<tr>
-<th>Resource Type</th>
-<th>Granular Scope</th>
-</tr>
-</thead>
-<tbody>
-{% for scope in scopes -%}
-<tr>
-<td>{{scope | split: '.' | first }}</td>
-<td><code>{{ scope | prepend: 'patient/' }}</code></td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
- -->
-
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"issuer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"jwks_uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/.well-known/jwks.json"</span><span class="p">,</span><span class="w">
@@ -533,23 +484,42 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
     </span><span class="s2">"launch"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"launch/patient"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"offline_access"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/AllergyIntolerance"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/CarePlan"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/CareTeam"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Condition"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Coverage"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Device"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/DiagnosticReport"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/DocumentReference"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Encounter"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Goal"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Immunization"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/MedicationDispense"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/MedicationRequest"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Observation"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Organization"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Patient"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Practitioner"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/PractitionerRole"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Procedure"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Provenance"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/QuestionnaireResponse"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/RelatedPerson"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/ServiceRequest"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"patient/Specimen"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Condition.rs?category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/DocumentReference.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category|clinical-note"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=BAR"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=FOO"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|cognitive-status"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|disability-status"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|functional-status"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-category|sdoh"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org//CodeSystem-observation-category|social-history"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|activity"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|survey"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"patient/Observation.rs?category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs"</span><span class="w">
-
-  </span><span class="p">],</span><span class="w">
+</span><span class="p">],</span><span class="w">
   </span><span class="nl">"response_types_supported"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"code"</span><span class="p">],</span><span class="w">
   </span><span class="nl">"management_endpoint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/user/manage"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"introspection_endpoint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ehr.example.com/user/introspect"</span><span class="p">,</span><span class="w">
@@ -592,7 +562,7 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 01:24+0000">2024-02-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 19:22+0000">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
