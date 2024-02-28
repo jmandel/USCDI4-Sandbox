@@ -25,7 +25,7 @@ intro text  ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nul
 <div class="bg-success" markdown="1">
 SMART’s scopes defined in Version 2.0.0 of the [SMART App Launch] implementation guide allow a client to request the delegation of a specific set of access rights. The US Core API requires servers to support patient-specific [resource level scopes] and [granular scopes] allowing access to specific data about a single patient. US Core's required scopes (**SHALL**) are based on community-based consensus that the scope meets a system requirement, clinical need, or federal regulation. Similarly, US Core's recommended scopes (**SHOULD**) rely on community-based consensus that the scope meets a system requirement or clinical need as a best practice.
 
-The US Core required scopes listed below are named in the HTA-1 final rule, which requires support for Condition and Observation category scopes, and the recommended granular scope listed below is of particular interest to patients and health systems. 
+The US Core required scopes listed below are named in the HTI-1 final rule, which requires support for Condition and Observation category scopes, and the recommended granular scope listed below is of particular interest to patients and health systems. 
  
 Although these scopes are limited to patient-specific scopes. servers MAY support other patient-specific, user-level, and system-level scopes.  US Core clients should follow the [principle of least privilege] and access only the necessary resources. In other words, if a client needs only vital sign observations, it should request access only to Observations with a category of "vital-signs".
 </div><!-- new-content -->
